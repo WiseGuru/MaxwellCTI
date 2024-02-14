@@ -60,8 +60,8 @@ Windows.edb
 
 ## Windows 11
 Windows-gather.db
-- SystemIndex_Gather
-- SystemIndex_
+- SystemIndex_Gther
+- SystemIndex_GthrPth
 *Windows.db*
 - SystemIndex_1_PropertyStory
 - SystemIndex_1_PropertyStore_Metadata
