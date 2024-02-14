@@ -7,7 +7,7 @@ I managed to catch this excellent seminar live, and I highly recommend it. Below
 
 [For the Love of the Windows Search Index w/ Alissa Torres - YouTube](https://www.youtube.com/watch?v=Ej37pJf1nw0)
 
-### Notes
+# Notes
 
 Microsoft used to use ESE, but now uses SQLlite
 
@@ -61,7 +61,7 @@ Windows.edb
 ## Windows 11
 Windows-gather.db
 - SystemIndex_Gather
-- Su
+- SystemIndex_
 *Windows.db*
 - SystemIndex_1_PropertyStory
 - SystemIndex_1_PropertyStore_Metadata
