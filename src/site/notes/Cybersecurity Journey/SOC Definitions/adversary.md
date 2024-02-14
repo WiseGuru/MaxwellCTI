@@ -3,8 +3,8 @@
 ---
 
 #### Adversary
-- An attacker who performs [[Cybersecurity Journey/SOC Definitions/TTPs\|TTPs]] against an organization
-- 4 levels
+1. An attacker who performs [[Cybersecurity Journey/SOC Definitions/TTPs\|TTPs]] against an organization
+2.  4 levels
         1.  Script kiddies
             1.  Low skill, use other people's tools, etc.
             2.  "baby hackers"
