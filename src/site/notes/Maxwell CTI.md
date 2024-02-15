@@ -6,7 +6,7 @@
 
 Hello and welcome! This blog is a documentation of my journey into cybersecurity; as I take classes, attend seminars, participate in cyber ranges and HTB/THM-style labs, and pursue my own interests, I will document the things I learn and work on here.
 
-### Other Sites
+### My Other Sites
 Because I actually can't contain myself, here's my (non-exhaustive) list of other sites and projects I'm working on.
 
 [WiseGuru's CCNA Definitions](https://ccnadefinitions.com/)
