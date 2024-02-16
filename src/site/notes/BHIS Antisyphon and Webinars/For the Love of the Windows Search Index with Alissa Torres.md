@@ -9,7 +9,7 @@ I managed to catch this excellent seminar live, and I highly recommend it. Below
 
 # Notes
 
-Microsoft used to use ESE, but now uses SQLlite
+Microsoft used to use ESE up to Windows 10, but now uses SQLlite in Windows 11+
 
 
 SearchIndexer.exe
