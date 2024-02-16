@@ -4,10 +4,10 @@
 
 I was browsing the Career chat in the [Antisyphon Discord](https://discord.gg/antisyphon), and came across a post from Jon H., discussing his techniques for networking in the cybersecurity community and getting interviews. 
 
-I wanted to save it here for easy posterity and easy reference; he was also good enough to share an example resume, which I will leave with the original link.
+I thought it was really helpful and clear, and I did not see it on his site (which he helpfully linked in the post), and I wanted to save it here for easy posterity and easy reference. He was also good enough to share an example resume, which is available just below his Discord post.
 
-[Link to original post](https://discord.com/channels/861923838911578143/861923839407161346/1204901150344744981)
-Current as of 2024-02-15
+## Jon Hatch's Job Hunting [(original post)](https://discord.com/channels/861923838911578143/861923839407161346/1204901150344744981)
+> Current as of 2024-02-15
 
 Hey Y'all , just wanted to share a few things that have worked for me when it comes to job hunting. First, I have not seen [Jason Blanchard 's Presentation on Job hunting](https://www.youtube.com/watch?v=LThxETdRxlQ) as if you are a hacker, so if I am echoing anything Jason says, it's because he gives fantastic advice. Quick note about me: I was a career Soldier/Logistician/Defense Contractor for well over a decade before I jumped into cybersecurity. During this transition I did my research, I conducted informational interviews, I networked, and eventually landed my first job. I've learned a ton about the recruiting process, how ATS systems work, and I hope this will help you as well.
 
