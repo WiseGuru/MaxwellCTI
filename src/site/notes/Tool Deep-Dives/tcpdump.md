@@ -4,7 +4,7 @@
 
 #### tcpdump
 - Unix/Linux CLI-based packet capture and analyzer utility that is extremely flexible
-- Not as feature-right as [[Tool Deep-Dives/Wireshark/Wireshark\|Wireshark]], but can run in more places with less overhead more quickly
+- Not as feature-right as [[Tool Deep-Dives/Wireshark\|Wireshark]], but can run in more places with less overhead more quickly
 - Important commands
 	- `-D`
 		- Lists interfaces
