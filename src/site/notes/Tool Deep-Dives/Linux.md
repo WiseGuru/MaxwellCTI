@@ -79,9 +79,6 @@
 
 
 
-
-
-
 # Metadata
 
 ### Sources
