@@ -23,12 +23,8 @@
 	- [[Tool Deep-Dives/less\|less]]
 	- [[Tool Deep-Dives/grep\|grep]]
 		- Specifically, you can use `\|` to grab multiple variables, like `grep '3389\|445\|CLOSED\|ESTABLISH'
-
-
-
-
-
-
+- **Flags**
+	- [reading tcp flags](https://gist.github.com/tuxfight3r/9ac030cb0d707bb446c7)
 
 
 # Metadata
