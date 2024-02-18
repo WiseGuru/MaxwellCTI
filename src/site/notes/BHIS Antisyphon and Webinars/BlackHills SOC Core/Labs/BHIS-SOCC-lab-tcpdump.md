@@ -12,6 +12,7 @@ Let's get down on this lab about...
 
 #### tcpdump
 - Unix/Linux CLI-based packet capture and analyzer utility that is extremely flexible
+	- Also fun fact, the `man` page for `tcpdump` breaks down the [TCP header](https://ccnadefinitions.com/ccna/20-definitions/tcp/) 
 - Not as feature-right as [[Tool Deep-Dives/Wireshark\|Wireshark]], but can run in more places with less overhead more quickly
 - Important commands
 	- `-D`
@@ -25,8 +26,9 @@ Let's get down on this lab about...
 		- Don't resolve hostname
 	- `-r <file>`
 		- Identify the file you're reading from
-- Like Wireshark, you can also filter output by host and port
+- Like Wireshark, you can also filter output by net, host, and/or port
 	- `tcpdump host 192.168.1.2 port 80`
+	- `tcpdump net 192.168.1.0/24 port 445`
 - **CRITICALLY**, the output can be managed more easily when piped to various Linux commands
 	- [[Tool Deep-Dives/less\|less]]
 	- [[Tool Deep-Dives/grep\|grep]]
@@ -57,6 +59,10 @@ Many of the entries in the PCAP are broken up roughly like this:
 
 Anyway, lots here to unpack, but a lot of chaff to sort through, so we'll filter further, tack on `and port 80` to filter only traffic through port 80 for HTTP traffic (or any traffic going over HTTP).
 
+You can also string ports together using `or`, for example, `tcpdump -n -r magnitude_1hr.pcap host 192.168.99.52 and port 443 or 80`
+
 We were already seeing a bunch of HTTP packets, so to help get a clearer picture of what's going on, we can add `-A` to show the packet contents, and see what data is being transmitted. This is also a ton of data, so we can pipe the output to `less` to make it easier to scroll.
 
 In the first fill screen, we see that PowerShell is being sent from an external IP to our host private IP address, and it's encoded in [[Tool Deep-Dives/Base64\|Base64]]. Bad-bad! 
+
+You can also filter by protocol; in the lab, they append `ip6` to the command to show only IPv6 entries, but you could filter by `arp`, `stp`, but not `lldp` for some reason. 
