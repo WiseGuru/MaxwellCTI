@@ -122,7 +122,6 @@ In the first fill screen, we see that PowerShell is being sent from an external 
 > You can also filter by protocol; in the lab, they append `ip6` to the command to show only IPv6 entries, but you could filter by `arp`, `stp`, but not `lldp` for some reason.
 
 
-
 </div></div>
 
 
