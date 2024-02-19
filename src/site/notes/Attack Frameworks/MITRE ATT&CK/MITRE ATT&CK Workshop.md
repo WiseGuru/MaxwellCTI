@@ -20,4 +20,5 @@
 		1. Each Technique/sub-technique also includes the mitigations, data sources and detections, and procedure examples
 	2. Tactics are pretty static, but techniques change
 	3. ![MITRE ATT&CK Workshop-2.png](/img/user/Attachments/MITRE%20ATT&CK%20Workshop-2.png)
-	4. 
+
+*I finished watching the video passively; need to finish my notes here.*
