@@ -100,3 +100,10 @@ John Strand recommended a book, but I missed it, and can't be arsed to find it i
 
 
 
+Ping/Port/Parse (14:00)
+- Ping
+	- Is the device alive?
+- Port
+	- Is the port/process alive and running?
+- Parse
+	- Parse those log files to figure out what's happening
