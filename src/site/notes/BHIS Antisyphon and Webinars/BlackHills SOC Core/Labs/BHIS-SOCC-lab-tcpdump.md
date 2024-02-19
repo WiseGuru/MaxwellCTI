@@ -134,10 +134,10 @@ If we search the network for the NTP port, we find that there is a preconfigured
 ![BHIS-SOCC-lab-tcpdump-2.png](/img/user/Attachments/BHIS-SOCC-lab-tcpdump-2.png)
 
 Server `157.245.128.27` feels like a [[SOC Definitions/C2\|C2]] server that host `192.168.99.51` is beaconing to.
-	1. The target server is flagged as malicious on VirusTotal.com
-	2. The target server appears to be masquerading as an NTP/time synchronization server
-	3. The host machine is checking in with the target server about every minute over port 443
-	4. The host machine is checking in with a different NTP server, and the traffic looks very different.
+1. The target server is flagged as malicious on VirusTotal.com
+2. The target server appears to be masquerading as an NTP/time synchronization server
+3. The host machine is checking in with the target server about every minute over port 443
+4. The host machine is checking in with a different NTP server, and the traffic looks very different.
 
 And we're correct! Here's the closing paragraph below:
 ![BHIS-SOCC-lab-tcpdump-4.png](/img/user/Attachments/BHIS-SOCC-lab-tcpdump-4.png)
