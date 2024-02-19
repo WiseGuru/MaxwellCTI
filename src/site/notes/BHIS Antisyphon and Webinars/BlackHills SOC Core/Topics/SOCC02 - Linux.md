@@ -107,3 +107,63 @@ Ping/Port/Parse (14:00)
 	- Is the port/process alive and running?
 - Parse
 	- Parse those log files to figure out what's happening
+
+## Linux
+1. When you're learning Linux:
+	1. Don't get sidetracked with all the distros
+	2. **You need to learn bash**
+		1. [bash scripting search results - eBooks.com](https://www.ebooks.com/en-us/searchapp/searchresults.net?term=bash+scripting)
+2. Processes with top
+	1. `ps aux`
+		1. Shows all processes
+			1. a - all processes
+			2. u - sorted by user
+			3. x - include the processes using a teletype terminal
+		2. [How to Use the ps aux Command in Linux | Linode Docs](https://www.linode.com/docs/guides/use-the-ps-aux-command-in-linux/)
+	2. `top`
+		1. Shows *live* processes
+3. Networking stuff
+	1. `ip a`
+		1. New version of ifconfig
+	2. Ping, Port, Parse
+		1. `ping`
+			1. "*Packet Inter-Net Groper"
+		2. `port`
+			1. Will attempt the identify the port is alive and running
+		3. `parse`
+			1. Parse any results to see what's going on
+	3. NMAP and checking remote ports
+		1. Run as `su`
+		2. Port/State/Service
+			1. Port
+				1. The port is the thing
+			2. State
+				1. Open
+					1. The port is verifiably open
+				2. Closed
+					1. The port is verifiably closed
+				3. Open|filtered
+					1. The port may be open
+			3. Service
+		3. Q from audience: How often do you scan for UDP?
+			1. A: NMAP sends specific information to UDP ports (vs. blank packets) to initiate a conversation, based on the appropriate protocol
+				1. e.g., port 53 will be a DNS request, 161 will be an SNMP request, etc.
+	4. `netstat`
+	5. List open files `lsof`
+		1. `lsof -i -P`
+			1. Shows all open files and their connected shit
+			2. pipe, backpipe, what port it's listening to, etc.
+4. **Show and evade Linux history**
+	1. `history`
+		1. Shows complete bash command history
+	2. add a space before the command
+		1. `~$ ps aux`
+			2. Will appear in the history
+		2. `~$  ps aux`
+			1. Will NOT appear in the history
+5. Files and file management
+	1. `cd /proc`
+		1. `/proc` is a virtual file system that contains information about processes and etc.
+6. `strings`
+
+### Lab: [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Linux\|Linux]]
