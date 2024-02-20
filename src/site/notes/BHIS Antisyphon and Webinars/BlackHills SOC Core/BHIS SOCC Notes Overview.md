@@ -14,7 +14,7 @@ If you can, I **highly** recommend you check out and attend their courses; this 
 
 Since the course was taught over 4 days from a 200-page slide deck, I'm going to organize my notes in order of instruction and general topic; as I explore and expand the notes, they may get broken off into their own tool deep-dives and linked back in previews (like [[Tool Deep-Dives/tcpdump\|tcpdump]]).
 
-Side topics (like [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Discord Comments and Job Hunting\|Job Hunting]]) will get their own out-of-order page in the main folder.
+Side topics (like [[BHIS Antisyphon and Webinars/Career Growth/Discord Comments and Job Hunting\|Job Hunting]]) will get their own out-of-order page in the main folder.
 
 # Navigation
 
