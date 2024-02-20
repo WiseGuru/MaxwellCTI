@@ -116,6 +116,7 @@ Jason Blanchard gave a talk about Job Hunting, and my short-hand notes are below
 		1. ![Comments and Interview Job stuff-1.png](/img/user/Attachments/Comments%20and%20Interview%20Job%20stuff-1.png)
 		2. ![Comments and Interview Job stuff-2.png](/img/user/Attachments/Comments%20and%20Interview%20Job%20stuff-2.png)
 		3. ![Comments and Interview Job stuff-3.png](/img/user/Attachments/Comments%20and%20Interview%20Job%20stuff-3.png)
+		4. [[BHIS Antisyphon and Webinars/Career Growth/Jon Hatch's Guide to Job Hunting\|Jon Hatch's Guide to Job Hunting]] also has a resume template that I think was quite good.
 2. Informational interviews
 	1. [Informational Interviews - JM Hatch's Cybersecurity Blog](https://www.jmhatch.com/landing/blog/informational-interviews)
 
