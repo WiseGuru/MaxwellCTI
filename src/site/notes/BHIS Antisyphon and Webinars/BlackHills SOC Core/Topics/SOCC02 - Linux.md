@@ -2,6 +2,15 @@
 {"dg-publish":true,"permalink":"/bhis-antisyphon-and-webinars/black-hills-soc-core/topics/socc-02-linux/"}
 ---
 
+# Become the Master Triager
+Ping/Port/Parse (14:00)
+- Ping
+	- Is the device alive?
+- Port
+	- Is the port/process alive and running?
+- Parse
+	- Parse those log files to figure out what's happening
+
 # Learning Bash is critical
 John Strand recommended a book, but I missed it, and can't be arsed to find it in the video. It maybe the Amazon link, but anyway, here are some sources to get started:
 
@@ -21,7 +30,10 @@ John Strand recommended a book, but I missed it, and can't be arsed to find it i
 # Linux
 - It's the OS that's in basically everything, so get used to it.
 - It comes in a variety of distributions or "distros"
-	- **insert distinction between Linux and Unix here**
+	- Don't get distracted with the distros
+		- Most of them are built on a core version (like Debian or Arch) and have various quality-of-life or customization features added (like Ubuntu, Mint, SteamOS, or Kali.)
+	- There are many Unix-like OS's, like Linux, macOS, and FreeBSD
+		- They often function similarly, but will have different command structures for the same task, like app installation or network interface configuration
 - Users and privileges
 	- Becoming SU
 		- `sudo su -`
@@ -92,46 +104,34 @@ John Strand recommended a book, but I missed it, and can't be arsed to find it i
 </div></div>
 
 
+### Running Processes
+1. `ps aux`
+	1. Shows all processes
+		1. a - all processes
+		2. u - sorted by user
+		3. x - include the processes using a teletype terminal
+	2. [How to Use the ps aux Command in Linux | Linode Docs](https://www.linode.com/docs/guides/use-the-ps-aux-command-in-linux/)
+2. `top`
+	1. Shows *live* processes
 
+### Networking
+1. `ip a`
+	1. New version of `ifconfig`, shows network interface configuration and various stats
+		1. If it's not installed, you can install the `iproute2` package from apt
+	2. `ifconfig` is no longer installed by default on newer versions of Linux, so you should get used to running `ip a`
+		1. However, if necessary, you can install `net-tools` (`sudo apt install net-tools`) to get it back
 
+[[Tool Deep-Dives/Nmap\|Nmap]]
 
 
 </div></div>
 
 
 
-Ping/Port/Parse (14:00)
-- Ping
-	- Is the device alive?
-- Port
-	- Is the port/process alive and running?
-- Parse
-	- Parse those log files to figure out what's happening
+
 
 ## Linux
-1. When you're learning Linux:
-	1. Don't get sidetracked with all the distros
-	2. **You need to learn bash**
-		1. [bash scripting search results - eBooks.com](https://www.ebooks.com/en-us/searchapp/searchresults.net?term=bash+scripting)
-2. Processes with top
-	1. `ps aux`
-		1. Shows all processes
-			1. a - all processes
-			2. u - sorted by user
-			3. x - include the processes using a teletype terminal
-		2. [How to Use the ps aux Command in Linux | Linode Docs](https://www.linode.com/docs/guides/use-the-ps-aux-command-in-linux/)
-	2. `top`
-		1. Shows *live* processes
 3. Networking stuff
-	1. `ip a`
-		1. New version of ifconfig
-	2. Ping, Port, Parse
-		1. `ping`
-			1. "*Packet Inter-Net Groper"
-		2. `port`
-			1. Will attempt the identify the port is alive and running
-		3. `parse`
-			1. Parse any results to see what's going on
 	3. NMAP and checking remote ports
 		1. Run as `su`
 		2. Port/State/Service
