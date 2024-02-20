@@ -9,7 +9,7 @@
 	- **Technique**: how the [[Definitions and Topics/Adversary\|Adversary]] achieves the goal or objective
 		- e.g., port scan
 	- **Procedure**: how the *technique* is executed
-		- e.g., [[Definitions and Topics/Nmap\|Nmap]]
+		- e.g., [[Tool Deep-Dives/Nmap\|Nmap]]
 
 
 # Metadata
