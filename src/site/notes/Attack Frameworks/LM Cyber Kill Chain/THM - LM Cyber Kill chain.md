@@ -14,11 +14,11 @@
 	2. The Cyber Kill Chain helps understand process of steps and layers of an attack
 2. Reconnaissance
 	1. Discovery and collection of information related to the target.
-	2. [[SOC Definitions/OSINT\|OSINT]] - Open-Source Intelligence
+	2. [[Definitions and Topics/OSINT\|OSINT]] - Open-Source Intelligence
 		1. The first and most subtle step an attacker can take to gather information
 		2. Study of publicly available information
 			1. Never makes contact with the target, so it's very difficult to detect
-	3. [[SOC Definitions/Email harvesting\|Email harvesting]] and phishing
+	3. [[Definitions and Topics/Email harvesting\|Email harvesting]] and phishing
 3. Weaponization
 	1. A "weaponizer" combines an exploit and malware into a deliverable payload
 		1. The *exploit* is a program or code used to take advantage of a *vulnerability* in a system
@@ -35,9 +35,9 @@
 5. Exploitation
 	1. A vulnerability is exploited, either with the *payload* created earlier, or in addition (e.g., employee clicking a link, etc.)
 	2. The exploits can be used to move *laterally* through a system
-		1. [[SOC Definitions/Lateral movement\|Lateral movement]] is when a malicious actor is able to use access in one area of a system to access another area in the system
+		1. [[Definitions and Topics/Lateral movement\|Lateral movement]] is when a malicious actor is able to use access in one area of a system to access another area in the system
 			1. e.g., using an EA's credentials to log into the CEO's laptop
-	3. A [[SOC Definitions/Zero-day\|Zero-day]] is a vulnerability or exploit is a vulnerability or exploit that is unknown by the developer, and can be exploited on a fully-patched system
+	3. A [[Definitions and Topics/Zero-day\|Zero-day]] is a vulnerability or exploit is a vulnerability or exploit that is unknown by the developer, and can be exploited on a fully-patched system
 6. Installation
 	1. Once the attacker has entered the system, they want to install their malware, often to create a *backdoor*
 	2. There are various ways to gain *persistent backdoor access* to a system:
