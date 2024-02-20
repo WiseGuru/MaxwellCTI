@@ -22,7 +22,7 @@ Some of the links below will appear a little darker; that's because I'm still re
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC01 - Networking and PCAPs\|SOCC01 - Networking and PCAPs]]
 	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-tcpdump\|BHIS-SOCC-lab-tcpdump]]
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC02 - Linux\|SOCC02 - Linux]]
-	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Linux\|BHIS-SOCC-lab-Linux]]
+	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-LinuxCLI\|BHIS-SOCC-lab-LinuxCLI]]
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC03 - Windows Endpoint Management\|SOCC03 - Windows Endpoint Management]]
 	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-WindowsCLI\|BHIS-SOCC-lab-WindowsCLI]]
 	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-DeepBlueCLI\|BHIS-SOCC-lab-DeepBlueCLI]]
