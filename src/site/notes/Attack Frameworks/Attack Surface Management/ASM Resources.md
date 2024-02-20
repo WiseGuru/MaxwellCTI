@@ -13,7 +13,7 @@ NahamSec series, doesn't include EP0
 [Recon & Attack Surface Management - YouTube](https://www.youtube.com/playlist?list=PLKAaMVNxvLmDtXJw7vEQjxbvdqeE3O0es)
 
 ## BHIS [Ashley Knowles' video on ASM 101](https://www.youtube.com/watch?v=cznJlbEA2ws)
-In this video, Ashley Knowles said she had a list of FOSS/Paid ASM services on her GitHub. So I investigated, and found that her current list^[The video is a few years old, she might have dropped her original one] was forked from another account several of the links were outdated. I decided to make my own fork with some notes and a datestamp:
+In this video, Ashley Knowles said she had a list of [[Definitions and Topics/FOSS\|FOSS]]/Paid ASM services on her GitHub. So I investigated, and found that her current list^[The video is a few years old, she might have dropped her original one] was forked from another account several of the links were outdated. I decided to make my own fork with some notes and a datestamp:
 
 [GitHub - Curated list of open-source & paid Attack Surface Monitoring (ASM) tools.](https://github.com/WiseGuru/awesome-attack-surface-monitoring)
 
