@@ -13,3 +13,6 @@
 3. John Hammond ([not that one](https://jurassicpark.fandom.com/wiki/John_Hammond))
 	1. Cybersecurity educator and ethical hacker
 	2. [John Hammond - YouTube](https://www.youtube.com/@_JohnHammond)
+4. US Cyber Challenge
+	1. It's a product of the Center for Internet Security (CIS), and previously supported by the US Department of Homeland Security
+	2. [HOME | US Cyber Challenge](https://www.uscyberchallenge.org/)
