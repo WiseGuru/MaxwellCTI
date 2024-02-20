@@ -20,14 +20,14 @@ In this video, Ashley Knowles said she had a list of FOSS/Paid ASM services on h
 The original list has a few issues/pull requests from other people, and while the creator has reacted to them, they haven't integrated those changes, leading me to believe the list is effectively static. Therefore, I'll probably just keep this list updated separately and modify it as it suits me.
 
 ## Random LinkedIn Post
-This post listed a few tools and linked to a [CSO Online article](https://www.csoonline.com/article/570887/7-best-practices-for-enterprise-attack-surface-management.html). 
+[Joshua Bregler on LinkedIn](https://www.linkedin.com/posts/breglercissp_7-best-practices-for-enterprise-attack-surface-activity-7161741020362170369-Sopd?utm_source=share&utm_medium=member_desktop) created a post that listed a few tools and linked to a [CSO Online article](https://www.csoonline.com/article/570887/7-best-practices-for-enterprise-attack-surface-management.html). 
 
-The original post feels a little wordy,^[I'm always succinct, concise, to the point, and never verbose, wordy, circumlocutory, or repetitive. That is to say, I don't repeat myself.] so here's my summary, with all the LinkedIn tracking links removed.
+The original post feels a little wordy,^[I'm always succinct, concise, to the point, and never verbose, wordy, circumlocutory, or repetitive. That is to say, I don't repeat myself.] so here's my summary, with all the LinkedIn tracking links removed. The original is below for posterity.
 
 ### Summary
 [7 best practices for enterprise attack surface management | CSO Online](https://www.csoonline.com/article/570887/7-best-practices-for-enterprise-attack-surface-management.html)
 
-When it comes to Attack Surface Management, don't be overwhelmed with expensive products. There are plenty of Free, Cheap, and Open Source products that will suit your needs.
+When it comes to Attack Surface Management, don't be overwhelmed with expensive products. There are plenty of Free, Cheap, and Open Source tools to get you started, and may replace the need for expensive products entirely.
 
 I've broken these tools up into three categories (note that all of them except nmap, zenmap, ZAP, and Burp Suite CE are GitHub Repos, which we love to see).
 
@@ -36,16 +36,14 @@ I've broken these tools up into three categories (note that all of them except n
 	2. SubBrute is fast and unapologetic and has some nice upgrades: [subbrute: A DNS meta-query spider that enumerates DNS records, and subdomains.](https://github.com/TheRook/subbrute)
 	3. Knock is simple and efficient: [knock: Knock Subdomain Scan](https://github.com/guelfoweb/knock)
 2. Port Scanning (know your potential network ingress points)  
-	1. nmap is the OG: [https://nmap.org/](https://nmap.org/)  
-	2. zenmap is nmap's prettier sibling; just has a nice GUI and helpers: [https://nmap.org/zenmap/](https://nmap.org/zenmap/)  
+	1. Nmap is the OG: [Nmap](https://nmap.org/)
+	2. Zenmap is Nmap's prettier sibling; just has a nice GUI and helpers: [Zenmap](https://nmap.org/zenmap/)
 3. Vulnerability/Configuration Scanning  
 	1. nuclei is nifty and customizable: [nuclei: Fast and customizable vulnerability scanner based on simple YAML based DSL.](https://github.com/projectdiscovery/nuclei)
-	2. ZAP is wonderful for web app scans: [https://www.zaproxy.org/](https://www.zaproxy.org/)  
-	3. Burp is amazing for a million reasons: [Download Burp Suite Community Edition - PortSwigger](https://portswigger.net/burp/communitydownload)
+	2. ZAP is wonderful for web app scans: [ZAP](https://www.zaproxy.org/)
+	3. Burp is amazing for a million reasons: [Burp Suite CE by PortSwigger](https://portswigger.net/burp/communitydownload)
 
 ### Original post
-[Joshua Bregler on LinkedIn: 7 best practices for enterprise attack surface management](https://www.linkedin.com/posts/breglercissp_7-best-practices-for-enterprise-attack-surface-activity-7161741020362170369-Sopd?utm_source=share&utm_medium=member_desktop)
-
 On Fridays, we build things... This week...  
   
 Attack Surface Management!  
