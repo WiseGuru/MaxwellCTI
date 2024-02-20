@@ -166,4 +166,4 @@ Ping/Port/Parse (14:00)
 		1. `/proc` is a virtual file system that contains information about processes and etc.
 6. `strings`
 
-### Lab: [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Linux\|Linux]]
+### Lab: [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-LinuxCLI\|Linux]]
