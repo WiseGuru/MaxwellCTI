@@ -140,8 +140,12 @@ John Strand recommended a book, but I missed it, and can't be arsed to find it i
 3. `lsof`
 	1. List open files
 	2. `lsof -i -P`
-		1. Shows all open files and their connected shit
-		2. pipe, backpipe, what port it's listening to, etc.
+		1. Shows all open files and their connected devices
+		2. `i` - Shows all open network files
+			1. You can also specify an IP address to narrow it down to a specific host
+		3. `P` - Prohibits convert port numbers to names
+			1. Can make `lsof` run faster, 
+	3. pipe, backpipe, what port it's listening to, etc.
 
 [[Tool Deep-Dives/Nmap\|Nmap]]
 
