@@ -14,12 +14,21 @@ Since the course was taught over 4 days from a 200-page slide deck, I'm going to
 
 Side topics (like [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Discord Comments and Job Hunting\|Job Hunting]]) will get their own out-of-order page in the main folder.
 
-# Day 1
-
-
-
-
-
-Linux lab, then day over!
-[IntroLabs/LinuxCLI](https://github.com/strandjs/IntroLabs/blob/master/IntroClassFiles/Tools/IntroClass/LinuxCLI/LinuxCLI.md)
-
+[[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC01 - Networking and PCAPs\|SOCC01 - Networking and PCAPs]]
+- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-tcpdump\|BHIS-SOCC-lab-tcpdump]]
+[[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC02 - Linux\|SOCC02 - Linux]]
+- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Linux\|BHIS-SOCC-lab-Linux]]
+[[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC03 - Windows Endpoint Management\|SOCC03 - Windows Endpoint Management]]
+- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-WindowsCLI\|BHIS-SOCC-lab-WindowsCLI]]
+- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-DeepBlueCLI\|BHIS-SOCC-lab-DeepBlueCLI]]
+[[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC04 - Server Log Analysis\|SOCC04 - Server Log Analysis]]
+- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-FirewallLog\|BHIS-SOCC-lab-FirewallLog]]
+[[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC05 - Memory Forensics\|SOCC05 - Memory Forensics]]
+- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-MemoryForensics\|BHIS-SOCC-lab-MemoryForensics]]
+[[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC06 - Egress Traffic Analysis\|SOCC06 - Egress Traffic Analysis]]
+- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Rita-ACHunter\|BHIS-SOCC-lab-Rita-ACHunter]]
+[[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC07 - User and Entity Behavior Analytics\|SOCC07 - User and Entity Behavior Analytics]]
+- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Sysmon\|BHIS-SOCC-lab-Sysmon]]
+[[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC08 - Endpoint Protection\|SOCC08 - Endpoint Protection]]
+[[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC09 - Vulnerability Management\|SOCC09 - Vulnerability Management]]
+[[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC10 - Security in SDLC\|SOCC10 - Security in SDLC]]
