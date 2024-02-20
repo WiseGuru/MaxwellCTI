@@ -14,6 +14,13 @@
 		- `sudo su -`
 			- This changes the terminal environment from running as user AS root, to actually BEING root
 
+### Resources if you get lost
+> **WHEN IN DOUBT**: You can always learn about a command with by running `man <command>`, like `man pwd`
+
+- [die.net](https://www.die.net/)
+	- Various Linux manual pages
+- [explainshell.com](https://explainshell.com/)
+	- Copy and paste an entire line of shell commands to have each section broken down and identified clearly
 ### File directories
 | Root Directory | Description | Notes |
 | ---- | ---- | ---- |
@@ -38,6 +45,8 @@
 - `cd`
 	- Change directory
 	- Running without any changes will send you back to the home directory
+	- `cd /proc`
+		- `/proc` is the *virtual file system*, and contains information about running processes
 - `ls`
 	- Show any visible (non-hidden) files
 	- `ls -lrta`
@@ -89,14 +98,36 @@
 2. `top`
 	1. Shows *live* processes
 
-### Networking
+### Networking and file management
 1. `ip a`
 	1. New version of `ifconfig`, shows network interface configuration and various stats
 		1. If it's not installed, you can install the `iproute2` package from apt
 	2. `ifconfig` is no longer installed by default on newer versions of Linux, so you should get used to running `ip a`
 		1. However, if necessary, you can install `net-tools` (`sudo apt install net-tools`) to get it back
+2. `netstat`
+	1. Displays active network connections
+		1. `a` - all listening and non-listening (e.g. established) connections
+			1. Listening sockets are waiting for a connection
+			2. Established sockets have an active connection
+		2. `t` - TCP connections
+		3. `u` - UDP connections
+3. `lsof`
+	1. List open files
+	2. `lsof -i -P`
+		1. Shows all open files and their connected shit
+		2. pipe, backpipe, what port it's listening to, etc.
 
 [[Tool Deep-Dives/Nmap\|Nmap]]
+
+### Linux Terminal History
+1. `history`
+	1. Shows a complete history of Bash commands
+	2. Relatively easy to evade, add a space before the command
+		1. `~$ ps aux`
+			2. Will appear in the history
+		2. `~$  ps aux`
+			1. Will NOT appear in the history
+
 
 # Metadata
 
