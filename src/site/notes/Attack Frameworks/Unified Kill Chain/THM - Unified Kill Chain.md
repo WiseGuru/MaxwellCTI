@@ -11,7 +11,7 @@
 		2. Assessing vulnerabilities
 		3. Create a plan of action to secure those system within acceptable risk
 		4. Put policies in place to prevent future vulnerabilities
-			1. e.g., patch management, [[SOC Definitions/SDLC\|SDLC]], awareness training, etc.
+			1. e.g., patch management, [[Definitions and Topics/SDLC\|SDLC]], awareness training, etc.
 2. [The Unified Kill Chain](https://www.unifiedkillchain.com/)
 	1. Aims to compliment other cybersecurity frameworks
 	2. The goal is to cover an entire attack, and recognizes that an attacker will move between links in a non-linear fashio
