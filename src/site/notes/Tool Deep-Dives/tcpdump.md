@@ -28,6 +28,10 @@
 - **Flags**
 	- [reading tcp flags](https://gist.github.com/tuxfight3r/9ac030cb0d707bb446c7)
 
+### Work
+[[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC01 - Networking and PCAPs\|SOCC01 - Networking and PCAPs]]
+[[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-tcpdump\|BHIS-SOCC-lab-tcpdump]]
+
 
 # Metadata
 
