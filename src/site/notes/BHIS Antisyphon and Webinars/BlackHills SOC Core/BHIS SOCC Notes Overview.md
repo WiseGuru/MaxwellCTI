@@ -17,6 +17,7 @@ Since the course was taught over 4 days from a 200-page slide deck, I'm going to
 Side topics (like [[BHIS Antisyphon and Webinars/Career Growth/Discord Comments and Job Hunting\|Job Hunting]]) will get their own out-of-order page in the main folder.
 
 # Navigation
+Some of the links below will appear a little darker; that's because I'm still reviewing those notes for editing and additional context, and will come online as I clean them up.
 
 [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC01 - Networking and PCAPs\|SOCC01 - Networking and PCAPs]]
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-tcpdump\|BHIS-SOCC-lab-tcpdump]]
