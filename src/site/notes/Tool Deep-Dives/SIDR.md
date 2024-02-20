@@ -8,7 +8,7 @@ Really neat application that outputs the Windows Search Index for Windows 10 (an
 
 - The DB can be dumped into files (CSV or JSON) or straight to shell
 
-While I was watching the seminar [[BHIS Antisyphon and Webinars/For the Love of the Windows Search Index with Alissa Torres\|For the Love of the Windows Search Index with Alissa Torres]], user [(h,k)](https://kroothy.com/) on the [Antisyphon Discord](https://discord.gg/antisyphon) asked about Windows Search indexing file content for Markdown (.md) files, specifically relating to Obsidian.
+While I was watching the seminar [[BHIS Antisyphon and Webinars/One-Offs/For the Love of the Windows Search Index with Alissa Torres\|For the Love of the Windows Search Index with Alissa Torres]], user [(h,k)](https://kroothy.com/) on the [Antisyphon Discord](https://discord.gg/antisyphon) asked about Windows Search indexing file content for Markdown (.md) files, specifically relating to Obsidian.
 
 I love Obsidian, so I wanted to give it a shot.
 
