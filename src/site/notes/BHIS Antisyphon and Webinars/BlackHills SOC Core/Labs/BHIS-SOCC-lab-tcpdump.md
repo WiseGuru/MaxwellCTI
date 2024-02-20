@@ -133,7 +133,7 @@ Let's take a closer look at that server.
 If we search the network for the NTP port, we find that there is a preconfigured NTP server, and host `99.51` is connecting with it with the NTPv3 protocol
 ![BHIS-SOCC-lab-tcpdump-2.png](/img/user/Attachments/BHIS-SOCC-lab-tcpdump-2.png)
 
-Server `157.245.128.27` feels like a [[SOC Definitions/C2\|C2]] server that host `192.168.99.51` is beaconing to.
+Server `157.245.128.27` feels like a [[Definitions and Topics/C2\|C2]] server that host `192.168.99.51` is beaconing to.
 1. The target server is flagged as malicious on VirusTotal.com
 2. The target server appears to be masquerading as an NTP/time synchronization server
 3. The host machine is checking in with the target server about every minute over port 443
