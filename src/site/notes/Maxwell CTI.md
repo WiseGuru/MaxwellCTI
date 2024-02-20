@@ -6,6 +6,10 @@
 
 Hello and welcome! This blog is a documentation of my journey into cybersecurity; as I take classes, attend seminars, participate in cyber ranges and HTB/THM-style labs, and pursue my own interests, I will document the things I learn and work on here.
 
+### New here?
+Why not check out my notes on the [[BHIS Antisyphon and Webinars/BlackHills SOC Core/BHIS SOCC Notes Overview\|Black Hills Information Security SOC Analyst Core course?]]
+
+
 ### My Other Sites
 Because I actually can't contain myself, here's my (non-exhaustive) list of other sites and projects I'm working on.
 
