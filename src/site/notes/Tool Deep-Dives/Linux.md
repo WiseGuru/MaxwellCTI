@@ -5,7 +5,10 @@
 # Linux
 - It's the OS that's in basically everything, so get used to it.
 - It comes in a variety of distributions or "distros"
-	- **insert distinction between Linux and Unix here**
+	- Don't get distracted with the distros
+		- Most of them are built on a core version (like Debian or Arch) and have various quality-of-life or customization features added (like Ubuntu, Mint, SteamOS, or Kali.)
+	- There are many Unix-like OS's, like Linux, macOS, and FreeBSD
+		- They often function similarly, but will have different command structures for the same task, like app installation or network interface configuration
 - Users and privileges
 	- Becoming SU
 		- `sudo su -`
@@ -76,8 +79,24 @@
 </div></div>
 
 
+### Running Processes
+1. `ps aux`
+	1. Shows all processes
+		1. a - all processes
+		2. u - sorted by user
+		3. x - include the processes using a teletype terminal
+	2. [How to Use the ps aux Command in Linux | Linode Docs](https://www.linode.com/docs/guides/use-the-ps-aux-command-in-linux/)
+2. `top`
+	1. Shows *live* processes
 
+### Networking
+1. `ip a`
+	1. New version of `ifconfig`, shows network interface configuration and various stats
+		1. If it's not installed, you can install the `iproute2` package from apt
+	2. `ifconfig` is no longer installed by default on newer versions of Linux, so you should get used to running `ip a`
+		1. However, if necessary, you can install `net-tools` (`sudo apt install net-tools`) to get it back
 
+[[Tool Deep-Dives/Nmap\|Nmap]]
 
 # Metadata
 
