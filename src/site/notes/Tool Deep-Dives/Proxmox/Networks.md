@@ -16,6 +16,6 @@ Here are ways to gather information to troubleshoot your NIC:
 2. Take a screenshot of (or in some other way record) the *System>Network* screen for easy reference
 	1. Also keep in mind which virtual interfaces/bridges your vGuests are using.
 3. Get all MACs and interface names from the Shell
-	1. Navigate to your node, then Shell, then `ip add` to show all available interfaces
+	1. Navigate to your node, then Shell, then `ip add` (or `ip a`)^[As mentioned in the [[Tool Deep-Dives/Linux\|Linux]] dive, `ifconfig` is being deprecated, so it's not available by default in Proxmox.] to show all available interfaces
 4. Check your router's IP/Device/ARP table for connected devices.
 	1. In PFsense (which I had previously setup before I realized I should do OPNsense), you can go to *Diagnostics>ARP Table*
