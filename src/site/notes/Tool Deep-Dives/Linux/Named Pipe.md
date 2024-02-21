@@ -19,12 +19,12 @@ Let's break backpipe command down and see what's going on.
 1. `mknod backpipe p`
 	1. Creates a named pipe called "backpipe"
 2. `/bin/bash 0<backpipe`
-	1. `/bin/bash` reads its [[Tool Deep-Dives/Linux Data Streams\|standard input]] (`stdin`, file descriptor `0`) from the "backpipe"
+	1. `/bin/bash` reads its [[Tool Deep-Dives/Linux/Linux Data Streams\|standard input]] (`stdin`, file descriptor `0`) from the "backpipe"
 		2. `backpipe`'s output becomes `/bin/bash`'s input
 3. `|`
 	1. The output from the prior command is pipe into the following command
 4. `nc -l 2222 1>backpipe`
-	1. Netcat listens to port *2222* and the [[Tool Deep-Dives/Linux Data Streams\|standard output]] (`stdout`, file descriptor `1`) is sent into the named pipe "backpipe"
+	1. Netcat listens to port *2222* and the [[Tool Deep-Dives/Linux/Linux Data Streams\|standard output]] (`stdout`, file descriptor `1`) is sent into the named pipe "backpipe"
 
 **To summarize,** this forms a loop; *Netcat* listens for data on port *2222*, sends it to the *backpipe*. The *backpipe* sends the output to *Bash*'s input, and *Bash*'s output gets piped to *Netcat*. 
 
