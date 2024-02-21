@@ -31,7 +31,7 @@ Let's break backpipe command down and see what's going on.
 
 ![nyow-youre-thinking-with-portals-e1303609354625.jpg](/img/user/Attachments/nyow-youre-thinking-with-portals-e1303609354625.jpg)
 
-This is a [[Reverse Shell\|Reverse Shell]], which allows an attacker to execute shell commands on a remote system.
+This is a [[Definitions and Topics/Remote Shell\|Reverse Shell]], allowing an attacker to execute shell commands on a remote system.
 
 [Reverse shell cheatsheet](https://saucer-man.com/reverse/) has a similar command, which I've pasted below:
 
