@@ -29,8 +29,8 @@
 	- `tcpdump host 192.168.1.2 port 80`
 	- `tcpdump net 192.168.1.0/24 port 445`
 - **CRITICALLY**, the output can be managed more easily when piped to various Linux commands
-	- [[Tool Deep-Dives/less\|less]]
-	- [[Tool Deep-Dives/grep\|grep]]
+	- [[Tool Deep-Dives/Linux/less\|less]]
+	- [[Tool Deep-Dives/Linux/grep\|grep]]
 		- Specifically, you can use `\|` to grab multiple variables, like `grep '3389\|445\|CLOSED\|ESTABLISH'
 - **Flags**
 	- [reading tcp flags](https://gist.github.com/tuxfight3r/9ac030cb0d707bb446c7)
