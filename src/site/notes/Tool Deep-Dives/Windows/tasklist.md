@@ -5,10 +5,11 @@
 #### tasklist
 - `tasklist` shows all tasks running on the computer, in this moment, and their PID
 	- Can be run locally or remotely
+- One problem is that all `svchosts.exe` appear identical, and can be easy to gloss over
 
 ### Command
 1. `tasklist`
-	1. Problem is all the `svchosts.exe` that are identical and don't give a shit
+	1. 
 	2. `tasklist /svc`
 		1. For each exe running, it lists the associated services
 	3. `tasklist /m`
