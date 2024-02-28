@@ -12,7 +12,7 @@
 
 A great place to research [[Windows\|Windows]] CLI commands is [SS64](https://ss64.com), 
 
-1. Begin with network connections
+### Begin with network connections
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/tool-deep-dives/windows/netstat/#netstat" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
@@ -54,7 +54,7 @@ A great place to research [[Windows\|Windows]] CLI commands is [SS64](https://ss
 </div></div>
 
 
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/tool-deep-dives/windows/net/#net" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
@@ -65,7 +65,7 @@ A great place to research [[Windows\|Windows]] CLI commands is [SS64](https://ss
 </div></div>
 
 
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/tool-deep-dives/windows/net/#commands" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
@@ -84,21 +84,15 @@ A great place to research [[Windows\|Windows]] CLI commands is [SS64](https://ss
 </div></div>
 
 
-3. Windows Processes
-	1. `tasklist`
-		1. Shows all tasks running in this moment and their PID
-		2. Problem is all the `svchosts.exe` that are identical and don't give a shit
-		3. `tasklist /svc`
-			1. For each exe running, it lists the associated services
-		4. `tasklist /m`
-			1. All the DLLs associated with each executable
-		5. `tasklist /m /fi "pid eq [pid]`
-	2. `wmic`
-		1. `wmic process list full`
-		2. `wmic process get name,parentprocessid,processid`
-			1. shows the ID and process ID of each process running
-		3. `wmic process where processid=[PID] get commandline`
-			1. See if the file was launched via commandline,
+### Follow up with Windows Processes
+[[Tool Deep-Dives/Windows/tasklist\|tasklist]]
+
+2. `wmic`
+	1. `wmic process list full`
+	2. `wmic process get name,parentprocessid,processid`
+		1. shows the ID and process ID of each process running
+	3. `wmic process where processid=[PID] get commandline`
+		1. See if the file was launched via commandline,
 
 ### Lab: [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-WindowsCLI\|WindowsCLI]]
 
