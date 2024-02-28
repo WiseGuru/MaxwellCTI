@@ -26,6 +26,13 @@ I had to *disable Memory Integrity* on my computer in order for the VM to run pr
 ## Disable Updates
 Assuming you've now booted into Windows, it's important that you disable System Updates. *For that matter, don't update anything while running the VM, as it might cause problems with how the labs are expected to operate.*
 
-Because these VMs are old, and they've had "Do Not Update" so often that it doesn't take "No" for an answer. IMO, the best way to prevent updates from breaking your build is to disable them in the local group policy.
+Because these VMs are old, and they've had "Do Not Update" so often that it doesn't take "No" for an answer. I'm still working out the best way to disable them, but here are a few things to try.
+
+### Group Policy
 
 Open the start menu, and search for "gpedit"^[you can also do *Windows key+R* and type `gpedit.msc`, but I'm always a little wary of using shortcuts in VMs], and run it. Then drill down from *Computer Configuration>Administrative Templates>Windows Components>Windows Updates*,^[Once you select the first folder, you can quickly drop to the folder by type part of its name, and then use arrow keys to expand it. For example, *A* to select *Administrative Templates*, and *right-arrow* to expand the folder.] and select/open "Configure Automatic Updates" from the list of policies. Disable that shit, you don't need it here!^[You do need it elsewhere though, so unless you've got a WSUS server somewhere managing updates or something like that, don't do this.] 
+
+### Disable Services
+
+*Windows Key* + *R*, enter `services.msc`^[you can also search for services in the Start menu and run as admin], scroll down to *Windows Update* (or select the first item and type out "Windows Update" to jump down to it), Right-click>Properties, and change "Startup type" from "Manual" to "Disabled"
+
