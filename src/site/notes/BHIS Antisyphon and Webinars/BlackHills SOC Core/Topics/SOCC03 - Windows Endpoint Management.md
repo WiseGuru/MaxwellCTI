@@ -9,16 +9,81 @@
 	1. These commands are the grunt-work required to verify your [[EDR\|EDR]] application works
 		1. You **need** to be able to run these commands in terminal
 		2. There are times your EDR tool will be lying to you, or the EDR is opaque in how it makes decisions
-2. Begin with network connections
-	1. Core Windows network commands
 
-		2. `net view`
-			1. Shows all shares active on the windows session
-			2. You will need to run it against a clean system to know what's normal
-		3. `net use`
-			1. Show who is making outbound connections from the system (*outbound connections)
-		4. `net session`
-			1. Show who has an active session with this system right now (*inbound connections*)
+A great place to research [[Windows\|Windows]] CLI commands is [SS64](https://ss64.com), 
+
+1. Begin with network connections
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/tool-deep-dives/windows/netstat/#netstat" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+#### netstat
+- *netstat* (or network statistics) is a cross-platform CLI tool to monitor network traffic
+	- Unfortunately, some of the switches are different depending on the OS, and and the specifics can be found on the [Wikipedia Page](https://en.wikipedia.org/wiki/Netstat#Parameters)
+	- It is mostly obsolete on [[Tool Deep-Dives/Linux/Linux\|Linux]], and was replaced with [[Tool Deep-Dives/Linux/ss\|ss (secure socket)]]. 
+- It shows the live connections to the host system
+
+
+</div></div>
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/tool-deep-dives/windows/netstat/#important-windows-commands" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+## Important Windows Commands
+1. `netstat`
+	1. `-naob`
+		2. `a` - displays all active TCP and connections and TCP/UDP ports
+		3. `n` - displays active TCP connectives, expressed numerically, no attempt to determine name
+		4. `o` - displays active TCP connections with their PID
+		5. `b` - displays the executable involved
+			1. **NOTE**: The executable is listed *after* all the connection it's made
+			2. ![Day 2-4.png](/img/user/Attachments/Day%202-4.png)
+			3. **NOTE**: On macOS, `b` reports the total bytes in the traffic
+	2. `-f`
+		1. *Windows specific*; shows FQDN, may need to be run multiple times
+		2. Can be helpful in identifying services that don't resolve to a FQDN, and are suspicious
+		3. However, also takes longer to run, so not necessarily helpful for broad traffic filtering
+
+
+
+
+
+</div></div>
+
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+#### NET
+- `NET` is a [[Windows\|Windows]] command to manage and investigate network resources
+
+
+</div></div>
+
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+### Commands
+1. `net view`
+	1. Shows all shares active on the windows session
+	2. You will need to run it against a clean system to know what's normal
+2. `net use`
+	1. Show who is making outbound connections from the system (*outbound connections)
+3. `net session`
+	1. Show who has an active session with this system right now (*inbound connections*)
+
+
+
+
+</div></div>
+
+
 3. Windows Processes
 	1. `tasklist`
 		1. Shows all tasks running in this moment and their PID
