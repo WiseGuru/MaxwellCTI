@@ -85,7 +85,43 @@ A great place to research [[Windows\|Windows]] CLI commands is [SS64](https://ss
 
 
 ### Follow up with Windows Processes
-[[Tool Deep-Dives/Windows/tasklist\|tasklist]]
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/tool-deep-dives/windows/tasklist/#tasklist" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+#### tasklist
+- `tasklist` shows all tasks running on the computer, in this moment, and their PID
+	- Can be run locally or remotely
+- One problem is that all `svchosts.exe` appear identical, and can be easy to gloss over
+
+
+</div></div>
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/tool-deep-dives/windows/tasklist/#command" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+### Command
+1. `tasklist`
+	1. 
+	2. `tasklist /svc`
+		1. For each exe running, it lists the associated services
+	3. `tasklist /m`
+		1. All the DLLs associated with each executable
+	4. `tasklist /m /fi "pid eq [pid]`
+		1. `/m` - Lists all tasks curring using the given exe/dll name
+		2. `/fi` - Apply a pre-configured filter (e.g., by PID, but status, by username, etc.)
+	5. `/u domain\user </p password>`
+		1. Run `tasklist` as a different user
+		2. If the password is not entered in the optional switch, then the user will be prompted after running
+
+
+
+
+</div></div>
+
 
 2. `wmic`
 	1. `wmic process list full`
