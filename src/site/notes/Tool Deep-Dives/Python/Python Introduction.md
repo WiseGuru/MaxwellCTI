@@ -9,9 +9,14 @@ I started this section by following this video to ["Learn Python in 1 Hour"](htt
 	1. "True" represents the Boolean true value, and "true" is just a string
 2. Object-oriented
 	1. Bundles attributes and functions to individual units (objects)
-	2. Classes define what data defines an object
+	2. Classes identify which attributes are used to define a type of object
+		1. e.g., `class Hognose:`
+	3. Methods are used by Classes to define or represent the specific attributes
 		1. The method `def __init__(self,...)` defines attributes for the class
-		2. The method `def __repr__(self)` provides an "official" string *representation* of the object
+			1. e.g., `def __init__(self, name, age, length, ...)`
+		2. The method `def __repr__(self):...` provides an "official" string *representation* of the object
+			1. e.g., `def __repr__(self):`
+			   `return (f"Hognose(name='{self.name}', age={self.age},...)`
 3. Primitive data types
 	1. Strings
 		1. Unformatted, considered text
@@ -19,6 +24,9 @@ I started this section by following this video to ["Learn Python in 1 Hour"](htt
 	2. Integers
 		1. Whole numbers that can be manipulated with equations
 		2. `1+1` will equate to `2`
+		3. Can also convert strings to integers with `int()` (see example below)
+			1. `birth_year = input("Enter your birth year (YYYY): ")     # Accepts the birth year from a user as a string`
+			2. `int(birth_year)     # Converts the "birth_year" variable from a string to an integer`
 	3. Float
 		1. "Floating point number", which are rational numbers that usually end in decimal figures
 		2. e.g., `3.14` or `0.5`
