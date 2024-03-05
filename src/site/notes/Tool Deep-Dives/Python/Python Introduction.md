@@ -4,6 +4,7 @@
 
 I started this section by following this video to ["Learn Python in 1 Hour"](https://www.youtube.com/watch?v=kqtD5dpn9C8), but then immediately got distracted by Python's potential and went down a rabbit hole.^[Or hognose hole, if you will.]
 
+
 ### Key Features and Definitions in Python
 1. Case-sensitive
 	1. "True" represents the Boolean true value, and "true" is just a string
@@ -12,15 +13,20 @@ I started this section by following this video to ["Learn Python in 1 Hour"](htt
 	2. Classes identify which attributes are used to define a type of object
 		1. e.g., `class Hognose:`
 	3. Methods are used by Classes to define or represent the specific attributes
-		1. The method `def __init__(self,...)` defines attributes for the class
-			1. e.g., `def __init__(self, name, age, length, ...)`
+		1. The method `def __init__(self,...)` defines attributes for the class, and then to further define the attributes.
+			1. e.g., `def __init__(self, name, age, length, ...)      # Identifies the attributes name, age, length, etc. to define the class` 
+			   `self.age = int(years)    # Identifies the age for the Hognose class as the "years" variable converted to an integer.` 
 		2. The method `def __repr__(self):...` provides an "official" string *representation* of the object
-			1. e.g., `def __repr__(self):`
-			   `return (f"Hognose(name='{self.name}', age={self.age},...)`
+			1. e.g., `def __repr__(self):     # Initiates representation.`
+			   `return (f"Hognose(name='{self.name}', age={self.age},...)       # Returns `
 3. Primitive data types
 	1. Strings
 		1. Unformatted, considered text
 			1. `"12"` is a string, and cannot be added to or subtracted from
+		2. **Special note**
+			1. *F-Strings* are a special kind of formatting for strings, introduced in Python 3.6, which allow you to easily input variables into a string.
+			2. Variables are identified using curly^[![hooray-yay.gif](/img/user/Attachments/hooray-yay.gif)] brackets
+			3. e.g. `greeting = f'Hello, my name is {name} and I am {age} years old.'`
 	2. Integers
 		1. Whole numbers that can be manipulated with equations
 		2. `1+1` will equate to `2`
@@ -33,10 +39,13 @@ I started this section by following this video to ["Learn Python in 1 Hour"](htt
 	4. Boolean
 		1. Simple `True` and `False` or 1 and 0
 		2. Boolean values^[[Boolean data type - Wikipedia](https://en.wikipedia.org/wiki/Boolean_data_type)]
-		3. Function (`bool()`)
-			1. Evaluates any value as "True" or "False"
-				1. True in this case effectively refer to any non-null^[Null being the number 0, boolean False, the string "None", or an empty value] value
-				2. Even `-1` returns True
+	5. Conversion Functions
+		1. Strings, integers, float, and Boolean data types all have associated functions that convert values from one type to another
+		2. The functions are `str()`, `int()`, `float()`, and `bool()`
+			1. For example, `int(age)` will convert the "age" variable into an integer
+		3.  Function `bool()` evaluates any value as "True" or "False"
+			1. True in this case effectively refer to any non-null^[Null being the number 0, boolean False, the string "None", or an empty value] value
+			2. Even `-1` returns True
 4. Non-primitive data types (non-comprehensive)
 	1. Lists
 		1. Holds a large number of items of any data type
