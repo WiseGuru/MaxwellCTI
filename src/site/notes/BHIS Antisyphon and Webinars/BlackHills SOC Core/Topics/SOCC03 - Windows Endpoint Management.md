@@ -10,7 +10,7 @@
 		1. You **need** to be able to run these commands in terminal
 		2. There are times your EDR tool will be lying to you, or the EDR is opaque in how it makes decisions
 
-A great place to research [[Windows\|Windows]] CLI commands is [SS64](https://ss64.com), 
+A great place to research [[Tool Deep-Dives/Windows/Windows\|Windows]] CLI commands is [SS64](https://ss64.com), 
 
 ### Begin with network connections
 
@@ -59,7 +59,7 @@ A great place to research [[Windows\|Windows]] CLI commands is [SS64](https://ss
 
 
 #### NET
-- `NET` is a [[Windows\|Windows]] command to manage and investigate network resources
+- `NET` is a [[Tool Deep-Dives/Windows/Windows\|Windows]] command to manage and investigate network resources
 
 
 </div></div>
