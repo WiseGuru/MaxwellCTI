@@ -4,6 +4,7 @@
 
 I started this section by following this video to ["Learn Python in 1 Hour"](https://www.youtube.com/watch?v=kqtD5dpn9C8), but then immediately got distracted by Python's potential and went down a rabbit hole.^[Or hognose hole, if you will.]
 
+Also, if you want some real data to mess with^[And don't want to go Google Dorking and possibly uncover PII...], you can use [Kaggle](https://www.kaggle.com/datasets) to access a TON of CSV files on a range of topics. 
 
 ### Key Features and Definitions in Python
 1. Case-sensitive
@@ -131,6 +132,7 @@ class Hognose:
         self.last_fed = datetime.strptime(last_fed, '%m/%d/%Y')  # Convert last_fed to a datetime object.
 
 # Define the "official" string that is the snake object.
+# The return string is broken up to stay maintain shorter lines per PEP 8
     def __repr__(self):
         return (f"Hognose(name='{self.name}', age={self.age}, snoot='{self.snoot}', "
                 f"goodness={self.goodness}, good_eater={self.good_eater}, "
@@ -149,7 +151,7 @@ header_mapping = {
 
 # Read the CSV file and create Hognose instances.
 hognose_snakes = []
-with open('hognose_snakes.csv', 'r') as file:  # The 'r' stands for "read".
+with open('hognose_snakes.csv', 'r') as file:  # The 'r' stands for "read", as opposed to "write".
     csv_reader = csv.DictReader(file)
     for row in csv_reader:
         # Rename the keys based on the mapping.
