@@ -3,7 +3,7 @@
 ---
 
 #### NET
-- `NET` is a [[Windows\|Windows]] command to manage and investigate network resources
+- `NET` is a [[Tool Deep-Dives/Windows/Windows\|Windows]] command to manage and investigate network resources
 
 ### Commands
 1. `net view`
