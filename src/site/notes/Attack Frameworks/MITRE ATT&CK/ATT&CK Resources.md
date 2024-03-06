@@ -2,8 +2,9 @@
 {"dg-publish":true,"permalink":"/attack-frameworks/mitre-att-and-ck/att-and-ck-resources/"}
 ---
 
-## SOURCE
-[MITRE ATT&CK®](https://attack.mitre.org/)
+
+
+
 ### Further training and certifications
 [ATT&CK Training | MITRE ATT&CK®](https://attack.mitre.org/resources/training/)
 
