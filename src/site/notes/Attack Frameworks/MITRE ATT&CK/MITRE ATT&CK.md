@@ -43,4 +43,4 @@
 	2. When you select techniques, color-code them and assign a score
 	3. Once all layers created, create a new layer based on layers, and use math operations (a + b + c) to combine them
 3. Navigator maps can be exported as JSONs, and imported too
-	1. Other vendors have mapped their tools to *Navigator,* like [Red Canary's Atomic Red Team](https://github.com/redcanaryco/atomic-red-team), where you can import its capabilities into a layer (pre-color coded and scored) in Navigator.
+	1. Other vendors have mapped their tools to *Navigator,* like [Red Canary's Atomic Red Team](https://github.com/redcanaryco/atomic-red-team), where you can import its capabilities into a layer (pre-color coded and scored) in Navigator
