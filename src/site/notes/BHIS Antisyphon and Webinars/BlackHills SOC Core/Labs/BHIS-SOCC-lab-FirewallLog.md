@@ -76,5 +76,5 @@ To start, here are the tools we're familiar with, and some that are new.
 			2. This has a lot more deviation, but is still very concerning.
 3. Final analysis
 	1. Doesn't feel human
-		1. Humans are messy and chaotic, this feels automated
+		1. Humans are messy and chaotic, this feels automated.
 		2. Indicates communication with a pair of [[Definitions and Topics/C2\|C2]] servers.
