@@ -27,13 +27,13 @@ BHIS provides a VM troubleshooting guide;^[Which is provided in the class, I bel
 
 Depending on the error you get, *you may be tempted to modify the VM*; **don't do it.** The VM uses [Docker](https://www.docker.com/) to run Ubuntu on Windows 10, and your computer needs to be configured properly to handle VMs running VMs. 
 
-I had to *disable Memory Integrity* on my computer in order for the VM to run properly.
+Personally, I had to *disable Memory Integrity* on my Windows 11 computers in order for the VM to run properly.
 ## Disable Updates
 Assuming you've now booted into Windows, it's important that you disable System Updates. For that matter, *don't update anything while running the VM unless instructed to do so,* as it might cause problems with how the labs are expected to operate.
 
 Because these VMs are old, Windows Update doesn't "No" for an answer. I'm still working out the best way to disable them, but here are a few things to try.
 
-> If you just want a script you can run at machine startup, scroll down, copy it all, paste it, and you should be good for a while.
+> **If you just want a script** you can run at machine startup, scroll down, copy it all, paste it, and you should be good for a while.
 
 ### Disable Virtual NIC
 The most sure-fire way to prevent system updates is to disable the virtual network interface card (NIC) in the VM before booting it up. The problem with doing this, of course, is some labs request network access for package updates, VirusTotal lookups, things like that. But if you don't know the hassle of occasionally powering off to turn the NIC back on, this can save a lot of time and space re-extracting the VM.
