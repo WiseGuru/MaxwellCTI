@@ -55,7 +55,7 @@ Run Command Prompt as an administrator, then copy and paste the script below int
 Note that while it's written for CMD, I have the syntax in PowerShell since most of it is for PowerShell. 
 
 ```PowerShell
-REM # The first session is written for CMD, which bypasses some PS BS around services.
+REM # The first section is written for CMD, which bypasses some PS BS around services.
 sc config "wuauserv" start= disabled
 sc stop "wuauserv"
 sc config "bits" start= disabled
