@@ -5,7 +5,7 @@
 #### Base64
 - According to Wikipedia, **Base64** is a binary-to-text encoding scheme that converts 0s and 1s to a set of 64 unique characters.
 	- 6 binary bits converts to 1 Base64 character.
-- When used with [[PowerShell\|PowerShell]] to obfuscate fileless malware, search for things strings like `New-Object` or `.DownloadString`
+- When used with [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]] to obfuscate fileless malware, search for things strings like `New-Object` or `.DownloadString`
 
 
 
