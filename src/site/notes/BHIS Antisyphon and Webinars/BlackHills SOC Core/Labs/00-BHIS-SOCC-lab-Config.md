@@ -83,7 +83,9 @@ Write-Host "Congratulations! You should be all set with a clean desktop and fine
 
 
 # Experiments
-Create a scheduled task to kill BITS and WUAUSERV
+Create a scheduled task to kill BITS and WUAUSERV.
+In its current state, the task is created, but fails to run with 0x2 code.
+Unclear if it's necessary since the services are disabled in the main script, but just not taking any risks.
 ```CMD
 REM # Create scheduled task that kills BITS and WUAUSERV at logon.
 SCHTASKS /CREATE /SC ONLOGON /TN "MyTasks\Stop BITS" /TR "cmd.exe /c \"net stop bits"" /RL HIGHEST
