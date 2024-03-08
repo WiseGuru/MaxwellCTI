@@ -41,7 +41,9 @@ The most sure-fire way to prevent system updates is to disable the virtual netwo
 Select the VM, click on "Edit virtual machine settings," navigate to "Network" in the left column, and deselect the "Connect at power on."
 
 ### Group Policy
-Open the start menu, and search for "gpedit"^[you can also do *Windows key+R* and type `gpedit.msc`, but I'm always a little wary of using shortcuts in VMs], and run it. Then drill down from *Computer Configuration>Administrative Templates>Windows Components>Windows Updates*,^[Once you select the first folder, you can quickly drop to the folder by type part of its name, and then use arrow keys to expand it. For example, *A* to select *Administrative Templates*, and *right-arrow* to expand the folder.] and select/open "Configure Automatic Updates" from the list of policies. Disable that shit, you don't need it here!^[You do need it elsewhere though, so unless you've got a WSUS server somewhere managing updates or something like that, don't do this.] 
+Open the start menu, and search for "gpedit"^[you can also do *Windows key+R* and type `gpedit.msc`, but I'm always a little wary of using shortcuts in VMs], and run it. Then drill down from *Computer Configuration>Administrative Templates>Windows Components>Windows Updates*,^[Once you select the first folder, you can quickly drop to the folder by type part of its name, and then use arrow keys to expand it. For example, *A* to select *Administrative Templates*, and *right-arrow* to expand the folder.] and select/open "Configure Automatic Updates" from the list of policies. Disable that shit, you don't need it here!^[You do need it elsewhere though, so unless you've got a WSUS server somewhere managing updates or something like that, don't do this.]
+
+> This does not seem to hold over an extended period of time.
 
 ### Disable Services
 *Windows Key* + *R*, enter `services.msc`^[you can also search for services in the Start menu and run as admin], scroll down to *Windows Update* (or select the first item and type out "Windows Update" to jump down to it), Right-click>Properties, and change "Startup type" from "Manual" to "Disabled"
@@ -60,6 +62,9 @@ sc config "bits" start= disabled
 sc stop "bits"
 ECHO Switching to powershell!
 PowerShell.exe
+# Disable Antimalware Realtime Monitoring (required by the Windows CLI Lab)
+# This should generate the error "A general error occurred that is not covered by a more specific error code", and means realtime monitoring is already disabled.
+Set-MpPreference -DisableRealtimeMonitoring $true
 # Cleaning up interface
 Write-Host "Beginning modifications, killing Explorer"
 TASKKILL /IM explorer.exe /F
