@@ -20,6 +20,7 @@ Side topics (like [[Career Growth/Discord Comments and Job Hunting\|Job Hunting]
 # Navigation
 Some of the links below will appear a little darker; that's because I'm still reviewing those notes for editing and additional context, and will come online as I clean them up.
 
+- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC01 - Networking and PCAPs\|SOCC01 - Networking and PCAPs]]
 	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-tcpdump\|BHIS-SOCC-lab-tcpdump]]
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC02 - Linux\|SOCC02 - Linux]]
