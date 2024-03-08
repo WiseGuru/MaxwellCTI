@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/bhis-antisyphon-and-webinars/black-hills-soc-core/labs/00-bhis-socc-lab-config/"}
 ---
 
-Unfortunately, the lab VM setup is not super straight forward. Even if it works out of the box for you and your computer, it will get a little finicky.
+Unfortunately, the lab VM setup is not always super straight forward. It's a Windows 10 VM with Linux running in Docker, and that presents some problems for most systems. Even if it works out of the box for you and your computer, Windows Updates can make things a little finnicky.
 
 This is my guide/recommendations to configure the VM and have it ready to go.
 
