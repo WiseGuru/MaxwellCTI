@@ -47,6 +47,7 @@ This feels like event log analysis on easy-mode; you basically just run DeepBlue
 		2. This event log contains a ton of obfuscated PowerShell, and the output is the most suspicious ones based on length and ratio of alphanumeric and common symbols to other symbols.
 			1. ![BHIS-SOCC-lab-DeepBlueCLI.png](/img/user/Attachments/BHIS-SOCC-lab-DeepBlueCLI.png)
 				1. Sample output
+		3. We also see a range of obfuscated and [[Tool Deep-Dives/Base64\|Base64]]-encoded [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]] commands. Yikes! 
 
 Anyway, really interesting lab, and really well crafted tool. There are a many more EVTX files to run DeepBlue against and see what different kinds of activity looks like.
 
