@@ -4,7 +4,8 @@
 
 # Introduction
 
-[SOC Core Skills w/ John Strand – Antisyphon Training](https://www.antisyphontraining.com/on-demand-courses/soc-core-skills-w-john-strand/)
+Class: [SOC Core Skills w/ John Strand – Antisyphon Training](https://www.antisyphontraining.com/on-demand-courses/soc-core-skills-w-john-strand/)
+Lab setup: [John Strand Training Lab – Download Instructions – Antisyphon Training](https://www.antisyphontraining.com/john-strand-training-lab-download-instructions/)
 
 First, this course was great; tons of great information, the brightest brains ripe for picking, an active live-chat with good conversation and exchange of information, and an infectiously energetic atmosphere. I registered for the live, *Pay What You Can* edition of this course, was able to attend all 4 days live and perform all the labs during the training. I'm sharing my notes (cleaned up and revisited so I don't accidentally share any of their copyrighted material) in hope that it helps someone out who's just getting started. 
 
