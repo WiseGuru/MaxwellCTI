@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/netcat/","tags":["tools_soc"]}
+{"dg-publish":true,"permalink":"/tool-deep-dives/netcat/"}
 ---
 
 #### netcat
@@ -15,4 +15,4 @@ Used in the [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-la
 ### Sources
 
 ### Tags
-#tools_soc 
+#tools_sec
