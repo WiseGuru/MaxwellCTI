@@ -2,6 +2,8 @@
 {"dg-publish":true,"permalink":"/bhis-antisyphon-and-webinars/black-hills-soc-core/labs/00-bhis-socc-lab-config/"}
 ---
 
+First, follow the official guide on downloading and configuring the VM here: [John Strand Training Lab – Download Instructions – Antisyphon Training](https://www.antisyphontraining.com/john-strand-training-lab-download-instructions/)
+
 Unfortunately, the lab VM setup is not always super straight forward. It's a Windows 10 VM with Linux running in Docker, and that presents some problems for most systems. Even if it works out of the box for you and your computer, Windows Updates can make things a little finnicky.
 
 This is my guide/recommendations to configure the VM and have it ready to go.
@@ -11,17 +13,17 @@ This is my guide/recommendations to configure the VM and have it ready to go.
 
 # Pre-Config and Setup
 ## Specs
-First, I recommend using a *well-specced machine* with plenty of cores, RAM, and available storage. The VM is preconfigured with only *2 cores* and *4GB* RAM, and if you can increase the core count and available memory, the labs will run more quickly.
+First, I recommend using a *well-specced machine* with plenty of CPU cores, RAM, and available storage^[Why storage, though? Well, it's faster for your computer to copy/paste a pre-extracted backup of the VM rather than to have 7zip re-extract the VM every time something breaks, and the VM is about 40-60GB when extracted.]. The VM is preconfigured with only *2 cores* and *4GB* RAM, and if you can increase the core count and available memory, the labs will run more quickly.
 
-Why storage, though? Well, it's faster for your computer to copy/paste a pre-extracted backup of the VM rather than to have 7zip re-extract the VM every time something breaks, and the VM is about 40-60GB when extracted. 
 ### Upgrading Specs
-Following the instructions provided by BHIS/Antisyphon, extract the VM, open VMware, and import the VM. Then select the VM, choose "Edit virtual machine settings" in the right column, and increase core count and RAM as you are able.
-> If you're limited on processing power, go for N-1 cores, where N is the total core/thread count available.
+Following the instructions provided by BHIS/Antisyphon,^[[John Strand Training Lab – Download Instructions – Antisyphon Training](https://www.antisyphontraining.com/john-strand-training-lab-download-instructions/)] extract the VM, open VMware, and import the VM. Then select the VM, choose "Edit virtual machine settings" in the right column, and increase core count and RAM as you are able.
+
+> If you're limited on processing power, go for N-1 virtual cores, where N is the total physical core/thread count available on your computer.
 > - An Intel Core i5 3450 has 4 cores and 4 threads, so you would safely assign 3 cores to the VM.
 > - An Intel Core i7 3770K has 4 cores and 8 threads, so you could safely assign 7 cores to the VM.
 
 ## RTFM
-BHIS provides a VM troubleshooting guide; if your VM doesn't open when you first try to start it, read it first. 
+BHIS provides a VM troubleshooting guide;^[Which is provided in the class, I believe.] if your VM doesn't open when you first try to start it, read it first. 
 
 Depending on the error you get, *you may be tempted to modify the VM*; **don't do it.** The VM uses [Docker](https://www.docker.com/) to run Ubuntu on Windows 10, and your computer needs to be configured properly to handle VMs running VMs. 
 
