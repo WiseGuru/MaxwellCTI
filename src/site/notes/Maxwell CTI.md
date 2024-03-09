@@ -15,17 +15,18 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 
 
 ### What have I been up to lately?
-Take this with a grain of salt; Resilio Sync might cause "false modifications."
+Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
+
 | File                                                                                                                      | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Maxwell CTI\|Maxwell CTI]]                                                                                           | 09.03.2024 - 11:20 |
+| [[Maxwell CTI\|Maxwell CTI]]                                                                                           | 09.03.2024 - 11:48 |
+| [[Homelab/The Setup\|The Setup]]                                                                                       | 09.03.2024 - 11:46 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-WindowsCLI\|BHIS-SOCC-lab-WindowsCLI]]           | 08.03.2024 - 14:34 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]             | 08.03.2024 - 12:45 |
 | [[Tool Deep-Dives/Metasploit/msfvenom\|msfvenom]]                                                                      | 08.03.2024 - 12:33 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/BHIS SOCC Notes Overview\|BHIS SOCC Notes Overview]]                | 08.03.2024 - 10:17 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-DeepBlueCLI\|BHIS-SOCC-lab-DeepBlueCLI]]         | 08.03.2024 - 10:10 |
 | [[Homelab/pfSense\|pfSense]]                                                                                           | 07.03.2024 - 16:44 |
-| [[Homelab/The Setup\|The Setup]]                                                                                       | 07.03.2024 - 16:43 |
 | [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]]                                                                             | 07.03.2024 - 16:15 |
 | [[Definitions and Topics/SID\|SID]]                                                                                    | 07.03.2024 - 14:32 |
 | [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]]                                                                     | 07.03.2024 - 14:23 |
