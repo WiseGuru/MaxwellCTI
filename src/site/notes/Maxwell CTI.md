@@ -18,6 +18,10 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                      | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Tool Deep-Dives/Wireshark/Udemy - Chris Greer/S01-02 - Introduction\|S01-02 - Introduction]]                         | 09.03.2024 - 11:58 |
+| [[Definitions and Topics/OWASP\|OWASP]]                                                                                | 09.03.2024 - 11:57 |
+| [[Tool Deep-Dives/Linux/which\|which]]                                                                                 | 09.03.2024 - 11:57 |
+| [[Tool Deep-Dives/mknod\|mknod]]                                                                                       | 09.03.2024 - 11:57 |
 | [[Tool Deep-Dives/Linux/cut\|cut]]                                                                                     | 09.03.2024 - 11:55 |
 | [[Tool Deep-Dives/Python/Python\|Python]]                                                                              | 09.03.2024 - 11:55 |
 | [[Maxwell CTI\|Maxwell CTI]]                                                                                           | 09.03.2024 - 11:55 |
@@ -39,9 +43,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC05 - Memory Forensics\|SOCC05 - Memory Forensics]]       | 06.03.2024 - 15:52 |
 | [[Tool Deep-Dives/Python/Python Introduction\|Python Introduction]]                                                    | 06.03.2024 - 15:47 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-FirewallLog\|BHIS-SOCC-lab-FirewallLog]]         | 06.03.2024 - 15:42 |
-| [[Tool Deep-Dives/Linux/R core\|R core]]                                                                               | 06.03.2024 - 14:41 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC04 - Server Log Analysis\|SOCC04 - Server Log Analysis]] | 06.03.2024 - 13:54 |
-| [[Tool Deep-Dives/Windows/tasklist\|tasklist]]                                                                         | 06.03.2024 - 11:05 |
-| [[Attack Frameworks/MITRE ATT&CK/MITRE ATT&CK Workshop\|MITRE ATT&CK Workshop]]                                        | 05.03.2024 - 20:39 |
 
 { .block-language-dataview}
