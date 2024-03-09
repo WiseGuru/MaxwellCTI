@@ -32,7 +32,7 @@
 
 # Metadata
 
-> [!info]- Created (dynamic):: `$= dv.current().file.ctime`
+> [!info]- Created (dynamic):: <pre class="dataview dataview-error">Dataview JS queries are disabled. You can enable them in the Dataview settings.</pre>
 > Date created (stamp): 2023-11-30
-> Updated:: `$= dv.current().file.mtime`
+> Updated:: <pre class="dataview dataview-error">Dataview JS queries are disabled. You can enable them in the Dataview settings.</pre>
 > Tags: #defs_acpe 
