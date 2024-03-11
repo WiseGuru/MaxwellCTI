@@ -39,6 +39,9 @@
 		- Format the output as a list of values, grouped by object
 	- `Format-Table`
 		- Format the output as a table with properties as columns and objects as rows
+	- `Sort-Object` (alias: `Sort`)
+		- Sort objects by specific properties, delimited by commas 
+			- e.g., `Get-CimInstance Win32_Process | Select-Object Name, ParentProcessId, ProcessId | Sort ParentProcessID,Name` to collect a list of all processes and sort them by their ParentProcessID, and then by Name
 
 ## Set-ExecutionPolicy
 - By default, Windows computers have a **Restricted** [Execution Policy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4)^[Non-Windows computers running PowerShell are *Unrestricted* by default.] that do not let you run unsigned PowerShell scripts.
@@ -53,7 +56,14 @@
 ## WMI/CMI Commands
 The commands below are equivalent to the [[Tool Deep-Dives/Windows/wmic#WMIC Commands\|WMIC commands]] for process investigation
 1. Get list of all processes
-2. Get 
+	1. `Get-WmiObject Win32_Process | Select-Object *`
+	2. `Get-CimInstance Win32_Process | Select-Object *`
+2. Get list of process names, parent process IDs, and process IDs
+	1. `Get-WmiObject Win32_Process | Select-Object Name, ParentProcessId, ProcessId`
+	2. `Get-CimInstance Win32_Process | Select-Object Name, ParentProcessId, ProcessId`
+3. Get process and instance ID
+	1. `Get-WmiObject Win32_Process -Filter "ProcessId = [PID]" | Select-Object CommandLine`
+	2. `Get-CimInstance Win32_Process -Filter "ProcessId = [PID]" | Select-Object CommandLine`
 
 
 
