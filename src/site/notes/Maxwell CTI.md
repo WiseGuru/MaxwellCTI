@@ -18,8 +18,13 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                                      | Last modified      |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Definitions and Topics/NDR\|NDR]]                                                                                                    | 11.03.2024 - 13:54 |
+| [[Definitions and Topics/DLP\|DLP]]                                                                                                    | 11.03.2024 - 13:53 |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC06 - Egress Traffic Analysis\|SOCC06 - Egress Traffic Analysis]]         | 11.03.2024 - 13:48 |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/BHIS SOCC Notes Overview\|BHIS SOCC Notes Overview]]                                | 11.03.2024 - 13:40 |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC04 - Server Log Analysis\|SOCC04 - Server Log Analysis]]                 | 11.03.2024 - 12:51 |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                             | 11.03.2024 - 12:32 |
 | [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]]                                                                                     | 11.03.2024 - 12:23 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                             | 11.03.2024 - 12:12 |
 | [[Tool Deep-Dives/Windows/WMI\|WMI]]                                                                                                   | 11.03.2024 - 11:07 |
 | [[Tool Deep-Dives/Windows/wmic\|wmic]]                                                                                                 | 11.03.2024 - 10:54 |
 | [[Tool Deep-Dives/Windows/cmd.exe\|cmd.exe]]                                                                                           | 11.03.2024 - 10:51 |
@@ -37,11 +42,6 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Maxwell CTI\|Maxwell CTI]]                                                                                                           | 09.03.2024 - 11:55 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-WindowsCLI\|BHIS-SOCC-lab-WindowsCLI]]                           | 08.03.2024 - 14:34 |
 | [[Tool Deep-Dives/Metasploit/msfvenom\|msfvenom]]                                                                                      | 08.03.2024 - 12:33 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/BHIS SOCC Notes Overview\|BHIS SOCC Notes Overview]]                                | 08.03.2024 - 10:17 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-DeepBlueCLI\|BHIS-SOCC-lab-DeepBlueCLI]]                         | 08.03.2024 - 10:10 |
-| [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]]                                                                                             | 07.03.2024 - 16:15 |
-| [[Definitions and Topics/SID\|SID]]                                                                                                    | 07.03.2024 - 14:32 |
-| [[Tool Deep-Dives/DeepBlueCLI\|DeepBlueCLI]]                                                                                           | 07.03.2024 - 14:00 |
-| [[Tool Deep-Dives/Windows/Active Directory\|Active Directory]]                                                                         | 07.03.2024 - 13:39 |
 
 { .block-language-dataview}
