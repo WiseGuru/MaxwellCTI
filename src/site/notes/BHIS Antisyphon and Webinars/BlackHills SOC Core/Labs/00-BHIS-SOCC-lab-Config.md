@@ -50,24 +50,47 @@ Open the start menu, and search for "gpedit"^[you can also do *Windows key+R* an
 
 
 # Scripting it
-Run Command Prompt as an administrator, then copy and paste the script below into it. In addition to killing the Windows Update and BITS services, it also cleans up your task bar a little, which can be nice when working from laptops or smaller screens.
+Run PowerShell as an administrator, then copy and paste the script below into it. In addition to killing the Windows Update and BITS services, it also cleans up your task bar a little, which can be nice when working from laptops or smaller screens.
 
-Note that while it's written for CMD, I have the syntax in PowerShell since most of it is for PowerShell. 
 
-> The commands below to kill Windows Update do not appear to persist over a measure of days; I will see about creating a more persistent solution.
+> I am still testing persistence across days/reboots; hit me up on [LinkedIn](https://www.linkedin.com/in/maxwell-mcguire/) if you have any ideas or advice.
 
 ```PowerShell
-REM # The first section is written for CMD, which bypasses some PS BS around services.
-sc config "wuauserv" start= disabled
-sc stop "wuauserv"
-sc config "bits" start= disabled
-sc stop "bits"
-ECHO Switching to powershell!
-PowerShell.exe
-# Disable Antimalware Realtime Monitoring (required by the Windows CLI Lab)
+## Disable Windows Updates and services that might restart Windows Update
+Stop-Service -Name wuauserv -Force
+Set-Service -Name wuauserv -StartupType Disabled
+Stop-Service -Name bits -Force
+Set-Service -Name bits -StartupType Disabled
+Stop-Service -Name UsoSvc -Force
+Set-Service -Name UsoSvc -StartupType Disabled
+
+## Create PowerShell Script to Disable Updates Across Reboots
+# Stop/Disable WUAU Service
+Add-Content -Path C:\KillUpdates.ps1 -Value "Stop-Service -Name wuauserv -Force"
+Add-Content -Path C:\KillUpdates.ps1 -Value "Set-Service -Name wuauserv -StartupType Disabled"
+# Stop/Disable BITS
+Add-Content -Path C:\KillUpdates.ps1 -Value "Stop-Service -Name bits -Force"
+Add-Content -Path C:\KillUpdates.ps1 -Value "Set-Service -Name bits -StartupType Disabled"
+# Stop/Disable Update Orchestrator Service
+Add-Content -Path C:\KillUpdates.ps1 -Value "Stop-Service -Name UsoSvc -Force"
+Add-Content -Path C:\KillUpdates.ps1 -Value "Set-Service -Name UsoSvc -StartupType Disabled"
+
+# Set Task Variables
+$Action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-ExecutionPolicy Bypass -File C:\KillUpdates.ps1"
+$Trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Hours 1)
+$Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -DontStopOnIdleEnd -ExecutionTimeLimit (New-TimeSpan -Minutes 15)
+$Principal = New-ScheduledTaskPrincipal -UserId "SYSTEM" -LogonType ServiceAccount -RunLevel Highest
+
+# Create Task
+Register-ScheduledTask -TaskName "KillUpdateServices" -Action $Action -Trigger $Trigger -Settings $Settings -Principal $Principal
+
+## Disable Antimalware Realtime Monitoring (required by the Windows CLI Lab)
 # This should generate an error and means realtime monitoring is already disabled.
 Set-MpPreference -DisableRealtimeMonitoring $true
-# Cleaning up interface
+
+
+## Cleaning up interface
+# Kill Explorer
 Write-Host "Beginning modifications, killing Explorer"
 TASKKILL /IM explorer.exe /F
 # Cortana
@@ -79,14 +102,17 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Feeds" -
 # Windows Search
 Write-Host "Remove Windows Search bar (Search still possible in Menu)"
 Set-ItemProperty -path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name "SearchboxTaskbarMode" -Type DWord -Value 3
+# Show Full File Extensions
+Write-Host "Show full file extensions"
+Set-ItemProperty -path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "HideFileExt" -Type DWord -Value 0
 # Restart Explorer
 Write-Host "Restarting Explorer"
 Start-Process explorer.exe
-# You're all set
+
+## You're all set
 Write-Host "Congratulations! You should be all set with a clean desktop and fine experience for labbing. Hack it!"
 
 ```
-
 
 
 # Experiments
