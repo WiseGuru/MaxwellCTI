@@ -4,7 +4,7 @@
 
 #### WMIC
 - *Windows Management Instrumentation Command-line (WMIC)* is a (now deprecated) command-line method of working with [[Tool Deep-Dives/Windows/WMI\|WMI]].
-	- The new/supported method is using [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]], and commands can be found with `Get-Command -Noun WMI*`
+	- The new/supported method is using [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]], and commands can be found with `Get-Command -Noun *WMI*` and `Get-Command -Noun *CIM*`
 
 ### WMIC Commands
 1. `wmic process list full`
