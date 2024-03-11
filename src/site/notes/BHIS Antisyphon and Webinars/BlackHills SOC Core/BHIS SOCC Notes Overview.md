@@ -33,7 +33,7 @@ Some of the links below will appear a little darker; that's because I'm still re
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC05 - Memory Forensics\|SOCC05 - Memory Forensics]]
 	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-MemoryForensics\|BHIS-SOCC-lab-MemoryForensics]]
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC06 - Egress Traffic Analysis\|SOCC06 - Egress Traffic Analysis]]
-	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Rita-ACHunter\|BHIS-SOCC-lab-Rita-ACHunter]]
+	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-RITA-ACHunter\|BHIS-SOCC-lab-RITA-ACHunter]]
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC07 - User and Entity Behavior Analytics\|SOCC07 - User and Entity Behavior Analytics]]
 	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Sysmon\|BHIS-SOCC-lab-Sysmon]]
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC08 - Endpoint Protection\|SOCC08 - Endpoint Protection]]
