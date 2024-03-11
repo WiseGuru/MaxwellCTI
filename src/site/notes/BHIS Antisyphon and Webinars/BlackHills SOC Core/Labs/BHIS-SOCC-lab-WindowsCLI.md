@@ -6,7 +6,7 @@
 ## LAB: Windows CLI
 [WindowsCLI.md](https://github.com/strandjs/IntroLabs/blob/master/IntroClassFiles/Tools/IntroClass/WindowsCLI/WindowsCLI.md)
 
-In this lab, we're creating and running malware on our system, and then investigating it using [[Tool Deep-Dives/Windows/NET\|net]], [[Tool Deep-Dives/Windows/netstat\|netstat]], [[Tool Deep-Dives/Windows/tasklist\|tasklist]], and [[wmic\|wmic]].
+In this lab, we're creating and running malware on our system, and then investigating it using [[Tool Deep-Dives/Windows/NET\|net]], [[Tool Deep-Dives/Windows/netstat\|netstat]], [[Tool Deep-Dives/Windows/tasklist\|tasklist]], and [[Tool Deep-Dives/Windows/wmic\|wmic]].
 
 ### Windows Lab
 1. Get the malware going
