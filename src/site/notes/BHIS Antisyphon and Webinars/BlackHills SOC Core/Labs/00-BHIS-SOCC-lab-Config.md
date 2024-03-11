@@ -54,6 +54,8 @@ Run Command Prompt as an administrator, then copy and paste the script below int
 
 Note that while it's written for CMD, I have the syntax in PowerShell since most of it is for PowerShell. 
 
+> The commands below to kill Windows Update do not appear to persist over a measure of days; I will see about creating a more persistent solution.
+
 ```PowerShell
 REM # The first section is written for CMD, which bypasses some PS BS around services.
 sc config "wuauserv" start= disabled
@@ -63,7 +65,7 @@ sc stop "bits"
 ECHO Switching to powershell!
 PowerShell.exe
 # Disable Antimalware Realtime Monitoring (required by the Windows CLI Lab)
-# This should generate the error "A general error occurred that is not covered by a more specific error code", and means realtime monitoring is already disabled.
+# This should generate an error and means realtime monitoring is already disabled.
 Set-MpPreference -DisableRealtimeMonitoring $true
 # Cleaning up interface
 Write-Host "Beginning modifications, killing Explorer"
