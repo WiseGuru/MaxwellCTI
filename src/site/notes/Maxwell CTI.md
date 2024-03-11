@@ -18,8 +18,8 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                                      | Last modified      |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                             | 11.03.2024 - 11:25 |
-| [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]]                                                                                     | 11.03.2024 - 11:19 |
+| [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]]                                                                                     | 11.03.2024 - 12:23 |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                             | 11.03.2024 - 12:12 |
 | [[Tool Deep-Dives/Windows/WMI\|WMI]]                                                                                                   | 11.03.2024 - 11:07 |
 | [[Tool Deep-Dives/Windows/wmic\|wmic]]                                                                                                 | 11.03.2024 - 10:54 |
 | [[Tool Deep-Dives/Windows/cmd.exe\|cmd.exe]]                                                                                           | 11.03.2024 - 10:51 |
