@@ -7,14 +7,31 @@
 - *PowerShell* is the defacto [[Tool Deep-Dives/Windows/Windows\|Windows]] CLI management tool
 	- While it's a little more cumbersome than other programming tools, it's much easier to learn and read by non-specialists.^[Though some common commands have aliases that match the shorter version.]
 		- For example, `cd .\Tools` is impenetrable for someone who doesn't know how `cd` works, but `Set-Location -Path C:\Tools` literally spells it out for you.
-- Commands are constructed with a `Verb-Thing` syntax
+- Commands are constructed with a `Verb-Noun` syntax
 	- e.g., `Get-ADUser` to retrieve information for a user in [[Tool Deep-Dives/Windows/Active Directory\|Active Directory]] or `Set-ADUser` to modify that user
-- If you're not sure of the full command,^[Or you don't want to type the whole thing out.] you can use "Tab" to autocomplete based on the available information.
+- If you're not sure which command you want to use, you can enter **`Get-Command`** to find all commands available.
+	- `Get-Command -Noun <string>` will find all commands that have a particular phrase in the *Noun* part of the command
+		- Use a `*` to indicate wildcards, and can be used more than once in the string.
+		- e.g., `Get-Command -Noun WMI*` will find all commands for the [[Tool Deep-Dives/Windows/WMI\|WMI]]
+		- e.g., `Get-Command -Verb Remove` will find all commands with the *Remove* verb
+	- You can pipe to `Select-String` if you're note entirely sure what you're looking for, but it won't give you as much information^[Command type, version, source, etc.] as a correctly formatted command.
+- If you don't want to type the whole command out, you can use "Tab" to autocomplete based on the available information.
 	- Continuing to press tab will cycle through the available commands.
 	- Example, `Get-H` will start with `Get-Help`, then `Get-History`, etc.
 - Enter `Get-Help` before the command you're curious about to get the manual page.^[`Get-Help Get-Help` will get help on the `Get-Help` command.]
 
 > You can also get the equivalent of [[Tool Deep-Dives/Linux/less\|less]] by piping the output to `out-host -paging`
+
+### PowerShell Critical Commands
+- `Get-Command`
+	- Get a list of all available commands
+	- Can be filtered by Noun or Verb, and strings can use `*` as a wildcard
+		- e.g., `*wi*ws*` will return anything with the word `Windows` in it, and any other string that matches
+- `Get-Help <Command>`
+	- Returns the manual page of the specified command
+- `Set-ExecutionPolicy`
+	- Configure security policy for running scripts on the computer
+	- More detail below
 
 ## Set-ExecutionPolicy
 - By default, Windows computers have a **Restricted** [Execution Policy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4)^[Non-Windows computers running PowerShell are *Unrestricted* by default.] that do not let you run unsigned PowerShell scripts.
