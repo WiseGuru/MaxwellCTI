@@ -31,9 +31,9 @@ Personally, I had to *disable Memory Integrity* on my Windows 11 computers in or
 ## Disable Updates
 Assuming you've now booted into Windows, it's important that you disable System Updates. For that matter, *don't update anything while running the VM unless instructed to do so,* as it might cause problems with how the labs are expected to operate.
 
-Because these VMs are old, Windows Update doesn't "No" for an answer. I'm still working out the best way to disable them, but here are a few things to try.
+**Because these VMs are old, Windows Update doesn't "No" for an answer**. I'm still working out the best way to disable them, but here are a few things to try.
 
-> **If you just want a script** you can run at machine startup, scroll down, copy it all, paste it, and you should be good for a while.
+> **If you just want a script** you can run at machine startup, scroll down, copy it all, paste it, and you should be good for a while. Still testing how long it lasts, though.
 
 ### Disable Virtual NIC
 The most sure-fire way to prevent system updates is to disable the virtual network interface card (NIC) in the VM before booting it up. The problem with doing this, of course, is some labs request network access for package updates, VirusTotal lookups, things like that. But if you don't know the hassle of occasionally powering off to turn the NIC back on, this can save a lot of time and space re-extracting the VM.
@@ -46,14 +46,16 @@ Open the start menu, and search for "gpedit"^[you can also do *Windows key+R* an
 > This does not seem to hold over an extended period of time.
 
 ### Disable Services
-*Windows Key* + *R*, enter `services.msc`^[you can also search for services in the Start menu and run as admin], scroll down to *Windows Update* (or select the first item and type out "Windows Update" to jump down to it), Right-click>Properties, and change "Startup type" from "Manual" to "Disabled"
+*Windows Key* + *R*, enter `services.msc`^[you can also search for services in the Start menu and run as admin], scroll down to *Windows Update* (or select the first item and type out "Windows Update" to jump down to it), Right-click>Properties, and change "Startup type" from "Manual" to "Disabled".
+
+There's also the *BITS* service, which is the background file-transfer service Windows uses to manage update files, and the *Windows Update Orchestrator Service,* which manages all things Windows Update.^[[How Windows Update works - Windows Deployment | Microsoft Learn](https://learn.microsoft.com/en-us/windows/deployment/update/how-windows-update-works)]
 
 
 # Scripting it
-Run PowerShell as an administrator, then copy and paste the script below into it. In addition to killing the Windows Update and BITS services, it also cleans up your task bar a little, which can be nice when working from laptops or smaller screens.
+Run PowerShell as an administrator, then copy and paste the script below into it. In addition to killing the Windows Update and BITS services, it also cleans up your task bar a little and enables seeing all file extensions. Thoroughly commented so you can modify it as you like.
 
 
-> I am still testing persistence across days/reboots; hit me up on [LinkedIn](https://www.linkedin.com/in/maxwell-mcguire/) if you have any ideas or advice.
+> I'm still testing persistence across days/reboots; hit me up on [LinkedIn](https://www.linkedin.com/in/maxwell-mcguire/) if you have any ideas or advice.
 
 ```PowerShell
 ## Disable Windows Updates and services that might restart Windows Update
@@ -113,3 +115,9 @@ Start-Process explorer.exe
 Write-Host "Congratulations! You should be all set with a clean desktop and fine experience for labbing. Hack it!"
 
 ```
+
+
+
+# Metadata
+
+### Sources
