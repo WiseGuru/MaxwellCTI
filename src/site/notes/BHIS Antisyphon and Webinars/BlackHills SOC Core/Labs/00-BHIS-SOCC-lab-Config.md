@@ -113,37 +113,3 @@ Start-Process explorer.exe
 Write-Host "Congratulations! You should be all set with a clean desktop and fine experience for labbing. Hack it!"
 
 ```
-
-
-# Experiments
-Create a scheduled task to kill BITS and WUAUSERV.
-In its current state, the task is created, but fails to run with 0x2 code.
-Unclear if it's necessary since the services are disabled in the main script, but just not taking any risks.
-```CMD
-REM # Create scheduled task that kills BITS and WUAUSERV at logon.
-SCHTASKS /CREATE /SC ONLOGON /TN "MyTasks\Stop BITS" /TR "cmd.exe /c \"net stop bits"" /RL HIGHEST
-SCHTASKS /CREATE /SC ONLOGON /TN "MyTasks\Stop WUAUSERV" /TR "cmd.exe /c \"net stop wuauserv"" /RL HIGHEST
-
-```
-
-
-CMD-only regedits, which were not as clean as PS
-```
-REM Remove Cortana button
-reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /t REG_DWORD /reg:32 /v ShowCortanaButton /d 0
-Yes
-
-REM Don't show News and Weather
-reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Feeds /t REG_DWORD /reg:32 /v ShellFeedsTaskbarViewMode /d 2
-Yes
-
-REM Don't show News and Weather
-reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Feeds\FeedRepositorySate /t REG_DWORD /reg:32 /v FeedEnabled /d 0
-Yes
-
-REM Get rid of the Windows search bar
-REM Remember that you can still search whenever/however you want by opening the start menu. Same deal.
-reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search /t REG_DWORD /reg:32 /v SearchboxTaskbarMode /d 3
-Yes
-
-```
