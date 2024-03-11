@@ -32,6 +32,13 @@
 - `Set-ExecutionPolicy`
 	- Configure security policy for running scripts on the computer
 	- More detail below
+- Output Shaping
+	- `Out-Host -Paging`
+		- Equivalent to the [[Tool Deep-Dives/Linux/less\|less]] command in Linux
+	- `Format-List`
+		- Format the output as a list of values, grouped by object
+	- `Format-Table`
+		- Format the output as a table with properties as columns and objects as rows
 
 ## Set-ExecutionPolicy
 - By default, Windows computers have a **Restricted** [Execution Policy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4)^[Non-Windows computers running PowerShell are *Unrestricted* by default.] that do not let you run unsigned PowerShell scripts.
@@ -42,6 +49,12 @@
 	- `Bypass` and `Unrestricted` are the most open
 	- `AllSigned` or `RemoteSigned` allow signed scripts to run
 		- `RemoteSigned` allows unsigned scripts if they are unblocked by something like the `Unblock-File` cmdlet.
+
+## WMI/CMI Commands
+The commands below are equivalent to the [[Tool Deep-Dives/Windows/wmic#WMIC Commands\|WMIC commands]] for process investigation
+1. Get list of all processes
+2. Get 
+
 
 
 # Metadata
