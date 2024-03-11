@@ -5,7 +5,7 @@
 #### NET
 - `NET` is a [[Tool Deep-Dives/Windows/Windows\|Windows]] command to manage and investigate network resources
 
-### Commands
+### NET Commands
 1. `net view`
 	1. Shows all shares active on the windows session
 	2. You will need to run it against a clean system to know what's normal
