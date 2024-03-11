@@ -16,15 +16,15 @@
 	1. *Reading the manual will make you a super hero*
 		1. Most people do second-hand learning only, not primary
 		2. If you take the time to analyze the RAW^[Rules As Written], your analysis won't be derivative
-5. Identify what's important
-	1. What are the key configs?
-		1. Files, Tables, GUI
-	2. What are the key processes?
-		1. Ping, Port, Parse
-	3. Where does it store users?
-		1. Files, tables, GUI
-	4. What are the core ports to be open?
-	5. Where are the logs stored or sent?
+	2. Identify what's important
+		1. What are the key configs?
+			1. Files, Tables, GUI
+		2. What are the key processes?
+			1. Ping, Port, Parse
+		3. Where does it store users?
+			1. Files, tables, GUI
+		4. What are the core ports to be open?
+		5. Where are the logs stored or sent?
 
 
 ### Lab: [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-FirewallLog\|Firewall Logs]]
