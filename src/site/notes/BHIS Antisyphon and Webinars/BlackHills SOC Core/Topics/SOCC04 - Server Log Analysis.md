@@ -5,7 +5,7 @@
 # Server Analysis
 1. Enable logging and be sure you have a way to analyze them
 	1. It's important to run attacks against your own servers to make sure the correct logs are being generated
-2. 3. [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks)
+2. [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks)
 	1. Secure configuration guidelines for tons of devices
 3. Linux
 	1. Linux will condense logs to help prevent log overflow(example below)
