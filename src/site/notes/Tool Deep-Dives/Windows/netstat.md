@@ -8,7 +8,7 @@
 	- It is mostly obsolete on [[Tool Deep-Dives/Linux/Linux\|Linux]], and was replaced with [[Tool Deep-Dives/Linux/ss\|ss (secure socket)]]. 
 - It shows the live connections to the host system
 
-## Important Windows Commands
+## netstat Windows Commands
 1. `netstat`
 	1. `-naob`
 		2. `a` - displays all active TCP and connections and TCP/UDP ports
