@@ -7,7 +7,7 @@
 	- Can be run locally or remotely
 - One problem is that all `svchosts.exe` appear identical, and can be easy to gloss over
 
-### Command
+### Tasklist Commands
 1. `tasklist`
 	1. `tasklist /svc`
 		1. For each exe running, it lists the associated services
