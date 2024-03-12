@@ -4,7 +4,7 @@
 
 #### grep
 - CLI utility for searching text data sets for matching expressions.
-- Y\ou can use `\|` to separate "OR" strings
+- You can use `\|` to separate "OR" strings
 	- For example, `grep '445\|CLOSED\|ESTABLISHED'`
 - Important options
 	- `-i` or `--ignore-case`
