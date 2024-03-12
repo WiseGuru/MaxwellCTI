@@ -37,10 +37,10 @@ Some of the links below will appear a little darker; that's because I'm still re
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC07 - User and Entity Behavior Analytics\|SOCC07 - User and Entity Behavior Analytics]]
 	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Sysmon\|BHIS-SOCC-lab-Sysmon]]
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC08 - Endpoint Protection\|SOCC08 - Endpoint Protection]]
-	- [[BHIS-SOCC-lab-Velociraptor\|BHIS-SOCC-lab-Velociraptor]]
+	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Velociraptor\|BHIS-SOCC-lab-Velociraptor]]
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC09 - Vulnerability Management\|SOCC09 - Vulnerability Management]]
-	- [[BHIS-SOCC-lab-Nessus\|BHIS-SOCC-lab-Nessus]]
+	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Nessus\|BHIS-SOCC-lab-Nessus]]
 - [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC10 - Security in SDLC\|SOCC10 - Security in SDLC]]
-	- [[BHIS-SOCC-lab-ZAP-Weblogs\|BHIS-SOCC-lab-ZAP-Weblogs]]
+	- [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-ZAP-Weblogs\|BHIS-SOCC-lab-ZAP-Weblogs]]
 
 
