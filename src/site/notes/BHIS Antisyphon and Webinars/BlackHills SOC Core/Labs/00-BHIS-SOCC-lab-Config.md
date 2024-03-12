@@ -31,6 +31,9 @@ Personally, I had to *disable Memory Integrity* on my Windows 11 computers in or
 ## Disable Updates
 Assuming you've now booted into Windows, it's important that you disable System Updates. For that matter, *don't update anything while running the VM unless instructed to do so,* as it might cause problems with how the labs are expected to operate.
 
+> You will know if Windows Update kicks off, because you will no longer by able to open the "Terminal" shortcuts on the Desktop or Taskbar as Admin (they just won't open).
+> If that happens, you're running on borrowed time, and it might be worth doing a fresh extraction of the VM.
+
 **Because these VMs are old, Windows Update doesn't "No" for an answer**. I'm still working out the best way to disable them, but here are a few things to try.
 
 > **If you just want a script** you can run at machine startup, scroll down, copy it all, paste it, and you should be good for a while. Still testing how long it lasts, though.
@@ -116,8 +119,13 @@ Write-Host "Congratulations! You should be all set with a clean desktop and fine
 
 ```
 
+To verify that these services have not started back up again, you can run the following command to get their status:
 
-
+```PowerShell
+Get-Service -Name wuauserv,bits,UsoSvc
+```
+The output should look like this:
+![00-BHIS-SOCC-lab-Config.png](/img/user/Attachments/00-BHIS-SOCC-lab-Config.png)
 # Metadata
 
 ### Sources
