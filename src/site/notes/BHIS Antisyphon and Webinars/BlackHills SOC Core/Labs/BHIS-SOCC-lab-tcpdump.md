@@ -90,18 +90,18 @@ I haven't looked at the preamble for this malware, so let's start with the OWASP
 
 
 ### OWASP Top 10 ports
-| Port | Protocol | Interesting Links |
-| ---- | ---- | ---- |
-| 80 | HTTP |  |
-| 23 | Telnet |  |
-| 22 | SSH |  |
-| 443 | HTTPS |  |
-| 3389 | ms-term-serv (RDP) |  |
-| 445 | microsoft-ds (SMB) | SMB is synonymous in my head with EternalBlue [EternalBlue - Wikipedia](https://en.wikipedia.org/wiki/EternalBlue) |
-| 139 | netbios-ssn | [137,138,139 - Pentesting NetBios - HackTricks](https://book.hacktricks.xyz/network-services-pentesting/137-138-139-pentesting-netbios) |
-| 21 | FTP |  |
-| 135 | MSRPC | [Microsoft RPC - Wikipedia](https://en.wikipedia.org/wiki/Microsoft_RPC) |
-| 25 | SMTP |  |
+| Port | Protocol           | Interesting Links                                                                                                                       |
+| ---- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 80   | HTTP               |                                                                                                                                         |
+| 23   | Telnet             |                                                                                                                                         |
+| 22   | SSH                |                                                                                                                                         |
+| 443  | HTTPS              |                                                                                                                                         |
+| 3389 | ms-term-serv (RDP) |                                                                                                                                         |
+| 445  | microsoft-ds (SMB) | SMB is synonymous in my head with EternalBlue [EternalBlue - Wikipedia](https://en.wikipedia.org/wiki/EternalBlue)                      |
+| 139  | netbios-ssn        | [137,138,139 - Pentesting NetBios - HackTricks](https://book.hacktricks.xyz/network-services-pentesting/137-138-139-pentesting-netbios) |
+| 21   | FTP                |                                                                                                                                         |
+| 135  | MSRPC              | [Microsoft RPC - Wikipedia](https://en.wikipedia.org/wiki/Microsoft_RPC)                                                                |
+| 25   | SMTP               |                                                                                                                                         |
 
 </div></div>
 
