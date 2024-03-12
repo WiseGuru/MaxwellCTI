@@ -18,12 +18,18 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                                      | Last modified      |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-MemoryForensics\|BHIS-SOCC-lab-MemoryForensics]]                 | 12.03.2024 - 16:31 |
+| [[Tool Deep-Dives/Volatility\|Volatility]]                                                                                             | 12.03.2024 - 16:30 |
+| [[Definitions and Topics/VAD\|VAD]]                                                                                                    | 12.03.2024 - 16:21 |
+| [[Tool Deep-Dives/Linux/column\|column]]                                                                                               | 12.03.2024 - 14:58 |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC01 - Networking and PCAPs\|SOCC01 - Networking and PCAPs]]               | 12.03.2024 - 14:06 |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                             | 12.03.2024 - 12:15 |
+| [[Tool Deep-Dives/Linux/grep\|grep]]                                                                                                   | 12.03.2024 - 11:57 |
 | [[Definitions and Topics/NDR\|NDR]]                                                                                                    | 11.03.2024 - 13:54 |
 | [[Definitions and Topics/DLP\|DLP]]                                                                                                    | 11.03.2024 - 13:53 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC06 - Egress Traffic Analysis\|SOCC06 - Egress Traffic Analysis]]         | 11.03.2024 - 13:48 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/BHIS SOCC Notes Overview\|BHIS SOCC Notes Overview]]                                | 11.03.2024 - 13:40 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC04 - Server Log Analysis\|SOCC04 - Server Log Analysis]]                 | 11.03.2024 - 12:51 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                             | 11.03.2024 - 12:32 |
 | [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]]                                                                                     | 11.03.2024 - 12:23 |
 | [[Tool Deep-Dives/Windows/WMI\|WMI]]                                                                                                   | 11.03.2024 - 11:07 |
 | [[Tool Deep-Dives/Windows/wmic\|wmic]]                                                                                                 | 11.03.2024 - 10:54 |
@@ -32,16 +38,10 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Tool Deep-Dives/Windows/netstat\|netstat]]                                                                                           | 11.03.2024 - 10:47 |
 | [[Tool Deep-Dives/Windows/NET\|NET]]                                                                                                   | 11.03.2024 - 10:47 |
 | [[Tool Deep-Dives/Windows/tasklist\|tasklist]]                                                                                         | 11.03.2024 - 10:46 |
-| [[Tool Deep-Dives/Linux/grep\|grep]]                                                                                                   | 11.03.2024 - 10:22 |
 | [[Tool Deep-Dives/Wireshark/Udemy - Chris Greer/S01-02 - Introduction\|S01-02 - Introduction]]                                         | 09.03.2024 - 11:58 |
 | [[Definitions and Topics/OWASP\|OWASP]]                                                                                                | 09.03.2024 - 11:57 |
 | [[Tool Deep-Dives/Linux/which\|which]]                                                                                                 | 09.03.2024 - 11:57 |
 | [[Tool Deep-Dives/mknod\|mknod]]                                                                                                       | 09.03.2024 - 11:57 |
 | [[Tool Deep-Dives/Linux/cut\|cut]]                                                                                                     | 09.03.2024 - 11:55 |
-| [[Tool Deep-Dives/Python/Python\|Python]]                                                                                              | 09.03.2024 - 11:55 |
-| [[Maxwell CTI\|Maxwell CTI]]                                                                                                           | 09.03.2024 - 11:55 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-WindowsCLI\|BHIS-SOCC-lab-WindowsCLI]]                           | 08.03.2024 - 14:34 |
-| [[Tool Deep-Dives/Metasploit/msfvenom\|msfvenom]]                                                                                      | 08.03.2024 - 12:33 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-DeepBlueCLI\|BHIS-SOCC-lab-DeepBlueCLI]]                         | 08.03.2024 - 10:10 |
 
 { .block-language-dataview}
