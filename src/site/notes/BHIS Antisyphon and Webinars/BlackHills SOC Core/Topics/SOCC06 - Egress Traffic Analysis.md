@@ -42,4 +42,4 @@
 
 
 
-### LAB: [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-RITA-ACHunter\|BHIS-SOCC-lab-RITA-ACHunter]]
+### LAB: [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Rita-ACHunter\|BHIS-SOCC-lab-RITA-ACHunter]]
