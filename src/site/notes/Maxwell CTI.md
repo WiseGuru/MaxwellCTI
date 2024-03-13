@@ -18,6 +18,17 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                                                    | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC08 - Endpoint Protection\|SOCC08 - Endpoint Protection]]                               | 13.03.2024 - 16:15 |
+| [[Tool Deep-Dives/OpenEDR\|OpenEDR]]                                                                                                                 | 13.03.2024 - 16:13 |
+| [[Tool Deep-Dives/Elastic Stack\|Elastic Stack]]                                                                                                     | 13.03.2024 - 16:11 |
+| [[Tool Deep-Dives/SOS/Security Onion\|Security Onion]]                                                                                               | 13.03.2024 - 16:11 |
+| [[Tool Deep-Dives/Velociraptor\|Velociraptor]]                                                                                                       | 13.03.2024 - 16:04 |
+| [[Tool Deep-Dives/Wazuh/Wazuh\|Wazuh]]                                                                                                               | 13.03.2024 - 16:02 |
+| [[Definitions and Topics/EDR\|EDR]]                                                                                                                  | 13.03.2024 - 16:01 |
+| [[Definitions and Topics/XDR\|XDR]]                                                                                                                  | 13.03.2024 - 15:59 |
+| [[Definitions and Topics/SIEM\|SIEM]]                                                                                                                | 13.03.2024 - 15:52 |
+| [[Tool Deep-Dives/BLUESPAWN\|BLUESPAWN]]                                                                                                             | 13.03.2024 - 15:30 |
+| [[Tool Deep-Dives/Atomic Red Team\|Atomic Red Team]]                                                                                                 | 13.03.2024 - 15:26 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC07 - User and Entity Behavior Analytics\|SOCC07 - User and Entity Behavior Analytics]] | 13.03.2024 - 09:48 |
 | [[Definitions and Topics/Kerberoasting\|Kerberoasting]]                                                                                              | 13.03.2024 - 09:33 |
 | [[Tool Deep-Dives/LogonTracer\|LogonTracer]]                                                                                                         | 13.03.2024 - 08:49 |
@@ -32,16 +43,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC01 - Networking and PCAPs\|SOCC01 - Networking and PCAPs]]                             | 12.03.2024 - 14:06 |
 | [[Tool Deep-Dives/Linux/grep\|grep]]                                                                                                                 | 12.03.2024 - 11:57 |
 | [[Definitions and Topics/NDR\|NDR]]                                                                                                                  | 11.03.2024 - 13:54 |
-| [[Definitions and Topics/DLP\|DLP]]                                                                                                                  | 11.03.2024 - 13:53 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC06 - Egress Traffic Analysis\|SOCC06 - Egress Traffic Analysis]]                       | 11.03.2024 - 13:48 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/BHIS SOCC Notes Overview\|BHIS SOCC Notes Overview]]                                              | 11.03.2024 - 13:40 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC04 - Server Log Analysis\|SOCC04 - Server Log Analysis]]                               | 11.03.2024 - 12:51 |
-| [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]]                                                                                                   | 11.03.2024 - 12:23 |
-| [[Tool Deep-Dives/Windows/WMI\|WMI]]                                                                                                                 | 11.03.2024 - 11:07 |
-| [[Tool Deep-Dives/Windows/wmic\|wmic]]                                                                                                               | 11.03.2024 - 10:54 |
-| [[Tool Deep-Dives/Windows/cmd.exe\|cmd.exe]]                                                                                                         | 11.03.2024 - 10:51 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC03 - Windows Endpoint Management\|SOCC03 - Windows Endpoint Management]]               | 11.03.2024 - 10:47 |
-| [[Tool Deep-Dives/Windows/netstat\|netstat]]                                                                                                         | 11.03.2024 - 10:47 |
-| [[Tool Deep-Dives/Windows/NET\|NET]]                                                                                                                 | 11.03.2024 - 10:47 |
 
 { .block-language-dataview}
