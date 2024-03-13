@@ -18,12 +18,13 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                                      | Last modified      |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                             | 12.03.2024 - 21:43 |
+| [[Maxwell CTI\|Maxwell CTI]]                                                                                                           | 12.03.2024 - 16:56 |
 | [[Tool Deep-Dives/Linux/column\|column]]                                                                                               | 12.03.2024 - 16:39 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-MemoryForensics\|BHIS-SOCC-lab-MemoryForensics]]                 | 12.03.2024 - 16:31 |
 | [[Tool Deep-Dives/Volatility\|Volatility]]                                                                                             | 12.03.2024 - 16:30 |
 | [[Definitions and Topics/VAD\|VAD]]                                                                                                    | 12.03.2024 - 16:21 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC01 - Networking and PCAPs\|SOCC01 - Networking and PCAPs]]               | 12.03.2024 - 14:06 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                             | 12.03.2024 - 12:15 |
 | [[Tool Deep-Dives/Linux/grep\|grep]]                                                                                                   | 12.03.2024 - 11:57 |
 | [[Definitions and Topics/NDR\|NDR]]                                                                                                    | 11.03.2024 - 13:54 |
 | [[Definitions and Topics/DLP\|DLP]]                                                                                                    | 11.03.2024 - 13:53 |
@@ -42,6 +43,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Definitions and Topics/OWASP\|OWASP]]                                                                                                | 09.03.2024 - 11:57 |
 | [[Tool Deep-Dives/Linux/which\|which]]                                                                                                 | 09.03.2024 - 11:57 |
 | [[Tool Deep-Dives/mknod\|mknod]]                                                                                                       | 09.03.2024 - 11:57 |
-| [[Tool Deep-Dives/Linux/cut\|cut]]                                                                                                     | 09.03.2024 - 11:55 |
 
 { .block-language-dataview}
