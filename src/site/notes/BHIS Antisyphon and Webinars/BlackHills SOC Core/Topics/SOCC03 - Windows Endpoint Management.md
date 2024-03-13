@@ -6,7 +6,7 @@
 > Point of trivia (though interesting and possibly useful)
 > WoWw64 = Windows 32-bit on Windows 64-bit^[[WoW64 - Wikipedia](https://en.wikipedia.org/wiki/WoW64)], and is used to run 32-bit applications on 64-bit windows.
 1. Windows and Live forensics
-	1. These commands are the grunt-work required to verify your [[EDR\|EDR]] application works
+	1. These commands are the grunt-work required to verify your [[Definitions and Topics/EDR\|EDR]] application works
 		1. You **need** to be able to run these commands in terminal
 		2. There are times your EDR tool will be lying to you, or the EDR is opaque in how it makes decisions
 
