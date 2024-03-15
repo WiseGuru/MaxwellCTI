@@ -67,7 +67,7 @@ And for those who get lost in GitHub^[Definitely not me ever.], here's a link to
 To verify that these services have not started back up again, you can run the following command to get their status:
 
 ```PowerShell
-Get-Service -Name wuauserv,bits,UsoSvc
+Get-Service -Name wuauserv,bits,UsoSvc,InstallService
 ```
 The output should look like this:
 ![00-BHIS-SOCC-lab-Config.png](/img/user/Attachments/00-BHIS-SOCC-lab-Config.png)
