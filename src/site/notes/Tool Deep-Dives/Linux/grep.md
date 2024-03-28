@@ -12,6 +12,8 @@
 		- Useful when adversaries use alternating caps to prevent search matches
 	- `-v` or `--invert-match`
 		- Searches for any results that do NOT include the search term
+	- `-n` or `--line-number`
+		- Get the line number with the output
 - [[Tool Deep-Dives/Windows/Windows\|Windows]] alternatives
 	- In [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]]: `Select-String`
 	- In Windows command line ([[Tool Deep-Dives/Windows/cmd.exe\|cmd.exe]]), `findstr`
