@@ -25,7 +25,7 @@
 		1. Fast
 		2. Large user base, lots of support, free
 		3. Consistency
-	4. [[RITA\|RITA]] - Real Intelligence Threat Analytics
+	4. [[Tool Deep-Dives/RITA\|RITA]] - Real Intelligence Threat Analytics
 		1. Free
 		2. Finds patterns in network traffic
 		3. Looks for beacons
@@ -42,4 +42,4 @@
 
 
 
-### LAB: [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Rita-ACHunter\|BHIS-SOCC-lab-RITA-ACHunter]]
+### LAB: [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-RITA-ACHunter\|BHIS-SOCC-lab-RITA-ACHunter]]
