@@ -66,17 +66,17 @@ Also, if you want some real data to mess with^[And don't want to go Google Dorki
 	1. PEP (Python Enhancement Proposals)
 		1. [PEP 8 – Style Guide for Python Code | peps.python.org](https://peps.python.org/pep-0008/)
 		2. This is a style guide with a bunch of specific recommendations 
-	2. CapWord Convention
+	2. *CapWord* Convention
 		1. When stringing a bunch of words together, capitalize the first letter of each word
 			1. e.g. BigHairySpider
-		2. Typically reserved for class names
+		2. Typically reserved for *class names*
 			1. **NOTE**: Sometimes IDEs like PyCharm are too smart for their own good, and will read words like "Hognose" as a violation of this convention (it expects "HogNose")
 			2. In PyCharm, if you're working with a term frequently, this can be resolved by adding it to PyCharm's dictionary
 				1. Right-click the alert, select "Show Quick-Fixes", and then "Save 'Hognose' to dictionary"
-	3. snake_case convention
+	3. *snake_case* convention
 		1. String words together with underscores `_` instead of capital letters
 			1. e.g., big_hairy_spider
-		2. Typically used for functions, methods, and variables
+		2. Typically used for *functions*, *methods*, and *variables*
 	4. Commenting
 		1. Comments should be written as a sentence, begin with a capital letter, end with a period, and are identified with a pound and single space (`# `) at the start
 		2. Block comments begin at the start of a line
@@ -84,6 +84,10 @@ Also, if you want some real data to mess with^[And don't want to go Google Dorki
 		3. Inline comments should be used sparingly
 			1. Don't state the obvious
 			2. e.g., `x = y + 1     # Compensate for image border.`
+				1. Where `y` is the true edge of the image, and `x` is the image edge with 1 pixel buffer-zone for a stylized border.
+
+
+
 
 ### Basic/Imporant Commands/tools
 1. `print()`
@@ -106,62 +110,4 @@ We want to ingest the data from the CSV file, converting strings into their most
 
 > For this project, I'm going to over-comment to help the tl;drs out there.
 
-#### hognose_snakes.csv
-```CSV
-Snake Name,How old are they,What kind of snout,Are they good,Are they a good eater,When were they last fed
-Sneaky,3,Boopable,Yes,True,3/3/2024
-Hissy,5,Pointy,No,False,2/18/2024
-Slithery,2,Soft,Yes,False,2/19/2024
-```
-
-#### Python Script
-```Python
-# Import required modules.
-import csv
-from datetime import datetime
-
-# Create the "Hognose" class.
-class Hognose:
-# Define the attributes that make up the class.
-    def __init__(self, name, age, snoot, goodness, good_eater, last_fed):
-        self.name = name
-        self.age = float(age)  # Convert age to a float number (to account for ages between 0 and 1).
-        self.snoot = snoot
-        self.goodness = goodness == 'Yes'  # Convert goodness to a boolean.
-        self.good_eater = good_eater == 'True'  # Convert good_eater to a boolean.
-        self.last_fed = datetime.strptime(last_fed, '%m/%d/%Y')  # Convert last_fed to a datetime object.
-
-# Define the "official" string that is the snake object.
-# The return string is broken up to stay maintain shorter lines per PEP 8
-    def __repr__(self):
-        return (f"Hognose(name='{self.name}', age={self.age}, snoot='{self.snoot}', "
-                f"goodness={self.goodness}, good_eater={self.good_eater}, "
-                f"last_fed='{self.last_fed.strftime('%m/%d/%Y')}')")
-
-
-# Mapping between CSV headers and class attribute names.
-header_mapping = {
-    'Snake Name': 'name',
-    'How old are they': 'age',
-    'What kind of snout': 'snoot',
-    'Are they good': 'goodness',
-    'Are they a good eater': 'good_eater',
-    'When were they last fed': 'last_fed'
-}
-
-# Read the CSV file and create Hognose instances.
-hognose_snakes = []
-with open('hognose_snakes.csv', 'r') as file:  # The 'r' stands for "read", as opposed to "write".
-    csv_reader = csv.DictReader(file)
-    for row in csv_reader:
-        # Rename the keys based on the mapping.
-        renamed_row = {header_mapping[key]: value for key, value in row.items()}
-        # Create the Hognose object with the renamed keys.
-        snake = Hognose(**renamed_row)
-        hognose_snakes.append(snake)
-
-# Print the list of Hognose objects.
-for snake in hognose_snakes:
-    print(snake)
-
-```
+#### Project files: [Introduction](https://github.com/WiseGuru/learning-python/tree/main/Introduction)
