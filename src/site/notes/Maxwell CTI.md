@@ -16,32 +16,32 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 
 ## What have I been up to lately?
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
-| File                                                                                                                                                    | Last modified      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC08 - Endpoint Protection\|SOCC08 - Endpoint Protection]]                               | 13.03.2024 - 16:15 |
-| [[Tool Deep-Dives/OpenEDR\|OpenEDR]]                                                                                                                 | 13.03.2024 - 16:13 |
-| [[Tool Deep-Dives/Elastic Stack\|Elastic Stack]]                                                                                                     | 13.03.2024 - 16:11 |
-| [[Tool Deep-Dives/SOS/Security Onion\|Security Onion]]                                                                                               | 13.03.2024 - 16:11 |
-| [[Tool Deep-Dives/Velociraptor\|Velociraptor]]                                                                                                       | 13.03.2024 - 16:04 |
-| [[Tool Deep-Dives/Wazuh/Wazuh\|Wazuh]]                                                                                                               | 13.03.2024 - 16:02 |
-| [[Definitions and Topics/EDR\|EDR]]                                                                                                                  | 13.03.2024 - 16:01 |
-| [[Definitions and Topics/XDR\|XDR]]                                                                                                                  | 13.03.2024 - 15:59 |
-| [[Definitions and Topics/SIEM\|SIEM]]                                                                                                                | 13.03.2024 - 15:52 |
-| [[Tool Deep-Dives/BLUESPAWN\|BLUESPAWN]]                                                                                                             | 13.03.2024 - 15:30 |
-| [[Tool Deep-Dives/Atomic Red Team\|Atomic Red Team]]                                                                                                 | 13.03.2024 - 15:26 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC07 - User and Entity Behavior Analytics\|SOCC07 - User and Entity Behavior Analytics]] | 13.03.2024 - 09:48 |
-| [[Definitions and Topics/Kerberoasting\|Kerberoasting]]                                                                                              | 13.03.2024 - 09:33 |
-| [[Tool Deep-Dives/LogonTracer\|LogonTracer]]                                                                                                         | 13.03.2024 - 08:49 |
-| [[Definitions and Topics/baselining\|baselining]]                                                                                                    | 13.03.2024 - 08:45 |
-| [[Definitions and Topics/UEBA\|UEBA]]                                                                                                                | 13.03.2024 - 08:44 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                                           | 12.03.2024 - 21:43 |
-| [[Maxwell CTI\|Maxwell CTI]]                                                                                                                         | 12.03.2024 - 16:56 |
-| [[Tool Deep-Dives/Linux/column\|column]]                                                                                                             | 12.03.2024 - 16:39 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-MemoryForensics\|BHIS-SOCC-lab-MemoryForensics]]                               | 12.03.2024 - 16:31 |
-| [[Tool Deep-Dives/Volatility\|Volatility]]                                                                                                           | 12.03.2024 - 16:30 |
-| [[Definitions and Topics/VAD\|VAD]]                                                                                                                  | 12.03.2024 - 16:21 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC01 - Networking and PCAPs\|SOCC01 - Networking and PCAPs]]                             | 12.03.2024 - 14:06 |
-| [[Tool Deep-Dives/Linux/grep\|grep]]                                                                                                                 | 12.03.2024 - 11:57 |
-| [[Definitions and Topics/NDR\|NDR]]                                                                                                                  | 11.03.2024 - 13:54 |
+| File                                                                                                    | Last modified      |
+| ------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Sysmon\|BHIS-SOCC-lab-Sysmon]] | 28.03.2024 - 14:40 |
+| [[Definitions and Topics/Malware\|Malware]]                                                          | 28.03.2024 - 14:08 |
+| [[Tool Deep-Dives/Metasploit/Meterpreter\|Meterpreter]]                                              | 28.03.2024 - 14:08 |
+| [[Definitions and Topics/vulnerability\|vulnerability]]                                              | 28.03.2024 - 14:01 |
+| [[Definitions and Topics/Zero-day\|Zero-day]]                                                        | 28.03.2024 - 13:55 |
+| [[Tool Deep-Dives/Metasploit/Metasploit\|Metasploit]]                                                | 28.03.2024 - 13:51 |
+| [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]]                                                   | 28.03.2024 - 11:16 |
+| [[Tool Deep-Dives/Linux/Remmina\|Remmina]]                                                           | 27.03.2024 - 13:02 |
+| [[Tool Deep-Dives/Python/Python Input Validation\|Python Input Validation]]                          | 27.03.2024 - 12:14 |
+| [[Tool Deep-Dives/Python/Python Introduction\|Python Introduction]]                                  | 27.03.2024 - 12:12 |
+| [[Tool Deep-Dives/Python/Python\|Python]]                                                            | 27.03.2024 - 10:57 |
+| [[Tool Deep-Dives/Velociraptor\|Velociraptor]]                                                       | 26.03.2024 - 13:52 |
+| [[Tool Deep-Dives/Nmap\|Nmap]]                                                                       | 19.03.2024 - 12:03 |
+| [[Tool Deep-Dives/Windows/Windows Firewall\|Windows Firewall]]                                       | 19.03.2024 - 11:58 |
+| [[BHIS Antisyphon and Webinars/BlackHills MITRE/BHIS-I2S-lab-BLUESPAWN\|BHIS-I2S-lab-BLUESPAWN]]     | 19.03.2024 - 11:02 |
+| [[Tool Deep-Dives/Bloodhound\|Bloodhound]]                                                           | 19.03.2024 - 10:45 |
+| [[Tool Deep-Dives/RITA\|RITA]]                                                                       | 19.03.2024 - 09:16 |
+| [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]]                                                           | 19.03.2024 - 08:38 |
+| [[Tool Deep-Dives/CyberChef\|CyberChef]]                                                             | 19.03.2024 - 08:27 |
+| [[Tool Deep-Dives/LAN turtle\|LAN turtle]]                                                           | 18.03.2024 - 11:47 |
+| [[Tool Deep-Dives/Evilginx\|Evilginx]]                                                               | 18.03.2024 - 10:42 |
+| [[Definitions and Topics/WPAD\|WPAD]]                                                                | 18.03.2024 - 10:41 |
+| [[Tool Deep-Dives/Responder\|Responder]]                                                             | 18.03.2024 - 10:36 |
+| [[Tool Deep-Dives/FireProx\|FireProx]]                                                               | 18.03.2024 - 10:27 |
+| [[Tool Deep-Dives/Credking\|Credking]]                                                               | 18.03.2024 - 10:25 |
 
 { .block-language-dataview}
