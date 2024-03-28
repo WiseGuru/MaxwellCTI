@@ -10,11 +10,13 @@
 
 
 
-
 # Metadata
 
 ### Sources
 [Velociraptor - Digging deeper!](https://docs.velociraptor.app/)
 [Velociraptor » ADMIN Magazine](https://www.admin-magazine.com/Archive/2023/78/Incident-response-with-Velociraptor)
+[Artifact Reference - Velociraptor](https://docs.velociraptor.app/artifact_references/)
+#### Lab Setup
+[Velociraptor Setup – Blue Cape Security](https://bluecapesecurity.com/build-your-lab/velociraptor-setup/)
 ### Tags
 #tools_sec 
