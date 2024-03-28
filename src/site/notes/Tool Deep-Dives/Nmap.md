@@ -4,6 +4,7 @@
 
 #### Nmap
 - Short for *Network Mapper*, Nmap scans a host or network using various techniques to determine the devices and open ports on the network.
+- Hitting `space bar` will give you the current status of the scan
 
 1. NMAP and checking remote ports
 	1. Run as `su`
@@ -18,6 +19,7 @@
 			3. Open|filtered
 				1. The port may be open
 		3. Service
+2. Hi
 
 
 
