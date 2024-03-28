@@ -93,6 +93,9 @@
 		1. While not wrong, logs are only useful in *preventing* or *responding* to an attack *if you can analyze them*
 		2. "Logging everything" without the ability to analyze them is only helpful in post-event reconstruction
 	2. In my limited experience, I would say "more than you're logging right now."
+		1. I was taking the [[BHIS Antisyphon and Webinars/BlackHills DFIR Foundations Course/BHIS DFIR Foundations\|BHIS DFIR Foundations]] course, and there were two critical things that resonated here:
+			1. "**Prevention is ideal, but detection is a must.**" - Dr. Eric Cole
+			2. "Make sure that detection strategies cover all data and business process flows." - Derek Banks
 5. Command Line logging
 	1. Microsoft makes it hard to audit the command line.
 		1. Must enable Audit Process Creation auditing
