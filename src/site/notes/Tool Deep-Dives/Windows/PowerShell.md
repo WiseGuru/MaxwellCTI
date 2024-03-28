@@ -29,6 +29,7 @@
 		- e.g., `*wi*ws*` will return anything with the word `Windows` in it, and any other string that matches
 - `Get-Help <Command>`
 	- Returns the manual page of the specified command
+	- In line with this, `Update-Help` makes sure that you get the latest information when getting help on a certain command
 - `Set-ExecutionPolicy`
 	- Configure security policy for running scripts on the computer
 	- More detail below
