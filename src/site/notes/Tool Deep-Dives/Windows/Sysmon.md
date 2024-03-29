@@ -31,5 +31,6 @@ WEC Server
 [GitHub - SwiftOnSecurity/sysmon-config: Sysmon configuration file template with default high-quality event tracing](https://github.com/SwiftOnSecurity/sysmon-config)
 [GitHub - olafhartong/sysmon-modular: A repository of sysmon configuration modules](https://github.com/olafhartong/sysmon-modular)
 [Building A Perfect Sysmon Configuration File | CQURE Academy](https://cqureacademy.com/blog/hacks/sysmon-configuration-file)
+[Sysmon Threat Analysis Guide](https://www.varonis.com/blog/sysmon-threat-detection-guide)
 ### Tags
 #tools_win 
