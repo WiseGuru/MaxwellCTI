@@ -18,7 +18,8 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                    | Last modified      |
 | ------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Sysmon\|BHIS-SOCC-lab-Sysmon]] | 28.03.2024 - 14:40 |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Sysmon\|BHIS-SOCC-lab-Sysmon]] | 29.03.2024 - 16:13 |
+| [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]]                                                           | 29.03.2024 - 10:42 |
 | [[Definitions and Topics/Malware\|Malware]]                                                          | 28.03.2024 - 14:08 |
 | [[Tool Deep-Dives/Metasploit/Meterpreter\|Meterpreter]]                                              | 28.03.2024 - 14:08 |
 | [[Definitions and Topics/vulnerability\|vulnerability]]                                              | 28.03.2024 - 14:01 |
@@ -35,7 +36,6 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[BHIS Antisyphon and Webinars/BlackHills MITRE/BHIS-I2S-lab-BLUESPAWN\|BHIS-I2S-lab-BLUESPAWN]]     | 19.03.2024 - 11:02 |
 | [[Tool Deep-Dives/Bloodhound\|Bloodhound]]                                                           | 19.03.2024 - 10:45 |
 | [[Tool Deep-Dives/RITA\|RITA]]                                                                       | 19.03.2024 - 09:16 |
-| [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]]                                                           | 19.03.2024 - 08:38 |
 | [[Tool Deep-Dives/CyberChef\|CyberChef]]                                                             | 19.03.2024 - 08:27 |
 | [[Tool Deep-Dives/LAN turtle\|LAN turtle]]                                                           | 18.03.2024 - 11:47 |
 | [[Tool Deep-Dives/Evilginx\|Evilginx]]                                                               | 18.03.2024 - 10:42 |
