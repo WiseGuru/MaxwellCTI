@@ -189,4 +189,5 @@ And our first hit knocks it out of the park!
 
 # Final Thoughts
 I was surprised by the lack of results from [[Tool Deep-Dives/DeepBlueCLI\|DeepBlueCLI]], but that's probably just because of a lack of familiarity with the tool.
-[GPO and Sysmon](https://www.syspanda.com/index.php/2017/02/28/deploying-sysmonthrough-gpo/)
+
+However, the level of detail collected by [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]] logs is incredible, and would be super helpful in any kind of investigation. Additionally, it's so easy to deploy with plenty of premade configurations that would capture most relevant information, there's no reason not to. In fact, here's a guide on [Deploying Sysmon through GPO](https://securitynguyen.com/posts/cyber-homelabs/deploying-sysmon-through-gpo/).
