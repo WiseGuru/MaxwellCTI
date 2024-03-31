@@ -6,7 +6,7 @@
 
 This was an excellent course from Chris Greer that broadly introduced its students to Wireshark and packet capture.
 
-I got it on sale (**NEVER buy a Udemy course full price**; they go on sale at least once a month), and completed the course over a few days.
+I got it on sale^[(**NEVER buy a Udemy course full price**; they go on sale at least once a month], and completed the course over a few days.
 
 After passing the CCNA, I hadn't really had much of an opportunity to apply the theory I'd learned. This course was a great way to get started with the Wireshark interface, inspect real PCAPs and see how traffic looks and moves.
 
