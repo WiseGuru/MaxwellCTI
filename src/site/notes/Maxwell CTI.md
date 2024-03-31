@@ -6,18 +6,26 @@
 
 Hello and welcome! This blog is a documentation of my journey into cybersecurity; as I take classes, attend seminars, participate in cyber ranges and HTB/THM-style labs, and pursue my own interests, I will document the things I learn and work on here.
 
+As I work on projects, I try to document and publish what I learn. There will be many pages in progress (aka, with bad grammar, syntax, incomplete information, etc.), but I try to keep things tight and professional.
+
 ### New here?
-Why not check out my notes on the [[BHIS Antisyphon and Webinars/BlackHills SOC Core/BHIS SOCC Notes Overview\|Black Hills Information Security SOC Analyst Core course?]]
+Below is a list of the pages I've updated recently; you can also search from the top right, or scroll through everything on the left.
+
+Still not sure where to start? Why not check out my notes on the [[BHIS Antisyphon and Webinars/BlackHills SOC Core/BHIS SOCC Notes Overview\|Black Hills Information Security SOC Analyst Core course?]] 
 
 
 ### Find me everywhere else on [linktr.ee/wiseguru](https://linktr.ee/wiseguru)
 Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 
 
-## What have I been up to lately?
+## Recently Modified Pages
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                    | Last modified      |
 | ------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Maxwell CTI\|Maxwell CTI]]                                                                         | 31.03.2024 - 14:57 |
+| [[Definitions and Topics/Berkeley Packet Filter Syntax\|Berkeley Packet Filter Syntax]]              | 31.03.2024 - 14:56 |
+| [[Tool Deep-Dives/Wireshark/Udemy - Chris Greer/S00 - Course Overview\|S00 - Course Overview]]       | 31.03.2024 - 14:53 |
+| [[Tool Deep-Dives/Proxmox/Adding drives to Proxmox\|Adding drives to Proxmox]]                       | 31.03.2024 - 14:47 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Sysmon\|BHIS-SOCC-lab-Sysmon]] | 29.03.2024 - 16:13 |
 | [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]]                                                           | 29.03.2024 - 10:42 |
 | [[Definitions and Topics/Malware\|Malware]]                                                          | 28.03.2024 - 14:08 |
@@ -39,9 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Tool Deep-Dives/CyberChef\|CyberChef]]                                                             | 19.03.2024 - 08:27 |
 | [[Tool Deep-Dives/LAN turtle\|LAN turtle]]                                                           | 18.03.2024 - 11:47 |
 | [[Tool Deep-Dives/Evilginx\|Evilginx]]                                                               | 18.03.2024 - 10:42 |
-| [[Definitions and Topics/WPAD\|WPAD]]                                                                | 18.03.2024 - 10:41 |
-| [[Tool Deep-Dives/Responder\|Responder]]                                                             | 18.03.2024 - 10:36 |
-| [[Tool Deep-Dives/FireProx\|FireProx]]                                                               | 18.03.2024 - 10:27 |
-| [[Tool Deep-Dives/Credking\|Credking]]                                                               | 18.03.2024 - 10:25 |
 
 { .block-language-dataview}
