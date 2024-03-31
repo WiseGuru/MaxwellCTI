@@ -10,9 +10,9 @@ I'm building out a homelab, and I'd *physically* added two 10TB drives to my Pro
 	1. If the disk has already been formatted with partitions, select *Wipe Disk*
 	2. Next, select *Initialize Disk with GPT*, and get an error:
 	3. ![Adding drives to Proxmox-1.png](/img/user/Attachments/Adding%20drives%20to%20Proxmox-1.png)
-	4. Possible ways to fix - in Shell - DON'T NAVIGATE AWAY
+	4. Possible ways to fix - in Shell - *DON'T NAVIGATE AWAY*^[Navigating away closes the shell, and when you come back, it's a new terminal.]
 		1. `wipefs -af /dev/sd#`
-			1. Command succeeded, issue continues
+			1. The issue continues even though the command succeeded
 		2. Use Parted - **Worked**!
 			1. `apt update && apt dist-upgrade`^[Don't use `apt upgrade`, it can and will cause serious issues]
 			2. `apt install parted`
@@ -21,7 +21,7 @@ I'm building out a homelab, and I'd *physically* added two 10TB drives to my Pro
 				2. `unit TB`
 				3. `mkpart primary 0.00TB 10.00TB`
 				4. `print`
-					1. To show the results
+					1. This just shows the results
 	5. Or you can just skip straight to shell and create the zpool in Shell
 		1. `zpool create (Pool name) (mirror/Raid10/etc.) /dev/sd1 /dev/sd2 /dev/sdetc.`
 	6. Or you can go to ZFS and just add it straight through there...
