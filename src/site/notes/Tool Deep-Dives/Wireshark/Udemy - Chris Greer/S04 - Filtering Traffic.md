@@ -29,7 +29,7 @@
 	2. A *capture filter* is applied when you're first bringing packets into the device
 		1. Only want to focus on a certain IP, etc.
 		2. Much simpler than display filters
-			1. Built using the [[Tool Deep-Dives/Wireshark/Berkeley Packet Filter Syntax\|Berkeley Packet Filter Syntax]]
+			1. Built using the [[Definitions and Topics/Berkeley Packet Filter Syntax\|Berkeley Packet Filter Syntax]]
 		3. Not as ideal as *Display filters*, because you're more likely to miss what you're actually looking for
 3. Filtering Traffic
 	1. You can filter packets by protocol, but sometimes it's worth going deeper
