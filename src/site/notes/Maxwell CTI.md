@@ -22,6 +22,8 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                    | Last modified      |
 | ------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Tool Deep-Dives/MITRE Engage\|MITRE Engage]]                                                       | 01.04.2024 - 16:42 |
+| [[Definitions and Topics/EQL\|EQL]]                                                                  | 01.04.2024 - 16:18 |
 | [[Maxwell CTI\|Maxwell CTI]]                                                                         | 31.03.2024 - 14:57 |
 | [[Definitions and Topics/Berkeley Packet Filter Syntax\|Berkeley Packet Filter Syntax]]              | 31.03.2024 - 14:56 |
 | [[Tool Deep-Dives/Wireshark/Udemy - Chris Greer/S00 - Course Overview\|S00 - Course Overview]]       | 31.03.2024 - 14:53 |
@@ -45,7 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Tool Deep-Dives/Bloodhound\|Bloodhound]]                                                           | 19.03.2024 - 10:45 |
 | [[Tool Deep-Dives/RITA\|RITA]]                                                                       | 19.03.2024 - 09:16 |
 | [[Tool Deep-Dives/CyberChef\|CyberChef]]                                                             | 19.03.2024 - 08:27 |
-| [[Tool Deep-Dives/LAN turtle\|LAN turtle]]                                                           | 18.03.2024 - 11:47 |
-| [[Tool Deep-Dives/Evilginx\|Evilginx]]                                                               | 18.03.2024 - 10:42 |
 
 { .block-language-dataview}
