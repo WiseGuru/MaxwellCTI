@@ -85,7 +85,18 @@ Also, if you want some real data to mess with^[And don't want to go Google Dorki
 			1. Don't state the obvious
 			2. e.g., `x = y + 1     # Compensate for image border.`
 				1. Where `y` is the true edge of the image, and `x` is the image edge with 1 pixel buffer-zone for a stylized border.
-
+6. Objects
+	1. Any variable can be an object, and can have methods run against it
+		1. The changes do not impact the original variable; they create a new variable in memory.
+			1. e.g., `snake.upper()` d
+		2. e.g., let's say we have the variable `snake = "hoggy the hognose"`; we can use methods to manipulate the value.
+			1. *find*: `snake.find("Hog")` to find if the string "Hog" exists in the value
+				1. If it exists, the output is the position of the character, starting at 0
+				2. If it doesn't exist, the output is `-1`
+			2. *capitalize*: `snake.capitalize()` would capitalize the first letter of the string
+				1. Printing this gives us "Hoggy the hognose" instead of "hoggy the hognose"
+			3. *replace*: `snake.replace('`
+	3. 
 
 
 
