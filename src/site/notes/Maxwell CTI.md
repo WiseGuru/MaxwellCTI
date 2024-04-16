@@ -22,6 +22,12 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                    | Last modified      |
 | ------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Tool Deep-Dives/Python/Python Introduction\|Python Introduction]]                                  | 15.04.2024 - 16:20 |
+| [[Tool Deep-Dives/Linux/lnav\|lnav]]                                                                 | 10.04.2024 - 14:08 |
+| [[Tool Deep-Dives/SpiderSuite\|SpiderSuite]]                                                         | 02.04.2024 - 14:05 |
+| [[OSINT/OSINT Checklist\|OSINT Checklist]]                                                           | 02.04.2024 - 14:03 |
+| [[OSINT/Google Dorking\|Google Dorking]]                                                             | 02.04.2024 - 14:02 |
+| [[Career Growth/Discord Comments and Job Hunting\|Discord Comments and Job Hunting]]                 | 02.04.2024 - 12:54 |
 | [[Tool Deep-Dives/MITRE Engage\|MITRE Engage]]                                                       | 01.04.2024 - 16:42 |
 | [[Definitions and Topics/EQL\|EQL]]                                                                  | 01.04.2024 - 16:18 |
 | [[Maxwell CTI\|Maxwell CTI]]                                                                         | 31.03.2024 - 14:57 |
@@ -38,14 +44,8 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]]                                                   | 28.03.2024 - 11:16 |
 | [[Tool Deep-Dives/Linux/Remmina\|Remmina]]                                                           | 27.03.2024 - 13:02 |
 | [[Tool Deep-Dives/Python/Python Input Validation\|Python Input Validation]]                          | 27.03.2024 - 12:14 |
-| [[Tool Deep-Dives/Python/Python Introduction\|Python Introduction]]                                  | 27.03.2024 - 12:12 |
 | [[Tool Deep-Dives/Python/Python\|Python]]                                                            | 27.03.2024 - 10:57 |
 | [[Tool Deep-Dives/Velociraptor\|Velociraptor]]                                                       | 26.03.2024 - 13:52 |
 | [[Tool Deep-Dives/Nmap\|Nmap]]                                                                       | 19.03.2024 - 12:03 |
-| [[Tool Deep-Dives/Windows/Windows Firewall\|Windows Firewall]]                                       | 19.03.2024 - 11:58 |
-| [[BHIS Antisyphon and Webinars/BlackHills MITRE/BHIS-I2S-lab-BLUESPAWN\|BHIS-I2S-lab-BLUESPAWN]]     | 19.03.2024 - 11:02 |
-| [[Tool Deep-Dives/Bloodhound\|Bloodhound]]                                                           | 19.03.2024 - 10:45 |
-| [[Tool Deep-Dives/RITA\|RITA]]                                                                       | 19.03.2024 - 09:16 |
-| [[Tool Deep-Dives/CyberChef\|CyberChef]]                                                             | 19.03.2024 - 08:27 |
 
 { .block-language-dataview}
