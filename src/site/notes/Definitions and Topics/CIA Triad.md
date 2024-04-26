@@ -17,13 +17,10 @@ The *CIA Triad* is a widely used model in cybersecurity that outlines three main
 
 
 
-
-
-
 # Metadata
 
 ### Sources
-
-
+[What is the CIA Triad and Why is it important? | Fortinet](https://www.fortinet.com/resources/cyberglossary/cia-triad)
+[What is the CIA Triad? | Definition from TechTarget](https://www.techtarget.com/whatis/definition/Confidentiality-integrity-and-availability-CIA)
 ### Tags
 #defs_sec 
