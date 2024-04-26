@@ -5,7 +5,7 @@
 #### MITRE Engage
 - "MITRE Engage is a framework for planning and discussing adversary engagement operations that empowers you to engage your adversaries and achieve your cybersecurity goals."^[[MITRE Engage™ | An Adversary Engagement Framework from MITRE](https://engage.mitre.org/)]
 	- Basically, it's a framework for active defensive measures; you *Expose*, *Affect (impact operations)*, and *Elicit information* from the adversaries
-- Uses a *matrix* similar to [[Attack Frameworks/MITRE ATT&CK/MITRE ATT&CK\|MITRE ATT&CK]]
+- Uses a *matrix* similar to [[Security Frameworks/MITRE ATT&CK/MITRE ATT&CK\|MITRE ATT&CK]]
 	- *Expose* - Reveal adversary activites
 		- *Collect* - Passively gathering information from various sources
 		- *Detect* - Laying traps and analyzing information from gathered information
