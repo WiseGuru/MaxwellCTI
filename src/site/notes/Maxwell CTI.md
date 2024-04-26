@@ -22,7 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                    | Last modified      |
 | ------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                          | 26.04.2024 - 16:44 |
+| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                          | 26.04.2024 - 16:49 |
 | [[Tool Deep-Dives/Python/Python Introduction\|Python Introduction]]                                  | 16.04.2024 - 13:26 |
 | [[Tool Deep-Dives/Linux/lnav\|lnav]]                                                                 | 16.04.2024 - 13:17 |
 | [[Tool Deep-Dives/SpiderSuite\|SpiderSuite]]                                                         | 02.04.2024 - 14:05 |
