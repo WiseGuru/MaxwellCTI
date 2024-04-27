@@ -22,7 +22,8 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                    | Last modified      |
 | ------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                          | 26.04.2024 - 16:57 |
+| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                          | 27.04.2024 - 12:49 |
+| [[Definitions and Topics/PII\|PII]]                                                                  | 27.04.2024 - 11:57 |
 | [[Definitions and Topics/CIA Triad\|CIA Triad]]                                                      | 26.04.2024 - 16:55 |
 | [[Tool Deep-Dives/Python/Python Introduction\|Python Introduction]]                                  | 16.04.2024 - 13:26 |
 | [[Tool Deep-Dives/Linux/lnav\|lnav]]                                                                 | 16.04.2024 - 13:17 |
@@ -46,6 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]]                                                   | 28.03.2024 - 11:16 |
 | [[Tool Deep-Dives/Linux/Remmina\|Remmina]]                                                           | 27.03.2024 - 13:02 |
 | [[Tool Deep-Dives/Python/Python Input Validation\|Python Input Validation]]                          | 27.03.2024 - 12:14 |
-| [[Tool Deep-Dives/Python/Python\|Python]]                                                            | 27.03.2024 - 10:57 |
 
 { .block-language-dataview}
