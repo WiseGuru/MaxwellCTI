@@ -22,7 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                    | Last modified      |
 | ------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                          | 27.04.2024 - 13:15 |
+| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                          | 28.04.2024 - 12:02 |
 | [[Definitions and Topics/PII\|PII]]                                                                  | 27.04.2024 - 11:57 |
 | [[Definitions and Topics/CIA Triad\|CIA Triad]]                                                      | 26.04.2024 - 16:55 |
 | [[Tool Deep-Dives/Python/Python Introduction\|Python Introduction]]                                  | 16.04.2024 - 13:26 |
