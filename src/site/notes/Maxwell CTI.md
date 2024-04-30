@@ -22,6 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                           | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                 | 2024.04.30 - 11:44 |
 | [[Maxwell CTI\|Maxwell CTI]]                                                                                                | 2024.04.29 - 16:46 |
 | [[Definitions and Topics/Incident Response Plan\|Incident Response Plan]]                                                   | 2024.04.29 - 16:46 |
 | [[Definitions and Topics/CSIRT\|CSIRT]]                                                                                     | 2024.04.29 - 16:45 |
@@ -36,7 +37,6 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Definitions and Topics/STRIDE\|STRIDE]]                                                                                   | 2024.04.29 - 16:44 |
 | [[Definitions and Topics/Threat Modeling\|Threat Modeling]]                                                                 | 2024.04.29 - 16:03 |
 | [[Tool Deep-Dives/Burp Suite\|Burp Suite]]                                                                                  | 2024.04.29 - 13:13 |
-| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                 | 2024.04.28 - 15:51 |
 | [[Definitions and Topics/PII\|PII]]                                                                                         | 2024.04.27 - 11:57 |
 | [[Definitions and Topics/CIA Triad\|CIA Triad]]                                                                             | 2024.04.26 - 16:55 |
 | [[Tool Deep-Dives/Python/Python Introduction\|Python Introduction]]                                                         | 2024.04.16 - 13:26 |
