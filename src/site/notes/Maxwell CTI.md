@@ -22,6 +22,11 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                           | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| [[Tool Deep-Dives/OSINT/Wappalyzer\|Wappalyzer]]                                                                            | 2024.04.30 - 13:59 |
+| [[Tool Deep-Dives/OSINT/dirb\|dirb]]                                                                                        | 2024.04.30 - 13:59 |
+| [[Tool Deep-Dives/OSINT/Gobuster\|Gobuster]]                                                                                | 2024.04.30 - 13:58 |
+| [[Tool Deep-Dives/OSINT/ffuf\|ffuf]]                                                                                        | 2024.04.30 - 13:51 |
+| [[Tool Deep-Dives/Git\|Git]]                                                                                                | 2024.04.30 - 13:40 |
 | [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                 | 2024.04.30 - 11:49 |
 | [[Maxwell CTI\|Maxwell CTI]]                                                                                                | 2024.04.29 - 16:46 |
 | [[Definitions and Topics/Incident Response Plan\|Incident Response Plan]]                                                   | 2024.04.29 - 16:46 |
@@ -42,10 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Tool Deep-Dives/Python/Python Introduction\|Python Introduction]]                                                         | 2024.04.16 - 13:26 |
 | [[Tool Deep-Dives/Linux/lnav\|lnav]]                                                                                        | 2024.04.16 - 13:17 |
 | [[Tool Deep-Dives/SpiderSuite\|SpiderSuite]]                                                                                | 2024.04.02 - 14:05 |
-| [[Tool Deep-Dives/OSINT/OSINT Checklist\|OSINT Checklist]]                                                                  | 2024.04.02 - 14:03 |
-| [[Tool Deep-Dives/OSINT/Google Dorking\|Google Dorking]]                                                                    | 2024.04.02 - 14:02 |
-| [[Career Growth/Discord Comments and Job Hunting\|Discord Comments and Job Hunting]]                                        | 2024.04.02 - 12:54 |
-| [[Tool Deep-Dives/MITRE Engage\|MITRE Engage]]                                                                              | 2024.04.01 - 16:42 |
-| [[Definitions and Topics/EQL\|EQL]]                                                                                         | 2024.04.01 - 16:18 |
 
 { .block-language-dataview}
