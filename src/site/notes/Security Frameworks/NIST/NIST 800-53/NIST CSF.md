@@ -43,8 +43,11 @@
 ## The Core
 1. There are six core Functions:
 	1. Govern
-		1. The most *core* of core functions, it's critical to integrating the other Functions into an organization
-		2. Governance "informs how an organization will implement the other five Functions."
+		1. The newest and most *core* of core functions
+			1. It's critical to integrating the other Functions into an organization
+		2. Built with new and reorganized categories from the other functions
+			3. When using the [CSF 2.0 Reference Tool](https://csrc.nist.gov/Projects/Cybersecurity-Framework/Filters#/csf/filters), you will see "Withdrawn" categories and subcategories that now match to Governance
+		3. Governance "informs how an organization will implement the other five Functions."
 	2. Identify
 		1. Identify and understand the cybersecurity risks for your organization
 	3. Protect
@@ -52,11 +55,27 @@
 	4. Detect
 		1. How the organization detects and analyzes attacks and breaches.
 	5. Respond
-		1. Incident response
+		1. Incident response and mitigation
 	6. Recover
 		1. Restoring operation to impacted systems
 2. Each *core function* is composed of *categories* and *subcategories*
+	1. Categories and subcategories use shorthand identifiers
+		1. Function.*Category*-**Subcategory**
+			1. e.g., "GV.*OV*-**01**" would be Governance Oversight, subcategory 01
 
+## CSF Organizational Profiles
+> More coming...
+
+## CSF Tiers
+> More coming...
+
+## [CSF 2.0 Reference Tool](https://csrc.nist.gov/Projects/Cybersecurity-Framework/Filters#/csf/filters)
+1. Contains a full list of functions, categories, and subcategories
+	1. Also lists one or more *Implementation examples* per subcategory
+	2. Items that were changed between CSF 1.1 and 2.0 are highlighted and detailed
+2. Allows you to easily search, filter, and export functions and categories
+	1. Can export as JSON or .xlsx file
+		1. Excel Spreadsheet output is configured as a sortable table
 
 
 # Resources
@@ -67,5 +86,5 @@
 
 #### Supplemental
 [Hands on with the NIST Cybersecurity Framework 2.0 w/ Nathan Sweaney - YouTube](https://www.youtube.com/watch?v=BrWw62XCQg0)
-- 1 hour long
+- 1 hour long, starts going over the CSF around 22:30
 - Excellent short video discussing the new CSF 2.0 framework
