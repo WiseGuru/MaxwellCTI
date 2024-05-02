@@ -2,36 +2,60 @@
 {"dg-publish":true,"permalink":"/security-frameworks/nist/nist-800-53/nist-csf/"}
 ---
 
-> If you are just getting started, I recommend [just reading it](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf) since it's only **32 pages** long. From the *Introduction* to *Appendix A* is **15 pages.** 
+> If you are just getting started, I recommend [just reading it](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf) since it's only **32 pages** long.
+>  From the *Introduction* to *Appendix A* is **15 pages**; it's not that much.
 
 ## What is it?
-1. The CSF provides a *high-level overview of cybersecurity* concepts and outlines *six core functions:* Govern, Identify, Protect, Detect, Respond, and Recover.
-2. According the NIST, the *CSF* "provides guidance to industry, government agencies, and other organizations to manage cybersecurity risks."^[[nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf)]
-	1. "It offers a *taxonomy of high-level cybersecurity outcomes* that can be used by *any organization*... to better **understand**, **assess**, **prioritize**, and **communicate** its cybersecurity efforts."
-	2. "The CSF does not prescribe how outcomes should be achieved."
-		1. "Rather, it links to online resources that provide additional guidance on practices and controls that could be used to achieve those outcomes."
-3. The CSF is composed of three components:
+1. The CSF provides a *high-level overview of cybersecurity* concepts and outlines **six Core functions** to achieve risk management outcomes: Govern, Identify, Protect, Detect, Respond, and Recover.
+2. The CSF is not prescriptive, and is intended to be used with other frameworks and resources
+	2. Its goal is to help organizations *identify and assess*, *prioritize*, and *communicate* cyber risks
+		1. Identify and assess
+			1. Describe the security posture of the organization
+			2. Determine gaps and progress towards addressing gaps
+		2. Prioritize
+			1. Prioritize and action against cybersecurity risks in alignment with an organization's mission and governance expectations, and regulatory and legal requirements
+		3. Communicate
+			1. Provide a common language for high-level cybersecurity risk management
+
+
+## CSF Overview
+1. CSF is composed of three components:
 	1. *CSF Core*
-		1. This is the broad outcomes mentioned earlier
-		2. Intended to be understandable by executives and practitioners alike
+		1. Uses 6 functions to identify cybersecurity risk outcomes
+		2. Intended to be understandable by *executives*, *managers*, and *practitioners* alike
 	2. *CSF Organizational Profiles*
 		1. Mechanisms for building an organization's profile that maps to the Core
 		2. Can be used to understand *current* security posture or a desired *target* posture.
 	3. *CSF Tiers*
 		1. A method of characterizing the cybersecurity "rigor" of an organizational profile
-4. Additional Resources
+		2. Range from Tier 1^[Partial implementation or limited awareness of risk.] (lowest) to Tier 4^[Highly integrated into the organization or highly adaptive to cybersecurity risks.] (highest)
+2. Additional resources on the [NIST CSF website](https://www.nist.gov/cyberframework):
 	1. Informative References
+		1. Real-world outcomes
 	2. Implementation Examples
+		1. Examples on how certain outcomes can be achieved
 	3. Quick-Start Guides
+		1. "A supplementary resource that gives brief, actionable guidance on specific CSF-related topics."
 	4. Community Profiles and Organizational Profile Templates
+3. Working with cybersecurity risks
+	1. The goals of the 
 
-## Six core functions
-1. Govern
-2. Identify
-3. Protect
-4. Detect
-5. Respond
-6. Recover
+## The Core
+1. There are six core Functions:
+	1. Govern
+		1. The most *core* of core functions, it's critical to integrating the other Functions into an organization
+		2. Governance "informs how an organization will implement the other five Functions."
+	2. Identify
+		1. Identify and understand the cybersecurity risks for your organization
+	3. Protect
+		1. Safeguards to manage risk.
+	4. Detect
+		1. How the organization detects and analyzes attacks and breaches.
+	5. Respond
+		1. Incident response
+	6. Recover
+		1. Restoring operation to impacted systems
+2. Each *core function* is composed of *categories* and *subcategories*
 
 
 
