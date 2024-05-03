@@ -22,6 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                           | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| [[Social Networking/SOC 2 Type II\|SOC 2 Type II]]                                                                          | 2024.05.03 - 10:14 |
 | [[Security Frameworks/NIST/NIST 800-53/NIST CSF\|NIST CSF]]                                                                 | 2024.05.02 - 16:06 |
 | [[Security Frameworks/NIST/NIST 800-53/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                 | 2024.05.02 - 13:01 |
 | [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                 | 2024.05.02 - 12:48 |
@@ -46,6 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Tool Deep-Dives/Burp Suite\|Burp Suite]]                                                                                  | 2024.04.29 - 13:13 |
 | [[Definitions and Topics/PII\|PII]]                                                                                         | 2024.04.27 - 11:57 |
 | [[Definitions and Topics/CIA Triad\|CIA Triad]]                                                                             | 2024.04.26 - 16:55 |
-| [[Tool Deep-Dives/Python/Python Introduction\|Python Introduction]]                                                         | 2024.04.16 - 13:26 |
 
 { .block-language-dataview}
