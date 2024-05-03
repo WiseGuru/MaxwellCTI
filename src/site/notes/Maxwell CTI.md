@@ -22,10 +22,10 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                           | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| [[Social Networking/SOC 2 Type II\|SOC 2 Type II]]                                                                          | 2024.05.03 - 10:14 |
+| [[Social Networking/SOC 2 Type II\|SOC 2 Type II]]                                                                          | 2024.05.03 - 10:36 |
+| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                 | 2024.05.03 - 10:23 |
 | [[Security Frameworks/NIST/NIST 800-53/NIST CSF\|NIST CSF]]                                                                 | 2024.05.02 - 16:06 |
 | [[Security Frameworks/NIST/NIST 800-53/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                 | 2024.05.02 - 13:01 |
-| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                 | 2024.05.02 - 12:48 |
 | [[Tool Deep-Dives/OSINT/Wappalyzer\|Wappalyzer]]                                                                            | 2024.04.30 - 13:59 |
 | [[Tool Deep-Dives/OSINT/dirb\|dirb]]                                                                                        | 2024.04.30 - 13:59 |
 | [[Tool Deep-Dives/OSINT/Gobuster\|Gobuster]]                                                                                | 2024.04.30 - 13:58 |
