@@ -22,6 +22,12 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                           | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| [[Definitions and Topics/Subdomain Enumeration\|Subdomain Enumeration]]                                                     | 2024.05.06 - 14:39 |
+| [[Tool Deep-Dives/OSINT/Sublist3r\|Sublist3r]]                                                                              | 2024.05.06 - 14:38 |
+| [[Tool Deep-Dives/OSINT/ffuf\|ffuf]]                                                                                        | 2024.05.06 - 14:38 |
+| [[Tool Deep-Dives/OSINT/crt-sh\|crt-sh]]                                                                                    | 2024.05.06 - 14:04 |
+| [[Definitions and Topics/Look-alike domains\|Look-alike domains]]                                                           | 2024.05.06 - 13:57 |
+| [[Resources and Communities\|Resources and Communities]]                                                                    | 2024.05.03 - 10:47 |
 | [[Social Networking/SOC 2 Type II\|SOC 2 Type II]]                                                                          | 2024.05.03 - 10:36 |
 | [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                 | 2024.05.03 - 10:23 |
 | [[Security Frameworks/NIST/NIST 800-53/NIST CSF\|NIST CSF]]                                                                 | 2024.05.02 - 16:06 |
@@ -29,7 +35,6 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Tool Deep-Dives/OSINT/Wappalyzer\|Wappalyzer]]                                                                            | 2024.04.30 - 13:59 |
 | [[Tool Deep-Dives/OSINT/dirb\|dirb]]                                                                                        | 2024.04.30 - 13:59 |
 | [[Tool Deep-Dives/OSINT/Gobuster\|Gobuster]]                                                                                | 2024.04.30 - 13:58 |
-| [[Tool Deep-Dives/OSINT/ffuf\|ffuf]]                                                                                        | 2024.04.30 - 13:51 |
 | [[Tool Deep-Dives/Git\|Git]]                                                                                                | 2024.04.30 - 13:40 |
 | [[Maxwell CTI\|Maxwell CTI]]                                                                                                | 2024.04.29 - 16:46 |
 | [[Definitions and Topics/Incident Response Plan\|Incident Response Plan]]                                                   | 2024.04.29 - 16:46 |
@@ -42,10 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Definitions and Topics/AAA\|AAA]]                                                                                         | 2024.04.29 - 16:44 |
 | [[Definitions and Topics/Bell-LaPadula Model\|Bell-LaPadula Model]]                                                         | 2024.04.29 - 16:44 |
 | [[Definitions and Topics/Biba Integrity Model\|Biba Integrity Model]]                                                       | 2024.04.29 - 16:44 |
-| [[Definitions and Topics/STRIDE\|STRIDE]]                                                                                   | 2024.04.29 - 16:44 |
-| [[Definitions and Topics/Threat Modeling\|Threat Modeling]]                                                                 | 2024.04.29 - 16:03 |
-| [[Tool Deep-Dives/Burp Suite\|Burp Suite]]                                                                                  | 2024.04.29 - 13:13 |
-| [[Definitions and Topics/PII\|PII]]                                                                                         | 2024.04.27 - 11:57 |
-| [[Definitions and Topics/CIA Triad\|CIA Triad]]                                                                             | 2024.04.26 - 16:55 |
 
 { .block-language-dataview}
