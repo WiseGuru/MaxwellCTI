@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/tool-deep-dives/osint/ffuf/"}
 ---
 
-#### fuff - Fuzz Faster U Fool
+#### ffuf - Fuzz Faster U Fool
 - "A fast web fuzzer written in Go."^[[GitHub - ffuf/ffuf: Fast web fuzzer written in Go](https://github.com/ffuf/ffuf)]
 - Full usage can be found [on its GitHub readme](https://github.com/ffuf/ffuf?tab=readme-ov-file#usage)
 - Input a wordlist, and it searches a website for any pages with corresponding names
