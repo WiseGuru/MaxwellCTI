@@ -8,7 +8,7 @@ Unfortunately, the lab VM setup is not always super straight forward. It's a Win
 
 This is my guide/recommendations to configure the VM and have it ready to go.
 
-> **Warm Tip**:^[I always loved this typo in manuals...] quickly disable Windows Update in the VM by modifying local group policy. `gpedit.msc`, expand Computer Configuration>Administrative Templates>Windows Components>Windows Updates.
+> **Warm Tip**:^[I always loved this mistranslation in manuals...] quickly disable Windows Update in the VM by modifying local group policy. `gpedit.msc`, expand Computer Configuration>Administrative Templates>Windows Components>Windows Updates.
 > Select *Configure Automatic Updates*, click the radio button for *Disable*, then click *Apply*.
 
 # Pre-Config and Setup
@@ -27,7 +27,7 @@ BHIS provides a VM troubleshooting guide;^[Which is provided in the class, I bel
 
 Depending on the error you get, *you may be tempted to modify the VM*; **don't do it.** The VM uses [Docker](https://www.docker.com/) to run Ubuntu on Windows 10, and your computer needs to be configured properly to handle VMs running VMs. 
 
-Personally, I had to *disable Memory Integrity* on my Windows 11 computers in order for the VM to run properly.
+Personally, I had to *[[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/Disable Windows Memory Integrity\|Disable Windows Memory Integrity]]* on my Windows 11 computers in order for the VM to run properly.
 ## Disable Updates
 Assuming you've now booted into Windows, it's important that you disable System Updates. For that matter, *don't update anything while running the VM unless instructed to do so,* as it might cause problems with how the labs are expected to operate.
 
@@ -71,6 +71,8 @@ Get-Service -Name wuauserv,bits,UsoSvc,InstallService
 ```
 The output should look like this:
 ![00-BHIS-SOCC-lab-Config.png](/img/user/Attachments/00-BHIS-SOCC-lab-Config.png)
+
+
 # Metadata
 
 ### Sources
