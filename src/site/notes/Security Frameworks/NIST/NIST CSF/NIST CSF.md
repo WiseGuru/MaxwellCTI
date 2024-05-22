@@ -5,6 +5,7 @@
 > If you are just getting started, I recommend [just reading it](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf) since it's only **32 pages** long.
 >  From the *Introduction* to *Appendix A* is **15 pages**; it's not that much.
 
+
 ## What is it?
 1. The CSF provides a *high-level overview of cybersecurity* concepts and outlines **six Core functions** to achieve risk management outcomes: Govern, Identify, Protect, Detect, Respond, and Recover.
 2. The CSF is not prescriptive, and is intended to be used with other frameworks and resources
@@ -40,8 +41,10 @@
 3. Working with cybersecurity risks
 	1. The goals of the 
 
-## The Core
-1. There are six core Functions:
+## The Core Functions
+> I found a neat GIF on LinkedIn summarizing the Core Functions and was going to link it here, but the constant animation constantly grabbed my attention and I had to get rid of it.
+
+1. There are six core Functions in the CSF:
 	1. Govern
 		1. The newest and most *core* of core functions
 			1. It's critical to integrating the other Functions into an organization
@@ -61,7 +64,7 @@
 2. Each *core function* is composed of *categories* and *subcategories*
 	1. Categories and subcategories use shorthand identifiers
 		1. Function.*Category*-**Subcategory**
-			1. e.g., "GV.*OV*-**01**" would be Governance Oversight, subcategory 01
+			1. e.g., "GV.*OV*-**01**" would be Governance *Oversight*, subcategory **01**
 
 ## CSF Organizational Profiles
 > More coming...
