@@ -75,7 +75,6 @@ While this really discusses the RMF,
 		2. Gerald specifically mentions the [[NIST SP 800-15\|NIST SP 800-15]], but it was withdrawn in September of the year he published his video
 	2. If you have any challenges implementing controls, NIST has implementation guides for most systems
 		1. Offer tons of instructions and things you can do
-	3. [Definitive Guide to RMF (Actionable plan for FISMA Compliance) - YouTube](https://youtu.be/8zxzqpw0jBA?si=d2Z7dlXtEXcLZQkz&t=465)
 6. **Assess**: Bring in an independent auditor to inspect your controls
 	1. For [[FISMA\|FISMA]] or anything else, you will need an external auditor
 		1. If this is purely internal, can do it yourself, but it's better to have someone else verify
