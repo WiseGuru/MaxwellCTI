@@ -10,30 +10,29 @@ The course uses cookies to track progress through the slides, which is not ideal
 
 ```mermaid
 flowchart TD
+    A[NIST CSF] --> B{NIST RMF}
 
-    A[NIST CSF] --> B{NIST RMF}
+    B --> C(1. Categorize)
+    C --> |Impact Requirements| D[FIPS 199 and 200]
+    C --> |Impact Assignment| E[NIST 800-60]
+    C --> |Assess Risk| P[NIST 800-30]
 
-    B --> C(1. Categorize)
-    C --> |Impact Requirements| D[FIPS 199 and 200]
-    C --> |Impact Assignment| E[NIST 800-60]
-    C --> |Assess Risk| P[NIST 800-30]
-    
-    B --> M("`**4**. Assess`")
-    M -->|Review Controls| G[NIST 800-53]
-    M -->|Review Risk| P[NIST 800-30]
-    
-    B --> F(2. Select)
-    F -->|Select Controls| G[NIST 800-53]
-    
-    B --> H(3. Implement)
-    H --> I{{Contingency Planning - NIST 800-34
-    Connecting IT Systems - NIST 800-47
-    Incident Response - NIST 800-61
-    Configuration Management - NIST 800-128
-    }}
-    
-    B --> N(5. Authorize)
-    B --> O(6. Monitor)
+    B --> M("4. Assess")
+    M -->|Review Controls| G[NIST 800-53]
+    M -->|Review Risk| P[NIST 800-30]
+
+    B --> F(2. Select)
+    F -->|Select Controls| G[NIST 800-53]
+
+    B --> H(3. Implement)
+    H --> I{{"Contingency Planning - NIST 800-34
+    Connecting IT Systems - NIST 800-47
+    Incident Response - NIST 800-61
+    Configuration Management - NIST 800-128"}}
+
+    B --> N(5. Authorize)
+    B --> O(6. Monitor)
+
 ```
 
 #### Additional
