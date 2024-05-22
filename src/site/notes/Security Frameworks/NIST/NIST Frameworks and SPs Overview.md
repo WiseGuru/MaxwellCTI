@@ -8,6 +8,8 @@ NIST actually has a series of free online courses to introduce anyone to the RMF
 
 The course uses cookies to track progress through the slides, which is not ideal, but I guess better than creating an account.
 
+#### Rough Flowchart
+> Note that I moved the fourth step, **Assess**, to sit between steps 1 and 2, because I felt it made the chart easier to read.
 ```mermaid
 flowchart TD
     A[NIST CSF] --> B{NIST RMF}
@@ -35,7 +37,7 @@ flowchart TD
 
 ```
 
-#### Additional
+#### Additional Resources
 **RiskOptics**
 This guide ([Complete Guide to the NIST Cybersecurity Framework — RiskOptics](https://reciprocity.com/resource-center/complete-guide-to-the-nist-cybersecurity-framework/)) provides a thorough introduction to the NIST Cybersecurity Framework and how it interrelates.
 
