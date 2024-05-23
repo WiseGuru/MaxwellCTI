@@ -6,7 +6,7 @@
 ### What's the recommended order for study leading to the 800-53?
 NIST actually has a series of free online courses to introduce anyone to the RMF (800-37), 800-53, and the 800-53A and 53B, accessible here: [NIST Risk Management Framework | CSRC](https://csrc.nist.gov/projects/risk-management/rmf-courses)
 
-The course uses cookies to track progress through the slides and you're not aloud to skip around and can't adjust the speed, which is not ideal,^[Actually kind of sucks, means you can't continue progress easily on another device.] but I guess better than creating an account.
+The course uses cookies to track progress through the slides and you're not allowed to skip forward and can't adjust the speed, which is not ideal,^[It actually kind of sucks, because it means you can't continue progress easily on another device.] but I guess it's better than creating an account.^[One COULD theoretically use tools like Move Mouse and Greenshot (which gives precise mouse coordinates) to automate mouse movements and clicks to skip to the last two seconds of the video progress bar and then click "Next" to progress the slides, running it while taking a break, and then coming back later to peruse the slides and lectures at your leisure.]
 
 #### Rough Flowchart
 ```mermaid
