@@ -36,7 +36,7 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Tool Deep-Dives/OSINT/crt-sh\|crt-sh]]                                                                                     | 2024.05.06 - 14:04 |
 | [[Definitions and Topics/Look-alike domains\|Look-alike domains]]                                                            | 2024.05.06 - 13:57 |
 | [[Resources and Communities\|Resources and Communities]]                                                                     | 2024.05.03 - 10:47 |
-| [[Social Networking/SOC 2 Type II\|SOC 2 Type II]]                                                                           | 2024.05.03 - 10:36 |
+| [[Security Frameworks/SOC 2 Type II\|SOC 2 Type II]]                                                                         | 2024.05.03 - 10:36 |
 | [[Tool Deep-Dives/OSINT/Wappalyzer\|Wappalyzer]]                                                                             | 2024.04.30 - 13:59 |
 | [[Tool Deep-Dives/OSINT/dirb\|dirb]]                                                                                         | 2024.04.30 - 13:59 |
 | [[Tool Deep-Dives/OSINT/Gobuster\|Gobuster]]                                                                                 | 2024.04.30 - 13:58 |
