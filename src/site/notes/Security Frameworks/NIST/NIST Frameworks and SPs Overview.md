@@ -19,7 +19,7 @@ flowchart TD
   
     B --> Z("`**0. Prepare**`")
   
-    Z -->|Identify systems, stakeholders, and processes| C("`**1. Categorize**`")
+    Z --> |Identify systems, stakeholders, and processes| C("`**1. Categorize**`")
     C --> |Impact Requirements| D[FIPS 199 and 200]
     C --> |Impact Assignment| E[NIST 800-60]
     C --> |Assess Risk| P{{"Guide for Risk Assessments - NIST 800-30
@@ -27,7 +27,7 @@ flowchart TD
     Managing InfoSec Risk - NIST 800-39"}}
   
     D & E & P --> F("`**2. Select**`")
-    F -->|Select Controls| G[NIST 800-53]
+    F --> |Select Controls| G[NIST 800-53]
   
     G --> H("`**3. Implement**`")
     H --> I{{"Contingency Planning - NIST 800-34
@@ -36,12 +36,17 @@ flowchart TD
     Configuration Management - NIST 800-128"}}
   
     I --> M("`**4. Assess**`")
-    M -->|Test Controls and Plan Remediation| G
-
-    M --> N("`**5. Authorize**`")
+    M --> |Test Controls| R("NIST 800-53A")
+    R --> |Plan Remediation| G
+ 
+    R --> N("`**5. Authorize**`")
     N --> O("`**6. Monitor**`")
-    O --> Z
+    O --> |Continuous monitoring for changes| Q("InfoSec Continuous
+    Monitoring - NIST 800-137")
+    Q --> |Periodic or change-directed review| Z
 ```
+
+![NIST Frameworks and SPs Overview.png](/img/user/Attachments/NIST%20Frameworks%20and%20SPs%20Overview.png)^[I originally found this chart in NIST's free course, but I couldn't find a high-quality version anywhere, so I capped this from this video: [Module 8 - US Government NIST Cybersecurity RMF and ATO Process 2 - YouTube](https://www.youtube.com/watch?v=dG4WQnBOKE8)]
 
 #### Additional Resources
 
