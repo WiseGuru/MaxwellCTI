@@ -22,8 +22,8 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                            | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                              | 2024.05.22 - 16:12 |
-| [[Security Frameworks/NIST/NIST SP 800-37\|NIST SP 800-37]]                                                                  | 2024.05.22 - 11:52 |
+| [[Security Frameworks/NIST/NIST SP 800-37\|NIST SP 800-37]]                                                                  | 2024.05.23 - 10:10 |
+| [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                              | 2024.05.23 - 09:33 |
 | [[Security Frameworks/NIST/NIST CSF/NIST CSF\|NIST CSF]]                                                                     | 2024.05.22 - 09:18 |
 | [[Security Frameworks/NIST/NIST CSF/CSF Resources\|CSF Resources]]                                                           | 2024.05.17 - 14:34 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/Disable Windows Memory Integrity\|Disable Windows Memory Integrity]] | 2024.05.16 - 10:26 |
