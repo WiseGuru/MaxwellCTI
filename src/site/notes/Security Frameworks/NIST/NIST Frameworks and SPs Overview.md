@@ -12,33 +12,68 @@ The course uses cookies to track progress through the slides, which is not ideal
 > Note that I moved the fourth step, **Assess**, to sit between steps 1 and 2, because I felt it made the chart easier to read.
 ```mermaid
 flowchart TD
-    A[NIST CSF] --> B{NIST RMF}
 
-    B --> C(1. Categorize)
-    C --> |Impact Requirements| D[FIPS 199 and 200]
-    C --> |Impact Assignment| E[NIST 800-60]
-    C --> |Assess Risk| P{{"Guide for Risk Assessments - NIST 800-30
-    RMF Itself - NIST 800-37
-    Managing InfoSec Risk - NIST 800-39"}}
+    A["NIST CSF
 
-    B --> M("4. Assess")
-    M -->|Review Controls| G[NIST 800-53]
-    M -->|Review Risk| P{{"Guide for Risk Assessments - NIST 800-30
-    RMF Itself - NIST 800-37
-    Managing InfoSec Risk - NIST 800-39"}}
+    A broad framework outlining
 
-    B --> F(2. Select)
-    F -->|Select Controls| G[NIST 800-53]
+    organizational security"] --> B{"NIST RMF
 
-    B --> H(3. Implement)
-    H --> I{{"Contingency Planning - NIST 800-34
-    Connecting IT Systems - NIST 800-47
-    Incident Response - NIST 800-61
-    Configuration Management - NIST 800-128"}}
+    Actionable steps to
 
-    B --> N(5. Authorize)
-    B --> O(6. Monitor)
+    apply the CSF"}
 
+  
+
+    B --> Z("`**0. Prepare**`")
+
+  
+
+    Z -->|Identify systems, stakeholders, and processes| C("`**1. Categorize**`")
+
+    C --> |Impact Requirements| D[FIPS 199 and 200]
+
+    C --> |Impact Assignment| E[NIST 800-60]
+
+    C --> |Assess Risk| P{{"Guide for Risk Assessments - NIST 800-30
+
+    RMF Itself - NIST 800-37
+
+    Managing InfoSec Risk - NIST 800-39"}}
+
+  
+
+    D & E & P --> F("`**2. Select**`")
+
+    F -->|Select Controls| G[NIST 800-53]
+
+  
+
+    G --> H("`**3. Implement**`")
+
+    H --> I{{"Contingency Planning - NIST 800-34
+
+    Connecting IT Systems - NIST 800-47
+
+    Incident Response - NIST 800-61
+
+    Configuration Management - NIST 800-128"}}
+
+  
+
+    I --> M("`**4. Assess**`")
+
+    M -->|Test Controls and Plan Remediation| G
+
+  
+  
+  
+
+    M --> N("`**5. Authorize**`")
+
+    N --> O("`**6. Monitor**`")
+
+    O --> Z
 ```
 
 #### Additional Resources
