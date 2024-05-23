@@ -28,8 +28,9 @@ flowchart TD
   
     D & E & P --> F("`**2. Select**`")
     F --> |Select Controls| G[NIST 800-53]
+    G --> |Tailoring controls and ODPs| S[NIST 800-53B]
   
-    G --> H("`**3. Implement**`")
+    S --> H("`**3. Implement**`")
     H --> I{{"Contingency Planning - NIST 800-34
     Connecting IT Systems - NIST 800-47
     Incident Response - NIST 800-61
