@@ -4,12 +4,11 @@
 
 
 ### What's the recommended order for study leading to the 800-53?
-NIST actually has a series of free online courses to introduce anyone to the RMF, 800-53, and the 800-53A and 53B, accessible here: [NIST Risk Management Framework | CSRC](https://csrc.nist.gov/projects/risk-management/rmf-courses)
+NIST actually has a series of free online courses to introduce anyone to the RMF (800-37), 800-53, and the 800-53A and 53B, accessible here: [NIST Risk Management Framework | CSRC](https://csrc.nist.gov/projects/risk-management/rmf-courses)
 
-The course uses cookies to track progress through the slides, which is not ideal, but I guess better than creating an account.
+The course uses cookies to track progress through the slides and you're not aloud to skip around and can't adjust the speed, which is not ideal,^[Actually kind of sucks, means you can't continue progress easily on another device.] but I guess better than creating an account.
 
 #### Rough Flowchart
-> Note that I moved the fourth step, **Assess**, to sit between steps 1 and 2, because I felt it made the chart easier to read.
 ```mermaid
 flowchart TD
     A["NIST CSF
