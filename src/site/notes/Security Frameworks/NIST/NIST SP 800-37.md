@@ -48,7 +48,7 @@
 		2. If you have any challenges implementing controls, NIST has implementation guides for most systems
 			1. Offer tons of instructions and things you can do
 	5. **Assess**: Bring in an independent auditor to inspect your controls
-		1. For [[FISMA\|FISMA]] or anything else, you will need an external auditor
+		1. For [[Security Frameworks/NIST/FISMA\|FISMA]] or anything else, you will need an external auditor
 			1. If this is purely internal, can do it yourself, but it's better to have someone else verify
 	6. **Authorize**: Authorize the system
 		1. Basically just a memo from the person responsible authorizing the system to operate
