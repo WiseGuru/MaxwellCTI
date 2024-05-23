@@ -3,7 +3,12 @@
 ---
 
 ## What is it?
-1. "A SOC 2 Type 2 Report is a Service Organization Control (SOC) audit on how a cloud-based service provider handles sensitive information. It covers both the suitability of a company’s controls and its operating effectiveness."^[[SOC 2 Type 2 Compliance Guide: Everything You Need To Know | StrongDM](https://www.strongdm.com/blog/what-is-soc-2-type-2)]
+- "A SOC 2 Type 2 Report is a Service Organization Control (SOC) audit on how a cloud-based service provider handles sensitive information. It covers both the suitability of a company’s controls and its operating effectiveness."^[[SOC 2 Type 2 Compliance Guide: Everything You Need To Know | StrongDM](https://www.strongdm.com/blog/what-is-soc-2-type-2)]
+- I'm not sure how it's actually perceived in the industry, but feels more like a marketing gimmick/exercise than a security exercise and ripe for abuse by limiting what's within scope.
+	- Ostendio has a blog which discusses something similar:
+		- "... the ability to manipulate the scope has led to significant abuse of this audit. This ability to manipulate the scope means that it is difficult to compare one SOC 2 with another and also allows organizations to avoid auditing areas that are perhaps their weakest link."^[[The Rise and Fall of SOC 2 audits](https://www.ostendio.com/blog/the-rise-and-fall-of-soc2-audits)]
+	- It has to be conducted in good faith and paired with something like the NIST [[Security Frameworks/NIST/NIST SP 800-37\|RMF]] to actually be effective
+
 
 
 # Resources
@@ -13,7 +18,7 @@
 
 #### Supplemental
 ##### SecureFrame
-They seem to have a lot of material freely available online.
+- They seem to have a lot of material freely available online.
 - [SOC 2 Type II Compliance: Definition, Requirements, and Why You Need It](https://secureframe.com/blog/soc-2-type-ii)
 	- Overview of AICPA
  - [Your Step-by-Step SOC 2® Audit Checklist](https://secureframe.com/blog/soc-2-audit-checklist)
