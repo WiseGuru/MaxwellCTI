@@ -22,6 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                            | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Security Frameworks/SOC 2 Type II\|SOC 2 Type II]]                                                                         | 2024.05.23 - 16:16 |
 | [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                  | 2024.05.23 - 15:55 |
 | [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                              | 2024.05.23 - 15:53 |
 | [[Security Frameworks/NIST/FISMA\|FISMA]]                                                                                    | 2024.05.23 - 10:42 |
@@ -36,7 +37,6 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Tool Deep-Dives/OSINT/crt-sh\|crt-sh]]                                                                                     | 2024.05.06 - 14:04 |
 | [[Definitions and Topics/Look-alike domains\|Look-alike domains]]                                                            | 2024.05.06 - 13:57 |
 | [[Resources and Communities\|Resources and Communities]]                                                                     | 2024.05.03 - 10:47 |
-| [[Security Frameworks/SOC 2 Type II\|SOC 2 Type II]]                                                                         | 2024.05.03 - 10:36 |
 | [[Tool Deep-Dives/OSINT/Wappalyzer\|Wappalyzer]]                                                                             | 2024.04.30 - 13:59 |
 | [[Tool Deep-Dives/OSINT/dirb\|dirb]]                                                                                         | 2024.04.30 - 13:59 |
 | [[Tool Deep-Dives/OSINT/Gobuster\|Gobuster]]                                                                                 | 2024.04.30 - 13:58 |
