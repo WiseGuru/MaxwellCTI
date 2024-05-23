@@ -22,6 +22,8 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                            | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Security Frameworks/NIST/FISMA\|FISMA]]                                                                                    | 2024.05.23 - 10:42 |
+| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                  | 2024.05.23 - 10:27 |
 | [[Security Frameworks/NIST/NIST SP 800-37\|NIST SP 800-37]]                                                                  | 2024.05.23 - 10:10 |
 | [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                              | 2024.05.23 - 09:33 |
 | [[Security Frameworks/NIST/NIST CSF/NIST CSF\|NIST CSF]]                                                                     | 2024.05.22 - 09:18 |
@@ -35,7 +37,6 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Definitions and Topics/Look-alike domains\|Look-alike domains]]                                                            | 2024.05.06 - 13:57 |
 | [[Resources and Communities\|Resources and Communities]]                                                                     | 2024.05.03 - 10:47 |
 | [[Social Networking/SOC 2 Type II\|SOC 2 Type II]]                                                                           | 2024.05.03 - 10:36 |
-| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                  | 2024.05.03 - 10:23 |
 | [[Tool Deep-Dives/OSINT/Wappalyzer\|Wappalyzer]]                                                                             | 2024.04.30 - 13:59 |
 | [[Tool Deep-Dives/OSINT/dirb\|dirb]]                                                                                         | 2024.04.30 - 13:59 |
 | [[Tool Deep-Dives/OSINT/Gobuster\|Gobuster]]                                                                                 | 2024.04.30 - 13:58 |
@@ -46,6 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Definitions and Topics/Business Continuity and Disaster Recovery Guide\|Business Continuity and Disaster Recovery Guide]]  | 2024.04.29 - 16:45 |
 | [[Definitions and Topics/Privileged Identity Management\|Privileged Identity Management]]                                    | 2024.04.29 - 16:45 |
 | [[Definitions and Topics/Privileged Access Management\|Privileged Access Management]]                                        | 2024.04.29 - 16:45 |
-| [[Tool Deep-Dives/OSINT/Shodan\|Shodan]]                                                                                     | 2024.04.29 - 16:45 |
 
 { .block-language-dataview}
