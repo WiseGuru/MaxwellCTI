@@ -22,8 +22,8 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                            | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                  | 2024.05.24 - 11:39 |
-| [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                              | 2024.05.24 - 11:37 |
+| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                  | 2024.05.24 - 14:13 |
+| [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                              | 2024.05.24 - 13:02 |
 | [[Security Frameworks/NIST/NIST SP 800-37\|NIST SP 800-37]]                                                                  | 2024.05.24 - 11:24 |
 | [[Definitions and Topics/GRC\|GRC]]                                                                                          | 2024.05.24 - 10:14 |
 | [[Security Frameworks/NIST/NIST 800-53/FIPS 200\|FIPS 200]]                                                                  | 2024.05.24 - 09:02 |
