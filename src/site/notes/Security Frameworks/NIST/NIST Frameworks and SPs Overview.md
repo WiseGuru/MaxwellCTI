@@ -2,13 +2,17 @@
 {"dg-publish":true,"permalink":"/security-frameworks/nist/nist-frameworks-and-s-ps-overview/"}
 ---
 
+When I was first getting oriented, I asked ChatGPT and search on places like Reddit for help. At the time I thought they were helpful, but after review, they are over-simplified and treat each document in isolation, where NIST really intends them to wrap each other in loving arms and support each other through the process.
 
+I found a common theme that's interesting, but not surprising; technical people tended to *over emphasis the importance of the 800-53* and tended to *undersell the importance of the CSF and RMF*. One could argue this is because the CSF and RMF are significantly smaller documents and go into less detail, but I think it comes down to who we are as technicians. *We get absorbed in the how, and forget about the why*. The 800-53 is an integral part of the RMF, but I believe that *using the 800-53 alone would leave you less secure than following the principles of the RMF*.
+
+I hope this helps fellow technical people to see the forest through the trees.
 ### What's the recommended order for study leading to the 800-53?
-NIST actually has a series of free online courses to introduce anyone to the RMF (800-37), 800-53, and the 800-53A and 53B, accessible here: [NIST Risk Management Framework | CSRC](https://csrc.nist.gov/projects/risk-management/rmf-courses)
+NIST has a series of *free online courses* to introduce anyone to the [[Security Frameworks/NIST/NIST SP 800-37\|RMF (800-37)]], [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53]], and the [[Security Frameworks/NIST/NIST 800-53/800-53A\|800-53A]] and [[Security Frameworks/NIST/NIST 800-53/800-53B\|800-53B]], accessible here: [NIST Risk Management Framework | CSRC](https://csrc.nist.gov/projects/risk-management/rmf-courses)
 
-The course uses cookies to track progress through the slides and you're not allowed to skip forward and can't adjust the speed, which is not ideal,^[It actually kind of sucks, because it means you can't continue progress easily on another device.] but I guess it's better than creating an account.^[One COULD theoretically use tools like Move Mouse and Greenshot (which gives precise mouse coordinates) to automate mouse movements and clicks to skip to the last two seconds of the video progress bar and then click "Next" to progress the slides, running it while taking a break, and then coming back later to peruse the slides and lectures at your leisure.]
+The complete courses are *6 hours in length* (3 for *RMF* and 3 total for *800-53*, *53A*, and *53B*). The courses use cookies to track progress through the slides. You're not allowed to skip forward and can't adjust the speed, which is not ideal,^[It actually kind of sucks, because it means you can't continue progress easily on another device.] but I guess it's better than creating an account.^[One COULD theoretically use tools like Move Mouse and Greenshot (which gives precise mouse coordinates) to automate mouse movements and clicks to skip to the last two seconds of the video progress bar and then click "Next" to progress the slides, running it while taking a break, and then coming back later to peruse the slides and lectures at your leisure.]
 
-#### Rough Flowchart
+#### Graphs
 ```mermaid
 flowchart TD
     A["NIST CSF
@@ -47,16 +51,20 @@ flowchart TD
     Q --> |Periodic or change-directed review| Z
 ```
 
-![NIST Frameworks and SPs Overview.png](/img/user/Attachments/NIST%20Frameworks%20and%20SPs%20Overview.png)^[I originally found this chart in NIST's free course, but I couldn't find a high-quality version anywhere, so I capped this from this video: [Module 8 - US Government NIST Cybersecurity RMF and ATO Process 2 - YouTube](https://www.youtube.com/watch?v=dG4WQnBOKE8)]
+![NIST-RMF.png](/img/user/Attachments/NIST-RMF.png)
+^[[Risk Management Framework (RMF) Overview - FISMA Implementation Project | CSRC](https://csrc.nist.rip/Projects/Risk-Management/Risk-Management-Framework-(RMF)-Overview)]
 
 #### Additional Resources
 
+##### RiskOptics
+This guide ([Complete Guide to the NIST Cybersecurity Framework — RiskOptics](https://reciprocity.com/resource-center/complete-guide-to-the-nist-cybersecurity-framework/)) provides a thorough introduction to the NIST Cybersecurity Framework and how it interrelates.
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/security-frameworks/nist/nist-sp-800-37/#gerald-auger-definitive-guide-to-rmf" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/security-frameworks/nist/nist-sp-800-37/#gerald-auger-definitive-guide-to-rmf-2021" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
-##### Gerald Auger Definitive Guide to RMF
+##### Gerald Auger Definitive Guide to RMF (2021)
 [Definitive Guide to RMF (Actionable plan for FISMA Compliance) - YouTube](https://www.youtube.com/watch?v=8zxzqpw0jBA)
 1. Video Overview
 	1. Duration - 15:40
@@ -77,7 +85,7 @@ flowchart TD
 		2. Conduct risk assessments and get a baseline of current risk and security practices
 		3. **Max note**: Without any practical experience myself, I feel like Gerald combined the *Prepare* and *Categorize* tasks, and I think that omission would likely make subsequent steps more difficult.
 	2. **Categorize**: Identifying potential impact
-		1. [[FIPS 199\|FIPS 199]] and [[FIPS 200\|FIPS 200]] are used to identify potential impact of a system
+		1. [[FIPS 199\|FIPS 199]] and [[Security Frameworks/NIST/NIST 800-53/FIPS 200\|FIPS 200]] are used to identify potential impact of a system
 			1. Describes the importance of a system and steps required to secure it
 		2. Impact ratings are chosen between High, Moderate, and Low
 			1. 80-90% of systems are *Moderate* impact systems
@@ -112,13 +120,8 @@ flowchart TD
 		2. Often the audits are often scheduled to be tested in a kind of sequence to prevent infrequent massive effort
 
 
-
-
 </div></div>
 
-
-##### RiskOptics
-This guide ([Complete Guide to the NIST Cybersecurity Framework — RiskOptics](https://reciprocity.com/resource-center/complete-guide-to-the-nist-cybersecurity-framework/)) provides a thorough introduction to the NIST Cybersecurity Framework and how it interrelates.
 
 ##### ChatGPT
 The list below was generated by ChatGPT, and it feels like it front loads a lot, according to the Gerald Auger video. 
@@ -138,13 +141,3 @@ The list below was generated by ChatGPT, and it feels like it front loads a lot,
 	1. **Purpose**: This publication serves as a companion document to SP 800-53, focusing on assessing the effectiveness of the implemented controls.
 	2. **Relevance**: Understanding the assessment process helps ensure that the controls detailed in SP 800-53 are not only implemented but are also effective and functioning as intended.
 6. [[Security Frameworks/NIST/NIST 800-53/800-53R5\|NIST SP 800-53]]
-
-
-
-
-## Difference between NIST frameworks:
-[What is the main difference between these 3 framworks? : r/cybersecurity](https://www.reddit.com/r/cybersecurity/comments/11h09bz/what_is_the_main_difference_between_these_3/)
-- NIST 800-53 - This one was made specifically for the US federal govt. To quote _"The use of these controls is mandatory for federal information systems10 in accordance with Office of Management and Budget (OMB) Circular A-130 "_ As the name implies it's very specific around controls.
-- NIST CSF - Again to quote the NIST site: " The Framework is based on existing standards, guidelines, and practices for organizations to better manage and reduce cybersecurity risk. In addition, it was designed to foster risk and cybersecurity management communications amongst both internal and external organizational stakeholders." Think of this one as being a bit "higher level" than 800-53 as it's more focused on an overall program then just controls.
-- NIST RMF - " The NIST Risk Management Framework (RMF) provides a comprehensive, flexible, repeatable, and measurable 7-step process that any organization can use to manage information security and privacy risk for organizations and systems and links to a suite of NIST standards and guidelines to support implementation of risk management programs to meet the requirements of the Federal Information Security Modernization Act (FISMA)." As stated this one is more focused on risk and was again created for federal entities to use to satsfy the requiremetns of FISMA. It would be part of what you do in the NIST CSF. 800-53 and the CSF work hand in hand with this.
-
