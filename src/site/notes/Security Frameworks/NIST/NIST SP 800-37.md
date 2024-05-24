@@ -6,7 +6,7 @@
 - "The Risk Management Framework (RMF) provides a process that integrates security, privacy, and cyber supply chain risk management activities into the system development life cycle."^[[NIST Risk Management Framework | CSRC](https://csrc.nist.gov/projects/risk-management/about-rmf)]
 
 
-##### Gerald Auger Definitive Guide to RMF
+##### Gerald Auger Definitive Guide to RMF (2021)
 [Definitive Guide to RMF (Actionable plan for FISMA Compliance) - YouTube](https://www.youtube.com/watch?v=8zxzqpw0jBA)
 1. Video Overview
 	1. Duration - 15:40
@@ -27,7 +27,7 @@
 		2. Conduct risk assessments and get a baseline of current risk and security practices
 		3. **Max note**: Without any practical experience myself, I feel like Gerald combined the *Prepare* and *Categorize* tasks, and I think that omission would likely make subsequent steps more difficult.
 	2. **Categorize**: Identifying potential impact
-		1. [[FIPS 199\|FIPS 199]] and [[FIPS 200\|FIPS 200]] are used to identify potential impact of a system
+		1. [[FIPS 199\|FIPS 199]] and [[Security Frameworks/NIST/NIST 800-53/FIPS 200\|FIPS 200]] are used to identify potential impact of a system
 			1. Describes the importance of a system and steps required to secure it
 		2. Impact ratings are chosen between High, Moderate, and Low
 			1. 80-90% of systems are *Moderate* impact systems
@@ -61,16 +61,20 @@
 		1. Systems are monitored and brought re-audited at regular intervals
 		2. Often the audits are often scheduled to be tested in a kind of sequence to prevent infrequent massive effort
 
-
-
 # Resources
 
-#### Official Links
+#### Official
 - [SP 800-37 Rev. 2, Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy | CSRC](https://csrc.nist.gov/pubs/sp/800/37/r2/final)
 	- Direct link to the PDF: [nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r2.pdf](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r2.pdf)
 	- 183 pages
-#### Videos
-##### High Efficiency
+#### Supplemental
+##### Articles
+- [NIST Risk Management Framework - by Aron Lange](https://blog.grclab.com/p/nist-risk-management-framework)
+	- Super short and has a great graphic which details every step and task of the RMF
+##### Videos
 - [Definitive Guide to RMF (Actionable plan for FISMA Compliance) - YouTube](https://www.youtube.com/watch?v=8zxzqpw0jBA)
 	- 15 minute long video
 	- Older, includes references to documents that have been withdrawn and doesn't include the "Prepare" phase
+- [NIST RMF FULLY EXPLAINED (IN PLAIN ENGLISH) - YouTube](https://www.youtube.com/watch?v=Z2okRecJC7E)
+	- 1h12m video *long*
+	- I love and hate Gerald Auger; his content is great and helpful, but his style is super distracting and maddening.
