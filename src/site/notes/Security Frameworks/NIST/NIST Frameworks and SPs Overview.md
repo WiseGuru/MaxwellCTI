@@ -2,9 +2,9 @@
 {"dg-publish":true,"permalink":"/security-frameworks/nist/nist-frameworks-and-s-ps-overview/"}
 ---
 
-When I was first getting oriented, I asked ChatGPT and search on places like Reddit for help. At the time I thought they were helpful, but after review, they are over-simplified and treat each document in isolation, where NIST really intends them to wrap each other in loving arms and support each other through the process.
+When I was first getting oriented and searching the internet for help, I found a common theme that was interesting, but not surprising. 
 
-I found a common theme that's interesting, but not surprising; technical people tended to *over emphasis the importance of the 800-53* and tended to *undersell the importance of the CSF and RMF*. One could argue this is because the CSF and RMF are significantly smaller documents and go into less detail, but I think it comes down to who we are as technicians. *We get absorbed in the how, and forget about the why*. The 800-53 is an integral part of the RMF, but I believe that *using the 800-53 alone would leave you less secure than following the principles of the RMF*.
+Technical people tended to *over emphasis the importance of the 800-53* and *undersell the importance of the CSF and RMF*. One could argue this is because the CSF and RMF are significantly smaller documents and go into less detail, but I think it comes down to who we are as technicians. *We get absorbed in the how, and forget about the why*.
 
 I hope this helps fellow technical people to see the forest through the trees.
 ### What's the recommended order for study leading to the 800-53?
