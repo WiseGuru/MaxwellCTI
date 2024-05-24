@@ -12,7 +12,7 @@
 
 
 # Resources
-#### Original
+#### Official
 - [2017 Trust Services Criteria (With Revised Points of Focus – 2022) | Resources | AICPA & CIMA](https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022)
 	- SOC 2 
 
