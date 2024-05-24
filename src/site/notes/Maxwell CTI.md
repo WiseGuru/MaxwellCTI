@@ -22,11 +22,13 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                            | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Security Frameworks/SOC 2 Type II\|SOC 2 Type II]]                                                                         | 2024.05.23 - 16:16 |
-| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                  | 2024.05.23 - 15:55 |
-| [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                              | 2024.05.23 - 15:53 |
+| [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                              | 2024.05.24 - 11:37 |
+| [[Security Frameworks/NIST/NIST SP 800-37\|NIST SP 800-37]]                                                                  | 2024.05.24 - 11:24 |
+| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                  | 2024.05.24 - 10:41 |
+| [[Definitions and Topics/GRC\|GRC]]                                                                                          | 2024.05.24 - 10:14 |
+| [[Security Frameworks/NIST/NIST 800-53/FIPS 200\|FIPS 200]]                                                                  | 2024.05.24 - 09:02 |
+| [[Security Frameworks/SOC 2 Type II\|SOC 2 Type II]]                                                                         | 2024.05.24 - 09:01 |
 | [[Security Frameworks/NIST/FISMA\|FISMA]]                                                                                    | 2024.05.23 - 10:42 |
-| [[Security Frameworks/NIST/NIST SP 800-37\|NIST SP 800-37]]                                                                  | 2024.05.23 - 10:10 |
 | [[Security Frameworks/NIST/NIST CSF/NIST CSF\|NIST CSF]]                                                                     | 2024.05.22 - 09:18 |
 | [[Security Frameworks/NIST/NIST CSF/CSF Resources\|CSF Resources]]                                                           | 2024.05.17 - 14:34 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/Disable Windows Memory Integrity\|Disable Windows Memory Integrity]] | 2024.05.16 - 10:26 |
@@ -45,7 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Definitions and Topics/Incident Response Plan\|Incident Response Plan]]                                                    | 2024.04.29 - 16:46 |
 | [[Definitions and Topics/CSIRT\|CSIRT]]                                                                                      | 2024.04.29 - 16:45 |
 | [[Definitions and Topics/Business Continuity and Disaster Recovery Guide\|Business Continuity and Disaster Recovery Guide]]  | 2024.04.29 - 16:45 |
-| [[Definitions and Topics/Privileged Identity Management\|Privileged Identity Management]]                                    | 2024.04.29 - 16:45 |
-| [[Definitions and Topics/Privileged Access Management\|Privileged Access Management]]                                        | 2024.04.29 - 16:45 |
 
 { .block-language-dataview}
