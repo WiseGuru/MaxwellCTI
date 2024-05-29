@@ -11,7 +11,7 @@ As I work on projects, I try to document and publish what I learn. There will be
 ### New here?
 Below is a list of the pages I've updated recently; you can also search from the top right, or scroll through everything on the left.
 
-Still not sure where to start? Why not check out my notes on the [[BHIS Antisyphon and Webinars/BlackHills SOC Core/BHIS SOCC Notes Overview\|Black Hills Information Security SOC Analyst Core course?]] 
+Still not sure where to start? Why not check out my notes on the [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST CSF, RMF, and SP 800-53]]?
 
 
 ### Find me everywhere else on [linktr.ee/wiseguru](https://linktr.ee/wiseguru)
@@ -22,6 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and unpublished pages.
 | File                                                                                                                            | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Maxwell CTI\|Maxwell CTI]]                                                                                                 | 2024.05.29 - 14:45 |
 | [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                  | 2024.05.28 - 15:11 |
 | [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                              | 2024.05.24 - 14:16 |
 | [[Security Frameworks/NIST/NIST SP 800-37\|NIST SP 800-37]]                                                                  | 2024.05.24 - 11:24 |
@@ -43,7 +44,6 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Tool Deep-Dives/OSINT/dirb\|dirb]]                                                                                         | 2024.04.30 - 13:59 |
 | [[Tool Deep-Dives/OSINT/Gobuster\|Gobuster]]                                                                                 | 2024.04.30 - 13:58 |
 | [[Tool Deep-Dives/Git\|Git]]                                                                                                 | 2024.04.30 - 13:40 |
-| [[Maxwell CTI\|Maxwell CTI]]                                                                                                 | 2024.04.29 - 16:46 |
 | [[Definitions and Topics/Incident Response Plan\|Incident Response Plan]]                                                    | 2024.04.29 - 16:46 |
 | [[Definitions and Topics/CSIRT\|CSIRT]]                                                                                      | 2024.04.29 - 16:45 |
 | [[Definitions and Topics/Business Continuity and Disaster Recovery Guide\|Business Continuity and Disaster Recovery Guide]]  | 2024.04.29 - 16:45 |
