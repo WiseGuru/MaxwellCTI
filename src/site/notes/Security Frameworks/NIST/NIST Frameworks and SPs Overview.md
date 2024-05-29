@@ -16,7 +16,7 @@ Based on my research and understanding, here's my understanding on how the [[Sec
 
 Each of these documents (in particular the *RMF* and *800-53*) are supported by *Special Publications* (*SP*s) that delve^[Or "dive" if "delve" is too arcane a word for you.] into more specific topics and provide additional examples, context, and guidance to help you secure your organization.
 
- I've tried to create a flow-chart to better illustrate this and identify how some of the SPs are used. NIST also has their own chart below (with links to its original context).
+ I've tried to create a flow-chart to better illustrate this and identify how some of the SPs are used.
 
 ```mermaid
 flowchart TD
@@ -57,6 +57,8 @@ flowchart TD
 ```
 > For some reason, Mermaid.js is not rendered by DigitalGarden with Markdown Language, so the steps of the RMF have flanking `**`double asterisks`**` instead of appearing in bold.
 
+
+NIST also has their own chart (below), which reflects the circular nature of a strong security posture and the broad relevance of some Special Publications.
 ![NIST-RMF.png](/img/user/Attachments/NIST-RMF.png)
 ^[[Risk Management Framework (RMF) Overview - FISMA Implementation Project | CSRC](https://csrc.nist.rip/Projects/Risk-Management/Risk-Management-Framework-(RMF)-Overview)]
 
