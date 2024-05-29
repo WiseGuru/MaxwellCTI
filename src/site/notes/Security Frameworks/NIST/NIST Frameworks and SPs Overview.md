@@ -2,17 +2,22 @@
 {"dg-publish":true,"permalink":"/security-frameworks/nist/nist-frameworks-and-s-ps-overview/"}
 ---
 
-When I was first getting oriented and searching the internet for help, I found a common theme that was interesting, but not surprising. 
+When I was first getting oriented and searching the internet for help, I found a common theme that was interesting; technical people tended to over emphasize the importance of the 800-53 and undersell the importance of the CSF and RMF. One could argue this is because the CSF and RMF are significantly smaller documents and go into less detail, but I think it comes down to who we are as technicians. We get absorbed in the how, and ignore or forget about the why.
 
-Technical people tended to *over emphasis the importance of the 800-53* and *undersell the importance of the CSF and RMF*. One could argue this is because the CSF and RMF are significantly smaller documents and go into less detail, but I think it comes down to who we are as technicians. *We get absorbed in the how, and forget about the why*.
+I can't help but feel like NIST also found this, and is why they made the "*Govern*" function central to all other funcitons.
 
 I hope this helps fellow technical people to see the forest through the trees.
 ### What's the recommended order for study leading to the 800-53?
-NIST has a series of *free online courses* to introduce anyone to the [[Security Frameworks/NIST/NIST SP 800-37\|RMF (800-37)]], [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53]], the [[Security Frameworks/NIST/NIST 800-53/800-53A\|800-53A]], and [[Security Frameworks/NIST/NIST 800-53/800-53B\|800-53B]], accessible here: [NIST RMF Online Introductory Courses | CSRC](https://csrc.nist.gov/projects/risk-management/rmf-courses)
+Based on my research and understanding, here's my understanding on how the [[Security Frameworks/NIST/NIST CSF/NIST CSF\|NIST CSF]], [[Security Frameworks/NIST/NIST SP 800-37\|RMF]], and [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]] fit together.
 
-The complete courses are *6 hours in length* (3 for *RMF* and 3 total for *800-53*, *53A*, and *53B*). The courses use cookies to track progress through the slides. You're not allowed to skip forward and can't adjust the speed, which is not ideal,^[It actually kind of sucks, because it means you can't continue progress easily on another device.] but I guess it's better than creating an account.^[One COULD theoretically use tools like Move Mouse and Greenshot (which gives precise mouse coordinates) to automate mouse movements and clicks to skip to the last two seconds of the video progress bar and then click "Next" to progress the slides, running it while taking a break, and then coming back later to peruse the slides and lectures at your leisure.^[Also, it turns out that this is basically built into the tool; you can just click the active slide twice to skip to the next one. I don't know why any of this was done, and am confused.]]
+- The *CSF* is a set of guidelines and best practices designed to help organizations manage and reduce cybersecurity risks, focusing on five core functions: Identify, Protect, Detect, Respond, and Recover.
+- The *RMF* complements the *CSF* by providing a systematic process for managing security and privacy risks, outlined in a series of steps.
+- The *800-53* is a catalog of security and privacy controls that organizations can use to protect information systems and manage risks identified within the *RMF*. 
 
-#### Graphs
+Each of these documents (in particular the *RMF* and *800-53*) are supported by *Special Publications* (*SP*s) that delve^[Or "dive" if "delve" is too arcane a word for you.] into more specific topics and provide additional examples, context, and guidance to help you secure your organization.
+
+ I've tried to create a flow-chart to better illustrate this and identify how some of the SPs are used. NIST also has their own chart below (with links to its original context).
+
 ```mermaid
 flowchart TD
     A["NIST CSF
@@ -27,7 +32,7 @@ flowchart TD
     C --> |Impact Requirements| D[FIPS 199 and 200]
     C --> |Impact Assignment| E[NIST 800-60]
     C --> |Assess Risk| P{{"Guide for Risk Assessments - NIST 800-30
-    RMF Itself - NIST 800-37
+    The RMF - NIST 800-37
     Managing InfoSec Risk - NIST 800-39"}}
   
     D & E & P --> F("`**2. Select**`")
@@ -55,6 +60,12 @@ flowchart TD
 ^[[Risk Management Framework (RMF) Overview - FISMA Implementation Project | CSRC](https://csrc.nist.rip/Projects/Risk-Management/Risk-Management-Framework-(RMF)-Overview)]
 
 #### Additional Resources
+Below are other sources I've used to orient myself to the NIST ecosystem of publications, with some notes on use and usefulness.
+
+##### NIST Courses
+NIST has a series of *free online courses* to introduce anyone to the [[Security Frameworks/NIST/NIST SP 800-37\|RMF (800-37)]], [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53]], the [[Security Frameworks/NIST/NIST 800-53/800-53A\|800-53A]], and [[Security Frameworks/NIST/NIST 800-53/800-53B\|800-53B]], accessible here: [NIST RMF Online Introductory Courses | CSRC](https://csrc.nist.gov/projects/risk-management/rmf-courses)
+
+The complete courses are *6 hours in length* (3 for the *RMF* and 3 total for the *800-53*, *53A*, and *53B*). The courses use cookies to track progress through the slides. You're not allowed to skip forward and can't adjust the speed, which is not ideal,^[It actually kind of sucks, because it means you can't continue progress easily on another device.] but I guess it's better than creating an account.^[One COULD theoretically use tools like Move Mouse and Greenshot (which gives precise mouse coordinates) to automate mouse movements and clicks to skip to the last two seconds of the video progress bar and then click "Next" to progress the slides, running it while taking a break, and then coming back later to peruse the slides and lectures at your leisure.^[Also, it turns out that this is basically built into the tool; you can just click the active slide twice to skip to the next one. I don't know why any of this was done, and am confused.]]
 
 ##### RiskOptics
 This guide ([Complete Guide to the NIST Cybersecurity Framework — RiskOptics](https://reciprocity.com/resource-center/complete-guide-to-the-nist-cybersecurity-framework/)) provides a thorough introduction to the NIST Cybersecurity Framework and how it interrelates.
