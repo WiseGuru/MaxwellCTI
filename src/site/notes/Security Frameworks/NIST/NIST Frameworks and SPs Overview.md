@@ -55,6 +55,7 @@ flowchart TD
     Monitoring - NIST 800-137")
     Q --> |Periodic or change-directed review| Z
 ```
+> For some reason, Mermaid.js is not rendered by DigitalGarden with Markdown Language, so the steps of the RMF have flanking `**`double asterisks`**` instead of appearing in bold.
 
 ![NIST-RMF.png](/img/user/Attachments/NIST-RMF.png)
 ^[[Risk Management Framework (RMF) Overview - FISMA Implementation Project | CSRC](https://csrc.nist.rip/Projects/Risk-Management/Risk-Management-Framework-(RMF)-Overview)]
