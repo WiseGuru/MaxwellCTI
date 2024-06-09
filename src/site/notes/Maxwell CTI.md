@@ -19,14 +19,15 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 
 
 ## Recently Modified Pages
-Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".] and some unpublished pages.
+Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".]
 | File                                                                                                                            | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Tool Deep-Dives/7zip\|7zip]]                                                                                               | 2024.06.04 - 10:44 |
+| [[Tool Deep-Dives/Wireshark/Udemy - Chris Greer/S08 - UDP Analysis\|S08 - UDP Analysis]]                                     | 2024.06.02 - 11:24 |
 | [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                  | 2024.05.29 - 16:23 |
 | [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                              | 2024.05.29 - 16:20 |
 | [[Security Frameworks/NIST/NIST SP 800-37\|NIST SP 800-37]]                                                                  | 2024.05.24 - 11:24 |
 | [[Definitions and Topics/GRC\|GRC]]                                                                                          | 2024.05.24 - 10:14 |
-| [[Security Frameworks/NIST/NIST 800-53/FIPS 200\|FIPS 200]]                                                                  | 2024.05.24 - 09:02 |
 | [[Security Frameworks/SOC 2 Type II\|SOC 2 Type II]]                                                                         | 2024.05.24 - 09:01 |
 | [[Security Frameworks/NIST/FISMA\|FISMA]]                                                                                    | 2024.05.23 - 10:42 |
 | [[Security Frameworks/NIST/NIST CSF/NIST CSF\|NIST CSF]]                                                                     | 2024.05.22 - 09:18 |
@@ -46,6 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Definitions and Topics/Incident Response Plan\|Incident Response Plan]]                                                    | 2024.04.29 - 16:46 |
 | [[Definitions and Topics/CSIRT\|CSIRT]]                                                                                      | 2024.04.29 - 16:45 |
 | [[Definitions and Topics/Business Continuity and Disaster Recovery Guide\|Business Continuity and Disaster Recovery Guide]]  | 2024.04.29 - 16:45 |
-| [[Definitions and Topics/Privileged Identity Management\|Privileged Identity Management]]                                    | 2024.04.29 - 16:45 |
 
 { .block-language-dataview}
