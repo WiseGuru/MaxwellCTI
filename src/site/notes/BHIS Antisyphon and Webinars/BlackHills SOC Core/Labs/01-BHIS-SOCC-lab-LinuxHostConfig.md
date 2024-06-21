@@ -7,7 +7,7 @@ This is a quick and dirty guide to get the VM working on a Linux system; I got t
 
 You might be tempted to use VirtMan, but I wasn't able to get it to work. This is because VirtMan doesn't support virtualized NVMe drives, even though QEMU does. There's quite a lot of discussion about it at this blog post ([KVM guests with emulated SSD and NVMe drives – Just another Linux geek](https://blog.christophersmart.com/2019/12/18/kvm-guests-with-emulated-ssd-and-nvme-drives/)), and maybe I'll tackle that later, but right now I wanted to make sure it could be done first.
 
-So this will  get it done!
+With that out of the way, let's get started! 
 ## Install dependencies
 These are broken up so you can more easily see what's being installed and why.
 ```shell
@@ -121,9 +121,10 @@ If/when you're doing this for another VM, you can find the original configuratio
 	1. Enables KVM hardware acceleration and passes through the CPU configuration.
 	2. This DRAMATICALLY improves performance on the virtual machine.
 6. `-bios /usr/share/ovmf/OVMF.fd`
-	1. Sets the BIOS to UEFI
+	1. Sets the BIOS to UEFI.
 7. `-spice port=5930,disable-ticketing=on`
 	1. Sets the SPICE port number and disables authentication to access.
+	2. Note that `disable-ticketing` in short has been deprecated, so `disable-ticketing=on` is the appropriate switch.
 8. `-device virtio-serial-pci`
 	1. Required serial PCI device for SPICE.
 9. `-chardev spicevmc,id=vdagent,debug=0,name=vdagent`
@@ -134,3 +135,11 @@ If/when you're doing this for another VM, you can find the original configuratio
 	1. Creates a Virtio serial port device within the guest VM.
 	2. This serial port is linked to the SPICE VMC character device created earlier (`vdagent`). 
 	3. The name `com.redhat.spice.0` is recognized by the SPICE agent running inside the guest VM as the channel for SPICE communication.
+
+# Sources
+- https://www.kevindiaz.dev/blog/running-vmware-images-in-qemu.html
+	- Initial blog post inspiring the conversion.
+- [qemu-system-x86\_64(1) Debian Manpages](https://manpages.debian.org/testing/qemu-system-x86/qemu-system-x86_64.1.en.html)
+	- Additional context and information for launching the VM.
+- [FAQ - SPICE](https://www.spice-space.org/faq.html)
+	- Helpful for troubleshooting and understanding functionality.
