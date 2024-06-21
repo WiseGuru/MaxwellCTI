@@ -38,7 +38,7 @@ Once everything is installed, you can move on to configuring and running the VM.
 qemu-img convert -p -O qcow2 WINADHD-disk1.vmdk WINADHD-disk1.qcow2
 
 # Start the VM from the Terminal
-qemu-system-x86_64 -drive file=WINADHD-disk2.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=8 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -spice port=5930,disable-ticketing -device virtio-serial-pci -chardev spicevmc,id=vdagent,debug=0,name=vdagent -device virtserialport,chardev=vdagent,name=com.redhat.spice.0
+qemu-system-x86_64 -drive file=WINADHD-disk2.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=8 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -spice port=5930,disable-ticketing=on -device virtio-serial-pci -chardev spicevmc,id=vdagent,debug=0,name=vdagent -device virtserialport,chardev=vdagent,name=com.redhat.spice.0
 
 # View the VM with Spicy
 spicy --port 5930
