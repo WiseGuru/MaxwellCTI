@@ -34,6 +34,7 @@ sudo apt-get install qemu-utils
 sudo apt-get install libvirt-daemon-system libvirt-clients virt-manager
 ```
 
+### tl;dr dependencies
 Here's everything in two lines to save you some time. Copy the first line to ignore VirtManager, copy both to do everything.
 
 ```Shell
@@ -55,11 +56,16 @@ cd ~/Documents/VirtMachs && 7z x WINADHD04_23.7z
 qemu-img convert -p -O qcow2 WINADHD-disk1.vmdk WINADHD-disk1.qcow2
 
 # Start the VM from the Terminal
-qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=8 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -spice port=5930,disable-ticketing=on -device virtio-serial-pci -chardev spicevmc,id=vdagent,debug=0,name=vdagent -device virtserialport,chardev=vdagent,name=com.redhat.spice.0
+qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=4 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -spice port=5930,disable-ticketing=on -device virtio-serial-pci -chardev spicevmc,id=vdagent,debug=0,name=vdagent -device virtserialport,chardev=vdagent,name=com.redhat.spice.0
 
 # View the VM with Spicy
 spicy --port 5930
 ```
+
+If something goes wrong while you're playing around or setting up the VM, you can always just convert the original VMDK to qcow2, overwriting the bad qcow2 VM, and try again.
+
+## CRITICAL: After-boot Setup
+So you've just gone through all this trouble to download and convert this VM, so the next steps are critical to ensure updates don't get installed on Windows.
 
 1. Once you're booted into Windows, there are two things you will want to do immediately.
 	1. Stop updates
