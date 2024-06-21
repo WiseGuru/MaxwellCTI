@@ -75,6 +75,7 @@ If you just want to run everything from one terminal and don't care about copy/p
 qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=4 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd
 ```
 
+This basically just leaves off the last few switches that manage SPICE.
 ## CRITICAL: After-boot Setup
 So you've just gone through all this trouble to download and convert this VM, so the next steps are critical to ensure updates don't get installed on Windows. We'll also download and install the SPICE guest tools, 
 
