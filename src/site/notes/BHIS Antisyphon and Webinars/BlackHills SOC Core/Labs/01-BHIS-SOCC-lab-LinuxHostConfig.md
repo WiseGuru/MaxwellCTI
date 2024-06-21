@@ -118,8 +118,9 @@ So that launch command is a bit of a mind-full, so let's dive into it and explai
 	1. Required serial PCI device for SPICE.
 9. `-chardev spicevmc,id=vdagent,debug=0,name=vdagent`
 	1. *Character device definition* with an ID of `vdagent`
-	2. Sets up a communication channel between the SPICE client and the guest VM.
+	2. Sets up a communication channel^[SPICE Virtual Machine Channel (VMC)] between the SPICE client and the guest VM.
 	3. The character device acts as an endpoint that can be used for various SPICE-related functionalities, such as clipboard sharing and file transfers.
 10. `-device virtserialport,chardev=vdagent,name=com.redhat.spice.0`
 	1. Creates a Virtio serial port device within the guest VM.
 	2. This serial port is linked to the SPICE VMC character device created earlier (`vdagent`). 
+	3. The name `com.redhat.spice.0` is recognized by the SPICE agent running inside the guest VM as the channel for SPICE communication.
