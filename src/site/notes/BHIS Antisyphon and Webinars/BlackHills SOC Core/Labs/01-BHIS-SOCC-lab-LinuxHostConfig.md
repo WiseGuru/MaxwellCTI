@@ -12,7 +12,7 @@ This is a quick and dirty guide to get the VM working on a Linux system; I got t
 sudo apt-get update
 
 ## Install QEMU and KVM
-sudo apt-get install qemu-kvm qemu-system-x86
+sudo apt-get install qemu-system-x86
 
 ## Install OVMF (UEFI firmware)
 sudo apt-get install ovmf
@@ -26,7 +26,6 @@ sudo apt-get install qemu-utils
 ## Optionally, install libvirt and virt-manager for easier management
 ### Haven't yet actually gotten virtman to work this, so...
 sudo apt-get install libvirt-daemon-system libvirt-clients virt-manager
-
 ```
 
 Once everything is installed, you can move on to configuring and running the VM.
@@ -38,7 +37,7 @@ Once everything is installed, you can move on to configuring and running the VM.
 qemu-img convert -p -O qcow2 WINADHD-disk1.vmdk WINADHD-disk1.qcow2
 
 # Start the VM from the Terminal
-qemu-system-x86_64 -drive file=WINADHD-disk2.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=8 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -spice port=5930,disable-ticketing=on -device virtio-serial-pci -chardev spicevmc,id=vdagent,debug=0,name=vdagent -device virtserialport,chardev=vdagent,name=com.redhat.spice.0
+qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=8 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -spice port=5930,disable-ticketing=on -device virtio-serial-pci -chardev spicevmc,id=vdagent,debug=0,name=vdagent -device virtserialport,chardev=vdagent,name=com.redhat.spice.0
 
 # View the VM with Spicy
 spicy --port 5930
@@ -59,3 +58,7 @@ spicy --port 5930
 		1. Download the ISO
 	2. Open/Mount the ISO and run the setup EXE
 	3. Once complete, reboot the VM and you should be set!
+
+## Explaining the launch command
+So that launch command is a bit of a mouthful, so let's dive into it and explain what it's doing.
+
