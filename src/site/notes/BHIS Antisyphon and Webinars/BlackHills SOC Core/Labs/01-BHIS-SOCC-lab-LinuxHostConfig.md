@@ -2,14 +2,20 @@
 {"dg-publish":true,"permalink":"/bhis-antisyphon-and-webinars/black-hills-soc-core/labs/01-bhis-socc-lab-linux-host-config/"}
 ---
 
-
+# Converting The VM to run on Linux
 This is a quick and dirty guide to get the VM working on a Linux system; I got this running on Kubuntu 24.04, so you may have different required dependencies.
 
-```shell
-# Install dependencies
+You might be tempted to use VirtMan, but I wasn't able to get it to work. There's quite a lot of discussion about it at this blog post ([KVM guests with emulated SSD and NVMe drives – Just another Linux geek](https://blog.christophersmart.com/2019/12/18/kvm-guests-with-emulated-ssd-and-nvme-drives/)), and maybe I'll tackle that later, but right now I wanted to make sure it could be done first.
 
+So this will  get it done!
+## Install dependencies
+These are broken up so you can more easily see what's being installed and why.
+```shell
 ## Update repos
 sudo apt-get update
+
+## Install 7zip
+sudo apt install 7zip
 
 ## Install QEMU and KVM
 sudo apt-get install qemu-system-x86
@@ -28,12 +34,24 @@ sudo apt-get install qemu-utils
 sudo apt-get install libvirt-daemon-system libvirt-clients virt-manager
 ```
 
-Once everything is installed, you can move on to configuring and running the VM.
+Here's everything in two lines to save you some time. Copy the first line to ignore VirtManager, copy both to do everything.
+
+```Shell
+sudo apt update && sudo apt install 7zip qemu-system-x86 ovmf spice-client-gtk virt-viewer qemu-utils -Y
+sudo apt install libvirt-daemon-system libvirt-clients virt-manager -Y
+```
+
+## Converting and Using the VM
+To get started, you should extract the VM into a location you want to use. 
 
 ```shell
-# Convert and run the VM
+# Create the folder VirtMachs in Documents and download the virtual machine to it.
+mkdir ~/Documents/VirtMachs && wget -O ~/Documents/VirtMachs/WINADHD04_23.7z https://introclassjs.s3.us-east-1.amazonaws.com/WINADHD04_23.7z
 
-# Extract, then convert the VM
+# CD to the folder and extract the downloaded file to a folder sharing its name.
+cd ~/Documents/VirtMachs && 7z x WINADHD04_23.7z
+
+# Convert the VM with a progress bar
 qemu-img convert -p -O qcow2 WINADHD-disk1.vmdk WINADHD-disk1.qcow2
 
 # Start the VM from the Terminal
@@ -62,3 +80,10 @@ spicy --port 5930
 ## Explaining the launch command
 So that launch command is a bit of a mouthful, so let's dive into it and explain what it's doing.
 
+1. `qemu-system-x86_64`
+	1. The command to run the emulator
+2. `-drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1`
+	1. Selects the drive we created earlier, and assigns it the ID disk1
+	2. `if=none` doesn't assign it to an interface
+3. `-device nvme,drive=disk1,serial=deadbeef`
+	1. s
