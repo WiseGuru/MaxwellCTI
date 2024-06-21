@@ -68,6 +68,13 @@ spicy --port 5930
 
 If something goes wrong while you're playing around or setting up the VM,^[I had lots of weird device issues getting this figured out...] you can always just convert the original VMDK to qcow2, overwriting the bad qcow2 VM, and try again.^[Also, it turns out you don't have to convert the VMDK to qcow2 for QEMU to read it; just change the `-drive file=WINADHD-disk1.qcow2,format=qcow2` to `-drive file=WINADHD-disk1.vmdk,format=vmdk` and it should work.]
 
+### Running Without SPICE
+If you just want to run everything from one terminal and don't care about copy/paste, you can use the following code to just run it; it will pop-up while booting, so you'll be able to see any BIOS errors or problems immediately.
+
+```shell
+qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=4 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd
+```
+
 ## CRITICAL: After-boot Setup
 So you've just gone through all this trouble to download and convert this VM, so the next steps are critical to ensure updates don't get installed on Windows. We'll also download and install the SPICE guest tools, 
 
