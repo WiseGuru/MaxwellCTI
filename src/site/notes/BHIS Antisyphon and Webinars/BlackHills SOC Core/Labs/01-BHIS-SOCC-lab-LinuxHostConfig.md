@@ -5,7 +5,7 @@
 # Converting The VM to run on Linux
 This is a quick and dirty guide to get the VM working on a Linux system; I got this running on Kubuntu 24.04, so you may have different required dependencies.
 
-You might be tempted to use VirtMan, but I wasn't able to get it to work. There's quite a lot of discussion about it at this blog post ([KVM guests with emulated SSD and NVMe drives – Just another Linux geek](https://blog.christophersmart.com/2019/12/18/kvm-guests-with-emulated-ssd-and-nvme-drives/)), and maybe I'll tackle that later, but right now I wanted to make sure it could be done first.
+You might be tempted to use VirtMan, but I wasn't able to get it to work. This is because VirtMan doesn't support virtualized NVMe drives, even though QEMU does. There's quite a lot of discussion about it at this blog post ([KVM guests with emulated SSD and NVMe drives – Just another Linux geek](https://blog.christophersmart.com/2019/12/18/kvm-guests-with-emulated-ssd-and-nvme-drives/)), and maybe I'll tackle that later, but right now I wanted to make sure it could be done first.
 
 So this will  get it done!
 ## Install dependencies
@@ -94,6 +94,8 @@ Because you can't copy/paste into the system yet, you will have to type out the 
 
 ## Explaining the launch command
 So that launch command is a bit of a mind-full, so let's dive into it and explain what it's doing.
+
+If/when you're doing this for another VM, you can find the original configuration in the `virtualmachine.vmx` file; that's how we know this machine was originally configured to use NVMe drives.
 
 1. `qemu-system-x86_64`
 	1. The command to run the emulator.
