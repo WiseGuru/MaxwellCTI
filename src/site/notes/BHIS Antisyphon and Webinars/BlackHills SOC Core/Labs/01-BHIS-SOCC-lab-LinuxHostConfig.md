@@ -92,4 +92,20 @@ So that launch command is a bit of a mouthful, so let's dive into it and explain
 	1. Selects the drive we created earlier, and assigns it the ID disk1
 	2. `if=none` doesn't assign it to an interface
 3. `-device nvme,drive=disk1,serial=deadbeef`
-	1. s
+	1. Setups up the drive to be NVME with serial [Deadbeef](https://en.wikipedia.org/wiki/Deadbeef)
+4. `-m 4096 -smp cores=4`
+	1. Configures it with 4GB RAM and 4 CPU cores
+	2. Feel free to change these as you like
+5. `-enable-kvm -cpu host`
+	1. Enables KVM hardware acceleration and passes through the CPU configuration
+	2. This DRAMATICALLY improves performance on the virtual machine
+6. `-bios /usr/share/ovmf/OVMF.fd`
+	1. Sets the BIOS to UEFI
+7. `-spice port=5930,disable-ticketing=on`
+	1. Sets the SPICE port number and disables authentication to access
+8. `-device virtio-serial-pci`
+	1. Required serial PCI device for SPICE
+9. `-chardev spicevmc,id=vdagent,debug=0,name=vdagent`
+	1. More spice stuff
+10. `-device virtserialport,chardev=vdagent,name=com.redhat.spice.0`
+	1. Even more spice stuff
