@@ -29,7 +29,7 @@ sudo apt-get install libvirt-daemon-system libvirt-clients virt-manager
 
 ```
 
-Once everything is installed, you can move on
+Once everything is installed, you can move on to configuring and running the VM.
 
 ```shell
 # Convert and run the VM
@@ -42,15 +42,6 @@ qemu-system-x86_64 -drive file=WINADHD-disk2.qcow2,format=qcow2,if=none,id=disk1
 
 # View the VM with Spicy
 spicy --port 5930
-
-# Stop updates
-## open edge quickly and manually go to https://github.com/WiseGuru/Windows-Lab-VM-Update-Stomp
-### Open "KillWindowsUpdates.ps1" and select the copy icon from the top right
-## Run Powershell as admin and paste the command into it
-# Install spice guest tools 
-## https://docs.getutm.app/guest-support/windows/#download
-### Download and mount the ISO, then run the EXE
-## Reboot the Windows VM and you're ready to go!
 ```
 
 1. Once you're booted into Windows, there are two things you will want to do immediately.
