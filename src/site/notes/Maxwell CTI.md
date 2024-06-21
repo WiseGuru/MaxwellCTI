@@ -19,12 +19,14 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 
 
 ## Recently Modified Pages
-Take this with a grain of salt; there will be false-edits from Resilio Sync^[Because whenever it synchronizes between devices, that's a "modification time".]
+Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | File                                                                                                                            | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/01-BHIS-SOCC-lab-LinuxHostConfig\|01-BHIS-SOCC-lab-LinuxHostConfig]] | 2024.06.20 - 21:09 |
+| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                  | 2024.06.20 - 12:13 |
+| [[Tool Deep-Dives/Linux/Ubuntu spin-up script\|Ubuntu spin-up script]]                                                       | 2024.06.16 - 18:53 |
 | [[Tool Deep-Dives/7zip\|7zip]]                                                                                               | 2024.06.04 - 10:44 |
 | [[Tool Deep-Dives/Wireshark/Udemy - Chris Greer/S08 - UDP Analysis\|S08 - UDP Analysis]]                                     | 2024.06.02 - 11:24 |
-| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                  | 2024.05.29 - 16:23 |
 | [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                              | 2024.05.29 - 16:20 |
 | [[Security Frameworks/NIST/NIST SP 800-37\|NIST SP 800-37]]                                                                  | 2024.05.24 - 11:24 |
 | [[Definitions and Topics/GRC\|GRC]]                                                                                          | 2024.05.24 - 10:14 |
@@ -45,7 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync^[Bec
 | [[Tool Deep-Dives/OSINT/Gobuster\|Gobuster]]                                                                                 | 2024.04.30 - 13:58 |
 | [[Tool Deep-Dives/Git\|Git]]                                                                                                 | 2024.04.30 - 13:40 |
 | [[Definitions and Topics/Incident Response Plan\|Incident Response Plan]]                                                    | 2024.04.29 - 16:46 |
-| [[Definitions and Topics/CSIRT\|CSIRT]]                                                                                      | 2024.04.29 - 16:45 |
-| [[Definitions and Topics/Business Continuity and Disaster Recovery Guide\|Business Continuity and Disaster Recovery Guide]]  | 2024.04.29 - 16:45 |
 
 { .block-language-dataview}
