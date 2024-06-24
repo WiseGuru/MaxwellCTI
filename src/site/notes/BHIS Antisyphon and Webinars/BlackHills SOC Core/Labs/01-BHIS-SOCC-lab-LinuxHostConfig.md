@@ -56,7 +56,7 @@ cd ~/Documents/VirtMachs && 7z x WINADHD04_23.7z
 cd ~/Documents/VirtMachs/WINADHD04_23 && qemu-img convert -p -O qcow2 WINADHD-disk1.vmdk WINADHD-disk1.qcow2
 
 # Start the VM from the Terminal
-cd ~/Documents/VirtMachs/WINADHD04_23 && qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=4 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -spice port=5930,disable-ticketing=on -device virtio-serial-pci -chardev spicevmc,id=vdagent,debug=0,name=vdagent -device virtserialport,chardev=vdagent,name=com.redhat.spice.0
+cd ~/Documents/VirtMachs/WINADHD04_23 && qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=4 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -vga virtio -spice port=5930,disable-ticketing=on -device virtio-serial-pci -chardev spicevmc,id=vdagent,debug=0,name=vdagent -device virtserialport,chardev=vdagent,name=com.redhat.spice.0
 ```
 If all went well, then the VM is now running; however, you won't be able to see anything but a blinking cursor.
 
@@ -72,12 +72,12 @@ If something goes wrong while you're playing around or setting up the VM,^[I had
 If you just want to run everything from one terminal and don't care about copy/paste, you can use the following code to just run it; it will pop-up while booting, so you'll be able to see any BIOS errors or problems immediately.
 
 ```shell
-qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=4 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd
+qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=4 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -vga virtio
 ```
 
 This basically just leaves off the last few switches that manage SPICE.
 ## CRITICAL: After-boot Setup
-So you've just gone through all this trouble to download and convert this VM, so the next steps are critical to ensure updates don't get installed on Windows. We'll also download and install the SPICE guest tools, 
+So you've just gone through all this trouble to download and convert this VM, so the next steps are critical to ensure updates don't get installed on Windows. We'll also download and install the SPICE guest tools, and lastly the VirtIO drivers.^[which will allow you to dynamically resize the window.]
 
 Because you can't copy/paste into the system yet, you will have to type out the URLs; I tried my best to make them nice and short. I've also added shorturl links to make it a little faster, if you trust me to use them.
 
@@ -89,6 +89,7 @@ Because you can't copy/paste into the system yet, you will have to type out the 
 2. Stopping updates
 	1. Open edge quickly and manually go to https://github.com/WiseGuru/Windows-Lab-VM-Update-Stomp
 		1. Shortened URL: https://shorturl.at/NwUHK
+			1. Capitalization is important.
 		2. Open "KillWindowsUpdates.ps1" and select the copy icon from the top right
 			1. If you use the shortened URL, it takes you right to the script.
 	2. Run Powershell as admin and paste the command into it
@@ -97,8 +98,15 @@ Because you can't copy/paste into the system yet, you will have to type out the 
 3. Install SPICE guest tools
 	1. Open Edge and navigate to https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe
 		1. Shortened URL: https://shorturl.at/bQ7eR
-	2. Run the executable to install the 
-4. Once complete, reboot the VM so the SPICE Guest tools finish their config, and you should be set!
+			1. NOTE: This is a direct link to the EXE, so you will first be taken to the "Short URL" page which is full of ads, but the file should download.
+	2. Run the executable to install the drivers.
+4. Install the VirtIO drivers and then reboot.
+	1. Use [this link to the latest drivers](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/) and either download the MSI you're looking for or the `virtio-win-guest-tools.exe`
+		1. You should be able to copy/paste the link above, bit if not, here's the shortened URL: https://shorturl.at/7xOg6
+	2. Run the installer, and at the end you will be prompted to reboot; do that now.
+5. You should be set!
+
+A quick note on screen resolution; if you want to use a *standard* screen resolution (720p, 1080p, etc.), you can change the settings as normal in Windows. However, if you want it to take on the resolution of the SPICE window as you've sized it, you may need to reboot.
 
 ## Explaining the launch command
 So that launch command is a bit of a mind-full, so let's dive into it and explain what it's doing.
@@ -122,16 +130,18 @@ If/when you're doing this for another VM, you can find the original configuratio
 	2. This DRAMATICALLY improves performance on the virtual machine.
 6. `-bios /usr/share/ovmf/OVMF.fd`
 	1. Sets the BIOS to UEFI.
-7. `-spice port=5930,disable-ticketing=on`
+7. `-vga virtio`
+	1. Instructs the VM to use VirtIO display drivers, which allows us to resize the display automatically.
+8. `-spice port=5930,disable-ticketing=on`
 	1. Sets the SPICE port number and disables authentication to access.
 	2. Note that `disable-ticketing` in short has been deprecated, so `disable-ticketing=on` is the appropriate switch.
-8. `-device virtio-serial-pci`
+9. `-device virtio-serial-pci`
 	1. Required serial PCI device for SPICE.
-9. `-chardev spicevmc,id=vdagent,debug=0,name=vdagent`
+10. `-chardev spicevmc,id=vdagent,debug=0,name=vdagent`
 	1. *Character device definition* with an ID of `vdagent`
 	2. Sets up a communication channel^[SPICE Virtual Machine Channel (VMC)] between the SPICE client and the guest VM.
 	3. The character device acts as an endpoint that can be used for various SPICE-related functionalities, such as clipboard sharing and file transfers.
-10. `-device virtserialport,chardev=vdagent,name=com.redhat.spice.0`
+11. `-device virtserialport,chardev=vdagent,name=com.redhat.spice.0`
 	1. Creates a Virtio serial port device within the guest VM.
 	2. This serial port is linked to the SPICE VMC character device created earlier (`vdagent`). 
 	3. The name `com.redhat.spice.0` is recognized by the SPICE agent running inside the guest VM as the channel for SPICE communication.
@@ -143,3 +153,12 @@ If/when you're doing this for another VM, you can find the original configuratio
 	- Additional context and information for launching the VM.
 - [FAQ - SPICE](https://www.spice-space.org/faq.html)
 	- Helpful for troubleshooting and understanding functionality.
+
+
+# Changelog
+- 06/24/2024 1:25 PT
+	- Added VirtIO display drivers/instructions./
+- 06/20/2024 9:00 PT
+	- General cleanup and explaination
+- 06/20/2024 5:12 PT
+	- Initial publication
