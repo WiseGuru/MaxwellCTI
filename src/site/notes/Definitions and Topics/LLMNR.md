@@ -3,7 +3,7 @@
 ---
 
 #### LLMNR
-- *Link-Local Multicast Name Resolution* is a protocol based on [[DNS\|DNS]] that allows hosts to perform name resolution for link-local hosts.
+- *Link-Local Multicast Name Resolution* is a protocol based on [[Definitions and Topics/DNS\|DNS]] that allows hosts to perform name resolution for link-local hosts.
 	- Being phased out by Microsoft in favor of [[Definitions and Topics/mDNS\|mDNS]]
 
 

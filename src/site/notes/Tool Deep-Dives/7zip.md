@@ -28,7 +28,7 @@ Here's an example following
 
 If you want to make this permanent on your profile, you can edit your `profile.ps1` script (which runs whenever *you* launch Powershell) to set the variables for you; be warned though, that this may get you into the false-sense of security that the `7z` command will just work on any other computer you interact with.
 
-To change `profile.ps1`, just run `notepad $profile` from your Powershell terminal, and copy/paste the code above into it. Save the script, restart Powershell, and you should be goo
+To change `profile.ps1`, just run `notepad $profile` from your Powershell terminal, and copy/paste the code above into it. Save the script, restart Powershell, and you should be good to go.
 
 
 # Metadata

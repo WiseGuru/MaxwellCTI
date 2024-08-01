@@ -63,6 +63,7 @@ apt install ./volian-archive*.deb
 echo "deb-src https://deb.volian.org/volian/ scar main" | sudo tee -a /etc/apt/sources.list.d/volian-archive-scar-unstable.list
 apt update && apt install nala
 nala install flatpak
+## I need to add the flathub repo here
 nala install curl
 
 # Resilio Sync

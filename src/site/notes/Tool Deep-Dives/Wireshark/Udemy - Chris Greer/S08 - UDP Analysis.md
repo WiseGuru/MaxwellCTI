@@ -31,3 +31,31 @@
 	3. IP Differentiated Services Codepoint
 		1. Expedited Forwarding is what it should be
 			1. If it's set to default, the packets won't be treated with priority
+
+
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+
+#### UDP
+- *UDP* (*User Datagram Protocol*) is a connectionless communication protocol that allows data to be sent without establishing a connection, providing low latency and minimal overhead at the cost of reliability.:
+
+
+
+
+
+
+# Metadata
+
+### Sources
+
+
+### Tags
+#defs_sec 
+
+</div></div>
+ 
+
+

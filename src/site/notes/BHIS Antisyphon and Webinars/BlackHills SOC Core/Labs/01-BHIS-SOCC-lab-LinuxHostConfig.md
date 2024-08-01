@@ -159,6 +159,6 @@ If/when you're doing this for another VM, you can find the original configuratio
 - 06/24/2024 1:25 PT
 	- Added VirtIO display drivers/instructions./
 - 06/20/2024 9:00 PT
-	- General cleanup and explaination
+	- General cleanup and explanation
 - 06/20/2024 5:12 PT
 	- Initial publication
