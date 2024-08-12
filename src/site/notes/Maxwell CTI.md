@@ -20,32 +20,32 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 
 ## Recently Modified Pages
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
-| File                                                                                                                            | Last modified      |
-| ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Tool Deep-Dives/Linux/PATH Variable\|PATH Variable]]                                                                       | 2024.08.01 - 14:19 |
-| [[Tool Deep-Dives/Nikto\|Nikto]]                                                                                             | 2024.08.01 - 13:25 |
-| [[Tool Deep-Dives/Nuclei\|Nuclei]]                                                                                           | 2024.08.01 - 12:49 |
-| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                  | 2024.07.12 - 11:01 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/01-BHIS-SOCC-lab-LinuxHostConfig\|01-BHIS-SOCC-lab-LinuxHostConfig]] | 2024.06.24 - 14:36 |
-| [[Tool Deep-Dives/7zip\|7zip]]                                                                                               | 2024.06.24 - 13:35 |
-| [[Tool Deep-Dives/Linux/Ubuntu spin-up script\|Ubuntu spin-up script]]                                                       | 2024.06.16 - 19:53 |
-| [[Tool Deep-Dives/Wireshark/Udemy - Chris Greer/S08 - UDP Analysis\|S08 - UDP Analysis]]                                     | 2024.06.02 - 12:24 |
-| [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                              | 2024.05.29 - 17:20 |
-| [[Security Frameworks/NIST/NIST SP 800-37\|NIST SP 800-37]]                                                                  | 2024.05.24 - 12:24 |
-| [[Definitions and Topics/GRC\|GRC]]                                                                                          | 2024.05.24 - 11:14 |
-| [[Security Frameworks/SOC 2 Type II\|SOC 2 Type II]]                                                                         | 2024.05.24 - 10:01 |
-| [[Security Frameworks/NIST/FISMA\|FISMA]]                                                                                    | 2024.05.23 - 11:42 |
-| [[Security Frameworks/NIST/NIST CSF/NIST CSF\|NIST CSF]]                                                                     | 2024.05.22 - 10:18 |
-| [[Security Frameworks/NIST/NIST CSF/CSF Resources\|CSF Resources]]                                                           | 2024.05.17 - 15:34 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/Disable Windows Memory Integrity\|Disable Windows Memory Integrity]] | 2024.05.16 - 11:26 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                   | 2024.05.16 - 10:55 |
-| [[Tool Deep-Dives/OSINT/ffuf\|ffuf]]                                                                                         | 2024.05.13 - 14:15 |
-| [[Definitions and Topics/Subdomain Enumeration\|Subdomain Enumeration]]                                                      | 2024.05.06 - 15:39 |
-| [[Tool Deep-Dives/OSINT/Sublist3r\|Sublist3r]]                                                                               | 2024.05.06 - 15:38 |
-| [[Tool Deep-Dives/OSINT/crt-sh\|crt-sh]]                                                                                     | 2024.05.06 - 15:04 |
-| [[Definitions and Topics/Look-alike domains\|Look-alike domains]]                                                            | 2024.05.06 - 14:57 |
-| [[Resources and Communities\|Resources and Communities]]                                                                     | 2024.05.03 - 11:47 |
-| [[Tool Deep-Dives/OSINT/Wappalyzer\|Wappalyzer]]                                                                             | 2024.04.30 - 14:59 |
-| [[Tool Deep-Dives/OSINT/dirb\|dirb]]                                                                                         | 2024.04.30 - 14:59 |
+| File                                                                                                                                                    | Last modified      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Tool Deep-Dives/Linux/dpkg\|dpkg]]                                                                                                                 | 2024.08.12 - 15:12 |
+| [[Tool Deep-Dives/LogonTracer\|LogonTracer]]                                                                                                         | 2024.08.07 - 09:44 |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Topics/SOCC07 - User and Entity Behavior Analytics\|SOCC07 - User and Entity Behavior Analytics]] | 2024.08.07 - 09:44 |
+| [[Tool Deep-Dives/Rubeus\|Rubeus]]                                                                                                                   | 2024.08.07 - 09:43 |
+| [[Tool Deep-Dives/Certipy\|Certipy]]                                                                                                                 | 2024.08.07 - 09:40 |
+| [[Tool Deep-Dives/Windows/LDP\|LDP]]                                                                                                                 | 2024.08.07 - 09:40 |
+| [[Tool Deep-Dives/Linux/PATH Variable\|PATH Variable]]                                                                                               | 2024.08.01 - 13:19 |
+| [[Tool Deep-Dives/Nikto\|Nikto]]                                                                                                                     | 2024.08.01 - 12:25 |
+| [[Tool Deep-Dives/Nuclei\|Nuclei]]                                                                                                                   | 2024.08.01 - 11:49 |
+| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                                          | 2024.07.12 - 10:01 |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/01-BHIS-SOCC-lab-LinuxHostConfig\|01-BHIS-SOCC-lab-LinuxHostConfig]]                         | 2024.06.24 - 13:36 |
+| [[Tool Deep-Dives/7zip\|7zip]]                                                                                                                       | 2024.06.24 - 12:35 |
+| [[Tool Deep-Dives/Linux/Ubuntu spin-up script\|Ubuntu spin-up script]]                                                                               | 2024.06.16 - 18:53 |
+| [[Tool Deep-Dives/Wireshark/Udemy - Chris Greer/S08 - UDP Analysis\|S08 - UDP Analysis]]                                                             | 2024.06.02 - 11:24 |
+| [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                                                      | 2024.05.29 - 16:20 |
+| [[Security Frameworks/NIST/NIST SP 800-37\|NIST SP 800-37]]                                                                                          | 2024.05.24 - 11:24 |
+| [[Definitions and Topics/GRC\|GRC]]                                                                                                                  | 2024.05.24 - 10:14 |
+| [[Security Frameworks/SOC 2 Type II\|SOC 2 Type II]]                                                                                                 | 2024.05.24 - 09:01 |
+| [[Security Frameworks/NIST/FISMA\|FISMA]]                                                                                                            | 2024.05.23 - 10:42 |
+| [[Security Frameworks/NIST/NIST CSF/NIST CSF\|NIST CSF]]                                                                                             | 2024.05.22 - 09:18 |
+| [[Security Frameworks/NIST/NIST CSF/CSF Resources\|CSF Resources]]                                                                                   | 2024.05.17 - 14:34 |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/Disable Windows Memory Integrity\|Disable Windows Memory Integrity]]                         | 2024.05.16 - 10:26 |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                                           | 2024.05.16 - 09:55 |
+| [[Tool Deep-Dives/OSINT/ffuf\|ffuf]]                                                                                                                 | 2024.05.13 - 13:15 |
+| [[Definitions and Topics/Subdomain Enumeration\|Subdomain Enumeration]]                                                                              | 2024.05.06 - 14:39 |
 
 { .block-language-dataview}
