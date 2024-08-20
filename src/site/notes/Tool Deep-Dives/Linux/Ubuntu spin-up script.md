@@ -2,8 +2,9 @@
 {"dg-publish":true,"permalink":"/tool-deep-dives/linux/ubuntu-spin-up-script/"}
 ---
 
+> Completely untested, really posting for my own use.
+> Seriously, don't try to use it and assume it will just go; the information is probably dated an not useful.
 
-Completely untested, really posting for my own use
 ### Host Script
 #### Objectives
 1. Install Resilio Sync
