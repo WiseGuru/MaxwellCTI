@@ -46,7 +46,7 @@ sudo apt install libvirt-daemon-system libvirt-clients virt-manager -Y
 ```
 
 ## Converting and Using the VM
-To get started, you should extract the VM into a location you want to use. 
+To get started, you should extract the VM into a location you want to use.
 
 ```shell
 # Create the folder VirtMachs in Documents and download the virtual machine to it.
@@ -58,9 +58,18 @@ cd ~/Documents/VirtMachs && 7z x WINADHD04_23.7z
 # Convert the VM with a progress bar
 cd ~/Documents/VirtMachs/WINADHD04_23 && qemu-img convert -p -O qcow2 WINADHD-disk1.vmdk WINADHD-disk1.qcow2
 
-# Start the VM from the Terminal
-cd ~/Documents/VirtMachs/WINADHD04_23 && qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=4 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -vga virtio -spice port=5930,disable-ticketing=on -device virtio-serial-pci -chardev spicevmc,id=vdagent,debug=0,name=vdagent -device virtserialport,chardev=vdagent,name=com.redhat.spice.0
+# Start the VM from the Terminal (choose one)
+
+## Potato system (default config, 2 cores/4GB RAM)
+cd ~/Documents/VirtMachs/WINADHD04_23 && qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=2 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -vga virtio -spice port=5930,disable-ticketing=on -device virtio-serial-pci -chardev spicevmc,id=vdagent,debug=0,name=vdagent -device virtserialport,chardev=vdagent,name=com.redhat.spice.0
+
+## Average system (6 cores/6GB RAM)
+cd ~/Documents/VirtMachs/WINADHD04_23 && qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 6144 -smp cores=4 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -vga virtio -spice port=5930,disable-ticketing=on -device virtio-serial-pci -chardev spicevmc,id=vdagent,debug=0,name=vdagent -device virtserialport,chardev=vdagent,name=com.redhat.spice.0
+
+## Beefy system (8 cores/10GB RAM)
+cd ~/Documents/VirtMachs/WINADHD04_23 && qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 10240 -smp cores=8 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -vga virtio -spice port=5930,disable-ticketing=on -device virtio-serial-pci -chardev spicevmc,id=vdagent,debug=0,name=vdagent -device virtserialport,chardev=vdagent,name=com.redhat.spice.0
 ```
+
 If all went well, then the VM is now running; however, you won't be able to see anything but a blinking cursor.
 
 Now you need top open a separate terminal and launch SPICY to view the VM.
@@ -75,7 +84,14 @@ If something goes wrong while you're playing around or setting up the VM,^[I had
 If you just want to run everything from one terminal and don't care about copy/paste, you can use the following code to just run it; it will pop-up while booting, so you'll be able to see any BIOS errors or problems immediately.
 
 ```shell
-qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=4 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -vga virtio
+# Potato system (default config, 2 cores/4GB RAM)
+qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 4096 -smp cores=2 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -vga virtio
+
+# Average system (6 cores/6GB RAM)
+qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 6144 -smp cores=6 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -vga virtio
+
+# Beefy system (8 cores/10GB RAM)
+qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1 -device nvme,drive=disk1,serial=deadbeef -m 10240 -smp cores=8 -enable-kvm -cpu host -bios /usr/share/ovmf/OVMF.fd -vga virtio
 ```
 
 This basically just leaves off the last few switches that manage SPICE.
