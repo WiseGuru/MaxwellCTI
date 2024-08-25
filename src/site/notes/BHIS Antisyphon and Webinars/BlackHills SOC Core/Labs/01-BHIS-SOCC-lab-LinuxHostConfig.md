@@ -80,16 +80,27 @@ qemu-system-x86_64 -drive file=WINADHD-disk1.qcow2,format=qcow2,if=none,id=disk1
 
 This basically just leaves off the last few switches that manage SPICE.
 ## CRITICAL: After-boot Setup
-So you've just gone through all this trouble to download and convert this VM, so the next steps are critical to ensure updates don't get installed on Windows. We'll also download and install the SPICE guest tools, and lastly the VirtIO drivers.^[which will allow you to dynamically resize the window.]
+Once you're booted into Windows, there are two things you will want to do immediately.
 
-Because you can't copy/paste into the system yet, you will have to type out the URLs; I tried my best to make them nice and short. I've also added shorturl links to make it a little faster, if you trust me to use them.
+1. Stop updates
+	1. Critical for the labs to work
+	2. *Must be completed as soon as possible after booting*
+2. Install SPICE and VirtIO guest tools
+	1. Helpful to manage the vm, like being able to copy/paste between the host and vm
+	2. We'll also download and install the SPICE guest tools, and lastly the VirtIO drivers.^[which will allow you to dynamically resize the window.]
 
-1. Once you're booted into Windows, there are two things you will want to do immediately.
-	1. Stop updates
-		1. Critical for the labs to work
-	2. Install SPICE guest tools
-		1. Helpful to manage the vm, like being able to copy/paste between the host and vm
-2. Stopping updates
+Because you can't copy/paste into the system yet, I've  added ShortURL links to make typing them in a little faster.
+
+### Quickest Method
+The quickest way to stop Windows Updates and install the latest SPICE Guest Tools is to go to the ShortURL link below and copy/paste the entire script into an Elevated PowerShell session.
+
+[https://shorturl.at/0xPiV](https://shorturl.at/0xPiV)
+
+*You will need click through the install wizards and hit Enter in the terminal when prompted.*
+
+Below in the manual steps is an explanation of what's going on.
+### Manual Steps
+1. Stopping updates
 	1. Open edge quickly and manually go to https://github.com/WiseGuru/Windows-Lab-VM-Update-Stomp
 		1. Shortened URL: https://shorturl.at/NwUHK
 			1. Capitalization is important.
@@ -98,18 +109,18 @@ Because you can't copy/paste into the system yet, you will have to type out the 
 	2. Run Powershell as admin and paste the command into it
 		1. Once the terminal is open, you can just right-click and the script will paste and run itself
 		2. It's explained in detail in [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]
-3. Install SPICE guest tools
+2. Install SPICE guest tools
 	1. Open Edge and navigate to https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe
 		1. Shortened URL: https://shorturl.at/bQ7eR
 			1. NOTE: This is a direct link to the EXE, so you will first be taken to the "Short URL" page which is full of ads, but the file should download.
 	2. Run the executable to install the drivers.
-4. Install the VirtIO drivers and then reboot.
+3. Install the VirtIO drivers and then reboot.
 	1. Use [this link to the latest drivers](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/) and either download the MSI you're looking for or the `virtio-win-guest-tools.exe`
 		1. You should be able to copy/paste the link above, bit if not, here's the shortened URL: https://shorturl.at/7xOg6
 	2. Run the installer, and at the end you will be prompted to reboot; do that now.
-5. You should be set!
+4. You should be set!
 
-A quick note on screen resolution; if you want to use a *standard* screen resolution (720p, 1080p, etc.), you can change the settings as normal in Windows. However, if you want it to take on the resolution of the SPICE window as you've sized it, you may need to reboot.
+> A quick note on screen resolution; if you want to use a *standard* screen resolution (720p, 1080p, etc.), you can change the settings as normal in Windows. However, if you want it to take on the resolution of the SPICE window as you've sized it, you may need to reboot.
 
 ## Explaining the launch command
 So that launch command is a bit of a mind-full, so let's dive into it and explain what it's doing.
