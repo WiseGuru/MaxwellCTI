@@ -7,7 +7,7 @@
 	- It looks for these specific event IDs:
 		- **4624**: Successful logon
 		- **4625**: Logon failure
-		- **4768**: Kerberos Authentication (TGT Request)
+		- **4768**: [[Tool Deep-Dives/Kerberos\|Kerberos]] Authentication (TGT Request)
 		- **4769**: Kerberos Service Ticket (ST Request)
 		- **4776**: NTLM Authentication
 		- **4672**: Assign special privileges

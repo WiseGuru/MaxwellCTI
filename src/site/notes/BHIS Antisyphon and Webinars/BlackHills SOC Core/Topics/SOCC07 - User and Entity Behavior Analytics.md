@@ -82,7 +82,7 @@
 		2. **4672** - Special Privileges assigned to new logon
 		3. **4673** - A privileged service was called
 	10. [[Definitions and Topics/Kerberoasting\|Kerberoasting]]
-		6. **4769** - A Kerberos service ticket was requested
+		6. **4769** - A [[Tool Deep-Dives/Kerberos\|Kerberos]] service ticket was requested
 		7. **4771** - Kerberos pre-authentication failed
 	11. Network Shares
 		1. e.g., `\\C$\Users\JohnDoe` or `\\*\IPC$`
