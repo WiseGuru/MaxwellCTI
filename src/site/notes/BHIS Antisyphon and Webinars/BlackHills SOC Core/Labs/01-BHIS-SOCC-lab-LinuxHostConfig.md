@@ -111,7 +111,7 @@ A quick note on screen resolution; if you want to use a *standard* screen resolu
 ## Explaining the launch command
 So that launch command is a bit of a mind-full, so let's dive into it and explain what it's doing.
 
-If/when you're doing this for another VM, you can find the original configuration in the `virtualmachine.vmx` file; that's how we know this machine was originally configured to use NVMe drives.
+ >If/when you're doing this for another VM, you can find the original configuration in the `virtualmachine.vmx` file; that's how we know this machine was originally configured to use NVMe drives.
 
 1. `qemu-system-x86_64`
 	1. The command to run the emulator.
