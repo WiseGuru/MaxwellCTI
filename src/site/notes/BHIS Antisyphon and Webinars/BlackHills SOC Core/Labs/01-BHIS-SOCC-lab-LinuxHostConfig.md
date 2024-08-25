@@ -35,10 +35,13 @@ sudo apt-get install libvirt-daemon-system libvirt-clients virt-manager
 ```
 
 ### tl;dr dependencies
-Here's everything in two lines to save you some time. Copy the first line to ignore VirtManager, copy both to do everything.
+Here's everything condensed to save you some time. Run just the first section to install the basics, and the second section install for VirtManager.
 
 ```Shell
+# Install basic utils
 sudo apt update && sudo apt install 7zip qemu-system-x86 ovmf spice-client-gtk virt-viewer qemu-utils -Y
+
+# Install VirtManager
 sudo apt install libvirt-daemon-system libvirt-clients virt-manager -Y
 ```
 
