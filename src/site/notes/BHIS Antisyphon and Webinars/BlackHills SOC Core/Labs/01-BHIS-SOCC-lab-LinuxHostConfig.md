@@ -138,10 +138,10 @@ Below in the manual steps is an explanation of what's going on.
 	2. Run the installer, and at the end you will be prompted to reboot; do that now.
 4. You should be set!
 
-> A quick note on screen resolution; if you want to use a *standard* screen resolution (720p, 1080p, etc.), you can change the settings as normal in Windows. However, if you want it to take on the resolution of the SPICE window as you've sized it, you may need to reboot.
+> A quick note on screen resolution; if you want to use a *standard* screen resolution (720p, 1080p, etc.), you can change the settings as normal in Windows. However, if you want it to take on the resolution of the SPICE window as you've sized it, rebooting the VM is the quickest method.
 
 ## Explaining the launch command
-So that launch command is a bit of a mind-full, so let's dive into it and explain what it's doing.
+So that launch command is a bit long, so let's dive into it and explain what it's doing.
 
  >If/when you're doing this for another VM, you can find the original configuration in the `virtualmachine.vmx` file; that's how we know this machine was originally configured to use NVMe drives.
 
@@ -154,8 +154,8 @@ So that launch command is a bit of a mind-full, so let's dive into it and explai
 		1. Uses the original VMDK to launch the VM. Should work just fine.
 3. `-device nvme,drive=disk1,serial=deadbeef`
 	1. Setups up the drive to be NVME with serial [Deadbeef](https://en.wikipedia.org/wiki/Deadbeef).
-4. `-m 4096 -smp cores=4`
-	1. Configures it with 4GB RAM and 4 CPU cores.
+4. `-m 4096 -smp cores=2`
+	1. Configures it with 4GB RAM and 2 CPU cores.
 	2. Feel free to change these as you like.
 5. `-enable-kvm -cpu host`
 	1. Enables KVM hardware acceleration and passes through the CPU configuration.
@@ -188,6 +188,10 @@ So that launch command is a bit of a mind-full, so let's dive into it and explai
 
 
 # Changelog
+- 08/25/2024 2:25 PT
+	- Created a new script to configure the VM as quickly as possible
+	- Added VM configurations with variable specs.
+	- General reformatting
 - 06/24/2024 1:25 PT
 	- Added VirtIO display drivers/instructions./
 - 06/20/2024 9:00 PT
