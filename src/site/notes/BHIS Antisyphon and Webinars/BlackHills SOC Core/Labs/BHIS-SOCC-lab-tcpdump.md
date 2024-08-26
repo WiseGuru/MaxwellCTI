@@ -146,3 +146,36 @@ And we're correct! Here's the closing paragraph below:
 ![BHIS-SOCC-lab-tcpdump-4.png](/img/user/Attachments/BHIS-SOCC-lab-tcpdump-4.png)
 
 With [[Tool Deep-Dives/tcpdump\|tcpdump]], we were unable to see the details on the certificate that AC found, but without any idea of what was wrong, we were able to identify the malicious activity and flag the host as compromised.
+
+
+# Bonus Lab 2
+[Malware of the Day - XenoRAT - Active Countermeasures](https://www.activecountermeasures.com/malware-of-the-day-xenorat/)
+
+It's been a while since I've done packet analysis, and I haven't read the blogpost talking about this, but let's see if we can figure out what's going on.
+
+Like in Bonus Lab 1, I started with searching the PCAP file for all ports but HTTP/S.
+
+`tcpdump -n -r xenorat_24hr.pcap port 23 or 22 or 3389 or 445 or 139 or 21 or 135 or 25 | less`
+
+![BHIS-SOCC-lab-tcpdump-5.png](/img/user/Attachments/BHIS-SOCC-lab-tcpdump-5.png)
+
+I'm seeing a lot of traffic between 192.168.2.14, .19, .22, and .77. They're all local, and after a period of time, it just becomes chatter between .14 and .77. Any of these could be the infected machine, but let's search for 192.168.2.77. Why .77? Because if either of .14 or .77 is a server, it's probably the one lower in the IP range since Admins are likely to reserve the first part of the IP range for static IPs.
+
+> Because there's a lot of chatter between .14 and .77, I'm going to exclude .14 from the results.
+> Also, if do the reverse (exclude .77 results), we that it doesn't really talk with any external machines.
+
+`tcpdump -n -r xenorat_24hr.pcap host 192.168.2.77 and not 192.168.2.14 | less`
+
+![BHIS-SOCC-lab-tcpdump-6.png](/img/user/Attachments/BHIS-SOCC-lab-tcpdump-6.png)
+
+Well, look at that; notice a pattern? Regular check-ins with IP 172...75 carrying no data. It's also communicating on port 4444, which is a bit suspicious as well.
+
+[Port 4444 (tcp/udp) :: SpeedGuide](https://www.speedguide.net/port.php?port=4444)
+
+So I would bet that the host at IP 172...75 is probably a C2 server of some kind, and .77 is probably infected and should be investigated further.
+
+And from the blog post, it looks like we're correct! 
+
+![BHIS-SOCC-lab-tcpdump-7.png](/img/user/Attachments/BHIS-SOCC-lab-tcpdump-7.png)
+
+Of course we don't have access to other system logs and processes to see how the attack was done, but it's a good place to start.
