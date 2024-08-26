@@ -22,8 +22,8 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | File                                                                                                                                                    | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                                           | 2024.08.26 - 09:15 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/01-BHIS-SOCC-lab-LinuxHostConfig\|01-BHIS-SOCC-lab-LinuxHostConfig]]                         | 2024.08.26 - 09:04 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                                           | 2024.08.25 - 14:20 |
 | [[Tool Deep-Dives/Linux/Ubuntu spin-up script\|Ubuntu spin-up script]]                                                                               | 2024.08.20 - 15:26 |
 | [[Tool Deep-Dives/Linux/dpkg\|dpkg]]                                                                                                                 | 2024.08.12 - 15:12 |
 | [[Tool Deep-Dives/LogonTracer\|LogonTracer]]                                                                                                         | 2024.08.07 - 09:44 |
