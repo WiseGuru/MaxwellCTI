@@ -188,7 +188,7 @@ So that launch command is a bit long, so let's dive into it and explain what it'
 
 
 # Changelog
-- 08/25/2024 2:25 PT
+- 08/25/2024 2:26 PT
 	- Created a new script to configure the VM as quickly as possible
 	- Added VM configurations with variable specs.
 	- General reformatting
