@@ -43,7 +43,7 @@
  [TCPdump Labs](https://github.com/strandjs/IntroLabs/blob/master/IntroClassFiles/Tools/IntroClass/TCPDump/TCPDump.md)
 
 
-So first we cd to the folder with the PCAP, open it, and sort by the host machine.
+So first we get into the Linux terminal and `cd` to the folder with the PCAP (which is the root of the ADHD user profile), open it, and sort by the host machine.
 - `tcpdump -n -r magnitude_1hr.pcap host 192.168.99.52`
 	- `-n` 
 		- Instructs tcpdump not to resolve the hostnames
@@ -55,7 +55,9 @@ So first we cd to the folder with the PCAP, open it, and sort by the host machin
 
 Many of the entries in the PCAP are broken up roughly like this:
 
-`<time> <protocol> sourceip.protocol>targetip.port: flags seq# ack# <window size> <packet length> <packet contents protocol>`
+```XML
+<time> <protocol> sourceip.protocol>targetip.port: flags seq# ack# <window size> <packet length> <packet contents protocol>
+```
 
 Anyway, lots here to unpack, but also a lot of chaff to sort through, so we'll filter further. Tack on `and port 80` to filter only traffic through port 80 for HTTP traffic (or any traffic going over port 80).
 
@@ -63,13 +65,15 @@ You can also string ports together using `or`, for example, `tcpdump -n -r magni
 
 We were already seeing a bunch of HTTP packets, so to help get a clearer picture of what's going on, we can add `-A` to show the packet contents, and see what data is being transmitted. The output blows past, but we can pipe the output to `less` to make it easier to scroll.
 
-`tcpdump -n -r magnitude_1hr.pcap host 192.168.99.52 and port 443 or 80 | less`
+`tcpdump -n -r magnitude_1hr.pcap host 192.168.99.52 and port 443 or 80 -A | less`
 
-In the first fill screen, we see that PowerShell is being sent from an external IP to our host private IP address, and it's encoded in [[Tool Deep-Dives/Base64\|Base64]] to obfuscate the malicious code. Bad-bad!
+In the 4th packet, we see that the "Referer" and "Host" addresses are highly unusual (Botswana Bank and a costume site), and in 8th packet, we see that PowerShell is being sent from an external IP to our host private IP address, and it's encoded in [[Tool Deep-Dives/Base64\|Base64]] to obfuscate the malicious code. Bad-bad!
+
+![BHIS-SOCC-lab-tcpdump.png](/img/user/Attachments/BHIS-SOCC-lab-tcpdump.png)
 
 > You can also filter by protocol; in the lab, they append `ip6` to the command to show only IPv6 entries, but you could filter by `arp`, `stp`, but not `lldp` for some reason.
 
-# Bonus Lab
+# Bonus Lab 1
 [Malware of the Day - What Time Is It? - Active Countermeasures](https://www.activecountermeasures.com/malware-of-the-day-what-time-is-it/)
 Now that we have the basics, let's take a look at the most recent^[At the time of writing, 2024/02/19] Malware of the Day (linked at the bottom of the tcpdump lab).
 
