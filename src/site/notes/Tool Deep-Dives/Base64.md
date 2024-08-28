@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/base64/","tags":["tools_soc"]}
+{"dg-publish":true,"permalink":"/tool-deep-dives/base64/","tags":["tools_sec"]}
 ---
 
 #### Base64

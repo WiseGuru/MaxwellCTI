@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/zap/","tags":["tools_soc"]}
+{"dg-publish":true,"permalink":"/tool-deep-dives/zap/","tags":["tools_sec"]}
 ---
 
 #### ZAP

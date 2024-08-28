@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/nmap/","tags":["tools_soc"]}
+{"dg-publish":true,"permalink":"/tool-deep-dives/nmap/","tags":["tools_sec"]}
 ---
 
 #### Nmap
@@ -19,7 +19,6 @@
 			3. Open|filtered
 				1. The port may be open
 		3. Service
-2. Hi
 
 
 

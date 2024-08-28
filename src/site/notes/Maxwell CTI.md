@@ -22,6 +22,17 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | File                                                                                                                                                    | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Tool Deep-Dives/mknod\|mknod]]                                                                                                                     | 2024.08.28 - 15:18 |
+| [[Tool Deep-Dives/Nmap\|Nmap]]                                                                                                                       | 2024.08.28 - 15:17 |
+| [[Tool Deep-Dives/tcpdump\|tcpdump]]                                                                                                                 | 2024.08.28 - 15:17 |
+| [[Tool Deep-Dives/Wireshark\|Wireshark]]                                                                                                             | 2024.08.28 - 15:17 |
+| [[Tool Deep-Dives/ZAP\|ZAP]]                                                                                                                         | 2024.08.28 - 15:17 |
+| [[Tool Deep-Dives/Base64\|Base64]]                                                                                                                   | 2024.08.28 - 15:17 |
+| [[Tool Deep-Dives/Amass\|Amass]]                                                                                                                     | 2024.08.28 - 15:17 |
+| [[Tool Deep-Dives/Linux/Linux\|Linux]]                                                                                                               | 2024.08.28 - 09:22 |
+| [[Tool Deep-Dives/SSH/SSH\|SSH]]                                                                                                                     | 2024.08.27 - 13:32 |
+| [[Tool Deep-Dives/Linux/lsof\|lsof]]                                                                                                                 | 2024.08.26 - 12:39 |
+| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-LinuxCLI\|BHIS-SOCC-lab-LinuxCLI]]                                             | 2024.08.26 - 12:30 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-tcpdump\|BHIS-SOCC-lab-tcpdump]]                                               | 2024.08.26 - 11:22 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                                           | 2024.08.26 - 09:15 |
 | [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/01-BHIS-SOCC-lab-LinuxHostConfig\|01-BHIS-SOCC-lab-LinuxHostConfig]]                         | 2024.08.26 - 09:04 |
@@ -36,16 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Be
 | [[Tool Deep-Dives/Nikto\|Nikto]]                                                                                                                     | 2024.08.01 - 13:25 |
 | [[Tool Deep-Dives/Nuclei\|Nuclei]]                                                                                                                   | 2024.08.01 - 12:49 |
 | [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                                          | 2024.07.12 - 11:01 |
-| [[Tool Deep-Dives/7zip\|7zip]]                                                                                                                       | 2024.06.24 - 13:35 |
-| [[Tool Deep-Dives/Wireshark/Udemy - Chris Greer/S08 - UDP Analysis\|S08 - UDP Analysis]]                                                             | 2024.06.02 - 12:24 |
-| [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                                                      | 2024.05.29 - 17:20 |
-| [[Security Frameworks/NIST/NIST SP 800-37\|NIST SP 800-37]]                                                                                          | 2024.05.24 - 12:24 |
-| [[Definitions and Topics/GRC\|GRC]]                                                                                                                  | 2024.05.24 - 11:14 |
-| [[Security Frameworks/SOC 2 Type II\|SOC 2 Type II]]                                                                                                 | 2024.05.24 - 10:01 |
-| [[Security Frameworks/NIST/FISMA\|FISMA]]                                                                                                            | 2024.05.23 - 11:42 |
-| [[Security Frameworks/NIST/NIST CSF/NIST CSF\|NIST CSF]]                                                                                             | 2024.05.22 - 10:18 |
-| [[Security Frameworks/NIST/NIST CSF/CSF Resources\|CSF Resources]]                                                                                   | 2024.05.17 - 15:34 |
-| [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/Disable Windows Memory Integrity\|Disable Windows Memory Integrity]]                         | 2024.05.16 - 11:26 |
-| [[Tool Deep-Dives/OSINT/ffuf\|ffuf]]                                                                                                                 | 2024.05.13 - 14:15 |
 
 { .block-language-dataview}

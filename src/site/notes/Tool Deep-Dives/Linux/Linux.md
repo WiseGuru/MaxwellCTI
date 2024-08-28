@@ -3,6 +3,7 @@
 ---
 
 # Linux
+*On Linux, everything is a file.*
 - It's the OS that's in basically everything, so get used to it.
 - It comes in a variety of distributions or "distros"
 	- Don't get distracted with the distros
@@ -22,24 +23,24 @@
 - [explainshell.com](https://explainshell.com/)
 	- Copy and paste an entire line of shell commands to have each section broken down and identified clearly
 ### File directories
-| Root Directory | Description | Notes |
-| ---- | ---- | ---- |
-| /bin | User binaries |  |
-| /boot | Boot loader files |  |
-| /dev | Device files |  |
-| /etc | System configuration files |  |
-| /home | User home directories |  |
-| /lib | Libraries and kernel modules |  |
-| /media | Removeable media mount point | Should have just been /mnt, but HERE WE ARE |
-| /mnt | Mount point for temporary mounted file systems |  |
-| /opt | Add-in application software packages |  |
-| /sbin | System binaries |  |
-| /srv | Data for services |  |
-| /tmp | Temporary files |  |
-| /usr | User utilities and applications |  |
-| /var | Variable files |  |
-| /root | Root user home directory |  |
-| /proc | Virtual file system |  |
+| Root Directory | Description                                    | Notes                                       |
+| -------------- | ---------------------------------------------- | ------------------------------------------- |
+| /boot          | Boot loader files                              |                                             |
+| /dev           | Device files                                   |                                             |
+| /etc           | System configuration files                     |                                             |
+| /home          | User home directories                          |                                             |
+| /lib           | Libraries and kernel modules                   |                                             |
+| /media         | Removeable media mount point                   | Should have just been /mnt, but HERE WE ARE |
+| /mnt           | Mount point for temporary mounted file systems |                                             |
+| /opt           | Add-in application software packages           |                                             |
+| /bin           | User binaries                                  |                                             |
+| /sbin          | System binaries                                |                                             |
+| /srv           | Data for services                              |                                             |
+| /tmp           | Temporary files                                |                                             |
+| /usr           | User utilities and applications                |                                             |
+| /var           | Variable files                                 |                                             |
+| /root          | Root user home directory                       |                                             |
+| /proc          | Virtual file system                            |                                             |
 
 ### Navigating Linux and directories
 - `cd`

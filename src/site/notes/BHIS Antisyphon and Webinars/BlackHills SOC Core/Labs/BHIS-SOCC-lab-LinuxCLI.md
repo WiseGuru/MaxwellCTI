@@ -39,16 +39,17 @@ In this lab, we're investigating [[Definitions and Topics/backdoor\|backdoors]] 
 2. Investigate from the *Analyst* terminal
 	1. In the [lab](https://github.com/strandjs/IntroLabs/blob/master/IntroClassFiles/Tools/IntroClass/LinuxCLI/LinuxCLI.md), they suggest logging in as Root; this is generally a bad idea in the real world (like logging in as domain admin), and we should be able to accomplish most commands just running them with `sudo`.
 	2. Look for network connection processes
-		1. `sudo lsof -i -P`
+		1. [[Tool Deep-Dives/Linux/lsof\|lsof]] 
+		2. `sudo lsof -i -P`
 			1. `-i` is internet connections
 			2. `-P` port number only (don't guess the service)
 			3. ![BHIS-SOCC-lab-LinuxCLI-1.png](/img/user/Attachments/BHIS-SOCC-lab-LinuxCLI-1.png)
-		2. This shows us the services that look strange; we can dig into a specific process with lowercase `-p`
+		3. This shows us the services that look strange; we can dig into a specific process with lowercase `-p`
 			1. `lsof -p [process ID]`
 				1. In my case, `sudo lsof -p 372`
 			2. Shows everything associated with that particular PID
 			3. ![BHIS-SOCC-lab-LinuxCLI-2.png](/img/user/Attachments/BHIS-SOCC-lab-LinuxCLI-2.png)
-	3. Investigate the process files
+	4. Investigate the process files
 		2. `cd /proc/[pid]`
 		3. `ls`
 			1. Everything associated with the memory of the executable *as it resides in memory*
