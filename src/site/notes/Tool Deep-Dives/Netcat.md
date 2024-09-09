@@ -7,7 +7,7 @@
 
 
 
-Used in the [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-LinuxCLI\|BHIS-SOCC-lab-LinuxCLI]] to create a [[Definitions and Topics/Remote Shell\|Reverse Shell]] using a [[Tool Deep-Dives/Linux/Named Pipe\|Named Pipe]]
+Used in the [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-LinuxCLI\|BHIS-SOCC-lab-LinuxCLI]] to create a [[Definitions and Topics/Remote Shell\|Reverse Shell]] using a [[Tool Deep-Dives/Linux/Named Pipe\|Named Pipe]]
 
 
 # Metadata

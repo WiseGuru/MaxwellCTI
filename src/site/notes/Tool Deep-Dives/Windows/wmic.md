@@ -15,7 +15,7 @@
 	1. See what commands were used to launch the process
 		1. Processes started through mouse/keyboard interaction list the full path of the executable
 		2. Processes started through command line *tend* to only show the name of the executable and any switches used, but it's anything the person enters into the CLI
-		3. Check the end of the [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-WindowsCLI\|BHIS-SOCC-lab-WindowsCLI]] for details
+		3. Check the end of the [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-WindowsCLI\|BHIS-SOCC-lab-WindowsCLI]] for details
 
 
 

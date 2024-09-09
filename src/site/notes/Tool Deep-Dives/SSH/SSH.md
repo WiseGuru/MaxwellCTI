@@ -18,7 +18,8 @@
 	1. Terminate the session.
 3. `ssh-keygen`
 4. `ssh-agent`
-	1. Keymanager for SSH; 
+	1. Keymanager for SSH; in my experience, it's critical to some apps being able to connect.
+	2. You use `ssh-add` to add keys to the agent with `ssh-add \path\to\key\file`
    
 
 

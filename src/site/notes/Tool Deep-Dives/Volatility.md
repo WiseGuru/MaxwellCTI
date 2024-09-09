@@ -15,7 +15,7 @@
 	- ![Volatility-1.png](/img/user/Attachments/Volatility-1.png)
 
 ### Important Modules
-Most of these modules were explored in the [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-MemoryForensics\|BHIS SOCC course Memory Forensics lab]] I took earlier, but that was using a much earlier version of Volatility; here are additional references and links for the latest version of Volatility.
+Most of these modules were explored in the [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-MemoryForensics\|BHIS SOCC course Memory Forensics lab]] I took earlier, but that was using a much earlier version of Volatility; here are additional references and links for the latest version of Volatility.
 - [netscan](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference#netscan)
 - [pslist](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference#pslist)
 	- Show most processes, just not the hidden or unlinked ones

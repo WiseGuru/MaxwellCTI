@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/career-growth/discord-comments-and-job-hunting/"}
 ---
 
-During the [[BHIS Antisyphon and Webinars/BlackHills SOC Core/BHIS SOCC Notes Overview\|SOC Core]] course, there were lots of interesting side-tracks that I wanted to record for posterity
+During the [[Webinars and Training/BlackHills SOC Core/BHIS SOCC Notes Overview\|SOC Core]] course, there were lots of interesting side-tracks that I wanted to record for posterity
 # Various Home Lab Projects
 These are a range of home lab guides and overviews that looked interesting; I will come back and summarize/organize them.
 [Building Blue Team Home Lab Part 10 - SIEM Part 1 | facyber](https://facyber.me/posts/blue-team-lab-guide-part-10/)

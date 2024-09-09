@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/tool-deep-dives/linux/named-pipe/"}
 ---
 
-During the [[BHIS Antisyphon and Webinars/BlackHills SOC Core/BHIS SOCC Notes Overview\|BHIS SOC Analyst Core]] course I took recently, the [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-LinuxCLI\|Linux Lab]] had an interesting command where you create a FIFO (First in, First out) "backpipe" with `mknod` (create filesystem node) and `netcat`, effectively creating a shell [[Definitions and Topics/backdoor\|backdoor]] on a [[Tool Deep-Dives/Linux/Linux\|Linux]] system.
+During the [[Webinars and Training/BlackHills SOC Core/BHIS SOCC Notes Overview\|BHIS SOC Analyst Core]] course I took recently, the [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-LinuxCLI\|Linux Lab]] had an interesting command where you create a FIFO (First in, First out) "backpipe" with `mknod` (create filesystem node) and `netcat`, effectively creating a shell [[Definitions and Topics/backdoor\|backdoor]] on a [[Tool Deep-Dives/Linux/Linux\|Linux]] system.
 
 ```Bash
 mknod backpipe p
@@ -10,7 +10,7 @@ mknod backpipe p
 ```
 
 
-Basically, `mknod <string> p` creates a named *pipe* (specified by the `p`) called "backpipe" (though it could functionally be named anything that doesn't conflict with other things; for example in the [[BHIS Antisyphon and Webinars/BlackHills SOC Core/Labs/BHIS-SOCC-lab-tcpdump#Bonus Lab\|tcpdump Bonus Lab]], one could name it *timesync.svc* or something similar to make it less obvious). This *Named Pipe* allows us to pipe an output *from* any location in the shell *to* any location in the shell.
+Basically, `mknod <string> p` creates a named *pipe* (specified by the `p`) called "backpipe" (though it could functionally be named anything that doesn't conflict with other things; for example in the [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-tcpdump#Bonus Lab\|tcpdump Bonus Lab]], one could name it *timesync.svc* or something similar to make it less obvious). This *Named Pipe* allows us to pipe an output *from* any location in the shell *to* any location in the shell.
 ![ThinkingWithPortals.gif|300](/img/user/Attachments/ThinkingWithPortals.gif)
 
 Additionally, `>` and `<` can be used to redirect input in a script; for example, if we ran `./FiscalReport.sh < 2024Q1.csv`, the `FiscalReport` shell script would input the values from `2024Q1.csv`. 
