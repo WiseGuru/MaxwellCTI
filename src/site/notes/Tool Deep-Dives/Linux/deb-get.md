@@ -31,6 +31,7 @@ Follow the [GitHub instructions](https://github.com/wimpysworld/deb-get?tab=read
 		4. Generate token
 2. Insert it into your current working session
 	1. Open your terminal and run `export DEBGET_TOKEN=github_pat_whatever-your-token-is`
+	2. Update deb-get `sudo deb-get update`
 3. Add it to your `.profile` or `.zshrc` config file (depending on if you use ZSH as your shell)
 	1. The following commands will append the token to the config file; be sure you know which one you're using. 
 	2. *Be careful that you don't share your .profile or .zshrc file with anyone or on GitHub!*
@@ -76,7 +77,6 @@ If the token is misconfigured, you'll see this:
   "status": "401"
 }
 ```
-
 
 
 # Metadata
