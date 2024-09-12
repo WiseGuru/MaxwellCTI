@@ -79,6 +79,22 @@ If the token is misconfigured, you'll see this:
 ```
 
 
+#### Update and use deb-get
+Before you can use `deb-get` to install anything, you need to update its list of repos. As mentioned before, this is basically the same as with `apt-get`; just run `deb-get update`, and it will pull a list of all available repos to install from.
+
+To begin installing applications, I recommend running `deb-get list` and scrolling through to check for any apps you may have already installed manually, with Flatpak, or Snap, and deciding if you want to remove and reinstall them with `deb-get`.
+
+For example, [I installed GitHub Desktop](https://github.com/shiftkey/desktop?tab=readme-ov-file#installation-via-package-manager) before getting `deb-get`, and I started getting warnings about the repo ([shiftkey](https://github.com/shiftkey)) I chose; not sure why, but it was preventing me from running updates, I had to remove it.
+
+> NOTE: I typically use [Nala](https://github.com/volitank/nala) instead of `apt-get`, which has a few neat features, but I'm showing `apt` here for universality.
+
+```bash
+sudo apt remove github-desktop
+sudo deb-get update
+sudo deb-get install github-desktop
+```
+
+I then went and remove the problematic repo from `/etc/apt/sources.list.d/` and everything was golden!
 # Metadata
 
 ### Sources
