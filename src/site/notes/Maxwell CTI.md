@@ -22,12 +22,15 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | File                                                                                                                                             | Last modified      |
 | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| [[Tool Deep-Dives/Windows/RDP\|RDP]]                                                                                                          | 2024.11.06 - 10:56 |
+| [[Tool Deep-Dives/Linux/xrdp\|xrdp]]                                                                                                          | 2024.11.06 - 10:44 |
+| [[Tool Deep-Dives/SSH/OpenSSH\|OpenSSH]]                                                                                                      | 2024.11.06 - 10:40 |
+| [[Tool Deep-Dives/SSH/SSH\|SSH]]                                                                                                              | 2024.11.06 - 10:39 |
 | [[Tool Deep-Dives/Linux/deb-get\|deb-get]]                                                                                                    | 2024.09.12 - 10:10 |
 | [[Tool Deep-Dives/Linux/which\|which]]                                                                                                        | 2024.09.12 - 09:02 |
 | [[Definitions and Topics/Indicators of Compromise\|Indicators of Compromise]]                                                                 | 2024.08.30 - 10:36 |
 | [[Tool Deep-Dives/Purple Knight\|Purple Knight]]                                                                                              | 2024.08.30 - 10:31 |
 | [[Tool Deep-Dives/Linux/Remmina\|Remmina]]                                                                                                    | 2024.08.29 - 17:10 |
-| [[Tool Deep-Dives/SSH/SSH\|SSH]]                                                                                                              | 2024.08.29 - 17:09 |
 | [[Tool Deep-Dives/Linux/Linux\|Linux]]                                                                                                        | 2024.08.28 - 09:22 |
 | [[Tool Deep-Dives/Linux/lsof\|lsof]]                                                                                                          | 2024.08.26 - 12:39 |
 | [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-LinuxCLI\|BHIS-SOCC-lab-LinuxCLI]]                                             | 2024.08.26 - 12:30 |
@@ -44,8 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Be
 | [[Tool Deep-Dives/Linux/PATH Variable\|PATH Variable]]                                                                                        | 2024.08.01 - 13:19 |
 | [[Tool Deep-Dives/Nikto\|Nikto]]                                                                                                              | 2024.08.01 - 12:25 |
 | [[Tool Deep-Dives/Nuclei\|Nuclei]]                                                                                                            | 2024.08.01 - 11:49 |
-| [[Security Frameworks/NIST/NIST 800-53/800-53R5\|800-53R5]]                                                                                   | 2024.07.12 - 10:01 |
-| [[Tool Deep-Dives/7zip\|7zip]]                                                                                                                | 2024.06.24 - 12:35 |
-| [[Tool Deep-Dives/Wireshark/Udemy - Chris Greer/S08 - UDP Analysis\|S08 - UDP Analysis]]                                                      | 2024.06.02 - 11:24 |
 
 { .block-language-dataview}
