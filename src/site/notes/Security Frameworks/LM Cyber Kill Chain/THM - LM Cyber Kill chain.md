@@ -27,9 +27,9 @@
 			1. In the example, it's a group of soldiers, or a macro that executes code on a system
 		3. The *payload* is the combination of the *exploit* and the *malware* that is delivered to a system
 			1. the soldiers in the wooden horse, or the [word document with macros to infect a system](https://www.trustedsec.com/blog/intro-to-macros-and-vba-for-script-kiddies)
-	4. IF the goal is more long-term, the attacker may attempt to leave themselves a *backdoor*
+	2. IF the goal is more long-term, the attacker may attempt to leave themselves a *backdoor*
 4. Delivery
-	6. How the *payload* is delivered
+	1. How the *payload* is delivered
 		1. Phishing email, infected USB drives, or a watering hole attack, for example
 		2. [Cybercriminal group mails malicious USB dongles to targeted companies | CSO Online](https://www.csoonline.com/article/569163/cybercriminal-group-mails-malicious-usb-dongles-to-targeted-companies.html)
 5. Exploitation
