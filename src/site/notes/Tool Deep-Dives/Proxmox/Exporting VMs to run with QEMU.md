@@ -25,7 +25,23 @@
 - Install QEMU if necessary and run the VM.
 	- [[Webinars and Training/BlackHills SOC Core/Labs/01-BHIS-SOCC-lab-LinuxHostConfig#Running Without SPICE\|Running the VM without spice]]
 	- You *should* be able to run the VM without converting it; just set `format=raw` and it should work.
-	
+	- Here's an example of a command to run the VM, based on my extraction:
+
+```bash
+qemu-system-x86_64 \
+    -drive file=/home/max/Downloads/extract/disk-drive-efidisk0.raw,format=raw,if=none,id=efidisk0 \
+    -device ide-hd,drive=efidisk0 \
+    -drive file=/home/max/Downloads/extract/disk-drive-tpmstate0-backup.raw,format=raw,if=none,id=tpmstate0 \
+    -device ide-hd,drive=tpmstate0 \
+    -drive file=/home/max/Downloads/extract/disk-drive-virtio0.raw,format=raw,if=none,id=virtio0 \
+    -device virtio-blk-pci,drive=virtio0 \
+    -m 16384 \
+    -smp cores=8 \
+    -enable-kvm \
+    -cpu host \
+    -bios /usr/share/ovmf/OVMF.fd \
+    -vga virtio
+```
 
 # Metadata
 
