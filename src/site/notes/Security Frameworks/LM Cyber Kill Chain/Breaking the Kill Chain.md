@@ -7,14 +7,14 @@
 1. Reconnaissance
 	1. Goal: Find a weakness to exploit
 	2. Two kinds of reconnaissance
-		2. Passive
+		1. Passive
 			1. WHOIS
 			2. Arin registation
 			3. Google
 			4. Shodan
 			5. Job Listing
 			6. Company Website
-		3. Active
+		2. Active
 			1. NMAP
 			2. Port Scanning
 			3. Banner Grabbing
