@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/mounting-usb-drives-in-prox-mox/"}
 ---
 
-> Use [[Tool Deep-Dives/Linux/lsblk\|lsblk]] to identify storage blocks
 #### Summary
 This guide was built using [syncbricks'](https://www.youtube.com/@syncbricks) video, linked below.
 1. Erase the disk
