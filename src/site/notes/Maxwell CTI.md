@@ -20,32 +20,32 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 
 ## Recently Modified Pages
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
-| File                                                                                                 | Last modified      |
-| ---------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Tool Deep-Dives/Proxmox/Exporting VMs to run with QEMU\|Exporting VMs to run with QEMU]]        | 2024.11.12 - 14:56 |
-| [[Tool Deep-Dives/Proxmox/Mounting USB Drives in ProxMox\|Mounting USB Drives in ProxMox]]        | 2024.11.12 - 14:47 |
-| [[Tool Deep-Dives/Linux/lsblk\|lsblk]]                                                            | 2024.11.12 - 14:45 |
-| [[Tool Deep-Dives/Linux/fstab\|fstab]]                                                            | 2024.11.12 - 14:03 |
-| [[Tool Deep-Dives/Linux/sed\|sed]]                                                                | 2024.11.12 - 13:02 |
-| [[Tool Deep-Dives/SSH/OpenSSH\|OpenSSH]]                                                          | 2024.11.12 - 12:07 |
-| [[Tool Deep-Dives/pfSense\|pfSense]]                                                              | 2024.11.12 - 10:29 |
-| [[Tool Deep-Dives/Linux/Formatting Drives on Linux\|Formatting Drives on Linux]]                  | 2024.11.12 - 10:25 |
-| [[Security Frameworks/LM Cyber Kill Chain/THM - LM Cyber Kill chain\|THM - LM Cyber Kill chain]]  | 2024.11.11 - 17:19 |
-| [[Security Frameworks/LM Cyber Kill Chain/Breaking the Kill Chain\|Breaking the Kill Chain]]      | 2024.11.11 - 17:11 |
-| [[Tool Deep-Dives/Windows/RDP\|RDP]]                                                              | 2024.11.06 - 10:56 |
-| [[Tool Deep-Dives/Linux/xrdp\|xrdp]]                                                              | 2024.11.06 - 10:44 |
-| [[Tool Deep-Dives/SSH/SSH\|SSH]]                                                                  | 2024.11.06 - 10:39 |
-| [[Tool Deep-Dives/Linux/deb-get\|deb-get]]                                                        | 2024.09.12 - 10:10 |
-| [[Tool Deep-Dives/Linux/which\|which]]                                                            | 2024.09.12 - 09:02 |
-| [[Definitions and Topics/Indicators of Compromise\|Indicators of Compromise]]                     | 2024.08.30 - 10:36 |
-| [[Tool Deep-Dives/Purple Knight\|Purple Knight]]                                                  | 2024.08.30 - 10:31 |
-| [[Tool Deep-Dives/Linux/Remmina\|Remmina]]                                                        | 2024.08.29 - 17:10 |
-| [[Tool Deep-Dives/Nmap\|Nmap]]                                                                    | 2024.08.28 - 15:17 |
-| [[Tool Deep-Dives/Base64\|Base64]]                                                                | 2024.08.28 - 15:17 |
-| [[Tool Deep-Dives/Amass\|Amass]]                                                                  | 2024.08.28 - 15:17 |
-| [[Tool Deep-Dives/Linux/Linux\|Linux]]                                                            | 2024.08.28 - 09:22 |
-| [[Tool Deep-Dives/Linux/lsof\|lsof]]                                                              | 2024.08.26 - 12:39 |
-| [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-LinuxCLI\|BHIS-SOCC-lab-LinuxCLI]] | 2024.08.26 - 12:30 |
-| [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-tcpdump\|BHIS-SOCC-lab-tcpdump]]   | 2024.08.26 - 11:22 |
+| File                                                                                                   | Last modified      |
+| ------------------------------------------------------------------------------------------------------ | ------------------ |
+| [[Tool Deep-Dives/Linux/Formatting Drives on Linux\|Formatting Drives on Linux]]                    | 2024.11.12 - 21:03 |
+| [[Tool Deep-Dives/Proxmox/Exporting VMs to run with QEMU\|Exporting VMs to run with QEMU]]          | 2024.11.12 - 14:56 |
+| [[Tool Deep-Dives/Proxmox/Mounting USB Drives in ProxMox\|Mounting USB Drives in ProxMox]]          | 2024.11.12 - 14:47 |
+| [[Tool Deep-Dives/Linux/lsblk\|lsblk]]                                                              | 2024.11.12 - 14:45 |
+| [[Tool Deep-Dives/Linux/fstab\|fstab]]                                                              | 2024.11.12 - 14:03 |
+| [[Tool Deep-Dives/Linux/sed\|sed]]                                                                  | 2024.11.12 - 13:02 |
+| [[Tool Deep-Dives/SSH/OpenSSH\|OpenSSH]]                                                            | 2024.11.12 - 12:07 |
+| [[Security Frameworks/LM Cyber Kill Chain/THM - LM Cyber Kill chain\|THM - LM Cyber Kill chain]]    | 2024.11.11 - 17:19 |
+| [[Security Frameworks/LM Cyber Kill Chain/Breaking the Kill Chain\|Breaking the Kill Chain]]        | 2024.11.11 - 17:11 |
+| [[Tool Deep-Dives/Windows/RDP\|RDP]]                                                                | 2024.11.06 - 10:56 |
+| [[Tool Deep-Dives/Linux/xrdp\|xrdp]]                                                                | 2024.11.06 - 10:44 |
+| [[Tool Deep-Dives/SSH/SSH\|SSH]]                                                                    | 2024.11.06 - 10:39 |
+| [[Tool Deep-Dives/Linux/deb-get\|deb-get]]                                                          | 2024.09.12 - 10:10 |
+| [[Tool Deep-Dives/Linux/which\|which]]                                                              | 2024.09.12 - 09:02 |
+| [[Definitions and Topics/Indicators of Compromise\|Indicators of Compromise]]                       | 2024.08.30 - 10:36 |
+| [[Tool Deep-Dives/Purple Knight\|Purple Knight]]                                                    | 2024.08.30 - 10:31 |
+| [[Tool Deep-Dives/Linux/Remmina\|Remmina]]                                                          | 2024.08.29 - 17:10 |
+| [[Tool Deep-Dives/Nmap\|Nmap]]                                                                      | 2024.08.28 - 15:17 |
+| [[Tool Deep-Dives/Base64\|Base64]]                                                                  | 2024.08.28 - 15:17 |
+| [[Tool Deep-Dives/Amass\|Amass]]                                                                    | 2024.08.28 - 15:17 |
+| [[Tool Deep-Dives/Linux/Linux\|Linux]]                                                              | 2024.08.28 - 09:22 |
+| [[Tool Deep-Dives/Linux/lsof\|lsof]]                                                                | 2024.08.26 - 12:39 |
+| [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-LinuxCLI\|BHIS-SOCC-lab-LinuxCLI]]   | 2024.08.26 - 12:30 |
+| [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-tcpdump\|BHIS-SOCC-lab-tcpdump]]     | 2024.08.26 - 11:22 |
+| [[Webinars and Training/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]] | 2024.08.26 - 09:15 |
 
 { .block-language-dataview}
