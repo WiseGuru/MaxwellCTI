@@ -6,6 +6,7 @@
 When you mount a drive to Linux that you need to wipe, you might run into an error like this:
 ```bash
 sudo wipefs -a /dev/sda
+
 wipefs: error: /dev/sda: probing initialization failed: Device or resource busy
 ```
 This is likely because Linux has a *partition* on that drive mounted, so it cannot make changes to the drive itself.
