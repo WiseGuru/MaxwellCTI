@@ -25,7 +25,7 @@
 - Install QEMU if necessary and run the VM.
 	- [[Webinars and Training/BlackHills SOC Core/Labs/01-BHIS-SOCC-lab-LinuxHostConfig#Running Without SPICE\|Running the VM without spice]]
 	- You *should* be able to run the VM without converting it; just set `format=raw` and it should work.
-	- Here's an example of a command to run the VM, based on my extraction:
+	- Here's an example of a command to run the VM (without Spice), based on my extraction:
 
 ```bash
 qemu-system-x86_64 \
