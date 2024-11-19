@@ -22,7 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | 25 Most Recently Modified Pages                                                                                          | Last Modified      |
 | ------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                       | 2024.11.18 - 20:53 |
+| [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                       | 2024.11.18 - 20:57 |
 | [[Tool Deep-Dives/Proxmox/Exporting VMs to run with QEMU\|Exporting VMs to run with QEMU]]                            | 2024.11.12 - 21:07 |
 | [[Tool Deep-Dives/Linux/Formatting Drives on Linux\|Formatting Drives on Linux]]                                      | 2024.11.12 - 21:03 |
 | [[Tool Deep-Dives/Proxmox/Mounting USB Drives in ProxMox\|Mounting USB Drives in ProxMox]]                            | 2024.11.12 - 14:47 |

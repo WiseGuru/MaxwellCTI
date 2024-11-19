@@ -18,45 +18,7 @@ Each of these documents (in particular the *RMF* and *800-53*) are supported by 
 
  I've created a flow-chart to better illustrate this and identify how some of the SPs are used.
 
-```mermaid
-flowchart TD
-    A["NIST CSF
-    A broad framework outlining
-    organizational security"] --> B{"NIST RMF
-    Actionable steps to
-    apply the CSF"}
-  
-    B --> Z("`**0. Prepare**`")
-  
-    Z --> |Identify systems, stakeholders, and processes| C("`**1. Categorize**`")
-    C --> |Impact Requirements| D[FIPS 199 and 200]
-    C --> |Impact Assignment| E[NIST 800-60]
-    C --> |Assess Risk| P{{"Guide for Risk Assessments - NIST 800-30
-    The RMF - NIST 800-37
-    Managing InfoSec Risk - NIST 800-39"}}
-  
-    D & E & P --> F("`**2. Select**`")
-    F --> |Select Controls| G[NIST 800-53]
-    G --> |Tailoring controls and ODPs| S[NIST 800-53B]
-  
-    S --> H("`**3. Implement**`")
-    H --> I{{"Contingency Planning - NIST 800-34
-    Connecting IT Systems - NIST 800-47
-    Incident Response - NIST 800-61
-    Configuration Management - NIST 800-128"}}
-  
-    I --> M("`**4. Assess**`")
-    M --> |Test Controls| R("NIST 800-53A")
-    R --> |Plan Remediation| G
- 
-    R --> N("`**5. Authorize**`")
-    N --> O("`**6. Monitor**`")
-    O --> |Continuous monitoring for changes| Q("InfoSec Continuous
-    Monitoring - NIST 800-137")
-    Q --> |Periodic or change-directed review| Z
-```
-> For some reason, Mermaid.js is not rendered properly by DigitalGarden with Markdown Language, so the steps of the RMF have flanking `**`double asterisks`**` instead of appearing in bold.
-
+![NIST Frameworks and SPs Overview-1.png](/img/user/Attachments/NIST%20Frameworks%20and%20SPs%20Overview-1.png)
 
 NIST also has their own chart (below), which reflects the circular nature of a strong security posture and the broad relevance of some Special Publications.
 ![NIST-RMF.png](/img/user/Attachments/NIST-RMF.png)
