@@ -43,7 +43,7 @@
         }
 
         // **Modification Start**: Filter nodes based on folders or files with decoded URLs
-        const foldersToExclude = ['']; // Use the URL folder path
+        const foldersToExclude = ['/none']; // Use the URL folder path
         const filesToExclude = ['/']; // Use the full URL file path
 
         nodes = Object.values(existing).filter(n => {
@@ -226,7 +226,7 @@
         graphData = JSON.parse(JSON.stringify(graphData));
 
         // **Modification Start**: Filter nodes based on folders or files with decoded URLs
-        const foldersToExclude = ['']; // Use the URL folder path
+        const foldersToExclude = ['/none']; // Use the URL folder path
         const filesToExclude = ['/']; // Use the full URL file path
 
         // Filter out nodes in specified folders or files
