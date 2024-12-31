@@ -29,18 +29,17 @@
 - **Adding a Passphrase**:
   - A passphrase adds an additional layer of security by protecting the private key. If the private key file is compromised, the attacker would still need the passphrase to use it. This is particularly important on devices that may not always be physically secure.
 
-**Windows:**
 1. **Open Preferred Terminal
-   - Windows: Press `Win + X`, then select *Windows Terminal (Admin)* or *PowerShell (Admin)*.
-   - Linux: Whatever your preferred terminal emulator is.
-1. **Generate the Key:**
-   - `ssh-keygen -t ed25519 -C [Identifying comment]`
-	   - `-t [algorithm]` choose the algorithm to use (e.g. rsa, ed25519, etc)
-	   - `-C [Comment]` used to identify the key
-   - Follow the prompts to save the key in the default location:
-	   - Windows: `C:\Users\YourUsername\.ssh\id_ed25519`
-	   - Linux: `~/.ssh/id_ed25519`
-   - When prompted, enter a strong passphrase.
+   1. Windows: Press `Win + X`, then select *Windows Terminal (Admin)* or *PowerShell (Admin)*.
+   2. Linux: Whatever your preferred terminal emulator is.
+2. **Generate the Key:**
+   1. `ssh-keygen -t ed25519 -C [Identifying comment]`
+	   1. `-t [algorithm]` choose the algorithm to use (e.g. rsa, ed25519, etc)
+	   2. `-C [Comment]` used to identify the key
+   2. Follow the prompts to save the key in the default location:
+	   1. Windows: `C:\Users\YourUsername\.ssh\id_ed25519`
+	   2. Linux: `~/.ssh/id_ed25519`
+   3. When prompted, enter a strong passphrase.
 
 
 **Transfer the Public Key to the Host Using `scp`:**
