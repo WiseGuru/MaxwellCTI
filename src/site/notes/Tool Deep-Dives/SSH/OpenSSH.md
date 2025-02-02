@@ -29,7 +29,7 @@
 - **Adding a Passphrase**:
   - A passphrase adds an additional layer of security by protecting the private key. If the private key file is compromised, the attacker would still need the passphrase to use it. This is particularly important on devices that may not always be physically secure.
 
-1. **Open Preferred Terminal
+1. **Open Preferred Terminal**
    1. Windows: Press `Win + X`, then select *Windows Terminal (Admin)* or *PowerShell (Admin)*.
    2. Linux: Whatever your preferred terminal emulator is.
 2. **Generate the Key:**
@@ -58,7 +58,7 @@
 
 1. **SSH into the Remote Host:**
    ```bash
-   ssh max@remote_host -p 3022
+   ssh max@remote_host -p 22
    ```
 
 2. **Move the Public Key to the Appropriate Location:**
@@ -111,6 +111,11 @@
    ```
    - Disabling password authentication forces the use of SSH key-based authentication, which is more secure.
 
+**Change the Default Port**
+Search the file for `port 22` and replace `22` with whatever port number you want between *1024* and *65536*
+
+> changing the default port number prevents automated scanners from detecting an open SSH port and reduces the number of failed logins from automated services.
+
 3. **Save and Close the File.**
 
 4. **Restart the SSH Service:**
@@ -155,7 +160,7 @@
 
 3. **Configure the Rule:**
    1. **Rule Type:** Select Port and click Next.
-   2. **Protocol and Ports:** Select TCP and specify Specific local ports as `3022` (or the port you configured in `sshd_config`). Click Next.
+   2. **Protocol and Ports:** Select TCP and specify Specific local ports as `22` (or the port you configured in `sshd_config`). Click Next.
    3. **Action:** Select Allow the connection. Click Next.
    4. **Profile:** Choose when the rule applies (Domain, Private, Public). Click Next.
    5. **Name:** Give your rule a name, such as OpenSSH Inbound Rule. Click Finish.
