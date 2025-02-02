@@ -35,8 +35,14 @@ Below are a few courses, classes, and channels that cover the basics you'll want
 	4. Taken a little bit at a time and using a homelab should give you a great foundation and feeling of confidence for your first IT Helpdesk/Support job.
 2. [Kevtech IT Support](https://www.youtube.com/@KevtechITSupport/playlists)
 	1. This guy has a ton of videos and playlists going over every aspect of an IT Helpdesk environment.
+	2. He's also on Udemy, but watch is free videos first to make sure his format works for you.
 3. Techtubers
 	1. Watching techtubers talk shop is a great way to get learn by immersion; see trends in the techspace, get different perspectives and weird dives into highly specific pieces of tech that might interest you...
-	2. Linus Tech Tips, Bitwit, Jayz2Cents, Snazzy Labs, Chris Greer, Chris Titus Tech, DIY Perks, Veronica Explains, Black Hills Information Security, Antisyphon Labs
-		1. [LTT - How to Build a PC, the last guide you’ll ever need! (2024 Update)](https://youtu.be/s1fxZ-VWs2U?)
+		1. [Matt Brown](https://www.youtube.com/@mattbrwn) is an awesome hardware security researcher who shows the whole process of hacking hardware.
+		2. [Veronica Explains](https://www.youtube.com/@VeronicaExplains) is a fountain of information for all things Linux; tons of great videos on essential tools.
+		3. Linus Tech Tips, Bitwit, Jayz2Cents, Snazzy Labs, DIY Perks; they're all in kind of the same territory for hardware enthusiasts. Not directly helpful to IT support, but they're entertaining and keep you in the know.
+			1. [LTT - How to Build a PC, the last guide you’ll ever need! (2024 Update)](https://youtu.be/s1fxZ-VWs2U?)
+		4. [Chris Greer](https://www.youtube.com/@ChrisGreer) has a ton of great classes on [[Tool Deep-Dives/Wireshark\|Wireshark]] to help you get started
+		5. [Chris Titus Tech](https://www.youtube.com/@ChrisTitusTech) is like the LTT of Linux, [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]], and corporate applications
+		6. Black Hills Information Security and Antisyphon Labs are great resources for cybersecurity news and topics, 
 

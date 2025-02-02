@@ -13,7 +13,11 @@ A homelab can be as simple or complicated as you like; for the purpose of gettin
 The best is that, as long as you already have a computer,^[ARM processors, like Apple Silicon, have required special tooling to work with traditional Windows VMs; however, Parallels and (I believe) Virtualbox both support running x86_64 virtual machines on ARM CPUs, but I have not tested this yet.] you can get started right now and for free. 
 
 ## Old Hardware
-**Old hardware** is another great way to start; many offices run on Dell Optiplex desktops, Lenovo Thinkpad laptops, or HP... computers, and being able to actually look at and work with the hardware that's even a few generations gives you a rough idea of what's being used. Additionally, most big companies have hardware lifecycles that run around 3 to 5 years, meaning that every year, thousands of computers that are 3 to 5 years old get sent to ewaste recycling centers or are "rescued" by members of the IT team. Being able to disassemble, recombine, and upgrade these old machines is an education in itself, and if something breaks, it's not your primary computer, and you will learn a lot in trying to fix it.
+**Old hardware** is another great way to start; many offices run on Dell Optiplex desktops, Lenovo Thinkpad laptops, or HP... computers, and being able to actually look at and work with the hardware that's even a few generations gives you a rough idea of what's being used. Additionally, most big companies have hardware lifecycles that run around 3 to 5 years, meaning that every year, thousands of computers that are 3 to 5 years old get sent to ewaste recycling centers or are "rescued" by members of the IT team. 
+
+Disassembling, recombining, and upgrading these old machines is an education in itself, and you will become intimately familiar with how the computer works and gain confidence in tinkering with any system. Besides, it's not critical if something breaks since it's not your primary computer, and you will learn a lot in trying to fix it.
+
+> If you want some inspiration in getting familiar with hardware, the Linus Tech Tips [Scrapyard Wars series](https://www.youtube.com/watch?v=x1JA24KCAjE&list=PL8mG-RkN2uTyuEutQa79RZ0Q5u5gteUci) is a great way to see how old hardware can be cobbled together to make competent machines.
 
 ## Do Both
 The best thing is to do both; get an old desktop, install Windows or Linux, and then run your homelab in a virtual environment. Or, if you get several low-powered computers, physically build out your homelab with one OS per computer.
@@ -21,7 +25,7 @@ The best thing is to do both; get an old desktop, install Windows or Linux, and 
 # Getting Old Hardware
 When looking for or buying old hardware, here are some rules of thumb;
 
-1. Free is free
+1. *Free is free*
 	1. If you're getting a free computer, accept it with gratitude and figure out what to do with it later. You can run many operating systems with very low hardware specs, and you don't need the latest and greatest.
 	2. Only really worry about the following points if you're paying for a computer or if you have a specific task in mind.
 2. CPU Generations Matters
@@ -37,7 +41,7 @@ When looking for or buying old hardware, here are some rules of thumb;
 			2. I wouldn't recommend *buying*^[But free is free.] 5th gen or earlier, and I wouldn't pay more than $100 for a desktop with a 6th gen Core i7.
 	3. AMD Guidelines
 		1. Pre-Ryzen, AMD CPUs were not good.
-			1. Don't buy ANY desktop with a non-Ryzen AMD CPU in it.^[Free is free!]
+			1. Don't *buy* ANY desktop with a non-Ryzen AMD CPU in it.^[But free is free!]
 		2. Aim for a Ryzen 5 or Ryzen 7, any generation
 			1. The lowest tier 1st gen Ryzen 5 is 4 cores/8 threads, and the Ryzen 7 is 8 cores/16 threads; *tons of power for virtual machines*
 		3. These are a bit rarer because they were not adopted as quickly, but you can get *screaming* deals on them.
@@ -83,11 +87,11 @@ I recommend pairing this with the [[Intro to IT and Cybersecurity/Recommended He
 # GPU vs. No GPU
 
 ## GPU
-![[Building a Homelab-1.png\|Building a Homelab-1.png]]
+![Building a Homelab-1.png](/img/user/Attachments/Building%20a%20Homelab-1.png)
 
-![[Building a Homelab-2.png\|Building a Homelab-2.png]]
+![Building a Homelab-2.png](/img/user/Attachments/Building%20a%20Homelab-2.png)
 
 ## No GPU
-![[Building a Homelab-GPU-2.png\|Building a Homelab-GPU-2.png]]
+![Building a Homelab-GPU-2.png](/img/user/Attachments/Building%20a%20Homelab-GPU-2.png)
 
-![[Building a Homelab-GPU-1.png\|Building a Homelab-GPU-1.png]]
+![Building a Homelab-GPU-1.png](/img/user/Attachments/Building%20a%20Homelab-GPU-1.png)
