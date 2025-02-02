@@ -19,7 +19,7 @@ However, the key to effective troubleshooting is *defining the problem*. When so
 
 For help with logical troubleshooting, [CompTIA](https://www.comptia.org/blog/troubleshooting-methodology) has a handy little blog that describes their steps, but I think [Limble](https://limblecmms.com/blog/what-is-troubleshooting/) has a better guide and flowchart:
 
-![[Limble-Troubleshooting-1.png\|300]]
+![Limble-Troubleshooting-1.png|300](/img/user/Attachments/Limble-Troubleshooting-1.png)
 
 # Building a Homelab
 I go into it more in [[Intro to IT and Cybersecurity/Building a Homelab\|Building a Homelab]], but if you're just getting started in IT, I highly recommend setting up a homelab to get hands-on experience with the hardware and software you'll be supporting.
