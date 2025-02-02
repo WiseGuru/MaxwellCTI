@@ -10,7 +10,7 @@ A homelab can be as simple or complicated as you like; for the purpose of gettin
 ## Virtual Machines
 **Virtual machines** are a great place to get started; you can learn about Microsoft's Windows Servers, Active Directory, and create "user" computers to join to the domain. It can also be a safe place to try out configurations, learn about *group policy*, system resource management, and many other things.
 
-The best is that, as long as you already have a computer,^[ARM processors, like Apple Silicon, have required special tooling to work with traditional Windows VMs; however, Parallels and (I believe) Virtualbox both support running x86_64 virtual machines on ARM CPUs, but I have not tested this yet.] you can get started right now and for free. 
+The best is that, as long as you already have a computer,^[ARM processors, like Apple Silicon, have required special tooling to work with traditional Windows VMs; however, Parallels and (I believe) Virtualbox both support running x86_64 virtual machines on ARM CPUs, but I have not tested this yet.] you can get started right now and for free.
 
 ## Old Hardware
 **Old hardware** is another great way to start; many offices run on Dell Optiplex desktops, Lenovo Thinkpad laptops, or HP... computers, and being able to actually look at and work with the hardware that's even a few generations gives you a rough idea of what's being used. Additionally, most big companies have hardware lifecycles that run around 3 to 5 years, meaning that every year, thousands of computers that are 3 to 5 years old get sent to ewaste recycling centers or are "rescued" by members of the IT team. 
@@ -19,6 +19,7 @@ Disassembling, recombining, and upgrading these old machines is an education in 
 
 > If you need inspiration, the Linus Tech Tips [Scrapyard Wars series](https://www.youtube.com/watch?v=x1JA24KCAjE&list=PL8mG-RkN2uTyuEutQa79RZ0Q5u5gteUci) is a fun lesson in building competent computers from old and cobbled together hardware.
 
+If you do not have a spare monitor or TV you can dedicate to a desktop, you can install a hypervisor like [[Tool Deep-Dives/Proxmox/Proxmox Virtual Environment\|Proxmox Virtual Environment]] and access it remotely from another computer, tablet, or smartphone.^[Though managing multiple OSes from a smartphone will be rough.]
 ## Do Both
 The best thing is to do both; get an old desktop, install Windows or Linux, and then run your homelab in a virtual environment. Or, if you get several low-powered computers, physically build out your homelab with one OS per computer.
 
@@ -26,8 +27,9 @@ The best thing is to do both; get an old desktop, install Windows or Linux, and 
 When looking for or buying old hardware, here are some rules of thumb;
 
 1. *Free is free*
-	1. If you're getting a free computer, accept it with gratitude and figure out what to do with it later. You can run many operating systems with very low hardware specs, and you don't need the latest and greatest.
-	2. Only really worry about the following points if you're paying for a computer or if you have a specific task in mind.
+	1. If you're getting a free computer, accept it with gratitude and figure out what to do with it later.
+	2. You can run many operating systems on computers with old or low hardware specs, and you don't need the latest and greatest.
+	3. Only really worry about the following points if you're paying for a computer or if you have a specific task in mind.
 2. CPU Generations Matters
 	1. For a long time, Intel believed that people only needed a few cores to do their work; however, once AMD got serious with Ryzen, Intel had to pick up the pace and add cores.
 		1. The more cores and threads^[Cores are the physical processing cores on the CPU, and threads are virtual cores. Applications and processes are often locked to certain cores, so the more cores and threads you have, the more multitasking you can do on the system.] you have and the newer the CPU, the more you can do with the machine.

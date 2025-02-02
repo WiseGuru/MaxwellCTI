@@ -37,12 +37,30 @@ Below are a few courses, classes, and channels that cover the basics you'll want
 	1. This guy has a ton of videos and playlists going over every aspect of an IT Helpdesk environment.
 	2. He's also on Udemy, but watch is free videos first to make sure his format works for you.
 3. Techtubers
-	1. Watching techtubers talk shop is a great way to get learn by immersion; see trends in the techspace, get different perspectives and weird dives into highly specific pieces of tech that might interest you...
+	1. Watching techtubers talk shop is a great way to get learn by immersion; see trends in the techspace, get different perspectives, and fall down niche dives into unknown areas of tech that might spark your interest... (*note that these channels are not listed in any particular order*)
 		1. [Matt Brown](https://www.youtube.com/@mattbrwn) is an awesome hardware security researcher who shows the whole process of hacking hardware.
 		2. [Veronica Explains](https://www.youtube.com/@VeronicaExplains) is a fountain of information for all things Linux; tons of great videos on essential tools.
-		3. Linus Tech Tips, Bitwit, Jayz2Cents, Snazzy Labs, DIY Perks; they're all in kind of the same territory for hardware enthusiasts. Not directly helpful to IT support, but they're entertaining and keep you in the know.
+		3. Linus Tech Tips, [Bitwit](https://www.youtube.com/@Bitwit), [JayzTwoCents](https://www.youtube.com/@Jayztwocents), [Gamers Nexus](https://www.youtube.com/@GamersNexus), [Snazzy Labs](https://www.youtube.com/@snazzy), [DIY Perks](https://www.youtube.com/@DIYPerks), [Level1Techs](https://www.youtube.com/c/Level1Techs); they're all in kind of the same territory for hardware enthusiasts. Maybe not directly helpful to IT support, but they're entertaining, keep you interested in creative, and keep you in the know.
 			1. [LTT - How to Build a PC, the last guide you’ll ever need! (2024 Update)](https://youtu.be/s1fxZ-VWs2U?)
 		4. [Chris Greer](https://www.youtube.com/@ChrisGreer) has a ton of great classes on [[Tool Deep-Dives/Wireshark\|Wireshark]] to help you get started
 		5. [Chris Titus Tech](https://www.youtube.com/@ChrisTitusTech) is like the LTT of Linux, [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]], and corporate applications
-		6. Black Hills Information Security and Antisyphon Labs are great resources for cybersecurity news and topics, 
+		6. [Black Hills Information Security](https://www.youtube.com/@BlackHillsInformationSecurity) and [Antisyphon Labs](https://www.youtube.com/@AntisyphonTraining) are great resources for cybersecurity news and topics.
+		7. [NetworkChuck](https://www.youtube.com/@NetworkChuck) focuses on networking, but gets into other areas as well in a light and entertaining format.
+		8. [LaurieWired](https://www.youtube.com/@lauriewired) is an awesome malware analyst; pretty beyond helpdesk, but she's super knowledgeable and great at explaining complex topics.
+		9. [Snake Discovery](https://www.youtube.com/@SnakeDiscovery) has nothing to do with tech, but they're great if you like reptiles.
+		10. [Lawrence Systems](https://www.youtube.com/@LAWRENCESYSTEMS) is a great resource for [[Career Growth/Intro to IT and Cybersecurity/Building a Homelab\|homelab]] setup and infrastructure configuration. It can be a little dry, but great information.
+		11. [DIY Perks](https://www.youtube.com/@DIYPerks) is a great source of inspiration for working with and reusing old hardware, and creating new and beautiful devices; below are a few favorites.
+			1. [Broken smartphone to working laptop transformation - YouTube](https://youtu.be/mciEZKSvva8)
+			2. [Transform a Damaged Laptop into an ALL-IN-ONE desktop PC - YouTube](https://youtu.be/8jeLCQ62vFk)
+			3. [Things you can make from old, dead laptops - YouTube](https://youtu.be/WLP_L7Mgz6M)
+			4. [Transform a laptop into a stunning desktop media PC (for CHEAP) - YouTube](https://youtu.be/e3fnsGHe8eE)
+			5. [Broken smartphone to working laptop transformation - YouTube](https://youtu.be/mciEZKSvva8)
+		12. [David Bombal](https://www.youtube.com/@davidbombal) is an IT and cybersecurity expert who focuses on networking and cybersecurity. He also has courses on [Udemy](https://www.udemy.com/user/davidbombal/).
+		13. [Jeff Geerling](https://www.youtube.com/@JeffGeerling) and his second channel [Level 2 Jeff](https://www.youtube.com/@Level2Jeff) are great sources for information on Linux and ARM/RISCV processors. 
+		14. [Smokin' & Grillin with AB](https://www.youtube.com/@SmokinandGrillinwithAB) is also not an IT channel, but he is an excellent chef. Not for people on a diet.
+		15. [John Hammond](https://www.youtube.com/@_JohnHammond) is the [Principal Security Researcher at Huntress](https://www.huntress.com/authors/john-hammond) and in incredible communicator in cybersecurity.
+		16. [Low Level](https://www.youtube.com/@LowLevelTV) does great breakdowns of the latest vulnerabilities.
+
+
+
 
