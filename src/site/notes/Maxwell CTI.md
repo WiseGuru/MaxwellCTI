@@ -22,6 +22,8 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | 25 Most Recently Modified Pages                                                                                                         | Last Modified      |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Career Growth/Resume Improvement in Tech and Cybersecurity\|Resume Improvement in Tech and Cybersecurity]]                         | 2025.02.02 - 11:31 |
+| [[Career Growth/Naomi Buckwalter\|Naomi Buckwalter]]                                                                                 | 2025.02.02 - 11:31 |
 | [[Career Growth/Intro to IT and Cybersecurity/Recommended Helpdesk Classes and Lectures\|Recommended Helpdesk Classes and Lectures]] | 2025.02.02 - 11:17 |
 | [[Career Growth/Intro to IT and Cybersecurity/Building a Homelab\|Building a Homelab]]                                               | 2025.02.02 - 10:59 |
 | [[Tool Deep-Dives/SSH/OpenSSH\|OpenSSH]]                                                                                             | 2025.01.08 - 08:49 |
@@ -45,7 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Be
 | [[Tool Deep-Dives/Linux/Remmina\|Remmina]]                                                                                           | 2024.08.29 - 17:10 |
 | [[Tool Deep-Dives/Linux/Linux\|Linux]]                                                                                               | 2024.08.28 - 09:22 |
 | [[Tool Deep-Dives/Linux/lsof\|lsof]]                                                                                                 | 2024.08.26 - 12:39 |
-| [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-LinuxCLI\|BHIS-SOCC-lab-LinuxCLI]]                                    | 2024.08.26 - 12:30 |
-| [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-tcpdump\|BHIS-SOCC-lab-tcpdump]]                                      | 2024.08.26 - 11:22 |
 
 { .block-language-dataview}
