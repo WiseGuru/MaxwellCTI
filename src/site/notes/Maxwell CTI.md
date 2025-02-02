@@ -22,10 +22,10 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | 25 Most Recently Modified Pages                                                                                                         | Last Modified      |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Career Growth/Intro to IT and Cybersecurity/Building a Homelab\|Building a Homelab]]                                               | 2025.02.02 - 13:37 |
 | [[Career Growth/Resume Improvement in Tech and Cybersecurity\|Resume Improvement in Tech and Cybersecurity]]                         | 2025.02.02 - 11:31 |
 | [[Career Growth/Naomi Buckwalter\|Naomi Buckwalter]]                                                                                 | 2025.02.02 - 11:31 |
 | [[Career Growth/Intro to IT and Cybersecurity/Recommended Helpdesk Classes and Lectures\|Recommended Helpdesk Classes and Lectures]] | 2025.02.02 - 11:17 |
-| [[Career Growth/Intro to IT and Cybersecurity/Building a Homelab\|Building a Homelab]]                                               | 2025.02.02 - 10:59 |
 | [[Tool Deep-Dives/SSH/OpenSSH\|OpenSSH]]                                                                                             | 2025.01.08 - 08:49 |
 | [[Tool Deep-Dives/Linux/xrdp\|xrdp]]                                                                                                 | 2024.12.31 - 10:07 |
 | [[Security Frameworks/NIST/Mermaid - NIST CSF\|Mermaid - NIST CSF]]                                                                  | 2024.11.25 - 13:37 |

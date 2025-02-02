@@ -17,7 +17,7 @@ The best is that, as long as you already have a computer,^[ARM processors, like 
 
 Disassembling, recombining, and upgrading these old machines is an education in itself, and you will become intimately familiar with how the computer works and gain confidence in tinkering with any system. Besides, it's not critical if something breaks since it's not your primary computer, and you will learn a lot in trying to fix it.
 
-> If you want some inspiration in getting familiar with hardware, the Linus Tech Tips [Scrapyard Wars series](https://www.youtube.com/watch?v=x1JA24KCAjE&list=PL8mG-RkN2uTyuEutQa79RZ0Q5u5gteUci) is a great way to see how old hardware can be cobbled together to make competent machines.
+> If you need inspiration, the Linus Tech Tips [Scrapyard Wars series](https://www.youtube.com/watch?v=x1JA24KCAjE&list=PL8mG-RkN2uTyuEutQa79RZ0Q5u5gteUci) is a fun lesson in building competent computers from old and cobbled together hardware.
 
 ## Do Both
 The best thing is to do both; get an old desktop, install Windows or Linux, and then run your homelab in a virtual environment. Or, if you get several low-powered computers, physically build out your homelab with one OS per computer.
