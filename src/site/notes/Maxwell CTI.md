@@ -22,7 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | 25 Most Recently Modified Pages                                                                                                         | Last Modified      |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Career Growth/Intro to IT and Cybersecurity/Recommended Helpdesk Classes and Lectures\|Recommended Helpdesk Classes and Lectures]] | 2025.02.02 - 14:54 |
+| [[Career Growth/Intro to IT and Cybersecurity/Recommended Helpdesk Classes and Lectures\|Recommended Helpdesk Classes and Lectures]] | 2025.02.02 - 15:00 |
 | [[Career Growth/Intro to IT and Cybersecurity/Building a Homelab\|Building a Homelab]]                                               | 2025.02.02 - 14:31 |
 | [[Tool Deep-Dives/Proxmox/Proxmox Virtual Environment\|Proxmox Virtual Environment]]                                                 | 2025.02.02 - 14:27 |
 | [[Career Growth/Resume Improvement in Tech and Cybersecurity\|Resume Improvement in Tech and Cybersecurity]]                         | 2025.02.02 - 11:31 |
