@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/ubuntu-spin-up-script/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/ubuntu-spin-up-script/","tags":["VM"]}
 ---
 
 > Completely untested, really posting for my own use.
-> Seriously, don't try to use it and assume it will just go; the information is probably dated an not useful.
+> Seriously, don't use this unless you're willing to accept a busted system; the information below is known to be absolutely busted.
 
 ### Host Script
 #### Objectives

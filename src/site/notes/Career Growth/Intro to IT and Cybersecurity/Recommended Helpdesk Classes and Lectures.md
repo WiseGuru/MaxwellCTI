@@ -28,15 +28,23 @@ Building a homelab demonstrates initiative and gets you real-world experience wi
 
 # IT Helpdesk/Support Classes and Lectures
 Below are a few courses, classes, and channels that cover the basics you'll want to cover. I never got the CompTIA A+, and I have heard various people say that they learned a lot of useful information from it, and that it was a complete waste of time.
+
+> When I mention Udemy courses, should always try to get them on sale.
+> - If you do not see them on sale or don't want to wait, you can either copy and paste the URL into an incognito browser window; there should be a banner at the top of the page to "redeem" a discount code. When I tested it, I was able to log in while the code changed and the price was a little higher, it was still less than $20.
+> - You can also use [Gale](https://link.gale.com/apps/UDEMY) and enter your school or a participating local public library to get discount codes.
+
 1. [IT Support Technical Skills Bootcamp | Udemy](https://www.udemy.com/course/it-support-technical-skills-training-part-1/)
 	1. As usual, don't buy a Udemy course at full price; wait for it to go on sale in a week or two.
 	2. 39 hours of lectures on a range of critical topics.
 	3. From what previews I've seen, it looks like a thorough overview of common applications and technology used in corporate environments.
 	4. Taken a little bit at a time and using a homelab should give you a great foundation and feeling of confidence for your first IT Helpdesk/Support job.
-2. [Kevtech IT Support](https://www.youtube.com/@KevtechITSupport/playlists)
+2. [MS-102 Microsoft 365 Administrator Expert course with SIMS | Udemy](https://www.udemy.com/course/ms100course)
+	1. Many things are moving to the cloud, and Microsoft 365 is an integral part of corporate infrastructure; you will stand out if you have hands-on experience managing it.
+	2. This is a great looking course with sims, and is only 13 hours long.
+3. [Kevtech IT Support](https://www.youtube.com/@KevtechITSupport/playlists)
 	1. This guy has a ton of videos and playlists going over every aspect of an IT Helpdesk environment.
 	2. He's also on Udemy, but watch is free videos first to make sure his format works for you.
-3. Techtubers
+4. Techtubers
 	1. Watching techtubers talk shop is a great way to get learn by immersion; see trends in the techspace, get different perspectives, and fall down niche dives into unknown areas of tech that might spark your interest... (*note that these channels are not listed in any particular order*)
 		1. [The Bearded I.T. Dad](https://www.youtube.com/@TheBeardedITDad) I just discovered him, and he's a great resource for getting started in IT.
 			1. [Build a Future-Proof Career with Azure - YouTube](https://www.youtube.com/watch?v=dUJh9oTV26s)
@@ -62,7 +70,8 @@ Below are a few courses, classes, and channels that cover the basics you'll want
 		15. [Smokin' & Grillin with AB](https://www.youtube.com/@SmokinandGrillinwithAB) is also not an IT channel, but he is an excellent chef. Not for people on a diet.
 		16. [John Hammond](https://www.youtube.com/@_JohnHammond) is the [Principal Security Researcher at Huntress](https://www.huntress.com/authors/john-hammond) and in incredible communicator in cybersecurity.
 		17. [Low Level](https://www.youtube.com/@LowLevelTV) does great breakdowns of the latest vulnerabilities.
-		18. [Miniminuteman](https://www.youtube.com/@miniminuteman773) actually kind of related to IT; the same kind of critical thinking Milo employs is very helpful in analyzing information and protecting yourself, family members, and co-workers from phishing scams.
+		18. [Miniminuteman](https://www.youtube.com/@miniminuteman773) actually kind of related to IT; the same kind of critical thinking Milo employs is very helpful in analyzing information and protecting yourself, family members, and co-workers from phishing scams. Additionally, science communication to combat pseudoscience has many parallels with communicating with users; maintaining engagement, fighting bad ideas, and teaching people complex topics in a short period of time.
+		19. [DeviantOllam](https://www.youtube.com/@DeviantOllam) is a notorious penetration tester with great guides, ideas, and opinions, and interesting stories.
 
 
 

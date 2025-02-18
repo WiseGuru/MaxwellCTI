@@ -22,8 +22,19 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | 25 Most Recently Modified Pages                                                                                                         | Last Modified      |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Career Growth/Intro to IT and Cybersecurity/Recommended Helpdesk Classes and Lectures\|Recommended Helpdesk Classes and Lectures]] | 2025.02.02 - 15:00 |
-| [[Career Growth/Intro to IT and Cybersecurity/Building a Homelab\|Building a Homelab]]                                               | 2025.02.02 - 14:31 |
+| [[Tool Deep-Dives/Linux/Spice\|Spice]]                                                                                               | 2025.02.18 - 10:28 |
+| [[Tool Deep-Dives/Linux/Ubuntu spin-up script\|Ubuntu spin-up script]]                                                               | 2025.02.18 - 10:27 |
+| [[Tool Deep-Dives/Linux/QEMU, KVMs, and Virt-Man/Installing a Windows VM on Linux\|Installing a Windows VM on Linux]]                | 2025.02.18 - 10:25 |
+| [[Tool Deep-Dives/Proxmox/Exporting VMs to run with QEMU\|Exporting VMs to run with QEMU]]                                           | 2025.02.18 - 10:25 |
+| [[Webinars and Training/BlackHills SOC Core/Labs/Disable Windows Memory Integrity\|Disable Windows Memory Integrity]]                | 2025.02.18 - 10:25 |
+| [[Career Growth/Intro to IT and Cybersecurity/Building a Homelab\|Building a Homelab]]                                               | 2025.02.18 - 10:24 |
+| [[Tool Deep-Dives/Linux/QEMU, KVMs, and Virt-Man/Adding a second monitor to a QEMU VM\|Adding a second monitor to a QEMU VM]]        | 2025.02.18 - 10:24 |
+| [[Webinars and Training/BlackHills SOC Core/Labs/01-BHIS-SOCC-lab-LinuxHostConfig\|01-BHIS-SOCC-lab-LinuxHostConfig]]                | 2025.02.18 - 10:23 |
+| [[Webinars and Training/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                                  | 2025.02.18 - 10:23 |
+| [[Definitions and Topics/Disinformation and Information Warfare\|Disinformation and Information Warfare]]                            | 2025.02.12 - 10:01 |
+| [[Tool Deep-Dives/GraphRunner/GraphRunner\|GraphRunner]]                                                                             | 2025.02.05 - 15:03 |
+| [[Tool Deep-Dives/Linux/Remmina\|Remmina]]                                                                                           | 2025.02.04 - 11:05 |
+| [[Career Growth/Intro to IT and Cybersecurity/Recommended Helpdesk Classes and Lectures\|Recommended Helpdesk Classes and Lectures]] | 2025.02.03 - 15:58 |
 | [[Tool Deep-Dives/Proxmox/Proxmox Virtual Environment\|Proxmox Virtual Environment]]                                                 | 2025.02.02 - 14:27 |
 | [[Career Growth/Resume Improvement in Tech and Cybersecurity\|Resume Improvement in Tech and Cybersecurity]]                         | 2025.02.02 - 11:31 |
 | [[Career Growth/Naomi Buckwalter\|Naomi Buckwalter]]                                                                                 | 2025.02.02 - 11:31 |
@@ -31,21 +42,10 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Be
 | [[Tool Deep-Dives/Linux/xrdp\|xrdp]]                                                                                                 | 2024.12.31 - 10:07 |
 | [[Security Frameworks/NIST/Mermaid - NIST CSF\|Mermaid - NIST CSF]]                                                                  | 2024.11.25 - 13:37 |
 | [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                                      | 2024.11.18 - 20:57 |
-| [[Tool Deep-Dives/Proxmox/Exporting VMs to run with QEMU\|Exporting VMs to run with QEMU]]                                           | 2024.11.12 - 21:07 |
 | [[Tool Deep-Dives/Linux/Formatting Drives on Linux\|Formatting Drives on Linux]]                                                     | 2024.11.12 - 21:03 |
 | [[Tool Deep-Dives/Proxmox/Mounting USB Drives in ProxMox\|Mounting USB Drives in ProxMox]]                                           | 2024.11.12 - 14:47 |
 | [[Tool Deep-Dives/Linux/lsblk\|lsblk]]                                                                                               | 2024.11.12 - 14:45 |
 | [[Tool Deep-Dives/Linux/fstab\|fstab]]                                                                                               | 2024.11.12 - 14:03 |
 | [[Tool Deep-Dives/Linux/sed\|sed]]                                                                                                   | 2024.11.12 - 13:02 |
-| [[Security Frameworks/LM Cyber Kill Chain/THM - LM Cyber Kill chain\|THM - LM Cyber Kill chain]]                                     | 2024.11.11 - 17:19 |
-| [[Security Frameworks/LM Cyber Kill Chain/Breaking the Kill Chain\|Breaking the Kill Chain]]                                         | 2024.11.11 - 17:11 |
-| [[Tool Deep-Dives/Windows/RDP\|RDP]]                                                                                                 | 2024.11.06 - 10:56 |
-| [[Tool Deep-Dives/SSH/SSH\|SSH]]                                                                                                     | 2024.11.06 - 10:39 |
-| [[Tool Deep-Dives/Linux/deb-get\|deb-get]]                                                                                           | 2024.09.12 - 10:10 |
-| [[Tool Deep-Dives/Linux/which\|which]]                                                                                               | 2024.09.12 - 09:02 |
-| [[Definitions and Topics/Indicators of Compromise\|Indicators of Compromise]]                                                        | 2024.08.30 - 10:36 |
-| [[Tool Deep-Dives/Purple Knight\|Purple Knight]]                                                                                     | 2024.08.30 - 10:31 |
-| [[Tool Deep-Dives/Linux/Remmina\|Remmina]]                                                                                           | 2024.08.29 - 17:10 |
-| [[Tool Deep-Dives/Linux/Linux\|Linux]]                                                                                               | 2024.08.28 - 09:22 |
 
 { .block-language-dataview}
