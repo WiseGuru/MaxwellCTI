@@ -8,4 +8,13 @@ I will eventually create a guide for this, as well as how to connect to a Window
 	1. It's important to be sure that you follow [section 4](https://sysguides.com/install-kvm-on-linux#3-04-install-virtio-drivers-for-windows-guests-) to install the [[Tool Deep-Dives/Linux/VirtIO\|VirtIO]] drivers on the Linux host machine for Windows guest VMs
 2. [How to Properly Install a Windows 11 Virtual Machine on KVM](https://sysguides.com/install-a-windows-11-virtual-machine-on-kvm)
 
+If you want to improve the power efficiency of the VM and cut bloat/telemetry/etc., you can run run one of several debloat scripts *at the time of Windows 11 installation*. Running these scripts after installation can sometimes cause issues with removing apps, preferences, or dependencies you want to keep.
+
+> **WARNING**: I am not endorsing the use of the scripts below. I advocate making a copy of your VM files before running the scripts to reduce effort in case you need to restore.
+
+[Ultimate Windows Tweaker 5 for Windows 11](https://www.thewindowsclub.com/ultimate-windows-tweaker-5-for-windows-11)
+
+[GitHub - Raphire/Win11Debloat](https://github.com/Raphire/Win11Debloat)
+
+[GitHub - n1snt/Windows-Debloater](https://github.com/n1snt/Windows-Debloater)
 
