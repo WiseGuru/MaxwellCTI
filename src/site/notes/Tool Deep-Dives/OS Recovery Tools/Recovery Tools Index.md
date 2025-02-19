@@ -2,6 +2,9 @@
 {"dg-publish":true,"permalink":"/tool-deep-dives/os-recovery-tools/recovery-tools-index/"}
 ---
 
+# Ventoy
+[Ventoy](https://www.ventoy.net/en/index.html)
+Allows you to use a single, large USB drive to store and boot from multiple bootable ISOs. Super helpful if you're distro hopping or want multiple rescue CDs. Sometimes I've had mixed results if SecureBoot is enabled, so your mileage may vary.
 
 # Hiren's BootCD
 [Download | Hiren's BootCD PE](https://www.hirensbootcd.org/download/)
