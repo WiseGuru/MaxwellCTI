@@ -17,7 +17,11 @@
 		- For example, `nano ~/.zshrc` or `nano ~/.bashrc`
 	- At the very end of the file, add `export PATH="$PATH:path/to/directory/here"`, replacing `path/to/directory/here` with the target directory
 		- For example to add the [[Tool Deep-Dives/Golang\|Go]] bin to the PATH variable, I entered `export PATH="$PATH:home/max/go/bin"`
+		- To add more directories, separate them with `:`, like `export PATH="$PATH:home/max/go/bin:home/max/bin`
 	- Exit Nano and save the file, then Reload your terminal with the new config using `source ~/.zshrc` or `source ~/.bashrc` 
+- Adding application shortcuts to the PATH variable
+	- You can save yourself time once you have a `~/bin` folder by [[Tool Deep-Dives/Linux/ln\|linking]] application shortcuts to that folder location
+	- 
 
 
 

@@ -22,6 +22,9 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | 25 Most Recently Modified Pages                                                                                                         | Last Modified      |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Technical Guides/Installing the Zen Browser\|Installing the Zen Browser]]                                                          | 2025.02.20 - 13:04 |
+| [[Tool Deep-Dives/Linux/ln\|ln]]                                                                                                     | 2025.02.20 - 12:50 |
+| [[Tool Deep-Dives/Linux/PATH Variable\|PATH Variable]]                                                                               | 2025.02.20 - 12:47 |
 | [[Tool Deep-Dives/OS Recovery Tools/Recovery Tools Index\|Recovery Tools Index]]                                                     | 2025.02.19 - 12:31 |
 | [[Tool Deep-Dives/Linux/QEMU, KVMs, and Virt-Man/Installing a Windows VM on Linux\|Installing a Windows VM on Linux]]                | 2025.02.18 - 10:48 |
 | [[Tool Deep-Dives/Linux/Spice\|Spice]]                                                                                               | 2025.02.18 - 10:34 |
@@ -44,8 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Be
 | [[Tool Deep-Dives/Linux/xrdp\|xrdp]]                                                                                                 | 2024.12.31 - 10:07 |
 | [[Security Frameworks/NIST/Mermaid - NIST CSF\|Mermaid - NIST CSF]]                                                                  | 2024.11.25 - 13:37 |
 | [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                                      | 2024.11.18 - 20:57 |
-| [[Tool Deep-Dives/Linux/Formatting Drives on Linux\|Formatting Drives on Linux]]                                                     | 2024.11.12 - 21:03 |
-| [[Tool Deep-Dives/Proxmox/Mounting USB Drives in ProxMox\|Mounting USB Drives in ProxMox]]                                           | 2024.11.12 - 14:47 |
-| [[Tool Deep-Dives/Linux/lsblk\|lsblk]]                                                                                               | 2024.11.12 - 14:45 |
 
 { .block-language-dataview}
