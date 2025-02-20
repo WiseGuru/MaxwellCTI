@@ -22,7 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | 25 Most Recently Modified Pages                                                                                                         | Last Modified      |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Technical Guides/Installing the Zen Browser\|Installing the Zen Browser]]                                                          | 2025.02.20 - 13:04 |
+| [[Technical Guides/Installing the Zen Browser\|Installing the Zen Browser]]                                                          | 2025.02.20 - 13:06 |
 | [[Tool Deep-Dives/Linux/ln\|ln]]                                                                                                     | 2025.02.20 - 12:50 |
 | [[Tool Deep-Dives/Linux/PATH Variable\|PATH Variable]]                                                                               | 2025.02.20 - 12:47 |
 | [[Tool Deep-Dives/OS Recovery Tools/Recovery Tools Index\|Recovery Tools Index]]                                                     | 2025.02.19 - 12:31 |

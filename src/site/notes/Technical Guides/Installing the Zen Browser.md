@@ -2,6 +2,8 @@
 {"dg-publish":true,"permalink":"/technical-guides/installing-the-zen-browser/"}
 ---
 
+>Written 2025.02.20
+
 I wanted to try out the [Zen Browser](https://zen-browser.app/) on Linux, but discovered that it's not available in a repository. So I downloaded the x86 Tarball, because I didn't want to use either Flathub or AppImage to manage it. Here are the steps I took to install it.
 
 1. Extract the Tarball and inspect the files
@@ -18,8 +20,11 @@ I wanted to try out the [Zen Browser](https://zen-browser.app/) on Linux, but di
 	3. Make the file executable: `chmod +x ~/.local/share/applications/zen-browser.desktop`
 	4. It worked for me immediately, but if it doesn't work for you, log out, then log back in again.
 
-After all that, I decided I like Firefox better. I guess I'm still not ready to move my tabs to a side column ¯\_(ツ)_/¯
+After all that, I decided I like Firefox better. I guess I'm still not ready to move my tabs to a side column ¯\\\_(ツ)\_/¯
+
+
 ### zen-browser.desktop
+
 ```bash
 [Desktop Entry]
 Version=1.0
