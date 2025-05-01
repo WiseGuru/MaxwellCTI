@@ -230,11 +230,20 @@ Below is an example of a DMARC TXT record:
 
 
 # Tools
+## Sites
+- [Learn and Test DMARC](https://www.dmarctester.com/)
+	- Great site for quickly testing mail you can send
+- [MX Lookup Tool - Check your DNS MX Records online - MxToolbox](https://mxtoolbox.com/)
+	- MxToolBox is one of the best online toolkits you can use; I have cultivated links here for each kind of check you might want to perform.
+	- [Network Tools: DNS,IP,Email - MxToolBox](https://mxtoolbox.com/SuperTool.aspx)
+	- [SPF Check & SPF Lookup - Sender Policy Framework (SPF) - MxToolBox](https://mxtoolbox.com/spf.aspx)
+	- [DKIM Check- DomainKeys Identified Mail (DKIM) Record Lookup - MxToolBox](https://mxtoolbox.com/dkim.aspx)
+	- [DMARC Check Tool - Domain Message Authentication Reporting & Conformance Lookup - MxToolBox](https://mxtoolbox.com/dmarc.aspx)
+	- [BIMI Record Check - BIMI Lookup Tool - Brand Indicators for Message Identification Tools - MxToolBox](https://mxtoolbox.com/bimi.aspx)
+	- [MTA-STS Lookup - Check domains for Inbound Transport Layer Security (TLS) Enforcement - MxToolbox](https://mxtoolbox.com/mta-sts.aspx)
+- [Free Domain Analyzer Tool \| PowerAnalyzer](https://powerdmarc.com/analyzer/)
+	- Checks BIMI and a few others with only a couple of clicks
+
+## DNS Look-up tools
 [[dig\|dig]]
 [[nslookup\|nslookup]]
-[Learn and Test DMARC](https://www.dmarctester.com/)
-[SPF Check & SPF Lookup - Sender Policy Framework (SPF) - MxToolBox](https://mxtoolbox.com/spf.aspx)
-[DKIM Check- DomainKeys Identified Mail (DKIM) Record Lookup - MxToolBox](https://mxtoolbox.com/dkim.aspx)
-[DMARC Check Tool - Domain Message Authentication Reporting & Conformance Lookup - MxToolBox](https://mxtoolbox.com/dmarc.aspx)
-[Network Tools: DNS,IP,Email - MxToolBox](https://mxtoolbox.com/SuperTool.aspx)
-[Free Domain Analyzer Tool \| PowerAnalyzer](https://powerdmarc.com/analyzer/)
