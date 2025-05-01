@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/git/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/git/","noteIcon":""}
 ---
 
 #### Git

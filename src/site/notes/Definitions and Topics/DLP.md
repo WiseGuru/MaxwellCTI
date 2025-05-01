@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/dlp/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/dlp/","noteIcon":""}
 ---
 
 #### DLP

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/nist/nist-csf/csf-resources/"}
+{"dg-publish":true,"permalink":"/security-frameworks/nist/nist-csf/csf-resources/","noteIcon":""}
 ---
 
 ## Source

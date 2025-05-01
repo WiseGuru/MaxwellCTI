@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/csirt/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/csirt/","noteIcon":""}
 ---
 
 #### CSIRT

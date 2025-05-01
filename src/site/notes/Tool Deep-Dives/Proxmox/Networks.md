@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/networks/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/networks/","noteIcon":""}
 ---
 
 Troubleshooting a bad NIC

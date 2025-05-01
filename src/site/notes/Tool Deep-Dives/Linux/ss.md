@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/ss/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/ss/","noteIcon":""}
 ---
 
 #### ss

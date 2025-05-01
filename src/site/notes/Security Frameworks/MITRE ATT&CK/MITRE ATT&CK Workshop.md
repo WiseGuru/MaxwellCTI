@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/mitre-att-and-ck/mitre-att-and-ck-workshop/"}
+{"dg-publish":true,"permalink":"/security-frameworks/mitre-att-and-ck/mitre-att-and-ck-workshop/","noteIcon":""}
 ---
 
 [Workshop: MITRE ATT&CK Fundamentals - YouTube](https://www.youtube.com/watch?v=1cCt2XZr2ms)

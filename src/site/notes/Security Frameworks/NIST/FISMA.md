@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/nist/fisma/"}
+{"dg-publish":true,"permalink":"/security-frameworks/nist/fisma/","noteIcon":""}
 ---
 
 #### FISM

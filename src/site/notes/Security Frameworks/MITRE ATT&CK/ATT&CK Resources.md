@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/mitre-att-and-ck/att-and-ck-resources/"}
+{"dg-publish":true,"permalink":"/security-frameworks/mitre-att-and-ck/att-and-ck-resources/","noteIcon":""}
 ---
 
 

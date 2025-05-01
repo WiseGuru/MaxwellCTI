@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/purple-knight/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/purple-knight/","noteIcon":""}
 ---
 
 #### Purple Knight

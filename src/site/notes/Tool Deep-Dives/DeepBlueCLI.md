@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/deep-blue-cli/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/deep-blue-cli/","noteIcon":""}
 ---
 
 #### DeepBlueCLI

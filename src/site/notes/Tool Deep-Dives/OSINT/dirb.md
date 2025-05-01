@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/osint/dirb/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/osint/dirb/","noteIcon":""}
 ---
 
 #### dirb

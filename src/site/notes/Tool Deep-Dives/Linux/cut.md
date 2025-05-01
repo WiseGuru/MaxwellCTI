@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/cut/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/cut/","noteIcon":""}
 ---
 
 #### cut

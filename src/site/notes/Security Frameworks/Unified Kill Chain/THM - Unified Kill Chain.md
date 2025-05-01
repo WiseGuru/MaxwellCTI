@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/unified-kill-chain/thm-unified-kill-chain/"}
+{"dg-publish":true,"permalink":"/security-frameworks/unified-kill-chain/thm-unified-kill-chain/","noteIcon":""}
 ---
 
 #thm 

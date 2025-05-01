@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws-practitioner/amazon-course/module-1-introduction/"}
+{"dg-publish":true,"permalink":"/aws-practitioner/amazon-course/module-1-introduction/","noteIcon":""}
 ---
 
 1. Fundamental cloud-compute model

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/volatility/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/volatility/","noteIcon":""}
 ---
 
 #### Volatility

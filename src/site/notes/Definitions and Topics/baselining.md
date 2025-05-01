@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/baselining/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/baselining/","noteIcon":""}
 ---
 
 #### baselining

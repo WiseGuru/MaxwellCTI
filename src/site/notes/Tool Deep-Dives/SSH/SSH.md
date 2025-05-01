@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/ssh/ssh/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/ssh/ssh/","noteIcon":""}
 ---
 
 #### SSH

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/virt-io/","tags":["VM"]}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/virt-io/","tags":["VM"],"noteIcon":""}
 ---
 
 #### VirtIO

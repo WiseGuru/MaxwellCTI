@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/removing-root/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/removing-root/","noteIcon":""}
 ---
 
 

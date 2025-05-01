@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/biba-integrity-model/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/biba-integrity-model/","noteIcon":""}
 ---
 
 #### Biba Integrity Model

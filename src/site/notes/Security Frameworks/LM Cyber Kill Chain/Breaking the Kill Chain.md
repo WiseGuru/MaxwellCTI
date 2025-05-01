@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/lm-cyber-kill-chain/breaking-the-kill-chain/"}
+{"dg-publish":true,"permalink":"/security-frameworks/lm-cyber-kill-chain/breaking-the-kill-chain/","noteIcon":""}
 ---
 
 [Breaking The Kill Chain: A Defensive Approach - YouTube](https://www.youtube.com/watch?v=II91fiUax2g)

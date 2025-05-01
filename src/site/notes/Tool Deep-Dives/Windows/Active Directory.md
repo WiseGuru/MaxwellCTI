@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/windows/active-directory/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/windows/active-directory/","noteIcon":""}
 ---
 
 #### Active Directory

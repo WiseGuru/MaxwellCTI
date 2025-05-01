@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/principle-of-least-privilege/","tags":["defs_soc"]}
+{"dg-publish":true,"permalink":"/definitions-and-topics/principle-of-least-privilege/","tags":["defs_soc"],"noteIcon":""}
 ---
 
 #### Least Privilege

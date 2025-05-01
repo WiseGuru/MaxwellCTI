@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/pcap-vs-pcapng/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/pcap-vs-pcapng/","noteIcon":""}
 ---
 
 [What is a PCAP file?](https://www.endace.com/learn/what-is-a-pcap-file)

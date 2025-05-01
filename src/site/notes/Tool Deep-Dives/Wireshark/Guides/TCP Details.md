@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/tcp-details/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/tcp-details/","noteIcon":""}
 ---
 
 1. Stateful Protocol

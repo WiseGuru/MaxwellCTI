@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/nist/mermaid-nist-csf/"}
+{"dg-publish":true,"permalink":"/security-frameworks/nist/mermaid-nist-csf/","noteIcon":""}
 ---
 
 

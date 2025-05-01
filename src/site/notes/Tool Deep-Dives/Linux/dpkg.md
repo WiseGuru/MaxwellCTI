@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/dpkg/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/dpkg/","noteIcon":""}
 ---
 
 #### dpkg

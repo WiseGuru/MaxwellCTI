@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/osint/google-dorking/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/osint/google-dorking/","noteIcon":""}
 ---
 
 #### Google Dorking

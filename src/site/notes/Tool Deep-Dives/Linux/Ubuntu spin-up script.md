@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/ubuntu-spin-up-script/","tags":["VM"]}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/ubuntu-spin-up-script/","tags":["VM"],"noteIcon":""}
 ---
 
 > Completely untested, really posting for my own use.

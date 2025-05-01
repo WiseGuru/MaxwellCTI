@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/open-edr/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/open-edr/","noteIcon":""}
 ---
 
 #### OpenEDR

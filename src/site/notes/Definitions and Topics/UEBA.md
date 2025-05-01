@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/ueba/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/ueba/","noteIcon":""}
 ---
 
 #### UEBA

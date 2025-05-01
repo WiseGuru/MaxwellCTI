@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/indicators-of-compromise/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/indicators-of-compromise/","noteIcon":""}
 ---
 
 #### Indicators of Compromise or Attack

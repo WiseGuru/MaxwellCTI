@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/01-bhis-socc-lab-linux-host-config/","tags":["VM"]}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/01-bhis-socc-lab-linux-host-config/","tags":["VM"],"noteIcon":""}
 ---
 
 > Download John Strand's VM from here: [John Strand Training Lab – Download Instructions – Antisyphon Training](https://www.antisyphontraining.com/john-strand-training-lab-download-instructions/)

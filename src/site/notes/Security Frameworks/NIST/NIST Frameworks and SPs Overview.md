@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/nist/nist-frameworks-and-s-ps-overview/"}
+{"dg-publish":true,"permalink":"/security-frameworks/nist/nist-frameworks-and-s-ps-overview/","noteIcon":""}
 ---
 
 When I was first getting oriented and searching the internet for help, I found a common theme that was interesting; technical people tended to over emphasize the importance of the 800-53 and undersell the importance of the CSF and RMF. One could argue this is because the CSF and RMF are significantly smaller documents and go into less detail, but I think it comes down to who we are as technicians. We get absorbed in the how, and ignore or forget about the why.

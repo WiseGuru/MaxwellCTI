@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/diamond-model/thm-diamond-model/"}
+{"dg-publish":true,"permalink":"/security-frameworks/diamond-model/thm-diamond-model/","noteIcon":""}
 ---
 
 ![THM - Diamond Model-1.png](/img/user/Attachments/THM%20-%20Diamond%20Model-1.png)

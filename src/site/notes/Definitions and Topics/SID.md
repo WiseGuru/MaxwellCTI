@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/sid/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/sid/","noteIcon":""}
 ---
 
 #### SID

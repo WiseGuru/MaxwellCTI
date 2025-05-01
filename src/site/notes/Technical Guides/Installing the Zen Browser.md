@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technical-guides/installing-the-zen-browser/"}
+{"dg-publish":true,"permalink":"/technical-guides/installing-the-zen-browser/","noteIcon":""}
 ---
 
 >Written 2025.02.20

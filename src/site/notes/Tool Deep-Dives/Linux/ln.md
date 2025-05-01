@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/ln/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/ln/","noteIcon":""}
 ---
 
 #### ln

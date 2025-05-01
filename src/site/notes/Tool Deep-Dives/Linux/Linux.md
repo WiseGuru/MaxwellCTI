@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/linux/","tags":["tools_linux"]}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/linux/","tags":["tools_linux"],"noteIcon":""}
 ---
 
 # Linux

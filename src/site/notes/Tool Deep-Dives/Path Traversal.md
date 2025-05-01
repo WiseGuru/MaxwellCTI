@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/path-traversal/","tags":["Linux"]}
+{"dg-publish":true,"permalink":"/tool-deep-dives/path-traversal/","tags":["Linux"],"noteIcon":""}
 ---
 
 #### Path Traversal

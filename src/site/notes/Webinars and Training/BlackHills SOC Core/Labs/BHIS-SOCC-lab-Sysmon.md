@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-sysmon/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-sysmon/","noteIcon":""}
 ---
 
 ## LAB: [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]] Log

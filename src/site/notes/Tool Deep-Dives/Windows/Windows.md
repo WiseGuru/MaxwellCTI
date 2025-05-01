@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/windows/windows/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/windows/windows/","noteIcon":""}
 ---
 
 #### Windows

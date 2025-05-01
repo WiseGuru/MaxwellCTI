@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/lm-cyber-kill-chain/kc-resources/"}
+{"dg-publish":true,"permalink":"/security-frameworks/lm-cyber-kill-chain/kc-resources/","noteIcon":""}
 ---
 
 ## Source

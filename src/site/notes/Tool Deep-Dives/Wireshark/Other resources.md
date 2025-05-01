@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/other-resources/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/other-resources/","noteIcon":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/zero-day/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/zero-day/","noteIcon":""}
 ---
 
 #### Zero-day

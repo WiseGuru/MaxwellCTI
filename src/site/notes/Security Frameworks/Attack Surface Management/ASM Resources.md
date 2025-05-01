@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/attack-surface-management/asm-resources/"}
+{"dg-publish":true,"permalink":"/security-frameworks/attack-surface-management/asm-resources/","noteIcon":""}
 ---
 
 ## ASM Videos

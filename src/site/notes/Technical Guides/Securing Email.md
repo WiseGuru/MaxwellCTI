@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technical-guides/securing-email/"}
+{"dg-publish":true,"permalink":"/technical-guides/securing-email/","noteIcon":""}
 ---
 
 # Definitions
@@ -194,7 +194,7 @@ Below is an example of a DMARC TXT record:
 1. Name: `_dmarc.example.com`
 	1. `_dmarc`
 		1. Signifies this a DMARC TXT entry
-2. Value: `v=DMARC1; p=reject; sp=none; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com;
+2. Value: `v=DMARC1; p=reject; sp=none; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com;`
 	1. `v=DMARC1`
 		1. DMARC version 1; at present, there is only one version.
 	2. `;`

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/nist/nist-sp-800-37/"}
+{"dg-publish":true,"permalink":"/security-frameworks/nist/nist-sp-800-37/","noteIcon":""}
 ---
 
 #### NIST SP 800-37 (RMF)

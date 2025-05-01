@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/which/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/which/","noteIcon":""}
 ---
 
 #### which

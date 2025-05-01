@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-03-windows-endpoint-management/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-03-windows-endpoint-management/","noteIcon":""}
 ---
 
 ## Windows endpoint management

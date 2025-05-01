@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/soc-2-type-ii/"}
+{"dg-publish":true,"permalink":"/security-frameworks/soc-2-type-ii/","noteIcon":""}
 ---
 
 ## What is it?

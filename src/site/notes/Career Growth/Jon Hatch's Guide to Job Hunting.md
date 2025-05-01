@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/career-growth/jon-hatch-s-guide-to-job-hunting/"}
+{"dg-publish":true,"permalink":"/career-growth/jon-hatch-s-guide-to-job-hunting/","noteIcon":""}
 ---
 
 I was browsing the Career chat in the [Antisyphon Discord](https://discord.gg/antisyphon), and came across a post from Jon H., discussing his techniques for networking in the cybersecurity community and getting interviews. 

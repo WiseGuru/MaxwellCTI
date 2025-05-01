@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/cia-triad/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/cia-triad/","noteIcon":""}
 ---
 
 #### CIA Triad

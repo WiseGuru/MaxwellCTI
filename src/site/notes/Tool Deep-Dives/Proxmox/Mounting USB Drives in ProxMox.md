@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/mounting-usb-drives-in-prox-mox/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/mounting-usb-drives-in-prox-mox/","noteIcon":""}
 ---
 
 #### Summary

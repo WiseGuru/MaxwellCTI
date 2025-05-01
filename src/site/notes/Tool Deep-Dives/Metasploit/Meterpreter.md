@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/metasploit/meterpreter/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/metasploit/meterpreter/","noteIcon":""}
 ---
 
 #### Meterpreter

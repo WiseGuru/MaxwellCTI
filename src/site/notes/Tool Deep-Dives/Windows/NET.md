@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/windows/net/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/windows/net/","noteIcon":""}
 ---
 
 #### NET

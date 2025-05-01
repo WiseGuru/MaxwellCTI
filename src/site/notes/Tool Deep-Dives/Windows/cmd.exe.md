@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/windows/cmd-exe/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/windows/cmd-exe/","noteIcon":""}
 ---
 
 #### cmd.exe

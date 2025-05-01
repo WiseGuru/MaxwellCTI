@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/grc/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/grc/","noteIcon":""}
 ---
 
 #### GRC

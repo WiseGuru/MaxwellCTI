@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-mitre/bhis-i2-s-lab-bluespawn/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-mitre/bhis-i2-s-lab-bluespawn/","noteIcon":""}
 ---
 
 

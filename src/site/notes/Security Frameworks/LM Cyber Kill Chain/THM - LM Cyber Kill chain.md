@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/lm-cyber-kill-chain/thm-lm-cyber-kill-chain/","tags":["thm"]}
+{"dg-publish":true,"permalink":"/security-frameworks/lm-cyber-kill-chain/thm-lm-cyber-kill-chain/","tags":["thm"],"noteIcon":""}
 ---
 
 1. Intro

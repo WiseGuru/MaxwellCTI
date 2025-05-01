@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/windows/wmic/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/windows/wmic/","noteIcon":""}
 ---
 
 #### WMIC

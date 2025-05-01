@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/career-growth/discord-comments-and-job-hunting/"}
+{"dg-publish":true,"permalink":"/career-growth/discord-comments-and-job-hunting/","noteIcon":""}
 ---
 
 During the [[Webinars and Training/BlackHills SOC Core/BHIS SOCC Notes Overview\|SOC Core]] course, there were lots of interesting side-tracks that I wanted to record for posterity

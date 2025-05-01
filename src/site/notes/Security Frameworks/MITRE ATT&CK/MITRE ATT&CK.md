@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/security-frameworks/mitre-att-and-ck/mitre-att-and-ck/"}
+{"dg-publish":true,"permalink":"/security-frameworks/mitre-att-and-ck/mitre-att-and-ck/","noteIcon":""}
 ---
 
 ## MITRE ATT&CK Overview

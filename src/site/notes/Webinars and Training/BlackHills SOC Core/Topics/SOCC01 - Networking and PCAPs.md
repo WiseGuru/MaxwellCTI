@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-01-networking-and-pca-ps/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-01-networking-and-pca-ps/","noteIcon":""}
 ---
 
 ## IP/TCP Headers and Ports

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/adding-drives-to-proxmox/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/adding-drives-to-proxmox/","noteIcon":""}
 ---
 
 

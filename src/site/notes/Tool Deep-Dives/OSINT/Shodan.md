@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/osint/shodan/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/osint/shodan/","noteIcon":""}
 ---
 
 #### Shodan

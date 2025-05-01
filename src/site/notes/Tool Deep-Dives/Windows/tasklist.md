@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/windows/tasklist/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/windows/tasklist/","noteIcon":""}
 ---
 
 #### tasklist

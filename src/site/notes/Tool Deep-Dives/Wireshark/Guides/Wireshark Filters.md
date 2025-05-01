@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/wireshark-filters/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/wireshark-filters/","noteIcon":""}
 ---
 
 

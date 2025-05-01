@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/lan-turtle/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/lan-turtle/","noteIcon":""}
 ---
 
 #### LAN Turtle

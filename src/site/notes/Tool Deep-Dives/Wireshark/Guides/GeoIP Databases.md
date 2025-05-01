@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/geo-ip-databases/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/geo-ip-databases/","noteIcon":""}
 ---
 
 ## How to add GeoIP information to Wireshark

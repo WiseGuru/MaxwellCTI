@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/osint/sublist3r/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/osint/sublist3r/","noteIcon":""}
 ---
 
 #### Sublist3r

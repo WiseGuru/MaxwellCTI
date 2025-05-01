@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/nuclei/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/nuclei/","noteIcon":""}
 ---
 
 #### Nuclei

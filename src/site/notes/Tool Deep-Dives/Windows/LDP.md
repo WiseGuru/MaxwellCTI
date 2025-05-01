@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/windows/ldp/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/windows/ldp/","noteIcon":""}
 ---
 
 #### LDP

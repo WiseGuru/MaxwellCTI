@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/lsblk/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/lsblk/","noteIcon":""}
 ---
 
 #### lsblk
