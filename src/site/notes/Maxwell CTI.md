@@ -22,6 +22,11 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | 25 Most Recently Modified Pages                                                                                                         | Last Modified      |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Technical Guides/Securing Email\|Securing Email]]                                                                                  | 2025.05.01 - 12:30 |
+| [[Definitions and Topics/DMARC\|DMARC]]                                                                                              | 2025.05.01 - 12:27 |
+| [[Definitions and Topics/DKIM\|DKIM]]                                                                                                | 2025.05.01 - 11:46 |
+| [[Definitions and Topics/SPF\|SPF]]                                                                                                  | 2025.05.01 - 11:42 |
+| [[Definitions and Topics/AAA\|AAA]]                                                                                                  | 2025.05.01 - 11:17 |
 | [[Technical Guides/Installing the Zen Browser\|Installing the Zen Browser]]                                                          | 2025.02.20 - 13:09 |
 | [[Tool Deep-Dives/Linux/ln\|ln]]                                                                                                     | 2025.02.20 - 12:50 |
 | [[Tool Deep-Dives/Linux/PATH Variable\|PATH Variable]]                                                                               | 2025.02.20 - 12:47 |
@@ -42,10 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Be
 | [[Career Growth/Intro to IT and Cybersecurity/Recommended Helpdesk Classes and Lectures\|Recommended Helpdesk Classes and Lectures]] | 2025.02.03 - 15:58 |
 | [[Tool Deep-Dives/Proxmox/Proxmox Virtual Environment\|Proxmox Virtual Environment]]                                                 | 2025.02.02 - 14:27 |
 | [[Career Growth/Resume Improvement in Tech and Cybersecurity\|Resume Improvement in Tech and Cybersecurity]]                         | 2025.02.02 - 11:31 |
-| [[Career Growth/Naomi Buckwalter\|Naomi Buckwalter]]                                                                                 | 2025.02.02 - 11:31 |
-| [[Tool Deep-Dives/SSH/OpenSSH\|OpenSSH]]                                                                                             | 2025.01.08 - 08:49 |
-| [[Tool Deep-Dives/Linux/xrdp\|xrdp]]                                                                                                 | 2024.12.31 - 10:07 |
-| [[Security Frameworks/NIST/Mermaid - NIST CSF\|Mermaid - NIST CSF]]                                                                  | 2024.11.25 - 13:37 |
-| [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]]                                      | 2024.11.18 - 20:57 |
 
 { .block-language-dataview}
