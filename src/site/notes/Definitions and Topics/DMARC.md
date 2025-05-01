@@ -16,10 +16,6 @@
 - DMARC can be configured in purely an audit mode without SPF and DKIM
 	- No authentication or authorization is performed, and no action is taken, but you get reports on who is sending emails on your domain's behalf.
 
-
-> **SPF/DKIM Alignment**
-> Alignment describes when the domain which has been authenticated matches the domain found in the "mail-from" field of an email. It can be "relaxed" and align all email with the same organizational domain (e.g., )
-
 #### DMARC Implementation
 Configuring DMARC is easy, but can cause you the most headaches because it's what authorizes email to be delivered, and a misconfiguration can stop your email in its tracks. Therefore, it's highly recommended that you first configure your DMARC policy to take no action on emails for the first couple of weeks, using the reports generated to make sure everything is getting delivered as expected, and then to ramp up implementation through the `pct` tag or take the gamble and go all in.
 

@@ -64,10 +64,6 @@
 	- No authentication or authorization is performed, and no action is taken, but you get reports on who is sending emails on your domain's behalf.
 
 
-> **SPF/DKIM Alignment**
-> Alignment describes when the domain which has been authenticated matches the domain found in the "mail-from" field of an email. It can be "relaxed" and align all email with the same organizational domain (e.g., )
-
-
 </div></div>
 
 
