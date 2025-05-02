@@ -22,10 +22,11 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | 25 Most Recently Modified Pages                                                                                                         | Last Modified      |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Technical Guides/Securing Email\|Securing Email]]                                                                                  | 2025.05.01 - 12:44 |
-| [[Definitions and Topics/DMARC\|DMARC]]                                                                                              | 2025.05.01 - 12:34 |
+| [[Definitions and Topics/DMARC\|DMARC]]                                                                                              | 2025.05.02 - 11:45 |
+| [[Tool Deep-Dives/Python/DMARC Report Analyzer\|DMARC Report Analyzer]]                                                              | 2025.05.02 - 11:23 |
+| [[Technical Guides/Securing Email\|Securing Email]]                                                                                  | 2025.05.02 - 10:58 |
+| [[Definitions and Topics/SPF\|SPF]]                                                                                                  | 2025.05.02 - 10:27 |
 | [[Definitions and Topics/DKIM\|DKIM]]                                                                                                | 2025.05.01 - 11:46 |
-| [[Definitions and Topics/SPF\|SPF]]                                                                                                  | 2025.05.01 - 11:42 |
 | [[Definitions and Topics/AAA\|AAA]]                                                                                                  | 2025.05.01 - 11:17 |
 | [[Technical Guides/Installing the Zen Browser\|Installing the Zen Browser]]                                                          | 2025.02.20 - 13:09 |
 | [[Tool Deep-Dives/Linux/ln\|ln]]                                                                                                     | 2025.02.20 - 12:50 |
@@ -46,6 +47,5 @@ Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Be
 | [[Tool Deep-Dives/Linux/Remmina\|Remmina]]                                                                                           | 2025.02.04 - 11:05 |
 | [[Career Growth/Intro to IT and Cybersecurity/Recommended Helpdesk Classes and Lectures\|Recommended Helpdesk Classes and Lectures]] | 2025.02.03 - 15:58 |
 | [[Tool Deep-Dives/Proxmox/Proxmox Virtual Environment\|Proxmox Virtual Environment]]                                                 | 2025.02.02 - 14:27 |
-| [[Career Growth/Resume Improvement in Tech and Cybersecurity\|Resume Improvement in Tech and Cybersecurity]]                         | 2025.02.02 - 11:31 |
 
 { .block-language-dataview}

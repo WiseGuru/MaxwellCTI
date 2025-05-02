@@ -114,15 +114,16 @@ The name of the SPF record designates the domain its being applied to; it can be
 1. Name: `@`
 	1. `@`
 		1. Designates the domain to which the SPF record applies; `@` is the current top-level domain (e.g., `example.com`)
-		2. Can also use a subdomain, like `mail` or `mail.example.com`, with formatting depending on your DNS host.
+		2. Can also use a subdomain, like `mail` or `mail.example.com`, with formatting depending on your DNS nameserver.
 2. Value: `v=spf1 +a mx ip4:123.45.67.89 a:contoso.com include:mail.example.com -all`
 	1. `v=spf1`
 		1. Version = SPF 1
 	2. `+a`
 		1. The `+` is a qualifier that says what to do if an email matches that value; here are a few of the most common ones.
-			1. `+` = Pass, the host is allowed to send; this is the default, and does not need to be explicitly written out and I only put it here for demonstration purposes
-			2. `-` = Fail, the host is not allowed to send
-			3. `~` = SoftFail, transitioning away from the host and not allowed to send, but authentic mail still come from that host
+			1. `+` = Pass, the email originating host is allowed to send; this is the default, and does not need to be explicitly written out and I only put it here for demonstration purposes
+			2. `-` = Fail, the originating host is not allowed to send
+			3. `~` = SoftFail, originating host is not allowed to send, but authentic mail may be sent from it
+				1. Should only be used either when initially configuring SPF/DKIM/DMARC or when decommissioning an authenticated sender
 		2. The `a` tells the recipient to check the current domain's DNS for A records (e.g., IPv4 addresses) and mark them as designated senders
 			1. You might also see `aaaa` to designate an IPv6 address
 	3. `mx`
@@ -136,10 +137,11 @@ The name of the SPF record designates the domain its being applied to; it can be
 		1. Checks `mail.example.com` for its own SPF record and includes that in the SPF record lookup
 		2. Be careful as this can bring you much closer to the *10 DNS lookup limit* and cause a `PermError`
 	7. `-all`
-		1. Fail All hosts that have not been matched to this point in the record
+		1. Fail all originating hosts that have not been matched to this point in the record
 			1. Because this is the last entry, any mail that is authenticated by one of the earlier entries will get through, and everything else is failed
 			2. Similar to Firewall configuration where the last rule is often `deny any any`
-		2. Because this is a Fail qualifier, it has to be manually written out as `-`
+		2. Because this is a *Fail* qualifier, it has to be manually written out as `-`
+			1. Also frequently seen in default configurations with a SoftFail as `~all`
 
 
 
@@ -212,8 +214,9 @@ Below is an example of a DMARC TXT record:
 		2. This is helpful during a slow rollout to make sure not all email flow stops
 	6. `aspf=r`
 		1. SPF alignment requirements
-			1. `s` is strict, and domains must match exactly
-			2. `r` is relaxed, and only the root/organizational domain must match
+			1. `r` is relaxed, and only the root/organizational domain must match
+				1. Relaxed is the default value for both `aspf` and `adkim`, and does not need to be explicitly stated
+			2. `s` is strict, and domains must match exactly
 	7. `adkim=r`
 		1. DKIM alignment requirements
 	8. `rua=mailto:dmarc-reports@example.com`
@@ -223,7 +226,10 @@ Below is an example of a DMARC TXT record:
 		1. Identifies the email address to which recipient servers should send *individual delivery forensic failure reports*
 		2. Forensic failure reports contain detailed information about failed deliveries to assist with triage and troubleshooting.
 
-
+> If you are sending DMARC reports to another domain, you will need to create a TXT record on that domain's nameserver to identify the sending domain.
+> The "Name" identifies the domain generating the report (e.g., `sendingdomain.com`), followed by `._report._dmarc`, and the value simply identifies the DMARC version (`v=DMARC1`)
+> For example:
+> `TXT   sendingdomain.com._report._dmarc.receivingdomain.com   "v=DMARC1"`
 
 
 </div></div>
@@ -242,6 +248,7 @@ Below is an example of a DMARC TXT record:
 	- [BIMI Record Check - BIMI Lookup Tool - Brand Indicators for Message Identification Tools - MxToolBox](https://mxtoolbox.com/bimi.aspx)
 	- [MTA-STS Lookup - Check domains for Inbound Transport Layer Security (TLS) Enforcement - MxToolbox](https://mxtoolbox.com/mta-sts.aspx)
 - [Free Domain Analyzer Tool \| PowerAnalyzer](https://powerdmarc.com/analyzer/)
+	- Can automatically detect/select the DKIM selector
 	- Checks BIMI and a few others with only a couple of clicks
 
 ## DNS Look-up tools

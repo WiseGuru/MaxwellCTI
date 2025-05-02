@@ -46,8 +46,9 @@ Below is an example of a DMARC TXT record:
 		2. This is helpful during a slow rollout to make sure not all email flow stops
 	6. `aspf=r`
 		1. SPF alignment requirements
-			1. `s` is strict, and domains must match exactly
-			2. `r` is relaxed, and only the root/organizational domain must match
+			1. `r` is relaxed, and only the root/organizational domain must match
+				1. Relaxed is the default value for both `aspf` and `adkim`, and does not need to be explicitly stated
+			2. `s` is strict, and domains must match exactly
 	7. `adkim=r`
 		1. DKIM alignment requirements
 	8. `rua=mailto:dmarc-reports@example.com`
@@ -57,7 +58,10 @@ Below is an example of a DMARC TXT record:
 		1. Identifies the email address to which recipient servers should send *individual delivery forensic failure reports*
 		2. Forensic failure reports contain detailed information about failed deliveries to assist with triage and troubleshooting.
 
-
+> If you are sending DMARC reports to another domain, you will need to create a TXT record on that domain's nameserver to identify the sending domain.
+> The "Name" identifies the domain generating the report (e.g., `sendingdomain.com`), followed by `._report._dmarc`, and the value simply identifies the DMARC version (`v=DMARC1`)
+> For example:
+> `TXT   sendingdomain.com._report._dmarc.receivingdomain.com   "v=DMARC1"`
 
 # Metadata
 
