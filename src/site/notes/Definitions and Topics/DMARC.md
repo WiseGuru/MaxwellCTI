@@ -13,10 +13,11 @@
 		- e.g., `marketing.example.com` would fail to align with `example.com`
 - There should only be one DMARC TXT record on your DNS host.
 	- Like [[Definitions and Topics/SPF\|SPF]], it applies to all emails sent from your domain, and not to specific hosts like [[Definitions and Topics/DKIM\|DKIM]]
-- DMARC can be configured in purely an audit mode without SPF and DKIM
-	- No authentication or authorization is performed, and no action is taken, but you get reports on who is sending emails on your domain's behalf.
-- If you are reviewing old records, you might see a DKIM record with `v=DKIM1; o=~`
-	- This is an outdated and unused spec; it can be deleted without issue.^[[What is this extra \_domainkey.? Should I kill it? : r/DMARC](https://www.reddit.com/r/DMARC/comments/1h7elj3/comment/m0kwi0l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)] ^[[draft-allman-dkim-ssp-01](https://datatracker.ietf.org/doc/html/draft-allman-dkim-ssp-01/#section-5)]
+- Delivery *aggregate* and *failure* reports are sent to designated email addresses for review
+	- Critical for troubleshooting and setup.
+	- DMARC can also be configured in purely an audit mode without SPF and DKIM; no action is taken, but you get reports on who is sending emails on your domain's behalf and whether they succeed for fail authentication.
+
+> If you are reviewing old records, you might see a DKIM record with `v=DKIM1; o=~`. This is an outdated and unused spec; it can be deleted without issue.^[[What is this extra \_domainkey.? Should I kill it? : r/DMARC](https://www.reddit.com/r/DMARC/comments/1h7elj3/comment/m0kwi0l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)] ^[[draft-allman-dkim-ssp-01](https://datatracker.ietf.org/doc/html/draft-allman-dkim-ssp-01/#section-5)]
 
 #### DMARC Implementation
 Configuring DMARC is easy, but can cause you the most headaches because it's what authorizes email to be delivered, and a misconfiguration can stop your email in its tracks. Therefore, it's highly recommended that you first configure your DMARC policy to take no action on emails for the first couple of weeks, using the reports generated to make sure everything is getting delivered as expected, and then to ramp up implementation through the `pct` tag or take the gamble and go all in.
@@ -46,6 +47,7 @@ Below is an example of a DMARC TXT record:
 		1. The percent of unauthenticated emails to apply the policy to
 			1. e.g., `pct=20` would only apply the `p=reject` policy to 20% of emails which fail authentication
 		2. This is helpful during a slow rollout to make sure not all email flow stops
+		3. Default is 100, and does not need to be explicitly written
 	6. `aspf=r`
 		1. SPF alignment requirements
 			1. `r` is relaxed, and only the root/organizational domain must match

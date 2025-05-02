@@ -8,7 +8,7 @@
 	- Recipients perform a DNS lookup to confirm the sender.
 	- If the SPF record is missing, or the sender is not authenticated, the message will fail and may not be delivered.
 - Each sending mail server/domain must be identified
-	- This can be directly via IP or through a domain lookup
+	- This can be directly via IP or through a domain/DNS lookup
 		- SPF is limited to *10 DNS lookups*; going over 10 causes a `PermError`
 	- It is not recommended to identify marketing services, like Mailchimp or Sendgrid, in SPF
 		- Due to the high volume of email they send and the number of distinct email servers they use to get around spam restrictions, you can't identify an IP address and domain look-ups can timeout and cause problems for authentication

@@ -2,6 +2,14 @@
 {"dg-publish":true,"permalink":"/technical-guides/securing-email/","noteIcon":""}
 ---
 
+Securing your email is a critical part of protecting yourself and your business from scams and losses. The [FBI IC3 2024 Annual Report](https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf) identifies Business Email Compromise and Phishing/Spoofing as one of the biggest problems by far, causing a combined *$2.8 billion* in losses last year alone.
+
+One of the best ways to protect yourself and those you interact with is to secure and authenticate emails you send. Without tools like [[Definitions and Topics/SPF\|SPF]], [[Definitions and Topics/DKIM\|DKIM]], and [[Definitions and Topics/DMARC\|DMARC]] to authenticate your your messages, scammers can send messages that appear to come from you without having access to your account or server.
+
+Great, sign me up, right? While setup is be relatively easy, misconfigurations can cause major headaches and prevent mail from getting delivered, and old configurations can muddy the waters about what's good and bad. 
+
+Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Technical Guides/Securing Email#Implementation\|Implementation Guides]], and [[Technical Guides/Securing Email#Tools and Resources\|Resources]] that will help you protect your identity.
+
 # Definitions
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/definitions-and-topics/spf/#spf" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
@@ -14,7 +22,7 @@
 	- Recipients perform a DNS lookup to confirm the sender.
 	- If the SPF record is missing, or the sender is not authenticated, the message will fail and may not be delivered.
 - Each sending mail server/domain must be identified
-	- This can be directly via IP or through a domain lookup
+	- This can be directly via IP or through a domain/DNS lookup
 		- SPF is limited to *10 DNS lookups*; going over 10 causes a `PermError`
 	- It is not recommended to identify marketing services, like Mailchimp or Sendgrid, in SPF
 		- Due to the high volume of email they send and the number of distinct email servers they use to get around spam restrictions, you can't identify an IP address and domain look-ups can timeout and cause problems for authentication
@@ -60,10 +68,11 @@
 		- e.g., `marketing.example.com` would fail to align with `example.com`
 - There should only be one DMARC TXT record on your DNS host.
 	- Like [[Definitions and Topics/SPF\|SPF]], it applies to all emails sent from your domain, and not to specific hosts like [[Definitions and Topics/DKIM\|DKIM]]
-- DMARC can be configured in purely an audit mode without SPF and DKIM
-	- No authentication or authorization is performed, and no action is taken, but you get reports on who is sending emails on your domain's behalf.
-- If you are reviewing old records, you might see a DKIM record with `v=DKIM1; o=~`
-	- This is an outdated and unused spec; it can be deleted without issue.^[[What is this extra \_domainkey.? Should I kill it? : r/DMARC](https://www.reddit.com/r/DMARC/comments/1h7elj3/comment/m0kwi0l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)] ^[[draft-allman-dkim-ssp-01](https://datatracker.ietf.org/doc/html/draft-allman-dkim-ssp-01/#section-5)]
+- Delivery *aggregate* and *failure* reports are sent to designated email addresses for review
+	- Critical for troubleshooting and setup.
+	- DMARC can also be configured in purely an audit mode without SPF and DKIM; no action is taken, but you get reports on who is sending emails on your domain's behalf and whether they succeed for fail authentication.
+
+> If you are reviewing old records, you might see a DKIM record with `v=DKIM1; o=~`. This is an outdated and unused spec; it can be deleted without issue.^[[What is this extra \_domainkey.? Should I kill it? : r/DMARC](https://www.reddit.com/r/DMARC/comments/1h7elj3/comment/m0kwi0l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)] ^[[draft-allman-dkim-ssp-01](https://datatracker.ietf.org/doc/html/draft-allman-dkim-ssp-01/#section-5)]
 
 
 </div></div>
@@ -101,7 +110,36 @@
 </div></div>
 
 
-# Getting Setup
+
+# Implementation
+Below are guides to understand how each type of record functions; but to safely implement them, I recommend following these steps.
+
+## Implementation Plan
+1. Configure DMARC to generate delivery reports
+	1. Setup two email accounts; one for DMARC aggregate reports and one for failure/forensic reports
+	2. Add the following DMARC policy to each domain you are managing (adding the appropriate addresses you created earlier):
+		1. `v=DMARC1; p=none; rua=mailto:[aggregate report email address]; ruf=mailto:[failure report email address]`
+		2. This policy functions just as an audit mode, *taking no action on emails which fail authentication*
+2. Configure one SPF record for each domain that identifies non-marketing mail senders
+	1. Most mail providers have a tool to generate SPF records, or will have one available for you to copy and paste; review it and make sure it meets your risk profile.
+	2. *Do not add Mailchimp or Sendgrid to your SPF record*; this will cause lookup errors, and therefore authentication failures.
+	3. If you use an email marketing service provider, set the last tag as `~all` and not `-all`
+3. Configure DKIM records for every sending host
+	1. Each sender (Microsoft Exchange, Gmail, Mailchimp, etc.) will have instructions on how to add DKIM records to your name server.
+4. Review DMARC reports
+	1. You will receive a bunch of DMARC reports; these are XML documents and are frequently zipped. Over the next couple of weeks to a month, review these reports to see how mail is being delivered.
+		1. [MxToolBox has an online DMARC Report Analyzer](https://mxtoolbox.com/DmarcReportAnalyzer.aspx) which converts them into an (online only) spreadsheet.
+		2. If you're comfortable running scripts, [DMARC-Report-Analyzer](https://github.com/QbDVision-Inc/DMARC-Report-Analyzer) is a Python-based analyzer which can download files directly from your report inboxes.
+	2. Check to make sure that all authentic mail is passing SPF and DKIM authentication, and adjust your SPF and DKIM records as necessary.
+5. Update DMARC policy to enforce policy
+	1. Once you are confident that authentic email won't get trapped, change the `p=` tag in DMARC to `quarantine` or `reject`
+		1. Quarantine is a little safer, since mail is delivered but sent to junk.
+	2. You can also add a `pct=` tag to only apply the policy to a percentage of unauthenticated mail
+		1. For example, `pct=30` would only apply the policy to 30% of messages who fail SPF and DKIM authentication checks.
+	3. Here's an example version of the updated record which applies the Quarantine policy to 50% of messages that fail authentication
+		1. `v=DMARC1; p=quarantine; pct=50; rua=mailto:[aggregate report email address]; ruf=mailto:[failure report email address]`
+
+
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/definitions-and-topics/spf/#spf-implementation" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
@@ -214,6 +252,7 @@ Below is an example of a DMARC TXT record:
 		1. The percent of unauthenticated emails to apply the policy to
 			1. e.g., `pct=20` would only apply the `p=reject` policy to 20% of emails which fail authentication
 		2. This is helpful during a slow rollout to make sure not all email flow stops
+		3. Default is 100, and does not need to be explicitly written
 	6. `aspf=r`
 		1. SPF alignment requirements
 			1. `r` is relaxed, and only the root/organizational domain must match
@@ -244,8 +283,9 @@ Below is an example of a DMARC TXT record:
 </div></div>
 
 
-# Tools
-## Sites
+
+# Tools and Resources
+## Resources
 - [Learn and Test DMARC](https://www.dmarctester.com/)
 	- Great site for quickly testing mail you can send
 - [MX Lookup Tool - Check your DNS MX Records online - MxToolbox](https://mxtoolbox.com/)
@@ -259,6 +299,9 @@ Below is an example of a DMARC TXT record:
 - [Free Domain Analyzer Tool \| PowerAnalyzer](https://powerdmarc.com/analyzer/)
 	- Can automatically detect/select the DKIM selector
 	- Checks BIMI and a few others with only a couple of clicks
+- [GitHub - QbDVision-Inc/DMARC-Report-Analyzer: Analysis on your DMARC report files](https://github.com/QbDVision-Inc/DMARC-Report-Analyzer?)
+	- Local, Python-based DMARC report analyzer
+	- Can automatically log in to email accounts and download DMARC reports directly for analysis
 
 ## DNS Look-up tools
 [[dig\|dig]]
