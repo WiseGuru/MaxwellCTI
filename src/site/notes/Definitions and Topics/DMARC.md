@@ -59,9 +59,12 @@ Below is an example of a DMARC TXT record:
 		2. Forensic failure reports contain detailed information about failed deliveries to assist with triage and troubleshooting.
 
 > If you are sending DMARC reports to another domain, you will need to create a TXT record on that domain's nameserver to identify the sending domain.
-> The "Name" identifies the domain generating the report (e.g., `sendingdomain.com`), followed by `._report._dmarc`, and the value simply identifies the DMARC version (`v=DMARC1`)
+> 
 > For example:
 > `TXT   sendingdomain.com._report._dmarc.receivingdomain.com   "v=DMARC1"`
+> 
+> The TXT record **name** identifies the domain generating the report (`sendingdomain.com`), followed by `._report._dmarc` and the domain receiving the reports (`.receivingdomain.com`). 
+> The TXT record **value** just identifies the DMARC version (`"v=DMARC1"`)
 
 # Metadata
 
