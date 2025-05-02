@@ -226,13 +226,17 @@ Below is an example of a DMARC TXT record:
 		1. Identifies the email address to which recipient servers should send *individual delivery forensic failure reports*
 		2. Forensic failure reports contain detailed information about failed deliveries to assist with triage and troubleshooting.
 
-> If you are sending DMARC reports to another domain, you will need to create a TXT record on that domain's nameserver to identify the sending domain.
+> If you are sending DMARC reports to another domain, you will need to create a TXT record on that domain's nameserver to identify each sending domain.^[[DMARC - DMARC External Validation](https://mxtoolbox.com/problem/dmarc/dmarc-external-validation?page=prob_dmarc&action=dmarc:annmulhern.com&showlogin=1&hidepitch=0&hidetoc=1)]
 > 
 > For example:
 > `TXT   sendingdomain.com._report._dmarc.receivingdomain.com   "v=DMARC1"`
 > 
 > The TXT record **name** identifies the domain generating the report (`sendingdomain.com`), followed by `._report._dmarc` and the domain receiving the reports (`.receivingdomain.com`). 
 > The TXT record **value** just identifies the DMARC version (`"v=DMARC1"`)
+> 
+> **WARNING**: While you can use a `*` wildcard to simplify the record to `*._report._dmarc.receivingdomain.com`, this allows anyone to send email to your DMARC report inboxes. Spam filters and firewalls don't typically inspect DMARC reports, and an attacked could exploit this flood the inbox with DMARC reports or inject malicious code into zipped attachments, which might get run automatically by report analyzing software. 
+
+
 
 
 </div></div>
