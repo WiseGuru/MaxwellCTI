@@ -22,7 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | 25 Most Recently Modified Pages                                                                                                         | Last Modified      |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Technical Guides/Securing Email\|Securing Email]]                                                                                  | 2025.05.02 - 15:40 |
+| [[Technical Guides/Securing Email\|Securing Email]]                                                                                  | 2025.05.02 - 15:43 |
 | [[Definitions and Topics/DMARC\|DMARC]]                                                                                              | 2025.05.02 - 15:29 |
 | [[Definitions and Topics/SPF\|SPF]]                                                                                                  | 2025.05.02 - 15:05 |
 | [[Tool Deep-Dives/Python/DMARC Report Analyzer\|DMARC Report Analyzer]]                                                              | 2025.05.02 - 13:06 |

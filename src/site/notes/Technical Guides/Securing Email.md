@@ -120,6 +120,7 @@ Below are guides to understand how each type of record functions; but to safely 
 	2. Add the following DMARC policy to each domain you are managing (adding the appropriate addresses you created earlier):
 		1. `v=DMARC1; p=none; rua=mailto:[aggregate report email address]; ruf=mailto:[failure report email address]`
 		2. This policy functions just as an audit mode, *taking no action on emails which fail authentication*
+		3. If DMARC reports are going to be sent across different domains, then make sure you create a TXT DMARC report record on the receiving domain saying which domains are allowed to send DMARC reports.
 2. Configure one SPF record for each domain that identifies non-marketing mail senders
 	1. Most mail providers have a tool to generate SPF records, or will have one available for you to copy and paste; review it and make sure it meets your risk profile.
 	2. *Do not add Mailchimp or Sendgrid to your SPF record*; this will cause lookup errors, and therefore authentication failures.
