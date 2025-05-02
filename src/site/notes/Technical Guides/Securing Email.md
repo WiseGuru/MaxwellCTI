@@ -62,6 +62,8 @@
 	- Like [[Definitions and Topics/SPF\|SPF]], it applies to all emails sent from your domain, and not to specific hosts like [[Definitions and Topics/DKIM\|DKIM]]
 - DMARC can be configured in purely an audit mode without SPF and DKIM
 	- No authentication or authorization is performed, and no action is taken, but you get reports on who is sending emails on your domain's behalf.
+- If you are reviewing old records, you might see a DKIM record with `v=DKIM1; o=~`
+	- This is an outdated and unused spec; it can be deleted without issue.^[[What is this extra \_domainkey.? Should I kill it? : r/DMARC](https://www.reddit.com/r/DMARC/comments/1h7elj3/comment/m0kwi0l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)] ^[[draft-allman-dkim-ssp-01](https://datatracker.ietf.org/doc/html/draft-allman-dkim-ssp-01/#section-5)]
 
 
 </div></div>
@@ -123,7 +125,6 @@ The name of the SPF record designates the domain its being applied to; it can be
 			1. `+` = Pass, the email originating host is allowed to send; this is the default, and does not need to be explicitly written out and I only put it here for demonstration purposes
 			2. `-` = Fail, the originating host is not allowed to send
 			3. `~` = SoftFail, originating host is not allowed to send, but authentic mail may be sent from it
-				1. Should only be used either when initially configuring SPF/DKIM/DMARC or when decommissioning an authenticated sender
 		2. The `a` tells the recipient to check the current domain's DNS for A records (e.g., IPv4 addresses) and mark them as designated senders
 			1. You might also see `aaaa` to designate an IPv6 address
 	3. `mx`
@@ -141,7 +142,8 @@ The name of the SPF record designates the domain its being applied to; it can be
 			1. Because this is the last entry, any mail that is authenticated by one of the earlier entries will get through, and everything else is failed
 			2. Similar to Firewall configuration where the last rule is often `deny any any`
 		2. Because this is a *Fail* qualifier, it has to be manually written out as `-`
-			1. Also frequently seen in default configurations with a SoftFail as `~all`
+		3. `~all` is also frequently seen in default configurations
+			1. Used when transitioning between services or when using email marketing services (Mailchimp, Sendgrid, etc.) which do not get added to the SPF record.
 
 
 

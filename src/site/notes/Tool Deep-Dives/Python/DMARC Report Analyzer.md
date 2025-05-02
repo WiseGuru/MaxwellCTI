@@ -14,7 +14,6 @@
 
 ### Sources
 - [GitHub - QbDVision-Inc/DMARC-Report-Analyzer: Analysis on your DMARC report files](https://github.com/QbDVision-Inc/DMARC-Report-Analyzer)
-	- NOTE: At the time of creating this note, the installation script does not properly capitalize the installation folder, so it fails on Linux. Updating it to `cd DMARC-Report-Analyzer` resolves the issue.
 
 ### Tags
 #tools_Python 
