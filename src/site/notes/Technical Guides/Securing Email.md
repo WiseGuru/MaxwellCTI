@@ -119,10 +119,11 @@ Below are implementation and syntax guides for each type of record; but to safel
 	1. Create two email accounts; one for DMARC aggregate reports and one for failure/forensic reports
 		1. For example, `dmarc_aggregate@example.com` and `dmarc_failures@example.com`
 	2. Add the following DMARC policy to each domain you are managing (adding the appropriate addresses you created earlier):
-		1. `v=DMARC1; p=none; rua=mailto:[aggregate report email address]; ruf=mailto:[failure report email address]`
+		1. `v=DMARC1; p=none; rua=mailto:[aggregate report email address]; ruf=mailto:[failure report email address]; fo=1`
 			1. This policy *takes no action on emails which fail authentication*, but *sends reports to your designated email addresses.*
 		2. If DMARC reports are going to be sent across different domains, then make sure you create a TXT DMARC report record (described below) on the receiving domain saying which domains are allowed to send DMARC reports.
 			1. For example, if you want `example.com` to send DMARC reports to `aggregate@contoso.com`, you would need to create a DMARC report record on `contoso.com`'s DNS name server.
+		3. `fo=1` will generate DMARC forensic reports for *either SPF or DKIM failures*, which is very helpful when troubleshooting problems during setup.
 2. **Configure one SPF record** for each domain that identifies non-marketing mail senders
 	1. Most mail providers have a tool to generate SPF records, or will have one available for you to copy and paste; review it and make sure it has everything you need and is strict enough to your liking.
 	2. *Do not add Mailchimp or Sendgrid to your SPF record*; this will cause lookup errors, and therefore authentication failures.
@@ -130,22 +131,27 @@ Below are implementation and syntax guides for each type of record; but to safel
 3. **Configure DKIM records** for every sending host
 	1. Each sender (Microsoft Exchange, Gmail, Mailchimp, etc.) will have instructions on how to add DKIM records to your name server.
 4. **Review DMARC reports**
-	1. It can take up to 48 hours for reports to start coming in
+	1. It can take up to 48 hours for reports to start coming in.
 		1. This is because DMARC records usually check for updates every 24 hours, and for global propagation it can take double that time.
 		2. If you are not seeing aggregate reports after 48 hours, check the record to make sure there aren't any typos. [[Technical Guides/Securing Email#Resources\|The resources below can really help.]]
 	2. These reports are XML documents and are frequently zipped before being attached
-		1. Over the next couple of weeks to a month, review these reports to see how mail is being delivered.
+		1. *Over the next couple of weeks to couple of months*, review these reports to see how mail is being delivered.
 			1. MxToolBox has an [online DMARC Report Analyzer](https://mxtoolbox.com/DmarcReportAnalyzer.aspx) which converts the reports into an (online only) spreadsheet.
 			2. If you're comfortable running scripts, [DMARC-Report-Analyzer](https://github.com/QbDVision-Inc/DMARC-Report-Analyzer) is a Python-based analyzer which can download files directly from your report inboxes and format them into a spreadsheet.
 	3. Check to make sure that all authentic mail is passing SPF and DKIM authentication, and adjust your SPF and DKIM records as necessary.
-		1. This is also a great way to uncover shadow IT and rogue service providers. 
-5. **Enforce DMARC policy**
+		1. This is also a great way to uncover shadow IT and rogue service providers.
+5. **Update SPF and DKIM records as needed**
+	1. Chances are you will have missed a service during your initial setup or there's a misconfiguration.
+	2. There is also a chance you will see inauthentic or malicious mail getting delivered.
+		1. The forensic/failure reports give you a lot of information about the email, including the sender, subject, and recipient, so you can reach out to the recipient if necessary.
+6. **Enforce DMARC policy**
 	1. Once you are confident that authentic email won't fail authentication, change the `p=` tag in DMARC to `quarantine` or `reject` to begin blocking unauthenticated mail.
 		1. Quarantine is a little safer since mail is delivered but sent to junk.
 		2. As mentioned before, it will take up to 48 hours for the changes to fully propagate.
 	2. You can also add a `pct=` tag to only apply the policy to a percentage of unauthenticated mail
 		1. For example, `pct=30` would only apply the policy to 30% of messages who fail SPF and DKIM authentication checks.
-	3. Here's an example of the updated record which applies the Quarantine policy to 50% of messages that fail authentication.
+	3. You can now remove the `fo=1` tag from the DMARC record because you should have a very good idea about how your mail is authenticated and you only care about if mail isn't being delivered.
+	4. Here's an example of the updated record which applies the Quarantine policy to 50% of messages that fail authentication.
 		1. `v=DMARC1; p=quarantine; pct=50; rua=mailto:[aggregate report email address]; ruf=mailto:[failure report email address]`
 
 
@@ -249,7 +255,7 @@ Below is an example of a DMARC TXT record:
 	2. `example.com`
 		1. The root/organization-level domain the policy is being applied to.
 		2. Only one DMARC record needs to exist for the whole domain, but you can add more records for different subdomains to take different actions.
-2. **Value**: `v=DMARC1; p=reject; sp=none; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com;`
+2. **Value**: `v=DMARC1; p=reject; sp=none; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com; fo=1;`
 	1. `v=DMARC1`
 		1. DMARC version 1; at present, there is only one version.
 	2. `;`
@@ -285,6 +291,9 @@ Below is an example of a DMARC TXT record:
 	9. `ruf=mailto:dmarc-failures@example.com`
 		1. Identifies the email address to which recipient servers should send *individual delivery forensic failure reports*
 		2. Forensic failure reports contain detailed information about failed deliveries to assist with triage and troubleshooting.
+	10. `fo=1`
+		1. This generates a forensic report *for any SPF or DKIM failure*, which is helpful for triage and troubleshooting during initial setup.
+			1. Default is `fo=0`, and once the `p` value is set to `quarantine` or `reject`, it can be safely removed.
 
 > If you are sending DMARC reports to another domain, you will need to create a TXT record on that domain's name server to identify each sending domain.^[[DMARC - DMARC External Validation](https://mxtoolbox.com/problem/dmarc/dmarc-external-validation?page=prob_dmarc&action=dmarc:annmulhern.com&showlogin=1&hidepitch=0&hidetoc=1)]
 > 
@@ -328,7 +337,10 @@ Below is an example of a DMARC TXT record:
 - [GitHub - QbDVision-Inc/DMARC-Report-Analyzer: Analysis on your DMARC report files](https://github.com/QbDVision-Inc/DMARC-Report-Analyzer?)
 	- Local, Python-based DMARC report analyzer
 	- Can automatically log in to email accounts and download DMARC reports directly for analysis
-
+- [Email Authentication Best Practices - Cisco](https://www.cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf)
+	- This best practices guide from Cisco is kind of crazy; it's 17 pages long and pretty technical. 
+	- It may be helpful for larger environments, but it feels backwards to me; it takes *6 and a half months* to get to the point where you're conducting a test run, and you don't setup a DMARC policy until about the 3rd month.
+	- I do think it's important to be diligent and 
 ## DNS Look-up tools
 [[dig\|dig]]
 [[nslookup\|nslookup]]

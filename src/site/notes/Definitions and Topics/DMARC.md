@@ -30,7 +30,7 @@ Below is an example of a DMARC TXT record:
 	2. `example.com`
 		1. The root/organization-level domain the policy is being applied to.
 		2. Only one DMARC record needs to exist for the whole domain, but you can add more records for different subdomains to take different actions.
-2. **Value**: `v=DMARC1; p=reject; sp=none; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com;`
+2. **Value**: `v=DMARC1; p=reject; sp=none; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com; fo=1;`
 	1. `v=DMARC1`
 		1. DMARC version 1; at present, there is only one version.
 	2. `;`
@@ -66,6 +66,9 @@ Below is an example of a DMARC TXT record:
 	9. `ruf=mailto:dmarc-failures@example.com`
 		1. Identifies the email address to which recipient servers should send *individual delivery forensic failure reports*
 		2. Forensic failure reports contain detailed information about failed deliveries to assist with triage and troubleshooting.
+	10. `fo=1`
+		1. This generates a forensic report *for any SPF or DKIM failure*, which is helpful for triage and troubleshooting during initial setup.
+			1. Default is `fo=0`, and once the `p` value is set to `quarantine` or `reject`, it can be safely removed.
 
 > If you are sending DMARC reports to another domain, you will need to create a TXT record on that domain's name server to identify each sending domain.^[[DMARC - DMARC External Validation](https://mxtoolbox.com/problem/dmarc/dmarc-external-validation?page=prob_dmarc&action=dmarc:annmulhern.com&showlogin=1&hidepitch=0&hidetoc=1)]
 > 
