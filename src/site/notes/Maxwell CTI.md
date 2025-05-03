@@ -22,11 +22,11 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | 25 Most Recently Modified Pages                                                                                                         | Last Modified      |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Technical Guides/Securing Email\|Securing Email]]                                                                                  | 2025.05.02 - 15:43 |
-| [[Definitions and Topics/DMARC\|DMARC]]                                                                                              | 2025.05.02 - 15:29 |
-| [[Definitions and Topics/SPF\|SPF]]                                                                                                  | 2025.05.02 - 15:05 |
+| [[Definitions and Topics/DMARC\|DMARC]]                                                                                              | 2025.05.02 - 21:03 |
+| [[Definitions and Topics/DKIM\|DKIM]]                                                                                                | 2025.05.02 - 20:54 |
+| [[Definitions and Topics/SPF\|SPF]]                                                                                                  | 2025.05.02 - 20:50 |
+| [[Technical Guides/Securing Email\|Securing Email]]                                                                                  | 2025.05.02 - 20:43 |
 | [[Tool Deep-Dives/Python/DMARC Report Analyzer\|DMARC Report Analyzer]]                                                              | 2025.05.02 - 13:06 |
-| [[Definitions and Topics/DKIM\|DKIM]]                                                                                                | 2025.05.01 - 11:46 |
 | [[Definitions and Topics/AAA\|AAA]]                                                                                                  | 2025.05.01 - 11:17 |
 | [[Technical Guides/Installing the Zen Browser\|Installing the Zen Browser]]                                                          | 2025.02.20 - 13:09 |
 | [[Tool Deep-Dives/Linux/ln\|ln]]                                                                                                     | 2025.02.20 - 12:50 |
