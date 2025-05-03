@@ -70,8 +70,12 @@ Below is an example of a DMARC TXT record:
 > If you are sending DMARC reports to another domain, you will need to create a TXT record on that domain's name server to identify each sending domain.^[[DMARC - DMARC External Validation](https://mxtoolbox.com/problem/dmarc/dmarc-external-validation?page=prob_dmarc&action=dmarc:annmulhern.com&showlogin=1&hidepitch=0&hidetoc=1)]
 > 
 > For example:
-> `Type   Name                                                   Value`
-> `TXT    sendingdomain.com._report._dmarc.receivingdomain.com   "v=DMARC1"`
+> 1. Type
+> 	1. `TXT`
+> 2. Name
+> 	1. `sendingdomain.com._report._dmarc.receivingdomain.com`
+> 3. Value
+> 	1. `"v=DMARC1"`
 > 
 > The TXT record **name** identifies the domain generating the report (`sendingdomain.com`), followed by `._report._dmarc` and the domain receiving the reports (`.receivingdomain.com`). 
 > The TXT record **value** just identifies the DMARC version (`"v=DMARC1"`)
