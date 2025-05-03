@@ -339,8 +339,8 @@ Below is an example of a DMARC TXT record:
 	- Can automatically log in to email accounts and download DMARC reports directly for analysis
 - [Email Authentication Best Practices - Cisco](https://www.cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf)
 	- This best practices guide from Cisco is kind of crazy; it's 17 pages long and pretty technical. 
-	- It may be helpful for larger environments, but it feels backwards to me; it takes *6 and a half months* to get to the point where you're conducting a test run, and you don't setup a DMARC policy until about the 3rd month.
-	- I do think it's important to be diligent and 
+	- It may be helpful for larger environments, but it feels backwards to me; it takes *6 and a half months* to get to the point where you're enacting policy, and you don't even setup a DMARC record until about the *third month*.
+	- I think it's important, critical even, to be diligent when working with a production environment, but for real, to only start gathering live information half-way through deployment seems crazy to me.
 ## DNS Look-up tools
 [[dig\|dig]]
 [[nslookup\|nslookup]]
