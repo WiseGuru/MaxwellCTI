@@ -91,6 +91,7 @@ Below is an example of a DMARC TXT record:
 [dmarc.org – Domain Message Authentication Reporting & Conformance](https://dmarc.org/)
 [DMARC - Wikipedia](https://en.wikipedia.org/wiki/DMARC)
 [Learn and Test DMARC](https://www.dmarctester.com/)
+[Use DMARC to validate email, setup steps - Microsoft Defender for Office 365 \| Microsoft Learn](https://learn.microsoft.com/en-us/defender-office-365/email-authentication-dmarc-configure)
 
 ### Tags
 #defs_sec 

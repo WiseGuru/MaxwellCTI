@@ -116,6 +116,10 @@ Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Techni
 # Implementation
 Below are implementation and syntax guides for each type of record; but to safely implement them, I recommend following these steps.
 
+> Many experts recommend configuring SPF and DKIM at least 48 hours before DMARC,^[[Recommended DMARC rollout - Google Workspace Admin Help](https://support.google.com/a/answer/10032473?sjid=10183544884627146580-NC)] ^[[cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf](https://www.cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf)] but I don't think this is efficient.
+> 
+> Even though all email sent during this period will show as "failed authentication," setting up DMARC first will provide you with more information sooner about who is sending email on your organization's behalf, which can help you correct your SPF and DKIM records more quickly, and there is no risk as long as you set `p=none`.
+
 ## Implementation Plan
 1. **Configure DMARC to generate delivery reports**
 	1. Create two email accounts; one for DMARC aggregate reports and one for failure/forensic reports
@@ -137,7 +141,7 @@ Below are implementation and syntax guides for each type of record; but to safel
 		1. This is because DMARC records usually check for updates every 24 hours, and for global propagation it can take double that time.
 		2. If you are not seeing aggregate reports after 48 hours, check the record to make sure there aren't any typos. [[Technical Guides/Securing Email#Resources\|The resources below can really help.]]
 	2. These reports are XML documents and are frequently zipped before being attached
-		1. *Over the next couple of weeks to couple of months*, review these reports to see how mail is being delivered.
+		1. *Over the next couple of weeks to couple of months*,^[[Google](https://support.google.com/a/answer/10032473?sjid=10183544884627146580-NC) recommends waiting at least a week, and that may be fine.] review these reports to see how mail is being delivered.
 			1. MxToolBox has an [online DMARC Report Analyzer](https://mxtoolbox.com/DmarcReportAnalyzer.aspx) which converts the reports into an (online only) spreadsheet.
 			2. If you're comfortable running scripts, [DMARC-Report-Analyzer](https://github.com/QbDVision-Inc/DMARC-Report-Analyzer) is a Python-based analyzer which can download files directly from your report inboxes and format them into a spreadsheet.
 	3. Check to make sure that all authentic mail is passing SPF and DKIM authentication, and adjust your SPF and DKIM records as necessary.
@@ -337,6 +341,8 @@ Below is an example of a DMARC TXT record:
 - [GitHub - QbDVision-Inc/DMARC-Report-Analyzer: Analysis on your DMARC report files](https://github.com/QbDVision-Inc/DMARC-Report-Analyzer?)
 	- Local, Python-based DMARC report analyzer
 	- Can automatically log in to email accounts and download DMARC reports directly for analysis
+- [Email authentication in Microsoft 365 - Microsoft Defender for Office 365 \| Microsoft Learn](https://learn.microsoft.com/en-us/defender-office-365/email-authentication-about)
+	- Microsoft has a robust guide on configuring SPF, DKIM, and DMARC records for your organization.
 - [Email Authentication Best Practices - Cisco](https://www.cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf)
 	- I'm linking this document really just to rant; this "most optimal" "best practices" guide from Cisco is kind of crazy.
 	- It may be helpful for larger environments, but their implementation strategy feels backwards to me.
