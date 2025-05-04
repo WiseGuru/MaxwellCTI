@@ -9,7 +9,9 @@
 	- If the SPF record is missing, or the sender is not authenticated, the message will fail and may not be delivered.
 - Each sending mail server/domain must be identified
 	- This can be directly via IP or through a domain/DNS lookup
-		- SPF is limited to *10 DNS lookups*; going over 10 causes a `PermError`
+		- SPF is limited to *10 DNS lookups*; going over 10 causes a `PermError`.
+		- `TempError` is often caused by a transient (e.g. temporary) DNS lookup error.
+			- It can be caused by recipient policies or a DNS lookup timeout; there may not be much you can do, but you should stillcheck your record to make sure it's well below 10 look ups.^[dmarcian's [SPF Surveyor](https://dmarcian.com/spf-survey) is a great tool that identifies the number of lookups at each step.]
 	- It is not recommended to add marketing services, like Mailchimp or Sendgrid, to SPF
 		- Marketers use tons of servers to send mail to get around spam filters, and because of this, SPF DNS lookups often reach their limit before getting to the root IP and fail authentication.
 - Provides [[Definitions and Topics/AAA\|Authentication]] and [[Definitions and Topics/AAA\|Authorization]]
@@ -60,6 +62,6 @@ The SPF record is processed in order; as soon as an email is matched to one of t
 ### Sources
 [SPF: Project Overview](http://www.open-spf.org/)
 [SPF: SPF Record Syntax](http://www.open-spf.org/SPF_Record_Syntax/)
-
+[Why SPF Authentication Fails: none, neutral, fail(hard fail), soft fail, temperror, and permerror Explained - DMARCLY](https://dmarcly.com/blog/why-spf-authentication-fails-none-neutral-fail-hard-fail-soft-fail-temperror-and-permerror-explained)
 ### Tags
 #defs_sec 
