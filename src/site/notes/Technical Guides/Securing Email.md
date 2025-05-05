@@ -62,17 +62,19 @@ Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Techni
 #### DMARC
 - *DMARC* (Domain-based Message Authentication, Reporting, and Conformance) is a mechanism that tells a receiving email server what to do based on the [[Definitions and Topics/SPF\|SPF]] and [[Definitions and Topics/DKIM\|DKIM]] authentication checks.
 	- DMARC checks whether the domain in the email's "From" field matches (or is *aligned* with) the SPF or DKIM authenticated domains.
-	- If an email's "From" domain is aligned with either the SPF or DKIM authenticated domains, then it can be delivered.
+	- If an email's "From" domain is aligned with *either* the SPF or DKIM authenticated domains, then it can be delivered.
 - DMARC Alignment requirements can be "Relaxed" or "Strict"
 	- Relaxed means email from a matching root-level (or organization level) domain will align
 		- e.g., `marketing.example.com` will align with `example.com`
 	- Strict means that the domain in the email must exactly match the authenticated domain
 		- e.g., `marketing.example.com` would fail to align with `example.com`
-- There should only be one DMARC TXT record on your DNS host.
-	- Like [[Definitions and Topics/SPF\|SPF]], it applies to all emails sent from your domain, and not to specific hosts like [[Definitions and Topics/DKIM\|DKIM]]
 - Delivery *aggregate* and *failure* reports can be sent to designated email addresses for review
 	- Critical for troubleshooting and setup.
 	- DMARC can also be configured in purely an audit mode without SPF and DKIM; no action is taken, but you get reports on who is sending emails on your domain's behalf and whether they succeed for fail authentication.
+- There will most likely only be one DMARC TXT record on your DNS host.
+	- Like [[Definitions and Topics/SPF\|SPF]], it applies to all emails sent from your domain, and not to specific hosts like [[Definitions and Topics/DKIM\|DKIM]]
+	- The `sp` tag can be used to apply a different policy action on subdomains
+		- However, if you want more granularity (like different aggregate/failure report addresses), you can add another record for that subdomain.
 
 > If you are reviewing old records, you might see a DKIM record with `v=DKIM1; o=~`. This is an outdated and unused spec; it can be deleted without issue.^[[What is this extra \_domainkey.? Should I kill it? : r/DMARC](https://www.reddit.com/r/DMARC/comments/1h7elj3/comment/m0kwi0l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)] ^[[draft-allman-dkim-ssp-01](https://datatracker.ietf.org/doc/html/draft-allman-dkim-ssp-01/#section-5)]
 
@@ -114,11 +116,11 @@ Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Techni
 
 
 # Implementation
-Below are implementation and syntax guides for each type of record; but to safely implement them, I recommend following these steps.
+Below are implementation and syntax guides for each type of record; but to have a smooth rollout I recommend following these steps.
 
-> Many experts recommend configuring SPF and DKIM at least 48 hours before DMARC,^[[Recommended DMARC rollout - Google Workspace Admin Help](https://support.google.com/a/answer/10032473?sjid=10183544884627146580-NC)] ^[[cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf](https://www.cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf)] but I don't think this is efficient.
+> **Note**: Many experts recommend configuring SPF and DKIM records at least 48 hours before DMARC,^[[Recommended DMARC rollout - Google Workspace Admin Help](https://support.google.com/a/answer/10032473?sjid=10183544884627146580-NC)] ^[[cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf](https://www.cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf)] but I don't think this is efficient.
 > 
-> Even though all email sent during this period will show as "failed authentication," setting up DMARC first will provide you with more information sooner about who is sending email on your organization's behalf, which can help you correct your SPF and DKIM records more quickly, and there is no risk as long as you set `p=none`.
+> Even though all email sent during this period will show as "failed authentication," setting up DMARC first will provide you with more information sooner about who is sending email on your organization's behalf, which can help you correct your SPF and DKIM records more quickly. There is no risk in setting up DMARC first as long as you set `p=none` so no action is taken on emails that fail authentication.
 
 ## Implementation Plan
 1. **Configure DMARC to generate delivery reports**
@@ -127,7 +129,7 @@ Below are implementation and syntax guides for each type of record; but to safel
 	2. Add the following DMARC policy to each domain you are managing (adding the appropriate addresses you created earlier):
 		1. `v=DMARC1; p=none; rua=mailto:[aggregate report email address]; ruf=mailto:[failure report email address]; fo=1`
 			1. This policy *takes no action on emails which fail authentication*, but *sends reports to your designated email addresses.*
-		2. If DMARC reports are going to be sent across different domains, then make sure you create a TXT DMARC report record (described below) on the receiving domain saying which domains are allowed to send DMARC reports.
+		2. If DMARC reports are going to be sent across different domains,^[Like if you're an MSP supporting support for a client.] then make sure you create a TXT DMARC report record (described below) on the receiving domain saying which domains are allowed to send DMARC reports.
 			1. For example, if you want `example.com` to send DMARC reports to `aggregate@contoso.com`, you would need to create a DMARC report record on `contoso.com`'s DNS name server.
 		3. `fo=1` will generate DMARC forensic reports for *either SPF or DKIM failures*, which is very helpful when troubleshooting problems during setup.
 2. **Configure one SPF record** for each domain that identifies non-marketing mail senders

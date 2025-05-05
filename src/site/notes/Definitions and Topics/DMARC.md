@@ -5,17 +5,19 @@
 #### DMARC
 - *DMARC* (Domain-based Message Authentication, Reporting, and Conformance) is a mechanism that tells a receiving email server what to do based on the [[Definitions and Topics/SPF\|SPF]] and [[Definitions and Topics/DKIM\|DKIM]] authentication checks.
 	- DMARC checks whether the domain in the email's "From" field matches (or is *aligned* with) the SPF or DKIM authenticated domains.
-	- If an email's "From" domain is aligned with either the SPF or DKIM authenticated domains, then it can be delivered.
+	- If an email's "From" domain is aligned with *either* the SPF or DKIM authenticated domains, then it can be delivered.
 - DMARC Alignment requirements can be "Relaxed" or "Strict"
 	- Relaxed means email from a matching root-level (or organization level) domain will align
 		- e.g., `marketing.example.com` will align with `example.com`
 	- Strict means that the domain in the email must exactly match the authenticated domain
 		- e.g., `marketing.example.com` would fail to align with `example.com`
-- There should only be one DMARC TXT record on your DNS host.
-	- Like [[Definitions and Topics/SPF\|SPF]], it applies to all emails sent from your domain, and not to specific hosts like [[Definitions and Topics/DKIM\|DKIM]]
 - Delivery *aggregate* and *failure* reports can be sent to designated email addresses for review
 	- Critical for troubleshooting and setup.
 	- DMARC can also be configured in purely an audit mode without SPF and DKIM; no action is taken, but you get reports on who is sending emails on your domain's behalf and whether they succeed for fail authentication.
+- There will most likely only be one DMARC TXT record on your DNS host.
+	- Like [[Definitions and Topics/SPF\|SPF]], it applies to all emails sent from your domain, and not to specific hosts like [[Definitions and Topics/DKIM\|DKIM]]
+	- The `sp` tag can be used to apply a different policy action on subdomains
+		- However, if you want more granularity (like different aggregate/failure report addresses), you can add another record for that subdomain.
 
 > If you are reviewing old records, you might see a DKIM record with `v=DKIM1; o=~`. This is an outdated and unused spec; it can be deleted without issue.^[[What is this extra \_domainkey.? Should I kill it? : r/DMARC](https://www.reddit.com/r/DMARC/comments/1h7elj3/comment/m0kwi0l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)] ^[[draft-allman-dkim-ssp-01](https://datatracker.ietf.org/doc/html/draft-allman-dkim-ssp-01/#section-5)]
 
