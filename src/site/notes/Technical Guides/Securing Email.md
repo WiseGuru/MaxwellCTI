@@ -8,7 +8,11 @@ One of the best ways to protect yourself and those you interact with is to secur
 
 Great! Sign me up, right? While setup is be relatively easy, misconfigurations can cause major headaches and prevent mail from getting delivered, and old attempts can muddy the waters about what's good and bad. 
 
-Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Technical Guides/Securing Email#Implementation\|Implementation Guides]], and [[Technical Guides/Securing Email#Tools and Resources\|Resources]] that will help you protect your email identity.
+>*Don't send email from your domain*? Stop anyone from impersonating you with **these rules that reject all email sent from your domain**:
+> SPF: `TXT   @   "v=spf1 -all"`
+> DMARC: `TXT  _dmarc.example.com   "v=DMARC1; p=reject"`
+
+Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Technical Guides/Securing Email#Implementation\|Implementation Guides]], and [[Technical Guides/Securing Email#Tools and Resources\|Resources]] that will help you configure and protect your email identity.
 
 # Definitions
 
