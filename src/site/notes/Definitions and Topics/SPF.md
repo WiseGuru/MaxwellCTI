@@ -12,8 +12,9 @@
 		- SPF is limited to *10 DNS lookups*; going over 10 causes a `PermError`.
 		- `TempError` is often caused by a transient (e.g. temporary) DNS lookup error.
 			- It can be caused by recipient policies or a DNS lookup timeout; there may not be much you can do, but you should still check your record to make sure it's well below 10 look ups.^[dmarcian's [SPF Surveyor](https://dmarcian.com/spf-survey) is a great tool that identifies the number of lookups at each step.]
-	- It is not recommended to add marketing services, like Mailchimp or Sendgrid, to SPF
+	- It is not recommended to add marketing services, like Mailchimp or Sendgrid, to your main SPF record
 		- Marketers use tons of servers to send mail to get around spam filters, and because of this, SPF DNS lookups often reach their limit before getting to the root IP and fail authentication.
+		- Configuring a unique subdomain (like `newsletter.example.com`) for email marketing services allows you to create an SPF record just for that subdomain and isolates email reputation damage.
 - Provides [[Definitions and Topics/AAA\|Authentication]] and [[Definitions and Topics/AAA\|Authorization]]
 
 #### SPF Implementation
