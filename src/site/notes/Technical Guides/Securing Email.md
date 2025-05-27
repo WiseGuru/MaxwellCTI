@@ -340,7 +340,7 @@ When using dig to verify records and look up changes, only SPF can be searched g
 	1. `dig @8.8.8.8 example.com TXT +noall +answer`
 	2. *NOTE*: This will return all root TXT records, so you may get several responses
 2. DKIM
-	1. `dig @1.1.1.1 default._domainkey.example.com TXT +noall +answer`
+	1. `dig @1.1.1.1 mx01._domainkey.example.com TXT +noall +answer`
 3. DMARC
 	1. `dig @8.8.4.4 _dmarc.example.com TXT +noall +answer`
 

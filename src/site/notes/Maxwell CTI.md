@@ -22,7 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | 25 Most Recently Modified Pages                                                                                                  | Last Modified      |
 | -------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Tool Deep-Dives/dig\|dig]]                                                                                                  | 2025.05.26 - 19:58 |
+| [[Tool Deep-Dives/dig\|dig]]                                                                                                  | 2025.05.26 - 20:01 |
 | [[Technical Guides/Securing Email\|Securing Email]]                                                                           | 2025.05.26 - 19:09 |
 | [[Definitions and Topics/SPF\|SPF]]                                                                                           | 2025.05.26 - 18:52 |
 | [[Definitions and Topics/SOA\|SOA]]                                                                                           | 2025.05.26 - 18:50 |
