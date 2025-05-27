@@ -11,7 +11,7 @@ As I work on projects, I try to document and publish what I learn. There will be
 ### New here?
 Below is a list of the pages I've updated recently; you can also search from the top right, or scroll through everything on the left.
 
-Still not sure where to start? Why not check out my notes on the [[Security Frameworks/NIST/NIST Frameworks and SPs Overview\|NIST CSF, RMF, and SP 800-53]]?
+Still not sure where to start? Why not check out my guide on [[Technical Guides/Securing Email\|securing email with SPF, DKIM, and DMARC]]?
 
 
 ### Find me everywhere else on [linktr.ee/wiseguru](https://linktr.ee/wiseguru)
@@ -19,7 +19,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 
 
 ## Recently Modified Pages
-Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
+Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                                                  | Last Modified      |
 | -------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
 | [[Tool Deep-Dives/dig\|dig]]                                                                                                  | 2025.05.27 - 09:11 |
