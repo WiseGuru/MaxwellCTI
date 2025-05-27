@@ -22,13 +22,13 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; there will be false-edits from Resilio Sync.^[Because whenever it synchronizes between devices, that's a "modification time".]
 | 25 Most Recently Modified Pages                                                                                                  | Last Modified      |
 | -------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Definitions and Topics/DKIM\|DKIM]]                                                                                         | 2025.05.27 - 09:02 |
+| [[Technical Guides/Securing Email\|Securing Email]]                                                                           | 2025.05.27 - 08:55 |
 | [[Tool Deep-Dives/dig\|dig]]                                                                                                  | 2025.05.26 - 20:15 |
-| [[Technical Guides/Securing Email\|Securing Email]]                                                                           | 2025.05.26 - 19:09 |
 | [[Definitions and Topics/SPF\|SPF]]                                                                                           | 2025.05.26 - 18:52 |
 | [[Definitions and Topics/SOA\|SOA]]                                                                                           | 2025.05.26 - 18:50 |
 | [[Definitions and Topics/DMARC\|DMARC]]                                                                                       | 2025.05.13 - 08:50 |
 | [[Definitions and Topics/GDPR\|GDPR]]                                                                                         | 2025.05.07 - 08:34 |
-| [[Definitions and Topics/DKIM\|DKIM]]                                                                                         | 2025.05.02 - 20:54 |
 | [[Tool Deep-Dives/Python/DMARC Report Analyzer\|DMARC Report Analyzer]]                                                       | 2025.05.02 - 13:06 |
 | [[Definitions and Topics/AAA\|AAA]]                                                                                           | 2025.05.01 - 11:17 |
 | [[Technical Guides/Installing the Zen Browser\|Installing the Zen Browser]]                                                   | 2025.02.20 - 13:09 |

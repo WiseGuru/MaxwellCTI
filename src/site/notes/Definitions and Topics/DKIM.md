@@ -20,6 +20,9 @@ The process to configure DKIM is different for each email provider.
 
 If your mail provider is also your DNS host, it's often as easy as checking a box. However, if your mail provider and DNS host are different, then you will be required to create specific DNS entries on the name server to authenticate. [Fastmail](https://www.fastmail.help/hc/en-us/articles/360058753354-Adding-MX-records-to-Namecheap#signing), for example, requires you to add three CNAME entries to your DNS host for authentication; this allows them to manage key rotation without bothering clients.
 
+> You can use [[Tool Deep-Dives/dig\|dig]] to inspect the DKIM record values and observe key key rotation.
+> Cycling through each record with the command `dig @1.1.1.1 fm1._domainkey.maxwellcti.com TXT +short` reveals that one record has the DKIM key, where the other two return `"v=DKIM1; k=rsa; n=Intentionally_Left_Blank_As_Per_DKIM_Rotation_BCP; p="`
+
 While it's best to follow the instructions provided by your mail provider, here's a quick-and-dirty overview of the DKIM record format. More tags can be found at [the DKIM Verification section on Wikipedia](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail#Verification)
 
 1. **Name**: `mx01._domainkey.example.com`
