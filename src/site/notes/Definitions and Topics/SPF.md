@@ -57,7 +57,6 @@ The SPF record is processed in order; as soon as an email is matched to one of t
 			1. `~all` is also frequently seen in default configurations, and is used when transitioning between services or when using email marketing services (Mailchimp, Sendgrid, etc.) which do not get added to the SPF record.
 
 
-
 # Metadata
 
 ### Sources

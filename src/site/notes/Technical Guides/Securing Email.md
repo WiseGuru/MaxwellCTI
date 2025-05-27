@@ -216,7 +216,6 @@ The SPF record is processed in order; as soon as an email is matched to one of t
 
 
 
-
 </div></div>
 
 
@@ -330,6 +329,25 @@ Below is an example of a DMARC TXT record:
 </div></div>
 
 
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/tool-deep-dives/dig/#using-dig-to-verify-spf-dkim-and-dmarc" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+#### Using [[Tool Deep-Dives/dig\|dig]] to verify [[Definitions and Topics/SPF\|SPF]], [[Definitions and Topics/DKIM\|DKIM]], and [[Definitions and Topics/DMARC\|DMARC]]
+When using dig to verify records and look up changes, only SPF can be searched generally; DKIM and DMARC searches must include the full name of the record. In the examples, I rotated the DNS server I was querying, but just as an example.
+
+1. SPF
+	1. `dig @8.8.8.8 example.com TXT +noall +answer`
+	2. *NOTE*: This will return all root TXT records, so you may get several responses
+2. DKIM
+	1. `dig @1.1.1.1 default._domainkey.example.com TXT +noall +answer`
+3. DMARC
+	1. `dig @8.8.4.4 _dmarc.example.com TXT +noall +answer`
+
+If the record exists and you entered the command correctly, you should get responses with all the information in the record being queried.
+
+</div></div>
+
 
 # Tools and Resources
 ## Resources
@@ -359,5 +377,5 @@ Below is an example of a DMARC TXT record:
 		- It takes *6 and a half months* to get to the point where you're enacting policy, and you don't even setup a DMARC record until about the *third month*.
 		- I think it's important, critical even, to be diligent when working with a production environment, and if you want to slow-roll deployment to make sure nothing goes wrong, all power to you, but to only start gathering live information half-way through deployment seems crazy to me.
 ## DNS Look-up tools
-[[dig\|dig]]
+[[Tool Deep-Dives/dig\|dig]]
 [[nslookup\|nslookup]]
