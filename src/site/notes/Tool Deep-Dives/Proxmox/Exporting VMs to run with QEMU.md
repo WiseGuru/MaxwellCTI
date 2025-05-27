@@ -5,9 +5,6 @@
 > **Disclaimer**: This is a long-ass process, and should really only be done if there are no other options. 
 
 #### Summary of Operations
-- Backup VM in question
-	- Clone the VM is the quicker way to create a full backup (not a snapshot)
-		- But creating a backup through the GUI is slower, because Proxmox tries to compress and repackage it.
 - ~~Export disk via Proxmox shell to local storage~~ *Create backup of VM*
 	- If your install disk is small, you will likely need to [[Tool Deep-Dives/Proxmox/Mounting USB Drives in ProxMox\|add USB storage]] and configure it to accept backups.
 	- Shutdown the VM, then either through the GUI or with `vzdump`, create a "stop" backup to the drive

@@ -13,7 +13,7 @@ I will eventually create a guide for this, as well as how to connect to a Window
 
 If you want to improve the power efficiency of the VM and cut bloat/telemetry/etc., you can run run one of several debloat scripts *at the time of Windows 11 installation*. Running these scripts after installation can sometimes cause issues with removing apps, preferences, or dependencies you want to keep.
 
-> **WARNING**: I am not endorsing the use of the scripts below. I advocate making a copy of your VM files before running the scripts to reduce effort in case you need to restore.
+> **WARNING**: I am not endorsing the use of these specific scripts and programs below; use at your own risk. I advocate making a copy of your VM files before running the scripts to reduce effort in case you need to restore.
 
 [Ultimate Windows Tweaker 5 for Windows 11](https://www.thewindowsclub.com/ultimate-windows-tweaker-5-for-windows-11)
 
