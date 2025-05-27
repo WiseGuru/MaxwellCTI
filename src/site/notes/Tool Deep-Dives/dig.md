@@ -18,16 +18,21 @@
 #### Using [[Tool Deep-Dives/dig\|dig]] to verify [[Definitions and Topics/SPF\|SPF]], [[Definitions and Topics/DKIM\|DKIM]], and [[Definitions and Topics/DMARC\|DMARC]]
 When using dig to verify records and look up changes, only SPF can be searched generally; DKIM and DMARC searches must include the full name of the record.
 
-In the examples, I rotated the DNS server I was querying to demonstrate that any DNS server could be used. Additionally, I specified TXT for all record types; however, if the record type is a CNAME (for example, the DKIM record), then requesting the TXT record will return the record from the redirected server, and requesting the CNAME value will show the record on your name server. Records for subdomains will require their own dig queries.
+In the examples, I rotated the DNS server I was querying to demonstrate that any DNS server could be used. Records for subdomains or named records above root (e.g., `mail.example.com` or `_dmarc.example.com`) will require their own dig queries.
 
 1. SPF
 	1. `dig @8.8.8.8 example.com TXT +noall +answer`
-	2. *NOTE*: This will return all root TXT records, so you may get several irrelevant responses in addition to the SPF
+		1. This will return all root TXT records, so you may get several irrelevant responses in addition to the SPF
 2. DKIM
 	1. `dig @1.1.1.1 mx01._domainkey.example.com TXT +noall +answer`
+		1. Returns the final DKIM record value, whether stored on your name server or redirected via a CNAME
 	2. `dig @1.0.0.1 protonmail._domainkey.example.com CNAME +noall +answer`
+		1. Only returns the CNAME record on your server, if applicable.
 3. DMARC
 	1. `dig @8.8.4.4 _dmarc.example.com TXT +noall +answer`
+		1. This will return the DMARC record for `example.com`
+	2. `dig @1.1.1.1 _dmarc.mail.example.com txt +noall +answer`
+		1. Returns the DMARC record for the subdomain `mail.example.com`
 
 If the record exists and you entered the command correctly, you should get responses with all the information in the record being queried.
 #### Issues with ANY types
