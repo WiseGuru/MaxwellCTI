@@ -27,9 +27,11 @@ Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Techni
 	- If the SPF record is missing, or the sender is not authenticated, the message will fail and may not be delivered.
 - Each sending mail server/domain must be identified
 	- This can be directly via IP or through a domain/DNS lookup
-		- SPF is limited to *10 DNS lookups*; going over 10 causes a `PermError`.
+		- SPF is limited to *10 DNS lookups*, and is evaluated all at once.
+			- Going over 10 causes a `PermError`.
 		- `TempError` is often caused by a transient (e.g. temporary) DNS lookup error.
 			- It can be caused by recipient policies or a DNS lookup timeout; there may not be much you can do, but you should still check your record to make sure it's well below 10 look ups.^[dmarcian's [SPF Surveyor](https://dmarcian.com/spf-survey) is a great tool that identifies the number of lookups at each step.]
+		- Once the SPF record is validated, the receiving email server matches the sending email server's address against the SPF record, stopping at the first match and corresponding action (pass, softfail, etc.)
 	- It is not recommended to add marketing services, like Mailchimp or Sendgrid, to your main SPF record
 		- Marketers use tons of servers to send mail to get around spam filters, and because of this, SPF DNS lookups often reach their limit before getting to the root IP and fail authentication.
 		- Configuring a unique subdomain (like `newsletter.example.com`) for email marketing services allows you to create an SPF record just for that subdomain and isolates email reputation damage.
@@ -178,8 +180,7 @@ Below are implementation and syntax guides for each type of record; but to have 
 #### SPF Implementation
 Honestly, [the syntax guide on Open-SPF is phenomenal](http://www.open-spf.org/SPF_Record_Syntax/), but here's a breakdown of a typical record^[Gussied up for use as an example.] for quick reference.
 
-The SPF record is processed in order; as soon as an email is matched to one of the rules, it stops getting processed and passes or fails the check.
-
+The SPF record is processed in order, but the whole record needs to be fully evaluated for the lookup to complete without a `permerror`.
 
 1. **Name**: `@`
 	1. `@`
@@ -327,8 +328,6 @@ Below is an example of a DMARC TXT record:
 > Spam filters and firewalls don't typically inspect DMARC reports, and an attacker could exploit this to flood the inbox with bogus DMARC reports or inject malicious code into zipped attachments, which might get run automatically by report analyzing software. 
 
 
-
-
 </div></div>
 
 
@@ -356,6 +355,38 @@ In the examples, I rotated the DNS server I was querying to demonstrate that any
 		1. Returns the DMARC record for the subdomain `mail.example.com`
 
 If the record exists and you entered the command correctly, you should get responses with all the information in the record being queried.
+
+</div></div>
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/tool-deep-dives/python/dmarc-report-analyzer/#dmarc-report-analyzer" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+#### DMARC Report Analyzer
+- *DMARC Report Analyzer* is a tool written in [[Tool Deep-Dives/Python/Python\|Python]] that allows you to analyze all DMARC reports in a folder or inbox and generate a spreadsheet with the results.
+- I've forked a version and added^[With the help of an LLM.] various features, including more progress bars, an offline cache for the Spamhaus list of IPs, and an output CSV which includes more information that can be helpful when troubleshooting [[Technical Guides/Securing Email\|email authentication issues.]]
+
+To install and use [DMARC Report Analyzer](https://github.com/WiseGuru/DMARC-Report-Analyzer/tree/main), there is a [helpful script in the Installation section](https://github.com/WiseGuru/DMARC-Report-Analyzer?tab=readme-ov-file#installation) to clone the repository to your local machine, create the local environment, install the requirements, and then run `main.py`. First, however, I recommend creating a `scripts` (or similar) folder somewhere to keep everything organized and then opening your Terminal from that folder.
+
+The script expects you to have Python version 3 installed on your system and is currently written for Linux, but there is an option for Windows (which I haven't really tested). 
+
+The output created 
+
+
+If working on a [[Tool Deep-Dives/Linux/Linux\|Linux]] system, you will need to use a [[Tool Deep-Dives/Python/Python Virtual Environment\|Python Virtual Environment]] to download and update the correct packages. This is easily managed with a shell script that performs the run/setup process.
+
+```bash
+#!/usr/bin/env bash
+cd ~/scripts/DMARC-Report-Analyzer
+# Optional
+python3 -m venv env
+source env/bin/activate
+# Mandatory
+pip install -r requirements.txt
+python3 main.py
+```
+
 
 </div></div>
 

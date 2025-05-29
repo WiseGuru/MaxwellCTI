@@ -22,15 +22,15 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                                                  | Last Modified      |
 | -------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Tool Deep-Dives/Python/DMARC Report Analyzer\|DMARC Report Analyzer]]                                                       | 2025.05.27 - 09:47 |
+| [[Tool Deep-Dives/Python/DMARC Report Analyzer\|DMARC Report Analyzer]]                                                       | 2025.05.29 - 10:46 |
+| [[Technical Guides/Securing Email\|Securing Email]]                                                                           | 2025.05.29 - 09:15 |
+| [[Definitions and Topics/DMARC\|DMARC]]                                                                                       | 2025.05.29 - 09:14 |
+| [[Definitions and Topics/SPF\|SPF]]                                                                                           | 2025.05.28 - 10:56 |
 | [[Tool Deep-Dives/Proxmox/Exporting VMs to run with QEMU\|Exporting VMs to run with QEMU]]                                    | 2025.05.27 - 09:27 |
 | [[Tool Deep-Dives/Linux/QEMU, KVMs, and Virt-Man/Installing a Windows VM on Linux\|Installing a Windows VM on Linux]]         | 2025.05.27 - 09:25 |
 | [[Tool Deep-Dives/dig\|dig]]                                                                                                  | 2025.05.27 - 09:11 |
 | [[Definitions and Topics/DKIM\|DKIM]]                                                                                         | 2025.05.27 - 09:02 |
-| [[Technical Guides/Securing Email\|Securing Email]]                                                                           | 2025.05.27 - 08:55 |
-| [[Definitions and Topics/SPF\|SPF]]                                                                                           | 2025.05.26 - 18:52 |
 | [[Definitions and Topics/SOA\|SOA]]                                                                                           | 2025.05.26 - 18:50 |
-| [[Definitions and Topics/DMARC\|DMARC]]                                                                                       | 2025.05.13 - 08:50 |
 | [[Definitions and Topics/GDPR\|GDPR]]                                                                                         | 2025.05.07 - 08:34 |
 | [[Definitions and Topics/AAA\|AAA]]                                                                                           | 2025.05.01 - 11:17 |
 | [[Technical Guides/Installing the Zen Browser\|Installing the Zen Browser]]                                                   | 2025.02.20 - 13:09 |
