@@ -87,9 +87,6 @@ Below is an example of a DMARC TXT record:
 > **WARNING**: While you can use a `*` wildcard to simplify the record to `*._report._dmarc.receivingdomain.com`, this allows anyone to send email to your DMARC report inboxes.
 > Spam filters and firewalls don't typically inspect DMARC reports, and an attacker could exploit this to flood the inbox with bogus DMARC reports or inject malicious code into zipped attachments, which might get run automatically by report analyzing software. 
 
-#### Using [[Tool Deep-Dives/whois\|whois]] to identify source IPs
-DMARC reports include the source IP for all emails being reported, and paired with [[Tool Deep-Dives/dig\|dig]], you can 
-
 
 # Metadata
 

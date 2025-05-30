@@ -22,9 +22,13 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                                                  | Last Modified      |
 | -------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Tool Deep-Dives/whois\|whois]]                                                                                              | 2025.05.30 - 10:21 |
+| [[Tool Deep-Dives/Linux/uniq\|uniq]]                                                                                          | 2025.05.30 - 10:18 |
+| [[Tool Deep-Dives/Linux/umount\|umount]]                                                                                      | 2025.05.30 - 10:18 |
+| [[Tool Deep-Dives/Linux/sort\|sort]]                                                                                          | 2025.05.30 - 10:18 |
+| [[Definitions and Topics/DMARC\|DMARC]]                                                                                       | 2025.05.30 - 10:16 |
 | [[Tool Deep-Dives/Python/DMARC Report Analyzer\|DMARC Report Analyzer]]                                                       | 2025.05.29 - 17:23 |
 | [[Technical Guides/Securing Email\|Securing Email]]                                                                           | 2025.05.29 - 09:15 |
-| [[Definitions and Topics/DMARC\|DMARC]]                                                                                       | 2025.05.29 - 09:14 |
 | [[Definitions and Topics/SPF\|SPF]]                                                                                           | 2025.05.28 - 10:56 |
 | [[Tool Deep-Dives/Proxmox/Exporting VMs to run with QEMU\|Exporting VMs to run with QEMU]]                                    | 2025.05.27 - 09:27 |
 | [[Tool Deep-Dives/Linux/QEMU, KVMs, and Virt-Man/Installing a Windows VM on Linux\|Installing a Windows VM on Linux]]         | 2025.05.27 - 09:25 |
@@ -43,9 +47,5 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Career Growth/Intro to IT and Cybersecurity/Building a Homelab\|Building a Homelab]]                                        | 2025.02.18 - 10:24 |
 | [[Tool Deep-Dives/Linux/QEMU, KVMs, and Virt-Man/Adding a second monitor to a QEMU VM\|Adding a second monitor to a QEMU VM]] | 2025.02.18 - 10:24 |
 | [[Webinars and Training/BlackHills SOC Core/Labs/01-BHIS-SOCC-lab-LinuxHostConfig\|01-BHIS-SOCC-lab-LinuxHostConfig]]         | 2025.02.18 - 10:23 |
-| [[Webinars and Training/BlackHills SOC Core/Labs/00-BHIS-SOCC-lab-Config\|00-BHIS-SOCC-lab-Config]]                           | 2025.02.18 - 10:23 |
-| [[Definitions and Topics/Disinformation and Information Warfare\|Disinformation and Information Warfare]]                     | 2025.02.12 - 10:01 |
-| [[Tool Deep-Dives/GraphRunner/GraphRunner\|GraphRunner]]                                                                      | 2025.02.05 - 15:03 |
-| [[Tool Deep-Dives/Linux/Remmina\|Remmina]]                                                                                    | 2025.02.04 - 11:05 |
 
 { .block-language-dataview}

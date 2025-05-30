@@ -328,6 +328,7 @@ Below is an example of a DMARC TXT record:
 > Spam filters and firewalls don't typically inspect DMARC reports, and an attacker could exploit this to flood the inbox with bogus DMARC reports or inject malicious code into zipped attachments, which might get run automatically by report analyzing software. 
 
 
+
 </div></div>
 
 
