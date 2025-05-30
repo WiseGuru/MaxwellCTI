@@ -17,7 +17,7 @@
 	- It is not recommended to add marketing services, like Mailchimp or Sendgrid, to your main SPF record
 		- Marketers use tons of servers to send mail to get around spam filters, and because of this, SPF DNS lookups often reach their limit before getting to the root IP and fail authentication.
 		- Configuring a unique subdomain (like `newsletter.example.com`) for email marketing services allows you to create an SPF record just for that subdomain and isolates email reputation damage.
-- Provides [[Definitions and Topics/AAA\|Authentication]] and [[Definitions and Topics/AAA\|Authorization]]
+- [[Definitions and Topics/AAA\|Authorizes]] a list of approved senders and provides weak [[Definitions and Topics/AAA\|Authentication]] by comparing the sending IP against the list of approved senders.
 
 #### SPF Implementation
 Honestly, [the syntax guide on Open-SPF is phenomenal](http://www.open-spf.org/SPF_Record_Syntax/), but here's a breakdown of a typical record^[Gussied up for use as an example.] for quick reference.

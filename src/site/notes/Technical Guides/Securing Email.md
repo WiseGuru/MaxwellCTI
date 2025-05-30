@@ -35,7 +35,7 @@ Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Techni
 	- It is not recommended to add marketing services, like Mailchimp or Sendgrid, to your main SPF record
 		- Marketers use tons of servers to send mail to get around spam filters, and because of this, SPF DNS lookups often reach their limit before getting to the root IP and fail authentication.
 		- Configuring a unique subdomain (like `newsletter.example.com`) for email marketing services allows you to create an SPF record just for that subdomain and isolates email reputation damage.
-- Provides [[Definitions and Topics/AAA\|Authentication]] and [[Definitions and Topics/AAA\|Authorization]]
+- [[Definitions and Topics/AAA\|Authorizes]] a list of approved senders and provides weak [[Definitions and Topics/AAA\|Authentication]] by comparing the sending IP against the list of approved senders.
 
 
 </div></div>
@@ -56,7 +56,7 @@ Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Techni
 		- You may have multiple DKIM records with different key selectors.
 		- Because authentication occurs by key pair, tools like [MxToolBox](https://mxtoolbox.com/dkim.aspx) often require the selector to test and validate the correct key.
 	- Can also be configured as a CNAME record^[Canonical name, which functions as an alias and points to another address.] which points to the actual DKIM TXT record
-- Provides [[Definitions and Topics/AAA\|Authentication]]
+- Only [[Definitions and Topics/AAA\|authorized]] senders are able to generate a valid signature, and proves the message was sent from an [[Definitions and Topics/AAA\|authorized]] sender.
 
 
 </div></div>
@@ -83,6 +83,7 @@ Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Techni
 	- Like [[Definitions and Topics/SPF\|SPF]], it applies to all emails sent from your domain, and not to specific hosts like [[Definitions and Topics/DKIM\|DKIM]]
 	- The `sp` tag can be used to apply a different policy action on subdomains
 		- However, if you want more granularity (like different aggregate/failure report addresses), you can add another record for that subdomain.
+- Checks [[Definitions and Topics/AAA\|authentication]] by requiring that at least either [[Definitions and Topics/SPF\|SPF]] or [[Definitions and Topics/DKIM\|DKIM]] must align, has a policy to tell receivers how to hand [[Definitions and Topics/AAA\|unauthorized]] senders, and provides [[Definitions and Topics/AAA\|accounting]] by generating XML reports and sending them to the domain owner.
 
 > If you are reviewing old records, you might see a DKIM record with `v=DKIM1; o=~`. This is an outdated and unused spec; it can be deleted without issue.^[[What is this extra \_domainkey.? Should I kill it? : r/DMARC](https://www.reddit.com/r/DMARC/comments/1h7elj3/comment/m0kwi0l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)] ^[[draft-allman-dkim-ssp-01](https://datatracker.ietf.org/doc/html/draft-allman-dkim-ssp-01/#section-5)]
 
@@ -313,6 +314,7 @@ Below is an example of a DMARC TXT record:
 		1. This generates a forensic report *for any SPF or DKIM failure*, which is helpful for triage and troubleshooting during initial setup.
 			1. Default is `fo=0`, and once the `p` value is set to `quarantine` or `reject`, it can be safely removed.
 		2. *Reminder*: many mailbox providers don't send forensic/failure reports for [[Definitions and Topics/GDPR\|GDPR]] compliance.
+ 
 
 > If you are sending DMARC reports to another domain, you will need to create a TXT record on that domain's name server to identify each sending domain.^[[DMARC - DMARC External Validation](https://mxtoolbox.com/problem/dmarc/dmarc-external-validation?page=prob_dmarc&action=dmarc:annmulhern.com&showlogin=1&hidepitch=0&hidetoc=1)]
 > 

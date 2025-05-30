@@ -13,7 +13,7 @@
 		- You may have multiple DKIM records with different key selectors.
 		- Because authentication occurs by key pair, tools like [MxToolBox](https://mxtoolbox.com/dkim.aspx) often require the selector to test and validate the correct key.
 	- Can also be configured as a CNAME record^[Canonical name, which functions as an alias and points to another address.] which points to the actual DKIM TXT record
-- Provides [[Definitions and Topics/AAA\|Authentication]]
+- Only [[Definitions and Topics/AAA\|authorized]] senders are able to generate a valid signature, and proves the message was sent from an [[Definitions and Topics/AAA\|authorized]] sender.
 
 #### DKIM Implementation: 3rd-Party Mail Provider
 The process to configure DKIM is different for each email provider.
