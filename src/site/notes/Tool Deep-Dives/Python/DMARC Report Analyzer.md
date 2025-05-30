@@ -10,9 +10,6 @@ To install and use [DMARC Report Analyzer](https://github.com/WiseGuru/DMARC-Rep
 
 The script expects you to have Python version 3 installed on your system and is currently written for Linux, but there is an option for Windows (which I haven't really tested). 
 
-The output created 
-
-
 If working on a [[Tool Deep-Dives/Linux/Linux\|Linux]] system, you will need to use a [[Tool Deep-Dives/Python/Python Virtual Environment\|Python Virtual Environment]] to download and update the correct packages. This is easily managed with a shell script that performs the run/setup process.
 
 ```bash
@@ -25,6 +22,12 @@ source env/bin/activate
 pip install -r requirements.txt
 python3 main.py
 ```
+
+The final result is a spreadsheet with a summary of all of the reports it collected. You can use [[Tool Deep-Dives/whois\|whois]] and [[Tool Deep-Dives/Linux/grep\|grep]] to lookup the IP addresses to to find out where emails are coming from with the command `whois [IP address] | grep "NetRange:\|CIDR:\|Organization:"`, and your output should look something like this:
+
+![DMARC Report Analyzer.png](/img/user/Attachments/DMARC%20Report%20Analyzer.png)
+
+
 
 # Metadata
 
