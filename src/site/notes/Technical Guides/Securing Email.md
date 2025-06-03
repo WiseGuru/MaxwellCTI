@@ -179,7 +179,7 @@ Below are implementation and syntax guides for each type of record; but to have 
 
 
 #### SPF Implementation
-Honestly, [the syntax guide on Open-SPF is phenomenal](http://www.open-spf.org/SPF_Record_Syntax/), but here's a breakdown of a typical record^[Gussied up for use as an example.] for quick reference.
+Honestly, [the syntax guide on Open-SPF is phenomenal](http://www.open-spf.org/SPF_Record_Syntax/), but here's a breakdown of a fictional and not necessarily optimal record for quick reference. 
 
 The SPF record is processed in order, but the whole record needs to be fully evaluated for the lookup to complete without a `permerror`.
 
@@ -199,9 +199,11 @@ The SPF record is processed in order, but the whole record needs to be fully eva
 			3. `~` = *SoftFail*, originating host is not officially allowed to send, but authentic mail may be sent from it
 		2. The `a` tells the recipient to check the current domain's DNS for A records (e.g., IPv4 addresses) and mark them as designated senders
 			1. You might also see `aaaa` to designate an IPv6 address
+		3. **Note**: dmarcian recommends avoiding `a` entries as they are often unnecessary and increase the number of lookups.^[[SPF Best Practices: Avoiding SPF Record Flattening - dmarcian](https://dmarcian.com/spf-best-practices/)]
 	3. `mx`
 		1. Check the current domain's DNS for MX records and mark them as designated senders
 			1. **Note**: Since the default mechanism is `+`, it does not need to be explicitly written out
+		2. **Note**: dmarcian recommends avoiding `mx` entries as they are often unnecessary and increase the number of lookups.^[[SPF Best Practices: Avoiding SPF Record Flattening - dmarcian](https://dmarcian.com/spf-best-practices/)]
 	4. `ip4:123.45.67.89`
 		1. Designates the IP address `123.45.67.89` as an authorized sender
 	5. `a:contoso.com`
@@ -216,7 +218,9 @@ The SPF record is processed in order, but the whole record needs to be fully eva
 		2. Because this is a *Fail* qualifier, it has to be manually written out as `-`
 			1. `~all` is also frequently seen in default configurations, and is used when transitioning between services or when using email marketing services (Mailchimp, Sendgrid, etc.) which do not get added to the SPF record.
 
-
+> Honorable mention: `redirect`
+> If you manage multiple domains and subdomains that all point reference the same record and information, you can configure them to all point to the same SPF record with a `redirect`. It does not count towards the DNS lookup limit, and reduces the headache of managing multiple identical SPF records.
+>  A subdomain that redirects to an "spf-primary" record would look like this: `mailer.example.com    txt    "v=spf1 redirect=spf-primary.example.com"`
 
 </div></div>
 

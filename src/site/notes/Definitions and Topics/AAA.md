@@ -13,9 +13,6 @@
 
 
 
-
-
-
 # Metadata
 
 ### Sources

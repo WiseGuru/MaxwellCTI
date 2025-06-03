@@ -22,9 +22,10 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                                                  | Last Modified      |
 | -------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Definitions and Topics/SPF\|SPF]]                                                                                           | 2025.06.03 - 09:36 |
+| [[Definitions and Topics/AAA\|AAA]]                                                                                           | 2025.05.30 - 11:08 |
 | [[Definitions and Topics/DMARC\|DMARC]]                                                                                       | 2025.05.30 - 11:07 |
 | [[Definitions and Topics/DKIM\|DKIM]]                                                                                         | 2025.05.30 - 11:05 |
-| [[Definitions and Topics/SPF\|SPF]]                                                                                           | 2025.05.30 - 11:03 |
 | [[Tool Deep-Dives/whois\|whois]]                                                                                              | 2025.05.30 - 10:21 |
 | [[Tool Deep-Dives/Linux/uniq\|uniq]]                                                                                          | 2025.05.30 - 10:18 |
 | [[Tool Deep-Dives/Linux/umount\|umount]]                                                                                      | 2025.05.30 - 10:18 |
@@ -36,7 +37,6 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Tool Deep-Dives/dig\|dig]]                                                                                                  | 2025.05.27 - 09:11 |
 | [[Definitions and Topics/SOA\|SOA]]                                                                                           | 2025.05.26 - 18:50 |
 | [[Definitions and Topics/GDPR\|GDPR]]                                                                                         | 2025.05.07 - 08:34 |
-| [[Definitions and Topics/AAA\|AAA]]                                                                                           | 2025.05.01 - 11:17 |
 | [[Technical Guides/Installing the Zen Browser\|Installing the Zen Browser]]                                                   | 2025.02.20 - 13:09 |
 | [[Tool Deep-Dives/Linux/ln\|ln]]                                                                                              | 2025.02.20 - 12:50 |
 | [[Tool Deep-Dives/Linux/PATH Variable\|PATH Variable]]                                                                        | 2025.02.20 - 12:47 |

@@ -20,7 +20,7 @@
 - [[Definitions and Topics/AAA\|Authorizes]] a list of approved senders and provides weak [[Definitions and Topics/AAA\|Authentication]] by comparing the sending IP against the list of approved senders.
 
 #### SPF Implementation
-Honestly, [the syntax guide on Open-SPF is phenomenal](http://www.open-spf.org/SPF_Record_Syntax/), but here's a breakdown of a typical record^[Gussied up for use as an example.] for quick reference.
+Honestly, [the syntax guide on Open-SPF is phenomenal](http://www.open-spf.org/SPF_Record_Syntax/), but here's a breakdown of a fictional and not necessarily optimal record for quick reference. 
 
 The SPF record is processed in order, but the whole record needs to be fully evaluated for the lookup to complete without a `permerror`.
 
@@ -40,9 +40,11 @@ The SPF record is processed in order, but the whole record needs to be fully eva
 			3. `~` = *SoftFail*, originating host is not officially allowed to send, but authentic mail may be sent from it
 		2. The `a` tells the recipient to check the current domain's DNS for A records (e.g., IPv4 addresses) and mark them as designated senders
 			1. You might also see `aaaa` to designate an IPv6 address
+		3. **Note**: dmarcian recommends avoiding `a` entries as they are often unnecessary and increase the number of lookups.^[[SPF Best Practices: Avoiding SPF Record Flattening - dmarcian](https://dmarcian.com/spf-best-practices/)]
 	3. `mx`
 		1. Check the current domain's DNS for MX records and mark them as designated senders
 			1. **Note**: Since the default mechanism is `+`, it does not need to be explicitly written out
+		2. **Note**: dmarcian recommends avoiding `mx` entries as they are often unnecessary and increase the number of lookups.^[[SPF Best Practices: Avoiding SPF Record Flattening - dmarcian](https://dmarcian.com/spf-best-practices/)]
 	4. `ip4:123.45.67.89`
 		1. Designates the IP address `123.45.67.89` as an authorized sender
 	5. `a:contoso.com`
@@ -56,6 +58,40 @@ The SPF record is processed in order, but the whole record needs to be fully eva
 			2. This is similar to Firewall configurations where the last rule is often `deny any any`
 		2. Because this is a *Fail* qualifier, it has to be manually written out as `-`
 			1. `~all` is also frequently seen in default configurations, and is used when transitioning between services or when using email marketing services (Mailchimp, Sendgrid, etc.) which do not get added to the SPF record.
+
+> Honorable mention: `redirect`
+> If you manage multiple domains and subdomains that all point reference the same record and information, you can configure them to all point to the same SPF record with a `redirect`. It does not count towards the DNS lookup limit, and reduces the headache of managing multiple identical SPF records.
+>  A subdomain that redirects to an "spf-primary" record would look like this: `mailer.example.com    txt    "v=spf1 redirect=spf-primary.example.com"`
+#### Managing DNS Lookups and DNS Flattening
+Going above 10 will cause a permanent error for your SPF record, preventing it from being used for authentication. Because most SPF records will point to external mail services whose structure could increase without notice, it's important to stay as far below 10 as possible so you don't accidentally begin erroring out.
+
+There are a few tools you can use to check the number of lookups you have:
+- [SPF Surveyor - dmarcian](https://dmarcian.com/spf-survey)
+	- Well organized and easy to read.
+- [EasyDMARC SPF Checker](https://easydmarc.com/tools/spf-lookup)
+	- Similar to dmarcian, though a little less clean.
+- [SPF Record Lookup - DMARCLY](https://dmarcly.com/tools/spf-record-checker)
+	- Pretty spartan, but gets the job done.
+	- Recommends flattening, which is bad practice.
+
+##### What can you do to reduce lookups?
+1. Remove unnecessary and duplicate records
+	1. `a` and `mx` records are often unnecessary:
+		1. `a` records identify domain-name lookup addresses, like `store.example.com`, and modernly the same IPs are not often reused for mail (especially with third-party email providers).
+		2. `mx` records instruct sending domains where you *receive* email, and while intuitively it's the same place as where you *send* email from, this is often no the case (especially with third-party email providers).
+	2. Remove any old or unused vendors or mechanisms
+2. Consolidate where possible
+	1. If there are overlapping SPF records for different services you use, you may be able to eliminate one of them. The tools listed above can help you find all sub-includes and IP ranges to determine eligibility.
+3. Remove records from mass-marketing vendors
+	1. Mass-marketing vendors (like MailChimp or SendGrid) do not work well with SPF, and will dramatically inflate the number of lookups you will perform. It's better to just configure [[Definitions and Topics/DKIM\|DKIM]] for them instead.
+4. Configure [[Definitions and Topics/DKIM\|DKIM]]
+	1. Do the best you can, then configure [[Definitions and Topics/DKIM\|DKIM]]; you only need either DKIM or SPF to pass [[Definitions and Topics/DMARC\|DMARC]], and configuring both can provide coverage if one or the other fails.
+
+##### Why not flattening?
+Flattening an SPF record is the process of condensing all DNS lookups into hard-coded IP addresses. This gets around the lookup problem by not requiring any lookups, and if you control the servers that send email, this could be just fine. However, if you rely on third-parties for your email needs, flattening will get you into trouble.
+
+Because those third-party services may add, delete, or change their infrastructure without informing you, those hard-coded IPs will open you up to bad-actors who take over abandoned IPs, or legitimate email will be flagged as illegitimate because of new sending IPs that are not part of your hard-coded SPF record.
+
 
 
 # Metadata
