@@ -90,7 +90,7 @@ There are a few tools you can use to check the number of lookups you have:
 ##### Why not flattening?
 Flattening an SPF record is the process of condensing all DNS lookups (e.g., `include:spf.example.com`) into hard-coded IP addresses. This gets around the lookup problem by not requiring any lookups, and if you control the servers that send email, this could be just fine. However, if you rely on third-parties for your email needs, flattening will get you into trouble.
 
-Because those third-party services may add, delete, or change their infrastructure without informing you, those hard-coded IPs will open you up to bad-actors who take over abandoned IPs, or legitimate email will be flagged as illegitimate because of new sending IPs that are not part of your hard-coded SPF record.
+Because those third-party services may add, delete, or change their infrastructure without informing you, those hard-coded IPs will open you up to bad-actors who take over abandoned IPs, or legitimate email will not pass authentication because the vendor added new IPs that are not part of your hard-coded SPF record.
 
 
 
