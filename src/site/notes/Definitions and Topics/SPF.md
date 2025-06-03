@@ -84,13 +84,16 @@ There are a few tools you can use to check the number of lookups you have:
 	1. If there are overlapping SPF records for different services you use, you may be able to eliminate one of them. The tools listed above can help you find all sub-includes and IP ranges to determine eligibility.
 3. Remove records from mass-marketing vendors
 	1. Mass-marketing vendors (like MailChimp or SendGrid) do not work well with SPF, and will dramatically inflate the number of lookups you will perform. It's better to just configure [[Definitions and Topics/DKIM\|DKIM]] for them instead.
-4. Configure [[Definitions and Topics/DKIM\|DKIM]]
+4. Use subdomains to split up certain senders
+	1. If certain groups or departments use automated systems to send email, you could create a subdomain for that group or purpose that isolates its records from the main domain.
+		1. e.g., if you use Acme Invoices as your billing platform, you could create `billing.example.com` and configure it with Acme Invoice's SPF and DKIM records.
+5. Configure [[Definitions and Topics/DKIM\|DKIM]]
 	1. Do the best you can, then configure [[Definitions and Topics/DKIM\|DKIM]]; you only need either DKIM or SPF to pass [[Definitions and Topics/DMARC\|DMARC]], and configuring both can provide coverage if one or the other fails.
 
 ##### Why not flattening?
 Flattening an SPF record is the process of condensing all DNS lookups (e.g., `include:spf.example.com`) into hard-coded IP addresses. This gets around the lookup problem by not requiring any lookups, and if you control the servers that send email, this could be just fine. However, if you rely on third-parties for your email needs, flattening will get you into trouble.
 
-Because those third-party services may add, delete, or change their infrastructure without informing you, those hard-coded IPs will open you up to bad-actors who take over abandoned IPs, or legitimate email will not pass authentication because the vendor added new IPs that are not part of your hard-coded SPF record.
+Third-party services may add, delete, or change their infrastructure without informing you. Using hard-coded IPs will open you up to bad-actors who take over the abandoned IPs, or cause legitimate email to fail authentication because the vendor added new IPs that are not part of your hard-coded SPF record.
 
 
 
