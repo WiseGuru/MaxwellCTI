@@ -208,8 +208,8 @@ The SPF record is processed in order, but the whole record needs to be fully eva
 		1. Designates the IP address `123.45.67.89` as an authorized sender
 	5. `a:contoso.com`
 		1. Checks `contoso.com` for A records^[Remember that A records are IPv4 addresses.] and designates them as authentic senders
-	6. `include:mail.example.com`
-		1. Checks `mail.example.com` for its own SPF record and includes that in the SPF record lookup
+	6. `include:spf.example.com`
+		1. Checks `spf.example.com` for its SPF record and includes that in the current SPF record lookup
 		2. Be careful as this can bring you much closer to the *10 DNS lookup limit* and cause a `PermError`
 	7. `-all`
 		1. Fail all originating hosts that have not been matched to this point in the record

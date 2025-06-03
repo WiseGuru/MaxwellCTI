@@ -49,8 +49,8 @@ The SPF record is processed in order, but the whole record needs to be fully eva
 		1. Designates the IP address `123.45.67.89` as an authorized sender
 	5. `a:contoso.com`
 		1. Checks `contoso.com` for A records^[Remember that A records are IPv4 addresses.] and designates them as authentic senders
-	6. `include:mail.example.com`
-		1. Checks `mail.example.com` for its own SPF record and includes that in the SPF record lookup
+	6. `include:spf.example.com`
+		1. Checks `spf.example.com` for its SPF record and includes that in the current SPF record lookup
 		2. Be careful as this can bring you much closer to the *10 DNS lookup limit* and cause a `PermError`
 	7. `-all`
 		1. Fail all originating hosts that have not been matched to this point in the record
@@ -88,7 +88,7 @@ There are a few tools you can use to check the number of lookups you have:
 	1. Do the best you can, then configure [[Definitions and Topics/DKIM\|DKIM]]; you only need either DKIM or SPF to pass [[Definitions and Topics/DMARC\|DMARC]], and configuring both can provide coverage if one or the other fails.
 
 ##### Why not flattening?
-Flattening an SPF record is the process of condensing all DNS lookups into hard-coded IP addresses. This gets around the lookup problem by not requiring any lookups, and if you control the servers that send email, this could be just fine. However, if you rely on third-parties for your email needs, flattening will get you into trouble.
+Flattening an SPF record is the process of condensing all DNS lookups (e.g., `include:spf.example.com`) into hard-coded IP addresses. This gets around the lookup problem by not requiring any lookups, and if you control the servers that send email, this could be just fine. However, if you rely on third-parties for your email needs, flattening will get you into trouble.
 
 Because those third-party services may add, delete, or change their infrastructure without informing you, those hard-coded IPs will open you up to bad-actors who take over abandoned IPs, or legitimate email will be flagged as illegitimate because of new sending IPs that are not part of your hard-coded SPF record.
 
