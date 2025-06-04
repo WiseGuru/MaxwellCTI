@@ -20,15 +20,25 @@
 - [[Definitions and Topics/AAA\|Authorizes]] a list of approved senders and provides weak [[Definitions and Topics/AAA\|Authentication]] by comparing the sending IP against the list of approved senders.
 
 #### SPF Implementation
-Honestly, [the syntax guide on Open-SPF is phenomenal](http://www.open-spf.org/SPF_Record_Syntax/), but here's a breakdown of a fictional and not necessarily optimal record for quick reference. 
+[The syntax guide on Open-SPF is phenomenal](http://www.open-spf.org/SPF_Record_Syntax/), but for simplicity, here's an example of a sub-optimal SPF record. 
 
-The SPF record is processed in order, but the whole record needs to be fully evaluated for the lookup to complete without a `permerror`.
+1. **Name**: `@`
+2. **Type**: TXT
+3. **TTL**: 3600
+4. **Value**: `v=spf1 +a mx ip4:123.45.67.89 a:contoso.com include:mail.example.com -all`
+
+The SPF record is processed in order, but the whole record needs to be fully evaluated for the lookup to complete without a `permerror`. Let's break it down.
 
 1. **Name**: `@`
 	1. `@`
 		1. Designates the domain to which the SPF record applies; `@` is the current top-level domain (e.g., `example.com`)
 		2. Can also use a subdomain, like `mail` or `mail.example.com`, with the exact formatting dependent on your DNS name server.
-2. **Value**: `v=spf1 +a mx ip4:123.45.67.89 a:contoso.com include:mail.example.com -all`
+2. **Type**: TXT
+	1. This is a text record (as opposed to A, CNAME, etc.)
+3. **TTL**: 3600
+	1. The *time to live* is 1 hour (3600 seconds)
+	2. This is an expiration date for the SPF record, and helps DNS servers maintain up-to-date records.
+4. **Value**: `v=spf1 +a mx ip4:123.45.67.89 a:contoso.com include:mail.example.com -all`
 	1. `v=spf1`
 		1. SPF version 1
 		2. There is currently only one version.

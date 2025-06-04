@@ -28,13 +28,24 @@ Configuring DMARC is easy, but can cause you the most headaches because it's wha
 
 Below is an example of a DMARC TXT record:
 
+1. **Name**: `_dmarc`
+2. **Type**: TXT
+3. **TTL**: 3600
+4. **Value**: `v=DMARC1; p=reject; sp=none; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com; fo=1;`
+
+Let's break it down.
+
 1. **Name**: `_dmarc.example.com`
 	1. `_dmarc`
 		1. Signifies this a DMARC TXT entry
-	2. `example.com`
-		1. The root/organization-level domain the policy is being applied to.
-		2. Only one DMARC record needs to exist for the whole domain, but you can add more records for different subdomains to take different actions.
-2. **Value**: `v=DMARC1; p=reject; sp=none; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com; fo=1;`
+	2. Note that you do not typically need to enter the root domain here; however, if you did a DMARC lookup for `example.com`, you would see the entry as `_dmarc.example.com`
+		1. Only one DMARC record needs to exist for the whole domain, but you can add more records for different subdomains to take different actions; for example, `_dmarc.mailer.example.com`
+2. **Type**: TXT
+	1. This is a text record (as opposed to A, CNAME, etc.)
+3. **TTL**: 3600
+	1. The *time to live* is 1 hour (3600 seconds)
+	2. This is an expiration date for the DMARC record, and helps DNS servers maintain up-to-date records.
+4. **Value**: `v=DMARC1; p=reject; sp=none; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com; fo=1;`
 	1. `v=DMARC1`
 		1. DMARC version 1; at present, there is only one version.
 	2. `;`
