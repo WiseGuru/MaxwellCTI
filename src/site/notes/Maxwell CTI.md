@@ -22,6 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                                                  | Last Modified      |
 | -------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Definitions and Topics/BIMI\|BIMI]]                                                                                         | 2025.06.04 - 16:02 |
 | [[Definitions and Topics/DMARC\|DMARC]]                                                                                       | 2025.06.04 - 11:41 |
 | [[Definitions and Topics/DKIM\|DKIM]]                                                                                         | 2025.06.04 - 11:38 |
 | [[Definitions and Topics/SPF\|SPF]]                                                                                           | 2025.06.04 - 11:34 |
@@ -46,6 +47,5 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Webinars and Training/BlackHills SOC Core/Labs/Disable Windows Memory Integrity\|Disable Windows Memory Integrity]]         | 2025.02.18 - 10:25 |
 | [[Career Growth/Intro to IT and Cybersecurity/Building a Homelab\|Building a Homelab]]                                        | 2025.02.18 - 10:24 |
 | [[Tool Deep-Dives/Linux/QEMU, KVMs, and Virt-Man/Adding a second monitor to a QEMU VM\|Adding a second monitor to a QEMU VM]] | 2025.02.18 - 10:24 |
-| [[Webinars and Training/BlackHills SOC Core/Labs/01-BHIS-SOCC-lab-LinuxHostConfig\|01-BHIS-SOCC-lab-LinuxHostConfig]]         | 2025.02.18 - 10:23 |
 
 { .block-language-dataview}
