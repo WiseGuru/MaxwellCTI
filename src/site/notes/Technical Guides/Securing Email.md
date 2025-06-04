@@ -218,9 +218,54 @@ The SPF record is processed in order, but the whole record needs to be fully eva
 		2. Because this is a *Fail* qualifier, it has to be manually written out as `-`
 			1. `~all` is also frequently seen in default configurations, and is used when transitioning between services or when using email marketing services (Mailchimp, Sendgrid, etc.) which do not get added to the SPF record.
 
-> Honorable mention: `redirect`
-> If you manage multiple domains and subdomains that all point reference the same record and information, you can configure them to all point to the same SPF record with a `redirect`. It does not count towards the DNS lookup limit, and reduces the headache of managing multiple identical SPF records.
->  A subdomain that redirects to an "spf-primary" record would look like this: `mailer.example.com    txt    "v=spf1 redirect=spf-primary.example.com"`
+##### Honorable mention: `redirect`
+ If you manage multiple domains and subdomains that all point reference the same record and information, you can configure them to all point to the same SPF record with a `redirect`. It does not count towards the DNS lookup limit, and reduces the headache of managing multiple identical SPF records.
+
+A subdomain that redirects to an "spf-primary" record would look like this: `mailer.example.com    txt    "v=spf1 redirect=spf-primary.example.com"`
+
+
+</div></div>
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/definitions-and-topics/spf/#managing-dns-lookups-and-dns-flattening" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+#### Managing DNS Lookups and DNS Flattening
+Going above 10 DNS lookups will cause a permanent error for your SPF record, preventing it from being used for authentication. Because most SPF records will point to external mail services whose structure could change without notice, it's important to stay as far below 10 as possible so you don't accidentally begin erroring out.
+
+There are a few tools you can use to check the number of lookups you have:
+- [SPF Surveyor - dmarcian](https://dmarcian.com/spf-survey)
+	- Well organized and easy to read.
+- [EasyDMARC SPF Checker](https://easydmarc.com/tools/spf-lookup)
+	- Similar to dmarcian, though a little less clean.
+- [SPF Record Lookup - DMARCLY](https://dmarcly.com/tools/spf-record-checker)
+	- Pretty spartan, but gets the job done.
+	- Recommends *flattening*, which is bad practice.
+
+##### What can you do to reduce lookups?
+1. Remove unnecessary and duplicate records
+	1. `a` and `mx` records are often unnecessary:
+		1. `a` records identify domain-name lookup addresses, like `store.example.com`, and modernly the same IPs are not often reused for mail (especially with third-party email providers).
+		2. `mx` records instruct sending domains where you *receive* email, and while intuitively it's the same place as where you *send* email from, this is often not the case (especially with third-party email providers).
+	2. Remove any old or unused vendors or mechanisms
+2. Consolidate where possible
+	1. If there are overlapping SPF records for different services you use, you may be able to eliminate one of them. The tools listed above can help you find all sub-includes and IP ranges to determine eligibility.
+3. Remove records from mass-marketing vendors
+	1. Mass-marketing vendors (like MailChimp or SendGrid) do not work well with SPF, and will dramatically inflate the number of lookups you will perform. It's better to just configure [[Definitions and Topics/DKIM\|DKIM]] for them instead.
+4. Use subdomains to split up certain senders
+	1. If certain groups or departments use automated systems to send email, you could create a subdomain for that group or purpose that isolates its records from the main domain.
+		1. e.g., if you use Acme Invoices as your billing platform, you could create `billing.example.com` and configure it with just Acme Invoice's SPF records to remove it from `example.com`'s SPF record.
+5. Configure [[Definitions and Topics/DKIM\|DKIM]]
+	1. Do the best you can, then configure [[Definitions and Topics/DKIM\|DKIM]]; you technically only need either DKIM or SPF to pass [[Definitions and Topics/DMARC\|DMARC]], and configuring both can provide coverage if one or the other fails.
+
+##### What is flattening, and why is it bad?
+Flattening an SPF record is the process of condensing all DNS lookups (e.g., `include:spf.example.com`, `a:contoso.com`, etc.) into hard-coded IP addresses. This gets around the lookup problem by not requiring any lookups, and if you control the servers that send email, this could be just fine. However, if you rely on third-parties for your email needs, flattening will get you into trouble.
+
+Third-party services may add, delete, or change their infrastructure without informing you. Using hard-coded IPs will open you up to bad-actors who take over the abandoned IPs, or cause legitimate email to fail authentication because the vendor added new IPs that are not part of your hard-coded SPF record. Unless you manage every part of your email infrastructure, it's best to avoid flattening.
+
+
+
 
 </div></div>
 

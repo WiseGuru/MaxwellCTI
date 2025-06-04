@@ -22,7 +22,8 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                                                  | Last Modified      |
 | -------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Definitions and Topics/SPF\|SPF]]                                                                                           | 2025.06.03 - 12:29 |
+| [[Definitions and Topics/SPF\|SPF]]                                                                                           | 2025.06.04 - 11:19 |
+| [[Technical Guides/Securing Email\|Securing Email]]                                                                           | 2025.06.04 - 11:14 |
 | [[Definitions and Topics/AAA\|AAA]]                                                                                           | 2025.05.30 - 11:08 |
 | [[Definitions and Topics/DMARC\|DMARC]]                                                                                       | 2025.05.30 - 11:07 |
 | [[Definitions and Topics/DKIM\|DKIM]]                                                                                         | 2025.05.30 - 11:05 |
@@ -31,7 +32,6 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Tool Deep-Dives/Linux/umount\|umount]]                                                                                      | 2025.05.30 - 10:18 |
 | [[Tool Deep-Dives/Linux/sort\|sort]]                                                                                          | 2025.05.30 - 10:18 |
 | [[Tool Deep-Dives/Python/DMARC Report Analyzer\|DMARC Report Analyzer]]                                                       | 2025.05.29 - 17:23 |
-| [[Technical Guides/Securing Email\|Securing Email]]                                                                           | 2025.05.29 - 09:15 |
 | [[Tool Deep-Dives/Proxmox/Exporting VMs to run with QEMU\|Exporting VMs to run with QEMU]]                                    | 2025.05.27 - 09:27 |
 | [[Tool Deep-Dives/Linux/QEMU, KVMs, and Virt-Man/Installing a Windows VM on Linux\|Installing a Windows VM on Linux]]         | 2025.05.27 - 09:25 |
 | [[Tool Deep-Dives/dig\|dig]]                                                                                                  | 2025.05.27 - 09:11 |
