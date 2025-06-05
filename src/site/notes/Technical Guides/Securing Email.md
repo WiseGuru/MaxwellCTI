@@ -145,14 +145,16 @@ Below are implementation and syntax guides for each type of record; but to have 
 
 ## Implementation Plan
 1. **Configure DMARC to generate delivery reports**
-	1. Create two email accounts; one for DMARC aggregate reports and one for failure/forensic reports
+	1. Create two email accounts dedicated to DMARC aggregate reports and failure/forensic reports
 		1. For example, `dmarc_aggregate@example.com` and `dmarc_failures@example.com`
 	2. Add the following DMARC policy to each domain you are managing (adding the appropriate addresses you created earlier):
 		1. `v=DMARC1; p=none; rua=mailto:[aggregate report email address]; ruf=mailto:[failure report email address]; fo=1`
-			1. This policy *takes no action on emails which fail authentication*, but *sends reports to your designated email addresses.*
+			1. This policy *takes no action on emails which fail authentication* and requests that *reports are sent to your designated email addresses.*
 		2. If DMARC reports are going to be sent across different domains,^[Like if you're an MSP supporting support for a client.] then make sure you create a TXT DMARC report record (described below) on the receiving domain saying which domains are allowed to send DMARC reports.
 			1. For example, if you want `example.com` to send DMARC reports to `aggregate@contoso.com`, you would need to create a DMARC report record on `contoso.com`'s DNS name server.
-		3. `fo=1` will generate DMARC forensic reports for *either SPF or DKIM failures*, which is very helpful when troubleshooting problems during setup.
+		3. `fo=1` will generate DMARC forensic reports for *either SPF or DKIM failures*, which can be helpful when troubleshooting problems during setup.
+			1. Obligatory reminder that most providers do not send forensic reports, so `fo` and `ruf` can be ignored if desired.
+	3. *Note*: Some providers require SPF and DKIM records before you can create a DMARC record, even in audit mode.
 2. **Configure one SPF record** for each domain that identifies non-marketing mail senders
 	1. Most mail providers have a tool to generate SPF records, or will have one available for you to copy and paste; review it and make sure it has everything you need and is strict enough to your liking.
 	2. *Do not add email marketers like Mailchimp or Sendgrid to your SPF record*; this will cause DNS lookups to exceed 10 hops and cause authentication failures.
@@ -161,7 +163,7 @@ Below are implementation and syntax guides for each type of record; but to have 
 3. **Configure DKIM records** for every sending host
 	1. Each sender (Microsoft Exchange, Gmail, Mailchimp, etc.) will have instructions on how to add DKIM records to your name server.
 4. **Review DMARC reports**
-	1. It can take up to 48 hours for reports to start coming in.
+	1. It can take 48 to 72 hours for reports to start coming in.
 		1. This is because DMARC records usually check for updates every 24 hours, and for global propagation it can take double that time.
 		2. If you are not seeing aggregate reports after 48 hours, check the record to make sure there aren't any typos. [[Technical Guides/Securing Email#Resources\|The resources below can really help.]]
 	2. These reports are XML documents and are frequently zipped before being attached
@@ -359,7 +361,7 @@ Below is an example of a DMARC TXT record:
 1. **Name**: `_dmarc`
 2. **Type**: TXT
 3. **TTL**: 3600
-4. **Value**: `v=DMARC1; p=quarantine; sp=reject; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com; fo=1;`
+4. **Value**: `v=DMARC1; p=quarantine; sp=reject; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com; fo=1; ri=43200`
 
 Let's break it down.
 
@@ -423,6 +425,11 @@ Let's break it down.
 			4. `s` generates a report when SPF fails.
 		2. You can select multiple options with a colon (e.g., `fo=0:d`)
 		3. *Reminder*: many mailbox providers don't send forensic/failure reports for [[Definitions and Topics/GDPR\|GDPR]] compliance.
+	11. `ri=43200`
+		1. The "report interval" is the time in seconds you request receivers to generate reports.
+			1. The default is 24 hours (86400 seconds), and 12 hours as configured here.
+		2. Most providers ignore this, and send reports every 24 hours or more based on their own infrastructure.
+			1. "DMARC implementations MUST be able to provide daily reports and SHOULD be able to provide hourly reports when requested.  However, anything other than a daily report is understood to be accommodated on a best-effort basis."^[[RFC 7489 - Domain-based Message Authentication, Reporting, and Conformance (DMARC)](https://datatracker.ietf.org/doc/html/rfc7489#autoid-21)]
  
 ##### Sending Reports to a Different Domain
  If you are sending DMARC reports to another domain for analysis, you will need to create a TXT record on that domain's name server to identify each sending domain.^[[DMARC - DMARC External Validation](https://mxtoolbox.com/problem/dmarc/dmarc-external-validation?page=prob_dmarc&action=dmarc:annmulhern.com&showlogin=1&hidepitch=0&hidetoc=1)]
@@ -507,7 +514,7 @@ The final result is a spreadsheet with a summary of all of the reports it collec
 
 
 # Tools and Resources
-## Resources
+## Resources and tools
 - [Learn and Test DMARC](https://www.dmarctester.com/)
 	- Great site for quickly testing mail you can send
 - [MX Lookup Tool - Check your DNS MX Records online - MxToolbox](https://mxtoolbox.com/)
@@ -524,7 +531,7 @@ The final result is a spreadsheet with a summary of all of the reports it collec
 - [Free Domain Analyzer Tool \| PowerAnalyzer](https://powerdmarc.com/analyzer/)
 	- Can automatically detect/select the DKIM selector
 	- Checks BIMI and a few others with only a couple of clicks
-- [GitHub - QbDVision-Inc/DMARC-Report-Analyzer: Analysis on your DMARC report files](https://github.com/QbDVision-Inc/DMARC-Report-Analyzer?)
+- [[Tool Deep-Dives/Python/DMARC Report Analyzer\|DMARC Report Analyzer]]
 	- Local, Python-based DMARC report analyzer
 	- Can automatically log in to email accounts and download DMARC reports directly for analysis
 - [Email authentication in Microsoft 365 - Microsoft Defender for Office 365 \| Microsoft Learn](https://learn.microsoft.com/en-us/defender-office-365/email-authentication-about)
@@ -534,6 +541,7 @@ The final result is a spreadsheet with a summary of all of the reports it collec
 	- It may be helpful for larger environments, but their implementation strategy feels backwards to me.
 		- It takes *6 and a half months* to get to the point where you're enacting policy, and you don't even setup a DMARC record until about the *third month*.
 		- I think it's important, critical even, to be diligent when working with a production environment, and if you want to slow-roll deployment to make sure nothing goes wrong, all power to you, but to only start gathering live information half-way through deployment seems crazy to me.
+- [GitHub - techsneeze/dmarcts-report-parser: A Perl based tool to parse DMARC reports from an IMAP mailbox or from the filesystem, and insert the information into a database. ( Formerly known as imap-dmarcts )](https://github.com/techsneeze/dmarcts-report-parser)
 ## DNS Look-up tools
 [[Tool Deep-Dives/dig\|dig]]
 [[nslookup\|nslookup]]

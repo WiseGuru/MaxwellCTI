@@ -38,7 +38,7 @@ Below is an example of a DMARC TXT record:
 1. **Name**: `_dmarc`
 2. **Type**: TXT
 3. **TTL**: 3600
-4. **Value**: `v=DMARC1; p=quarantine; sp=reject; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com; fo=1;`
+4. **Value**: `v=DMARC1; p=quarantine; sp=reject; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com; fo=1; ri=43200`
 
 Let's break it down.
 
@@ -102,6 +102,11 @@ Let's break it down.
 			4. `s` generates a report when SPF fails.
 		2. You can select multiple options with a colon (e.g., `fo=0:d`)
 		3. *Reminder*: many mailbox providers don't send forensic/failure reports for [[Definitions and Topics/GDPR\|GDPR]] compliance.
+	11. `ri=43200`
+		1. The "report interval" is the time in seconds you request receivers to generate reports.
+			1. The default is 24 hours (86400 seconds), and 12 hours as configured here.
+		2. Most providers ignore this, and send reports every 24 hours or more based on their own infrastructure.
+			1. "DMARC implementations MUST be able to provide daily reports and SHOULD be able to provide hourly reports when requested.  However, anything other than a daily report is understood to be accommodated on a best-effort basis."^[[RFC 7489 - Domain-based Message Authentication, Reporting, and Conformance (DMARC)](https://datatracker.ietf.org/doc/html/rfc7489#autoid-21)]
  
 ##### Sending Reports to a Different Domain
  If you are sending DMARC reports to another domain for analysis, you will need to create a TXT record on that domain's name server to identify each sending domain.^[[DMARC - DMARC External Validation](https://mxtoolbox.com/problem/dmarc/dmarc-external-validation?page=prob_dmarc&action=dmarc:annmulhern.com&showlogin=1&hidepitch=0&hidetoc=1)]
@@ -158,6 +163,10 @@ If the record exists and you entered the command correctly, you should get respo
 [Use DMARC to validate email, setup steps - Microsoft Defender for Office 365 \| Microsoft Learn](https://learn.microsoft.com/en-us/defender-office-365/email-authentication-dmarc-configure)
 [The DMARC ‘fo’ tag options and their ideal use cases – DMARC Report](https://dmarcreport.com/blog/the-dmarc-fo-tag-options-and-their-ideal-use-cases/)
 
+
+### Tools
+[[Tool Deep-Dives/Python/DMARC Report Analyzer\|DMARC Report Analyzer]]
+[GitHub - techsneeze/dmarcts-report-parser: A Perl based tool to parse DMARC reports from an IMAP mailbox or from the filesystem, and insert the information into a database. ( Formerly known as imap-dmarcts )](https://github.com/techsneeze/dmarcts-report-parser)
 
 ### Tags
 #defs_sec 
