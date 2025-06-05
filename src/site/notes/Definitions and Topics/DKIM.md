@@ -3,22 +3,24 @@
 ---
 
 #### DKIM
-- *DKIM* (Domain Keys Identified Mail) is a mechanism that authenticates all messages sent from a domain using [[Definitions and Topics/PKI\|PKI (Public Key Infrastructure)]]
+- *DKIM* (Domain Keys Identified Mail) is a mechanism that authenticates all messages sent from a domain using asymmetric key cryptography.
 	- DKIM uses two keys; a private key used for signing, and a public key for verification
 	- The administrator publishes the public key to the DNS record
-	- The sending server signs all out-bound messages using the private key
+	- The sending server signs all out-bound messages by using the private key to generate a hash from the message headers and body.
 	- Recipients verify the signed email against the public key
 - The DKIM key is shared via a *TXT record*
 	- DKIM records are differentiated with key selectors, and each email server requires its own public/private key pair.
 		- You may have multiple DKIM records with different key selectors.
 		- Because authentication occurs by key pair, tools like [MxToolBox](https://mxtoolbox.com/dkim.aspx) often require the selector to test and validate the correct key.
-	- Can also be configured as a CNAME record^[Canonical name, which functions as an alias and points to another address.] which points to the actual DKIM TXT record
-- Only [[Definitions and Topics/AAA\|authorized]] senders are able to generate a valid signature, and proves the message was sent from an [[Definitions and Topics/AAA\|authorized]] sender.
+	- Can also be configured as a CNAME record^[Canonical name, which functions as an alias and points to another address.] which points to the actual DKIM TXT record.
+		- CNAMEs are often used by service providers to allow them to manage and regularly cycle keys without bothering clients.
+	- When rotating keys, you’d publish `selector1._domainkey` and `selector2._domainkey` simultaneously, switch signing to the new key, then remove the old record after clients have refreshed.
+- Only [[Definitions and Topics/AAA\|servers with access to the private key]] are able to generate a valid signature, and proves the message was sent from an [[Definitions and Topics/AAA\|authorized]] sender.^[So keep that private key safe, or an attacker could forge messages!]
 
 #### DKIM Implementation: 3rd-Party Mail Provider
 The process to configure DKIM is different for each email provider.
 
-If your mail provider is also your DNS host, it's often as easy as checking a box. However, if your mail provider and DNS host are different, then you will be required to create specific DNS entries on the name server to authenticate. [Fastmail](https://www.fastmail.help/hc/en-us/articles/360058753354-Adding-MX-records-to-Namecheap#signing), for example, requires you to add three CNAME entries to your DNS host for authentication; this allows them to manage key rotation without bothering clients.
+If your mail provider is also your DNS host, it's often as easy as checking a box. However, if your mail provider and DNS host are different, then you will be required to create specific DNS entries on the name server to authenticate. [Fastmail](https://www.fastmail.help/hc/en-us/articles/360058753354-Adding-MX-records-to-Namecheap#signing), for example, requires you to add three CNAME entries to your DNS host for authentication.
 
 > You can use [[Tool Deep-Dives/dig\|dig]] to inspect the DKIM record values and observe key key rotation.
 > Cycling through each record with the command `dig @1.1.1.1 fm1._domainkey.maxwellcti.com TXT +short` reveals that one record has the DKIM key, where the other two return `"v=DKIM1; k=rsa; n=Intentionally_Left_Blank_As_Per_DKIM_Rotation_BCP; p="`
@@ -46,14 +48,15 @@ Let's break it down; more tags can be found on [the DKIM Verification section on
 	2. This is an expiration date for the DKIM record, and helps DNS servers maintain up-to-date records.
 4. **Value**: `v=DKIM1; k=rsa; p=bG9sIHlvdSBhYnNvbHV0ZSBuZXJkLCB5b3UgZm91bmQgbWUhIEkgd2lzaCBJIGNvdWxkIGdpdmUgeW91IHNvbWV0aGluZywgYnV0IGFsYXM7IGhpdCBtZSB1cCBpZiB5b3Ugd2FudCB0byBjaGF0IQ==`
 	1. `v=DKIM1`
-		1. Specifies the DKIM version; at this point, it's always DKIM1
+		1. Specifies the DKIM version; at this point, it's always DKIM1.
 	2. `;`
-		1. The separator between values
+		1. The separator between values.
 	3. `k=rsa`
-		1. The *key type* specifies the kind of encryption used to create the key-pair
-		2. The default is RSA
+		1. The *key type* specifies the kind of encryption used to create the key-pair.
+		2. The default is RSA.
 	4. `p=bG9sIHl...`
-		1. The Base64-encoded *public key*, which is absolutely required 
+		1. The Base64-encoded *public key*.
+		2. Most providers generate a 2048-bit key by default, and anything weaker (e.g., 1024 bits) is discouraged.
 
 #### [[Tool Deep-Dives/dig\|dig]]
 
@@ -89,5 +92,6 @@ If the record exists and you entered the command correctly, you should get respo
 ### Sources
 [DomainKeys Identified Mail (DKIM)](https://dkim.org/)
 [DomainKeys Identified Mail - Wikipedia](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail)
+[RFC 6376 - DomainKeys Identified Mail (DKIM) Signatures](https://datatracker.ietf.org/doc/html/rfc6376)
 ### Tags
 #defs_sec 

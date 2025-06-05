@@ -4,7 +4,8 @@
 
 #### DMARC
 - *DMARC* (Domain-based Message Authentication, Reporting, and Conformance) is a mechanism that tells a receiving email server what to do based on the [[Definitions and Topics/SPF\|SPF]] and [[Definitions and Topics/DKIM\|DKIM]] authentication checks.
-	- DMARC checks whether the domain in the email's "From" field matches (or is *aligned* with) the SPF or DKIM authenticated domains.
+	- DMARC checks whether the domain passes the SPF and DKIM authentication checks and that the email's "From" field is *aligned* with the SPF and DKIM authenticated domains.
+		- DMARC only checks for alignment if the authentication passes first.
 	- If an email's "From" domain is aligned with *either* the SPF or DKIM authenticated domains, then it can be delivered.
 - DMARC Alignment requirements can be "Relaxed" or "Strict"
 	- Relaxed means email from a matching root-level (or organization level) domain will align
@@ -22,19 +23,22 @@
 	- Like [[Definitions and Topics/SPF\|SPF]], it applies to all emails sent from your domain, and not to specific hosts like [[Definitions and Topics/DKIM\|DKIM]]
 	- The `sp` tag can be used to apply a different policy action on subdomains
 		- However, if you want more granularity (like different aggregate/failure report addresses), you can add another record for that subdomain.
-- Checks [[Definitions and Topics/AAA\|authentication]] by requiring that at least either [[Definitions and Topics/SPF\|SPF]] or [[Definitions and Topics/DKIM\|DKIM]] must align, has a policy to tell receivers how to hand [[Definitions and Topics/AAA\|unauthorized]] senders, and provides [[Definitions and Topics/AAA\|accounting]] by generating XML reports and sending them to the domain owner.
+- Verifies [[Definitions and Topics/AAA\|authentication]] by requiring alignment with either [[Definitions and Topics/SPF\|SPF]] or [[Definitions and Topics/DKIM\|DKIM]], specifies a policy instructing receivers how to handle [[Definitions and Topics/AAA\|unauthorized]] senders, and generates XML reports sent to the domain owner for [[Definitions and Topics/AAA\|Accounting]].
 
 > If you are reviewing old records, you might see a DKIM record with `v=DKIM1; o=~`. This is an outdated and unused spec; it can be deleted without issue.^[[What is this extra \_domainkey.? Should I kill it? : r/DMARC](https://www.reddit.com/r/DMARC/comments/1h7elj3/comment/m0kwi0l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)] ^[[draft-allman-dkim-ssp-01](https://datatracker.ietf.org/doc/html/draft-allman-dkim-ssp-01/#section-5)]
 
 #### DMARC Implementation
-Configuring DMARC is easy, but can cause you the most headaches because it's what authorizes email to be delivered, and a misconfiguration can stop your email in its tracks. Therefore, it's highly recommended that you *first configure your DMARC policy to take no action* on emails for the first couple of weeks, using the reports generated to make sure everything is getting delivered as expected, and then to add a `quarantine` or `reject` policy and maybe ramp up implementation through the `pct` tag.
+
+> **WARNING**: Both [[Definitions and Topics/SPF\|SPF]] and [[Definitions and Topics/DKIM\|DKIM]] **must** be configured before setting the DMARC policy to `quarantine` or `reject`. Failure to do so will result in undelivered mail.
+
+Configuring DMARC is easy, but can cause you the most headaches because it's what authorizes email to be delivered, and a misconfiguration can stop your email in its tracks. Therefore, it's highly recommended that you *first configure your DMARC policy to `none` to take no action* on emails for the first couple of weeks, using the reports generated to make sure everything is getting delivered as expected, and then to add a `quarantine` or `reject` policy and maybe ramp up implementation through the `pct` tag.
 
 Below is an example of a DMARC TXT record:
 
 1. **Name**: `_dmarc`
 2. **Type**: TXT
 3. **TTL**: 3600
-4. **Value**: `v=DMARC1; p=reject; sp=none; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com; fo=1;`
+4. **Value**: `v=DMARC1; p=quarantine; sp=reject; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com; fo=1;`
 
 Let's break it down.
 
@@ -42,19 +46,19 @@ Let's break it down.
 	1. `_dmarc`
 		1. Signifies this a DMARC TXT entry
 	2. Note that you do not typically need to enter the root domain here; however, if you did a DMARC lookup for `example.com`, you would see the entry as `_dmarc.example.com`
-		1. Only one DMARC record needs to exist for the whole domain, but you can add more records for different subdomains to take different actions; for example, `_dmarc.mailer.example.com`
+		1. Only one DMARC record needs to exist for the apex domain, but you can add more records for different subdomains to take different actions; for example, `_dmarc.mailer.example.com`
 2. **Type**: TXT
 	1. This is a text record (as opposed to A, CNAME, etc.)
 3. **TTL**: 3600
 	1. The *time to live* is 1 hour (3600 seconds)
 	2. This is an expiration date for the DMARC record, and helps DNS servers maintain up-to-date records.
-4. **Value**: `v=DMARC1; p=reject; sp=none; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com; fo=1;`
+4. **Value**: `v=DMARC1; p=quarantine; sp=reject; pct=100; aspf=r; adkim=r; rua=mailto:dmarc-reports@example.com; ruf=mailto:dmarc-failures@example.com; fo=1;`
 	1. `v=DMARC1`
 		1. DMARC version 1; at present, there is only one version.
 	2. `;`
 		1. The separator between tags.
 		2. Spaces and tabs can make entries more readable, but are completely optional.
-	3. `p=reject`
+	3. `p=quarantine`
 		1. The *Policy* applied to emails which fail their SPF and DKIM authentication checks
 		2. There are three options:
 			1. `none`: No action is taken
@@ -63,9 +67,11 @@ Let's break it down.
 				1. This allows the recipient server to still receive and process unauthenticated mail, just treats them with suspicion
 			3. `reject`: Instructs the receiving server to outright reject any mail that fails authentication.
 				1. This is the most secure, but can also be the most problematic if a configuration changes or something goes wrong.
-	4. `sp=quarantine`
-		1. The policy for subdomains.
-		2. If `sp` is not stated in the record, then the policy described by `p` applies to subdomains.
+	4. `sp=reject`
+		1. The policy for subdomains; if `sp` is not stated in the record, then the policy described by `p` applies to subdomains.
+			1. This may be helpful to set a stricter policy if there are no subdomains, or a looser policy if configuring a subdomain for mail.
+		2. Creating a distinct DMARC policy for a subdomain (e.g., `_dmarc.mailer.example.com`) takes precedence over the `sp` policy designation.
+			1. To reiterate, `sp` only applies to a subdomain if there isn't a more specific DMARC policy created for it.
 	5. `pct=100`
 		1. The percent of unauthenticated emails to apply the policy to.
 			1. e.g., `pct=20` would only apply the `p=reject` policy to 20% of emails which fail authentication
@@ -80,28 +86,37 @@ Let's break it down.
 		1. DKIM alignment requirements; see `aspf` for details.
 	8. `rua=mailto:dmarc-reports@example.com`
 		1. Identifies the email address to which recipient servers should send *delivery aggregate reports*
-		2. Aggregate reports contain basic information and include successful and failed delivery information
+		2. List of addresses must begin with `mailto:`
+		3. Aggregate reports contain basic information and include successful and failed delivery information
+		4. Multiple addresses can be specified if separated by a comma.
+			1. e.g., `rua=mailto:address1@example.com,address2@contoso.com`
 	9. `ruf=mailto:dmarc-failures@example.com`
 		1. Identifies the email address to which recipient servers should send *individual delivery forensic failure reports*
 		2. Forensic failure reports contain detailed information about failed deliveries to assist with triage and troubleshooting.
+			1. However, most major providers highly redact or suppress ruf records for privacy and [[Definitions and Topics/GDPR\|GDPR]] compliance.
 	10. `fo=1`
-		1. This generates a forensic report *for any SPF or DKIM failure*, which is helpful for triage and troubleshooting during initial setup.
-			1. Default is `fo=0`, and once the `p` value is set to `quarantine` or `reject`, it can be safely removed.
-		2. *Reminder*: many mailbox providers don't send forensic/failure reports for [[Definitions and Topics/GDPR\|GDPR]] compliance.
+		1. The *failure reporting option* specifies what generates a forensic report .
+			1. `0` is default, and only requests forensic reports on DMARC failure.
+			2. `1` requests a report *for any SPF or DKIM failure*, which is helpful for triage and troubleshooting during initial setup.
+			3. `d` generates a report only when DKIM authentication (not alignment)
+			4. `s` generates a report when SPF fails.
+		2. You can select multiple options with a colon (e.g., `fo=0:d`)
+		3. *Reminder*: many mailbox providers don't send forensic/failure reports for [[Definitions and Topics/GDPR\|GDPR]] compliance.
  
+##### Sending Reports to a Different Domain
+ If you are sending DMARC reports to another domain for analysis, you will need to create a TXT record on that domain's name server to identify each sending domain.^[[DMARC - DMARC External Validation](https://mxtoolbox.com/problem/dmarc/dmarc-external-validation?page=prob_dmarc&action=dmarc:annmulhern.com&showlogin=1&hidepitch=0&hidetoc=1)]
+ 
+For example:
+1. Type: `TXT`
+2. Name: `sendingdomain.com._report._dmarc.receivingdomain.com`
+	1. For example, if the MSP `AcmeIT.com` was configured to receive and manage DMARC reports for `example.com`, the record would be `example.com._report._dmarc.acmeit.com`
+3. Value: `"v=DMARC1"`
+	1. Just indicates the version of DMARC
 
-> If you are sending DMARC reports to another domain, you will need to create a TXT record on that domain's name server to identify each sending domain.^[[DMARC - DMARC External Validation](https://mxtoolbox.com/problem/dmarc/dmarc-external-validation?page=prob_dmarc&action=dmarc:annmulhern.com&showlogin=1&hidepitch=0&hidetoc=1)]
-> 
-> For example:
-> 1. Type: `TXT`
-> 2. Name: `sendingdomain.com._report._dmarc.receivingdomain.com`
-> 3. Value: `"v=DMARC1"`
-> 
-> The TXT record **name** identifies the domain generating the report (`sendingdomain.com`), followed by `._report._dmarc` and the domain receiving the reports (`.receivingdomain.com`). 
-> The TXT record **value** just identifies the DMARC version (`"v=DMARC1"`)
-> 
-> **WARNING**: While you can use a `*` wildcard to simplify the record to `*._report._dmarc.receivingdomain.com`, this allows anyone to send email to your DMARC report inboxes.
-> Spam filters and firewalls don't typically inspect DMARC reports, and an attacker could exploit this to flood the inbox with bogus DMARC reports or inject malicious code into zipped attachments, which might get run automatically by report analyzing software. 
+The TXT record **name** identifies the domain generating the report (`sendingdomain.com`), followed by `._report._dmarc` and the domain receiving the reports (`.receivingdomain.com`).
+The TXT record **value** just identifies the DMARC version (`"v=DMARC1"`)
+ 
+**WARNING**: While you can use a `*` wildcard to simplify the record to `*._report._dmarc.receivingdomain.com`, allowing anyone to send email to your DMARC report inboxes, you probably shouldn't. Spam filters and firewalls don't typically inspect DMARC reports, and an attacker could exploit this to flood the inbox with bogus DMARC reports or inject malicious code into zipped attachments, which might get run automatically by report analyzing software. 
 
 #### [[Tool Deep-Dives/dig\|dig]]
 
@@ -136,11 +151,13 @@ If the record exists and you entered the command correctly, you should get respo
 # Metadata
 
 ### Sources
+[RFC 7489 - Domain-based Message Authentication, Reporting, and Conformance (DMARC)](https://datatracker.ietf.org/doc/html/rfc7489)
 [dmarc.org – Domain Message Authentication Reporting & Conformance](https://dmarc.org/)
 [DMARC - Wikipedia](https://en.wikipedia.org/wiki/DMARC)
 [Learn and Test DMARC](https://www.dmarctester.com/)
 [Use DMARC to validate email, setup steps - Microsoft Defender for Office 365 \| Microsoft Learn](https://learn.microsoft.com/en-us/defender-office-365/email-authentication-dmarc-configure)
 [The DMARC ‘fo’ tag options and their ideal use cases – DMARC Report](https://dmarcreport.com/blog/the-dmarc-fo-tag-options-and-their-ideal-use-cases/)
+
 
 ### Tags
 #defs_sec 
