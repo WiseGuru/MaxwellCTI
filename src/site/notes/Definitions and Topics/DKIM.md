@@ -55,6 +55,35 @@ Let's break it down; more tags can be found on [the DKIM Verification section on
 	4. `p=bG9sIHl...`
 		1. The Base64-encoded *public key*, which is absolutely required 
 
+#### [[Tool Deep-Dives/dig\|dig]]
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/tool-deep-dives/dig/#using-dig-to-verify-spf-dkim-and-dmarc" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+#### Using [[Tool Deep-Dives/dig\|dig]] to verify [[Definitions and Topics/SPF\|SPF]], [[Definitions and Topics/DKIM\|DKIM]], and [[Definitions and Topics/DMARC\|DMARC]]
+When using dig to verify records and look up changes, only SPF can be searched generally; DKIM and DMARC searches must include the full name of the record.
+
+In the examples, I rotated the DNS server I was querying to demonstrate that any DNS server could be used. Records for subdomains or named records above root (e.g., `mail.example.com` or `_dmarc.example.com`) will require their own dig queries.
+
+1. SPF
+	1. `dig @8.8.8.8 example.com TXT +noall +answer`
+		1. This will return all root TXT records, so you may get several irrelevant responses in addition to the SPF
+2. DKIM
+	1. `dig @1.1.1.1 mx01._domainkey.example.com TXT +noall +answer`
+		1. Returns the final DKIM record value, whether stored on your name server or redirected via a CNAME
+	2. `dig @1.0.0.1 protonmail._domainkey.example.com CNAME +noall +answer`
+		1. Only returns the CNAME record on your server, if applicable.
+3. DMARC
+	1. `dig @8.8.4.4 _dmarc.example.com TXT +noall +answer`
+		1. This will return the DMARC record for `example.com`
+	2. `dig @1.1.1.1 _dmarc.mail.example.com txt +noall +answer`
+		1. Returns the DMARC record for the subdomain `mail.example.com`
+
+If the record exists and you entered the command correctly, you should get responses with all the information in the record being queried.
+
+</div></div>
+
 # Metadata
 
 ### Sources

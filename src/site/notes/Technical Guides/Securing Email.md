@@ -4,9 +4,9 @@
 
 Securing your email is a critical part of protecting yourself and your business from scams and losses. The [FBI IC3 2024 Annual Report](https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf) identifies Business Email Compromise and Phishing/Spoofing as one of the biggest problems by far, causing a combined *$2.8 billion* in losses in 2024 alone.
 
-One of the best ways to protect yourself and those you interact with is to secure and authenticate emails you send. *Without tools like [[Definitions and Topics/SPF\|SPF]], [[Definitions and Topics/DKIM\|DKIM]], and [[Definitions and Topics/DMARC\|DMARC]]* to authenticate your your messages, *scammers can send messages that appear to come from you without having access to your account or server*. 
+One of the best ways to protect yourself and those you interact with is to secure and authenticate emails you send. **Without** *tools like [[Definitions and Topics/SPF\|SPF]], [[Definitions and Topics/DKIM\|DKIM]], and [[Definitions and Topics/DMARC\|DMARC]]* to authenticate your your messages, *scammers can send messages that appear to come from you without having access to your account or server*. 
 
-Great! Sign me up, right? While setup is be relatively easy, misconfigurations can cause major headaches and prevent mail from getting delivered, and old attempts can muddy the waters about what's good and bad. 
+Great! Sign me up, right? While setup is be relatively easy, misconfigurations can cause major headaches and prevent mail from getting delivered, and prior attempts can muddy the water about what's working and what isn't.
 
 >*Don't send email from your domain*? Stop anyone from impersonating you with **these rules that reject all email sent from your domain**:
 > SPF: `TXT   @   "v=spf1 -all"`
@@ -22,9 +22,16 @@ Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Techni
 
 #### SPF
 - *SPF* (Sender Policy Framework) is a mechanism that identifies email servers that are authorized to send email from your domain.
-	- Uses a TXT or SPF record on your DNS host/nameserver
+	- Uses a TXT record^[There used to be an SPF record type, but that is no longer in use.] on your DNS host/nameserver
 	- Recipients perform a DNS lookup to confirm the sender.
-	- If the SPF record is missing, or the sender is not authenticated, the message will fail and may not be delivered.
+- Receivers perform an *SPF Lookup* by comparing the incoming mail's sending server to the list of authenticated senders in the SPF record.^[More technically, the receiving server fetches the SPF TXT record from the sending domain in the SMTP `MAILFROM` field, and checks whether the sending IP address is listed in the record.]
+	- If the email comes from an authorized sender, the email will `pass` the SPF lookup.
+		-  [[Definitions and Topics/DMARC\|DMARC]] would check for *SPF Alignment* by comparing the SMTP `MAILFROM` and the email's "From:" fields to make sure they match.
+	- If the sender is not authenticated, then the email either `fail` or `softfail` the SPF lookup.
+		- This means the email will rely on [[Definitions and Topics/DKIM\|DKIM]] to pass [[Definitions and Topics/DMARC\|DMARC]] and could result in undelivered mail.
+			- SPF alignment often fails in cases where email is automatically forwarded (e.g., from a professional account to a personal account), so it is best to have both *SPF* and [[Definitions and Topics/DKIM\|DKIM]] enabled where possible.
+	- If the SPF record is missing, most receivers will treat is as a `none` or `neutral` result.
+		- This means that the receiver's policies will play a bigger role in whether the email is delivered or not.
 - Each sending mail server/domain must be identified
 	- This can be directly via IP or through a domain/DNS lookup
 		- SPF is limited to *10 DNS lookups*, and is evaluated all at once.
@@ -32,10 +39,11 @@ Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Techni
 		- `TempError` is often caused by a transient (e.g. temporary) DNS lookup error.
 			- It can be caused by recipient policies or a DNS lookup timeout; there may not be much you can do, but you should still check your record to make sure it's well below 10 look ups.^[dmarcian's [SPF Surveyor](https://dmarcian.com/spf-survey) is a great tool that identifies the number of lookups at each step.]
 		- Once the SPF record is validated, the receiving email server matches the sending email server's address against the SPF record, stopping at the first match and corresponding action (pass, softfail, etc.)
+- Use subdomains for third-party services where possible.
+	- Configuring a unique subdomain (like `newsletter.example.com`) for email marketing services can help you stay below the 10 lookup limit with a separate SPF record isolates reputation harm from from misconfigured vendors.
 	- It is not recommended to add marketing services, like Mailchimp or Sendgrid, to your main SPF record
 		- Marketers use tons of servers to send mail to get around spam filters, and because of this, SPF DNS lookups often reach their limit before getting to the root IP and fail authentication.
-		- Configuring a unique subdomain (like `newsletter.example.com`) for email marketing services allows you to create an SPF record just for that subdomain and isolates email reputation damage.
-- [[Definitions and Topics/AAA\|Authorizes]] a list of approved senders and provides weak [[Definitions and Topics/AAA\|Authentication]] by comparing the sending IP against the list of approved senders.
+- [[Definitions and Topics/AAA\|Authorizes]] a list of approved senders and provides weak^[Since it does not cryptographically verify content like [[Definitions and Topics/DKIM\|DKIM]]] [[Definitions and Topics/AAA\|Authentication]] by comparing the sending IP against the list of approved senders.
 
 
 </div></div>
@@ -185,9 +193,9 @@ Below are implementation and syntax guides for each type of record; but to have 
 1. **Name**: `@`
 2. **Type**: TXT
 3. **TTL**: 3600
-4. **Value**: `v=spf1 +a mx ip4:123.45.67.89 a:contoso.com include:mail.example.com -all`
+4. **Value**: `v=spf1 +a mx ip4:123.45.67.89 a:contoso.com include:spf.example.com -all`
 
-The SPF record is processed in order, but the whole record needs to be fully evaluated for the lookup to complete without a `permerror`. Let's break it down.
+The SPF record is first checked as a whole to ensure it is a valid record and falls below the 10 maximum DNS lookups. Then the record is processed in order, and once the email is matched to a qualifier, it stops getting processed. Let's break it down.
 
 1. **Name**: `@`
 	1. `@`
@@ -198,7 +206,7 @@ The SPF record is processed in order, but the whole record needs to be fully eva
 3. **TTL**: 3600
 	1. The *time to live* is 1 hour (3600 seconds)
 	2. This is an expiration date for the SPF record, and helps DNS servers maintain up-to-date records.
-4. **Value**: `v=spf1 +a mx ip4:123.45.67.89 a:contoso.com include:mail.example.com -all`
+4. **Value**: `v=spf1 +a mx ip4:123.45.67.89 a:contoso.com include:spf.example.com -all`
 	1. `v=spf1`
 		1. SPF version 1
 		2. There is currently only one version.
@@ -209,16 +217,18 @@ The SPF record is processed in order, but the whole record needs to be fully eva
 			2. `-` = *Fail*, the originating host is not allowed to send
 			3. `~` = *SoftFail*, originating host is not officially allowed to send, but authentic mail may be sent from it
 		2. The `a` tells the recipient to check the current domain's DNS for A records (e.g., IPv4 addresses) and mark them as designated senders
-			1. You might also see `aaaa` to designate an IPv6 address
 		3. **Note**: dmarcian recommends avoiding `a` entries as they are often unnecessary and increase the number of lookups.^[[SPF Best Practices: Avoiding SPF Record Flattening - dmarcian](https://dmarcian.com/spf-best-practices/)]
 	3. `mx`
 		1. Check the current domain's DNS for MX records and mark them as designated senders
 			1. **Note**: Since the default mechanism is `+`, it does not need to be explicitly written out
-		2. **Note**: dmarcian recommends avoiding `mx` entries as they are often unnecessary and increase the number of lookups.^[[SPF Best Practices: Avoiding SPF Record Flattening - dmarcian](https://dmarcian.com/spf-best-practices/)]
+		2. The `mx` mechanism resolve to the A/AAAA records, which can trigger additional lookups.
+			1. **Note**: dmarcian recommends avoiding `mx` entries as they are often unnecessary and increase the number of lookups.^[[SPF Best Practices: Avoiding SPF Record Flattening - dmarcian](https://dmarcian.com/spf-best-practices/)]
 	4. `ip4:123.45.67.89`
 		1. Designates the IP address `123.45.67.89` as an authorized sender
+		2. Could also be used to designate an IP range (e.g., `ip4:123.45.67.0/24`)
+		3. **Note**: Use `ip6:` to designate an IPv6 address or range.
 	5. `a:contoso.com`
-		1. Checks `contoso.com` for A records^[Remember that A records are IPv4 addresses.] and designates them as authentic senders
+		1. Checks `contoso.com` for A and AAAA records^[Remember that A records are IPv4 addresses and AAAA records are for IPv6 addresses.] and designates them as authentic senders
 	6. `include:spf.example.com`
 		1. Checks `spf.example.com` for its SPF record and includes that in the current SPF record lookup
 		2. Be careful as this can bring you much closer to the *10 DNS lookup limit* and cause a `PermError`
@@ -226,11 +236,12 @@ The SPF record is processed in order, but the whole record needs to be fully eva
 		1. Fail all originating hosts that have not been matched to this point in the record
 			1. Because this is the last entry, any email that is authenticated by one of the earlier entries will get through, and everything else will fail authentication
 			2. This is similar to Firewall configurations where the last rule is often `deny any any`
-		2. Because this is a *Fail* qualifier, it has to be manually written out as `-`
+		2. Because this is a *Fail* qualifier, it must to be manually written out as `-`
 			1. `~all` is also frequently seen in default configurations, and is used when transitioning between services or when using email marketing services (Mailchimp, Sendgrid, etc.) which do not get added to the SPF record.
+		3. The last entry is always an `all` mechanism, which sets the qualifier for any email that doesn't match any earlier mechanism.
 
 ##### Honorable mention: `redirect`
- If you manage multiple domains and subdomains that all point reference the same record and information, you can configure them to all point to the same SPF record with a `redirect`. It does not count towards the DNS lookup limit, and reduces the headache of managing multiple identical SPF records.
+ If you manage multiple domains and subdomains that all point reference the same record and information, you can configure them to all point to the same SPF record with a `redirect`. This replaces the entire SPF record and does not count towards the DNS lookup limit, and can reduce the headache of managing multiple identical SPF records.
 
 A subdomain that redirects to an "spf-primary" record would look like this: `mailer.example.com    txt    "v=spf1 redirect=spf-primary.example.com"`
 
@@ -409,7 +420,6 @@ Let's break it down.
 > 
 > **WARNING**: While you can use a `*` wildcard to simplify the record to `*._report._dmarc.receivingdomain.com`, this allows anyone to send email to your DMARC report inboxes.
 > Spam filters and firewalls don't typically inspect DMARC reports, and an attacker could exploit this to flood the inbox with bogus DMARC reports or inject malicious code into zipped attachments, which might get run automatically by report analyzing software. 
-
 
 
 </div></div>
