@@ -1,13 +1,10 @@
-{#!-- components/lucideIcons.njk --#}
+{# components/lucideIcons.njk #}
 
-{#!-- 1) Pull in the UMD bundle so `window.lucide` exists --}
-<script src="https://unpkg.com/lucide@0.255.0/dist/umd/lucide.min.js"></script>
-
-{#!-- 2) Wait for DOM ready, then swap every <i icon-name="…"> for SVG --#}
-<script>
+<script defer src="https://unpkg.com/lucide@0.255.0/dist/umd/lucide.min.js"></script>
+<script defer>
   document.addEventListener('DOMContentLoaded', () => {
     lucide.createIcons({
-      attrs: { class: ["svg-icon"] }
+      attrs: { class: ['svg-icon'] }
     });
   });
 </script>
