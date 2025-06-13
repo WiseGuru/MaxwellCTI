@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technical-guides/securing-email/","noteIcon":""}
+{"dg-publish":true,"permalink":"/technical-guides/securing-email/"}
 ---
 
 Securing your email is a critical part of protecting yourself and your business from scams and losses. The [FBI IC3 2024 Annual Report](https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf) identifies Business Email Compromise and Phishing/Spoofing as one of the biggest problems by far, causing a combined *$2.8 billion* in losses in 2024 alone.
@@ -545,3 +545,4 @@ The final result is a spreadsheet with a summary of all of the reports it collec
 ## DNS Look-up tools
 [[Tool Deep-Dives/dig\|dig]]
 [[nslookup\|nslookup]]
+[[Tool Deep-Dives/whois\|whois]]
