@@ -11,7 +11,7 @@
 		-  [[Definitions and Topics/DMARC\|DMARC]] would check for *SPF Alignment* by comparing the SMTP `MAILFROM` and the email's "From:" fields to make sure they match.
 	- If the sender is not authenticated, then the email either `fail` or `softfail` the SPF lookup.
 		- This means the email will rely on [[Definitions and Topics/DKIM\|DKIM]] to pass [[Definitions and Topics/DMARC\|DMARC]] and could result in undelivered mail.
-			- SPF alignment often fails in cases where email is automatically forwarded (e.g., from a professional account to a personal account), so it is best to have both *SPF* and [[Definitions and Topics/DKIM\|DKIM]] enabled where possible.
+			- SPF alignment often fails in cases where email is automatically forwarded (e.g., from a professional account to a personal account, or if the email is sent to a distribution list), so it is best to have both *SPF* and [[Definitions and Topics/DKIM\|DKIM]] enabled where possible.
 	- If the SPF record is missing, most receivers will treat is as a `none` or `neutral` result.
 		- This means that the receiver's policies will play a bigger role in whether the email is delivered or not.
 - Each sending mail server/domain must be identified

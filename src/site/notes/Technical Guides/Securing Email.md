@@ -29,7 +29,7 @@ Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Techni
 		-  [[Definitions and Topics/DMARC\|DMARC]] would check for *SPF Alignment* by comparing the SMTP `MAILFROM` and the email's "From:" fields to make sure they match.
 	- If the sender is not authenticated, then the email either `fail` or `softfail` the SPF lookup.
 		- This means the email will rely on [[Definitions and Topics/DKIM\|DKIM]] to pass [[Definitions and Topics/DMARC\|DMARC]] and could result in undelivered mail.
-			- SPF alignment often fails in cases where email is automatically forwarded (e.g., from a professional account to a personal account), so it is best to have both *SPF* and [[Definitions and Topics/DKIM\|DKIM]] enabled where possible.
+			- SPF alignment often fails in cases where email is automatically forwarded (e.g., from a professional account to a personal account, or if the email is sent to a distribution list), so it is best to have both *SPF* and [[Definitions and Topics/DKIM\|DKIM]] enabled where possible.
 	- If the SPF record is missing, most receivers will treat is as a `none` or `neutral` result.
 		- This means that the receiver's policies will play a bigger role in whether the email is delivered or not.
 - Each sending mail server/domain must be identified
@@ -178,13 +178,13 @@ Below are implementation and syntax guides for each type of record; but to have 
 		1. The forensic/failure reports give you a lot of information about the email, including the sender, subject, and recipient, so you can reach out to the recipient if necessary.
 6. **Enforce DMARC policy**
 	1. Once you are confident that authentic email won't fail authentication, change the `p=` tag in DMARC to `quarantine` or `reject` to begin blocking unauthenticated mail.
-		1. Quarantine is a little safer since mail is delivered but sent to junk.
+		1. Quarantine tells receiving servers to send failed email to junk, which can be helpful if you want to ensure that all legitimate email be delivered, but spoofing email will also get delivered to junk, increasing the chances of a victim falling for an attack.
 		2. As mentioned before, it will take up to 48 hours for the changes to fully propagate.
 	2. You can also add a `pct=` tag to only apply the policy to a percentage of unauthenticated mail
 		1. For example, `pct=30` would only apply the policy to 30% of messages who fail SPF and DKIM authentication checks.
 	3. You can now remove the `fo=1` tag from the DMARC record because you should have a very good idea about how your mail is authenticated and you only care about if mail isn't being delivered.
-	4. Here's an example of the updated record which applies the Quarantine policy to 50% of messages that fail authentication.
-		1. `v=DMARC1; p=quarantine; pct=50; rua=mailto:[aggregate report email address]; ruf=mailto:[failure report email address]`
+	4. Here's an updated version of the DMARC record we created earlier after ensuring that all authentic email is being delivered.
+		1. `v=DMARC1; p=reject; rua=mailto:[aggregate report email address]; ruf=mailto:[failure report email address]`
 
 
 
