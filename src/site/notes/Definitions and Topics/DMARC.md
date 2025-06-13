@@ -23,7 +23,7 @@
 	- Like [[Definitions and Topics/SPF\|SPF]], it applies to all emails sent from your domain, and not to specific hosts like [[Definitions and Topics/DKIM\|DKIM]]
 	- The `sp` tag can be used to apply a different policy action on subdomains
 		- However, if you want more granularity (like different aggregate/failure report addresses), you can add another record for that subdomain.
-- Verifies [[Definitions and Topics/AAA\|authentication]] by requiring alignment with either [[Definitions and Topics/SPF\|SPF]] or [[Definitions and Topics/DKIM\|DKIM]], specifies a policy instructing receivers how to handle [[Definitions and Topics/AAA\|unauthorized]] senders, and generates XML reports sent to the domain owner for [[Definitions and Topics/AAA\|Accounting]].
+- DMARC verifies [[Definitions and Topics/AAA\|authentication]] by requiring alignment with either [[Definitions and Topics/SPF\|SPF]] or [[Definitions and Topics/DKIM\|DKIM]], specifies a policy instructing receivers how to handle [[Definitions and Topics/AAA\|unauthorized]] senders, and generates XML reports sent to the domain owner for [[Definitions and Topics/AAA\|Accounting]].
 
 > If you are reviewing old records, you might see a DKIM record with `v=DKIM1; o=~`. This is an outdated and unused spec; it can be deleted without issue.^[[What is this extra \_domainkey.? Should I kill it? : r/DMARC](https://www.reddit.com/r/DMARC/comments/1h7elj3/comment/m0kwi0l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)] ^[[draft-allman-dkim-ssp-01](https://datatracker.ietf.org/doc/html/draft-allman-dkim-ssp-01/#section-5)]
 

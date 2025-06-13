@@ -25,7 +25,7 @@
 	- Configuring a unique subdomain (like `newsletter.example.com`) for email marketing services can help you stay below the 10 lookup limit with a separate SPF record isolates reputation harm from from misconfigured vendors.
 	- It is not recommended to add marketing services, like Mailchimp or Sendgrid, to your main SPF record
 		- Marketers use tons of servers to send mail to get around spam filters, and because of this, SPF DNS lookups often reach their limit before getting to the root IP and fail authentication.
-- [[Definitions and Topics/AAA\|Authorizes]] a list of approved senders and provides weak^[Since it does not cryptographically verify content like [[Definitions and Topics/DKIM\|DKIM]]] [[Definitions and Topics/AAA\|Authentication]] by comparing the sending IP against the list of approved senders.
+- SPF [[Definitions and Topics/AAA\|Authorizes]] a list of approved senders and provides weak^[Since it does not cryptographically verify content like [[Definitions and Topics/DKIM\|DKIM]]] [[Definitions and Topics/AAA\|Authentication]] by comparing the sending IP against the list of approved senders.
 
 #### SPF Implementation
 [The syntax guide on Open-SPF is phenomenal](http://www.open-spf.org/SPF_Record_Syntax/), but for simplicity, here's an example of a sub-optimal SPF record. 
