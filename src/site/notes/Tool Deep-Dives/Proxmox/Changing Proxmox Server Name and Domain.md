@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/changing-proxmox-server-name-and-domain/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/changing-proxmox-server-name-and-domain/"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/windows/windows-firewall/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/windows/windows-firewall/"}
 ---
 
 #### Windows Firewall

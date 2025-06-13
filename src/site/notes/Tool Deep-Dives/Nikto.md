@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/nikto/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/nikto/"}
 ---
 
 #### Nikto

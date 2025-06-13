@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/named-pipe/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/named-pipe/"}
 ---
 
 During the [[Webinars and Training/BlackHills SOC Core/BHIS SOCC Notes Overview\|BHIS SOC Analyst Core]] course I took recently, the [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-LinuxCLI\|Linux Lab]] had an interesting command where you create a FIFO (First in, First out) "backpipe" with `mknod` (create filesystem node) and `netcat`, effectively creating a shell [[Definitions and Topics/backdoor\|backdoor]] on a [[Tool Deep-Dives/Linux/Linux\|Linux]] system.

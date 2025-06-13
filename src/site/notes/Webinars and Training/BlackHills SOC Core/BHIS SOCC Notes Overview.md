@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/bhis-socc-notes-overview/","noteIcon":""}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/bhis-socc-notes-overview/"}
 ---
 
 # Introduction
@@ -31,9 +31,9 @@ Some of the links below will appear a little darker; that's because I'm still re
 - [[Webinars and Training/BlackHills SOC Core/Topics/SOCC04 - Server Log Analysis\|SOCC04 - Server Log Analysis]]
 	- [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-FirewallLog\|BHIS-SOCC-lab-FirewallLog]]
 - [[Webinars and Training/BlackHills SOC Core/Topics/SOCC05 - Memory Forensics\|SOCC05 - Memory Forensics]]
-	- [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-MemoryForensics\|BHIS-SOCC-lab-MemoryForensics]]
+	- [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-MemoryAnalyses\|BHIS-SOCC-lab-MemoryAnalyses]]
 - [[Webinars and Training/BlackHills SOC Core/Topics/SOCC06 - Egress Traffic Analysis\|SOCC06 - Egress Traffic Analysis]]
-	- [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-RITA-ACHunter\|BHIS-SOCC-lab-RITA-ACHunter]]
+	- [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-RITA-ACHunter-01\|BHIS-SOCC-lab-RITA-ACHunter-01]]
 - [[Webinars and Training/BlackHills SOC Core/Topics/SOCC07 - User and Entity Behavior Analytics\|SOCC07 - User and Entity Behavior Analytics]]
 	- [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-Sysmon\|BHIS-SOCC-lab-Sysmon]]
 - [[Webinars and Training/BlackHills SOC Core/Topics/SOCC08 - Endpoint Protection\|SOCC08 - Endpoint Protection]]

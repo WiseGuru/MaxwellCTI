@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/7zip/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/7zip/"}
 ---
 
 #### 7zip

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/sort/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/sort/"}
 ---
 
 #### sort

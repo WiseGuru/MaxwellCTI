@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/deb-get/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/deb-get/"}
 ---
 
 #### deb-get

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s06-anatomy-of-a-packet/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s06-anatomy-of-a-packet/"}
 ---
 
 1. OSI and TCP/IP model review

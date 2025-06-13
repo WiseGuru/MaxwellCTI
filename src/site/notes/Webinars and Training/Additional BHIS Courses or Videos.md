@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/additional-bhis-courses-or-videos/","noteIcon":""}
+{"dg-publish":true,"permalink":"/webinars-and-training/additional-bhis-courses-or-videos/"}
 ---
 
 [Getting Started in Security with BHIS and MITRE ATT&CK w/ John Strand – Antisyphon Training](https://www.antisyphontraining.com/live-courses-catalog/getting-started-in-security-with-bhis-and-mitre-attck-w-john-strand/)

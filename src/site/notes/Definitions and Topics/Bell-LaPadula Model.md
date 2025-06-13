@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/bell-la-padula-model/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/bell-la-padula-model/"}
 ---
 
 #### Bell-LaPadula Model

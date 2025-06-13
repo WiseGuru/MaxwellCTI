@@ -1,6 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-sysmon/","noteIcon":""}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-sysmon/"}
 ---
+
+
 
 ## LAB: [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]] Log
 [IntroLabs/IntroClassFiles/Tools/IntroClass/Sysmon/Sysmon.md at master · strandjs/IntroLabs · GitHub](https://github.com/strandjs/IntroLabs/blob/master/IntroClassFiles/Tools/IntroClass/Sysmon/Sysmon.md)

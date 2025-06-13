@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/remote-shell/","tags":["defs_soc"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/remote-shell/","tags":["defs_sec"]}
 ---
 
 #### Remote Shell

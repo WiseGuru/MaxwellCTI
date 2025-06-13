@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/qemu-kv-ms-and-virt-man/installing-a-windows-vm-on-linux/","tags":["VM"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/qemu-kv-ms-and-virt-man/installing-a-windows-vm-on-linux/","tags":["VM"]}
 ---
 
 I will eventually create a guide for this, as well as how to connect to a Windows VM with [[Tool Deep-Dives/Linux/Remmina\|Remmina]] over [[Tool Deep-Dives/SSH/SSH\|SSH]] (which is more relevant for a [[Tool Deep-Dives/Proxmox/Proxmox Virtual Environment\|Proxmox]]-hosted VM) or [[Tool Deep-Dives/Linux/Spice\|Spice]]^[Which I discuss in [[Webinars and Training/BlackHills SOC Core/Labs/01-BHIS-SOCC-lab-LinuxHostConfig\|01-BHIS-SOCC-lab-LinuxHostConfig]] if you're impatient.] if you're running it locally, but for now, here's a great series of guides from [sysguides.com](https://sysguides.com) which cover just about everything you need, along with various other guides discussing GPU Passthrough (for gaming, software development, etc.)

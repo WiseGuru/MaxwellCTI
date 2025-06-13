@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-07-user-and-entity-behavior-analytics/","noteIcon":""}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-07-user-and-entity-behavior-analytics/"}
 ---
 
 

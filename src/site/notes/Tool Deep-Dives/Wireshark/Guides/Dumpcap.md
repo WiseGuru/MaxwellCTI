@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/dumpcap/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/dumpcap/"}
 ---
 
 ### Capturing packets via CLI with Dumpcap

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s05-capturing-packets/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s05-capturing-packets/"}
 ---
 
 1. 3 kinds of packet capture

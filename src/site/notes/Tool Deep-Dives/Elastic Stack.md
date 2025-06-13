@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/elastic-stack/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/elastic-stack/"}
 ---
 
 #### Elastic Stack

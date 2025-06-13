@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws-practitioner/amazon-course/aws-definitions/ec-2/","noteIcon":""}
+{"dg-publish":true,"permalink":"/aws-practitioner/amazon-course/aws-definitions/ec-2/"}
 ---
 
 #### EC2

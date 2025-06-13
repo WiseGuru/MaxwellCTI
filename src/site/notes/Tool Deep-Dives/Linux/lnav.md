@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/lnav/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/lnav/"}
 ---
 
 #### The Logfile Navigator

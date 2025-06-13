@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/tt-ps/","tags":["defs_soc"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/tt-ps/","tags":["defs_sec"]}
 ---
 
 #### TTPs

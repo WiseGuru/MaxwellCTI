@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/ndr/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/ndr/"}
 ---
 
 #### NDR

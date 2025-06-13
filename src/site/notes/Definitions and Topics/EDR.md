@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/edr/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/edr/"}
 ---
 
 #### EDR

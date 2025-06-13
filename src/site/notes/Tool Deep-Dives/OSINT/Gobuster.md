@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/osint/gobuster/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/osint/gobuster/"}
 ---
 
 #### Gobuster

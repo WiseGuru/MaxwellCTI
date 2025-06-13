@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/00-bhis-socc-lab-config/","tags":["VM"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/00-bhis-socc-lab-config/","tags":["VM"]}
 ---
 
 > Download John Strand's VM from here: [John Strand Training Lab – Download Instructions – Antisyphon Training](https://www.antisyphontraining.com/john-strand-training-lab-download-instructions/)
@@ -45,7 +45,7 @@ Assuming you've now booted into Windows, it's important that you disable System 
 > You will know if Windows Update kicks off, because you will no longer by able to open the "Terminal" shortcuts on the Desktop or Taskbar as Admin (they just won't open).
 > If that happens, you're running on borrowed time, and it might be worth doing a fresh extraction of the VM.
 
-### [This is my GitHub repo with my script to stop Windows Updates.](https://github.com/WiseGuru/Windows-Lab-VM-Update-Stomp) 
+### [This is the GitHub repo with my script to stop Windows Updates.](https://github.com/WiseGuru/Windows-Lab-VM-Update-Stomp) 
 It's worked well for me so far, but if you have trouble, below are some of the steps I've tried to disable updates.
 
 ### Disable Virtual NIC

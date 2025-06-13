@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/osint/wappalyzer/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/osint/wappalyzer/"}
 ---
 
 #### Wappalyzer

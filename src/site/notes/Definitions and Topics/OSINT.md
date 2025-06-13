@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/osint/","tags":["defs_soc"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/osint/","tags":["defs_sec"]}
 ---
 
 #### OSINT

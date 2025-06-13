@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/dmarc/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/dmarc/"}
 ---
 
 #### DMARC

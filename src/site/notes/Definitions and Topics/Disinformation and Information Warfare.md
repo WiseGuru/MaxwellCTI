@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/disinformation-and-information-warfare/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/disinformation-and-information-warfare/"}
 ---
 
 #### Disinformation, Misinformation, DIP, and Propaganda

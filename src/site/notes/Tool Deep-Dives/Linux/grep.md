@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/grep/","tags":["tools_linux"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/grep/","tags":["tools_linux"]}
 ---
 
 #### grep

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/m-dns/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/m-dns/"}
 ---
 
 #### mDNS

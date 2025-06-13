@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/os-recovery-tools/recovery-tools-index/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/os-recovery-tools/recovery-tools-index/"}
 ---
 
 # Ventoy

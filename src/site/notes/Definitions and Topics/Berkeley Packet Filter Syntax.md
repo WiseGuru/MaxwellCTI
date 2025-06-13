@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/berkeley-packet-filter-syntax/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/berkeley-packet-filter-syntax/"}
 ---
 
 ### Berkeley Packet Filter Syntax (BPF)

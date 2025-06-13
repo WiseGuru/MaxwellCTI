@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws-practitioner/amazon-course/aws-definitions/it-resources/","noteIcon":""}
+{"dg-publish":true,"permalink":"/aws-practitioner/amazon-course/aws-definitions/it-resources/"}
 ---
 
 #### IT Resources

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/bimi/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/bimi/"}
 ---
 
 #### BIMI

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/sed/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/sed/"}
 ---
 
 #### sed

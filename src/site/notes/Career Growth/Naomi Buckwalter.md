@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/career-growth/naomi-buckwalter/","noteIcon":""}
+{"dg-publish":true,"permalink":"/career-growth/naomi-buckwalter/"}
 ---
 
 *Written in early 2024*

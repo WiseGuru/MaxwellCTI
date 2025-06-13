@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/pii/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/pii/"}
 ---
 
 #### Personally Identifiable Information (PII)

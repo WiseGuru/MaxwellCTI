@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws-practitioner/amazon-course/aws-definitions/cloud-computing/","noteIcon":""}
+{"dg-publish":true,"permalink":"/aws-practitioner/amazon-course/aws-definitions/cloud-computing/"}
 ---
 
 #### Cloud Computing

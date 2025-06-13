@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-05-memory-forensics/","noteIcon":""}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-05-memory-forensics/"}
 ---
 
 
@@ -15,4 +15,4 @@
 	4. [Volatility 3 CheatSheet - onfvpBlog](https://blog.onfvp.com/post/volatility-cheatsheet/)
 
 
-### Lab: [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-MemoryForensics\|Memory Forensics]]
+### Lab: [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-MemoryAnalyses\|Memory Forensics]]

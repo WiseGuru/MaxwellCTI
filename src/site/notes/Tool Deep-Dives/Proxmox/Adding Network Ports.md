@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/adding-network-ports/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/adding-network-ports/"}
 ---
 
 You need to create a virtual network port to connect to a physical port.

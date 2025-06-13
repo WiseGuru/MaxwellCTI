@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/rubeus/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/rubeus/"}
 ---
 
 #### Rubeus

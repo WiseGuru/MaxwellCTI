@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/llmnr/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/llmnr/"}
 ---
 
 #### LLMNR

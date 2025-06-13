@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/nbt-ns/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/nbt-ns/"}
 ---
 
 #### NetBIOS over TCP/IP Name Service

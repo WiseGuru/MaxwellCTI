@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/stride/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/stride/"}
 ---
 
 #### STRIDE

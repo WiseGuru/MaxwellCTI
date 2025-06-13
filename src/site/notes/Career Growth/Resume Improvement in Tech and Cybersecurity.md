@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/career-growth/resume-improvement-in-tech-and-cybersecurity/","noteIcon":""}
+{"dg-publish":true,"permalink":"/career-growth/resume-improvement-in-tech-and-cybersecurity/"}
 ---
 
 *Written in early 2024*

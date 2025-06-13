@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/logon-tracer/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/logon-tracer/"}
 ---
 
 #### LogonTracer

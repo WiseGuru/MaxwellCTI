@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/netcat/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/netcat/"}
 ---
 
 #### netcat

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/maxwell-cti/","tags":["gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/maxwell-cti/","tags":["gardenEntry"]}
 ---
 
 # Welcome to Maxwell CTI!
@@ -20,32 +20,32 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 
 ## Recently Modified Pages
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
-| 25 Most Recently Modified Pages                                                                                                  | Last Modified      |
-| -------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| [[Technical Guides/Securing Email\|Securing Email]]                                                                           | 2025.06.05 - 15:05 |
-| [[Definitions and Topics/DMARC\|DMARC]]                                                                                       | 2025.06.05 - 15:05 |
-| [[Definitions and Topics/DKIM\|DKIM]]                                                                                         | 2025.06.05 - 12:44 |
-| [[Definitions and Topics/SPF\|SPF]]                                                                                           | 2025.06.05 - 12:28 |
-| [[Definitions and Topics/BIMI\|BIMI]]                                                                                         | 2025.06.04 - 16:02 |
-| [[Definitions and Topics/AAA\|AAA]]                                                                                           | 2025.05.30 - 11:08 |
-| [[Tool Deep-Dives/whois\|whois]]                                                                                              | 2025.05.30 - 10:21 |
-| [[Tool Deep-Dives/Linux/uniq\|uniq]]                                                                                          | 2025.05.30 - 10:18 |
-| [[Tool Deep-Dives/Linux/umount\|umount]]                                                                                      | 2025.05.30 - 10:18 |
-| [[Tool Deep-Dives/Linux/sort\|sort]]                                                                                          | 2025.05.30 - 10:18 |
-| [[Tool Deep-Dives/Python/DMARC Report Analyzer\|DMARC Report Analyzer]]                                                       | 2025.05.29 - 17:23 |
-| [[Tool Deep-Dives/Proxmox/Exporting VMs to run with QEMU\|Exporting VMs to run with QEMU]]                                    | 2025.05.27 - 09:27 |
-| [[Tool Deep-Dives/Linux/QEMU, KVMs, and Virt-Man/Installing a Windows VM on Linux\|Installing a Windows VM on Linux]]         | 2025.05.27 - 09:25 |
-| [[Tool Deep-Dives/dig\|dig]]                                                                                                  | 2025.05.27 - 09:11 |
-| [[Definitions and Topics/SOA\|SOA]]                                                                                           | 2025.05.26 - 18:50 |
-| [[Definitions and Topics/GDPR\|GDPR]]                                                                                         | 2025.05.07 - 08:34 |
-| [[Technical Guides/Installing the Zen Browser\|Installing the Zen Browser]]                                                   | 2025.02.20 - 13:09 |
-| [[Tool Deep-Dives/Linux/ln\|ln]]                                                                                              | 2025.02.20 - 12:50 |
-| [[Tool Deep-Dives/Linux/PATH Variable\|PATH Variable]]                                                                        | 2025.02.20 - 12:47 |
-| [[Tool Deep-Dives/OS Recovery Tools/Recovery Tools Index\|Recovery Tools Index]]                                              | 2025.02.19 - 12:31 |
-| [[Tool Deep-Dives/Linux/Spice\|Spice]]                                                                                        | 2025.02.18 - 10:34 |
-| [[Tool Deep-Dives/Linux/VirtIO\|VirtIO]]                                                                                      | 2025.02.18 - 10:33 |
-| [[Webinars and Training/BlackHills SOC Core/Labs/Disable Windows Memory Integrity\|Disable Windows Memory Integrity]]         | 2025.02.18 - 10:25 |
-| [[Career Growth/Intro to IT and Cybersecurity/Building a Homelab\|Building a Homelab]]                                        | 2025.02.18 - 10:24 |
-| [[Tool Deep-Dives/Linux/QEMU, KVMs, and Virt-Man/Adding a second monitor to a QEMU VM\|Adding a second monitor to a QEMU VM]] | 2025.02.18 - 10:24 |
+| 25 Most Recently Modified Pages                                                                            | Last Modified      |
+| ---------------------------------------------------------------------------------------------------------- | ------------------ |
+| [[Technical Guides/Securing Email\|Securing Email]]                                                     | 2025.06.13 - 12:34 |
+| [[Definitions and Topics/Trust Service Categories\|Trust Service Categories]]                           | 2025.06.12 - 15:53 |
+| [[Frameworks, Standards, and Regulations/SOC/SOC Reports\|SOC Reports]]                                 | 2025.06.12 - 15:46 |
+| [[Definitions and Topics/Attestation\|Attestation]]                                                     | 2025.06.12 - 15:46 |
+| [[Resources and Communities\|Resources and Communities]]                                                | 2025.06.12 - 15:22 |
+| [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]]                                                              | 2025.06.12 - 15:12 |
+| [[Definitions and Topics/backdoor\|backdoor]]                                                           | 2025.06.12 - 15:11 |
+| [[Definitions and Topics/TTPs\|TTPs]]                                                                   | 2025.06.12 - 15:11 |
+| [[Definitions and Topics/SDLC\|SDLC]]                                                                   | 2025.06.12 - 15:11 |
+| [[Definitions and Topics/Remote Shell\|Remote Shell]]                                                   | 2025.06.12 - 15:11 |
+| [[Definitions and Topics/Principle of Least Privilege\|Principle of Least Privilege]]                   | 2025.06.12 - 15:11 |
+| [[Definitions and Topics/OWASP\|OWASP]]                                                                 | 2025.06.12 - 15:11 |
+| [[Definitions and Topics/OSINT\|OSINT]]                                                                 | 2025.06.12 - 15:11 |
+| [[Definitions and Topics/Lateral movement\|Lateral movement]]                                           | 2025.06.12 - 15:10 |
+| [[Definitions and Topics/LAPS\|LAPS]]                                                                   | 2025.06.12 - 15:10 |
+| [[Definitions and Topics/FOSS\|FOSS]]                                                                   | 2025.06.12 - 15:10 |
+| [[Definitions and Topics/Email harvesting\|Email harvesting]]                                           | 2025.06.12 - 15:10 |
+| [[Definitions and Topics/C2\|C2]]                                                                       | 2025.06.12 - 15:10 |
+| [[Definitions and Topics/Adversary\|Adversary]]                                                         | 2025.06.12 - 15:10 |
+| [[Definitions and Topics/APT\|APT]]                                                                     | 2025.06.12 - 15:10 |
+| [[Frameworks, Standards, and Regulations/SOC/SOC 2\|SOC 2]]                                             | 2025.06.12 - 12:45 |
+| [[Definitions and Topics/CSOC\|CSOC]]                                                                   | 2025.06.12 - 12:43 |
+| [[Definitions and Topics/CUEC\|CUEC]]                                                                   | 2025.06.12 - 12:42 |
+| [[Webinars and Training/BlackHills SOC Core/Labs/000-BHIS-Lab-Directory\|000-BHIS-Lab-Directory]]       | 2025.06.09 - 11:44 |
+| [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-DeepBlueCLI\|BHIS-SOCC-lab-DeepBlueCLI]] | 2025.06.09 - 11:43 |
 
 { .block-language-dataview}

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/sidr/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/sidr/"}
 ---
 
 [GitHub - strozfriedberg/sidr: Search Index Database Reporter](https://github.com/strozfriedberg/sidr)

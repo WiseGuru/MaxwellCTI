@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/lsof/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/lsof/"}
 ---
 
 #### lsof

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources-and-communities/","noteIcon":""}
+{"dg-publish":true,"permalink":"/resources-and-communities/"}
 ---
 
 1. Monoliths (Active MSSPs and organizations)
@@ -35,7 +35,7 @@
 		1. Rapid-fire coding videos that are more interesting and motivational
 		2. [Fireship - YouTube](https://www.youtube.com/@Fireship)
 	6. Lesley Carhart
-		1. Absolutely incredible person; has a long-standing Calendly link for 30-minute mentoring sessions on their LinkedIn.
+		1. Absolutely incredible person; had a long-standing Calendly link for 30-minute mentoring sessions on their LinkedIn, but does not appear to have it up anymore.
 		2. [hacks4pancakes - YouTube](https://www.youtube.com/@hacks4pancakes)
 		3. [linkedin.com/in/lcarhart/](https://www.linkedin.com/in/lcarhart/)
 4. CTFs and Things

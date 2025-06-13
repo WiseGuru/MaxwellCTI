@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/dkim/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/dkim/"}
 ---
 
 #### DKIM

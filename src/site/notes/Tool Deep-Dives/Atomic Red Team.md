@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/atomic-red-team/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/atomic-red-team/"}
 ---
 
 #### Atomic Red Team

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/linux-data-streams/","tags":["#Linux"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/linux-data-streams/","tags":["#Linux"]}
 ---
 
 #### Linux Data Streams

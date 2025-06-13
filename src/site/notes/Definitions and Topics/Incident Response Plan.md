@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/incident-response-plan/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/incident-response-plan/"}
 ---
 
 #### Incident Response Plan

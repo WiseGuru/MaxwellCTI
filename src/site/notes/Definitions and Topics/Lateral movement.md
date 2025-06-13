@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/lateral-movement/","tags":["defs_soc"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/lateral-movement/","tags":["defs_sec"]}
 ---
 
 #### Lateral Movement

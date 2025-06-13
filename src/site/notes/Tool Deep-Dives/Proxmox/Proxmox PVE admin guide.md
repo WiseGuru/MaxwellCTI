@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/proxmox-pve-admin-guide/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/proxmox-pve-admin-guide/"}
 ---
 
 

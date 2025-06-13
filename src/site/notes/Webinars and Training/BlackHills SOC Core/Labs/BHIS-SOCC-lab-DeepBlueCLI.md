@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-deep-blue-cli/","noteIcon":""}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-deep-blue-cli/"}
 ---
+
 
 
 ## LAB: DeepBlueCLI

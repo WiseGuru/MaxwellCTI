@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/metasploit/msfvenom/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/metasploit/msfvenom/"}
 ---
 
 #### msfvenom

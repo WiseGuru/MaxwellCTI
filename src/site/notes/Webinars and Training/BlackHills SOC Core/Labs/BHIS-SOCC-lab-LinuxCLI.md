@@ -1,8 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-linux-cli/","noteIcon":""}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-linux-cli/"}
 ---
 
-The Lab - [IntroClass/LinuxCLI](https://github.com/strandjs/IntroLabs/blob/master/IntroClassFiles/Tools/IntroClass/LinuxCLI/LinuxCLI.md)
+
+## LAB:  [IntroClass/LinuxCLI](https://github.com/strandjs/IntroLabs/blob/master/IntroClassFiles/Tools/IntroClass/LinuxCLI/LinuxCLI.md)
 Section Notes - [[Webinars and Training/BlackHills SOC Core/Topics/SOCC02 - Linux\|SOCC02 - Linux]]
 ## Linux Lab
 In this lab, we're investigating [[Definitions and Topics/backdoor\|backdoors]] on a [[Tool Deep-Dives/Linux/Linux\|Linux]] system. In this write-up, I'm going to separate the commands into three different shell sessions; *Server*, *Adversary*, and *Analyst*, 

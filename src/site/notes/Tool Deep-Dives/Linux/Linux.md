@@ -1,10 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/linux/","tags":["tools_linux"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/linux/","tags":["tools_linux"]}
 ---
 
 # Linux
 *On Linux, everything is a file.*
 - It's the OS that's in basically everything, so get used to it.
+	- There's also the Linux [kernel](https://en.wikipedia.org/wiki/Kernel_(operating_system))
 - It comes in a variety of distributions or "distros"
 	- Don't get distracted with the distros
 		- Most of them are built on a core version (like Debian or Arch) and have various quality-of-life or customization features added (like Ubuntu, Mint, SteamOS, or Kali.)
@@ -60,6 +61,7 @@
 		- Update the index
 - `ps aux`
 	- List processes
+
 
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/tool-deep-dives/linux/vi/#vi" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
@@ -137,3 +139,4 @@
 # Metadata
 
 ### Sources
+[Linux - Wikipedia](https://en.wikipedia.org/wiki/Linux)

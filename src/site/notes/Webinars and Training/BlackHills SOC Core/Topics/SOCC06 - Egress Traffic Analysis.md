@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-06-egress-traffic-analysis/","noteIcon":""}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-06-egress-traffic-analysis/"}
 ---
 
 
@@ -42,4 +42,4 @@
 
 
 
-### LAB: [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-RITA-ACHunter\|BHIS-SOCC-lab-RITA-ACHunter]]
+### LAB: [[Webinars and Training/BlackHills SOC Core/Labs/BHIS-SOCC-lab-RITA-ACHunter-01\|BHIS-SOCC-lab-RITA-ACHunter-01]]

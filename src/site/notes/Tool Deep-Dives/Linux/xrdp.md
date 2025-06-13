@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/xrdp/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/xrdp/"}
 ---
 
 #### xrdp

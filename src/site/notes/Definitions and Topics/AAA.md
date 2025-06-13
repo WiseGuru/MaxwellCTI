@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/aaa/","noteIcon":""}
+{"dg-publish":true,"permalink":"/definitions-and-topics/aaa/"}
 ---
 
 #### AAA

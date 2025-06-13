@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/r-core/","noteIcon":""}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/r-core/"}
 ---
 
 #### R core

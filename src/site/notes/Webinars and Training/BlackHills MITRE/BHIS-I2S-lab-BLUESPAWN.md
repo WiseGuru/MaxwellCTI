@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-mitre/bhis-i2-s-lab-bluespawn/","noteIcon":""}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-mitre/bhis-i2-s-lab-bluespawn/"}
 ---
 
 
@@ -27,9 +27,9 @@ In this lab, we're looking at adversary emulation with [[Tool Deep-Dives/BLUESPA
 4. Run the test
 	1. Let it run for about 2 minutes; when done, kill it with Ctrl+C
 		1. `Invoke-AtomicTest All`
-		2. As it runs through, you'll see a bunch of [[Security Frameworks/MITRE ATT&CK/MITRE ATT&CK\|MITRE ATT&CK]] reference numbers and the attack being performed
+		2. As it runs through, you'll see a bunch of [[Frameworks, Standards, and Regulations/MITRE ATT&CK/MITRE ATT&CK\|MITRE ATT&CK]] reference numbers and the attack being performed
 	2. While the test is running, switch to the BLUESPAWN lab to watch the results
-		1. You'll see a bunch of findings and their associated [[Security Frameworks/MITRE ATT&CK/MITRE ATT&CK\|MITRE ATT&CK]] reference numbers
+		1. You'll see a bunch of findings and their associated [[Frameworks, Standards, and Regulations/MITRE ATT&CK/MITRE ATT&CK\|MITRE ATT&CK]] reference numbers
 	3. Cleanup
 		1. `Invoke-AtomicTest All -Cleanup`
 
