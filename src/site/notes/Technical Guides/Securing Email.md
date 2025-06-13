@@ -41,7 +41,7 @@ Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Techni
 		- Once the SPF record is validated, the receiving email server matches the sending email server's address against the SPF record, stopping at the first match and corresponding action (pass, softfail, etc.)
 - Use subdomains for third-party services where possible.
 	- Configuring a unique subdomain (like `newsletter.example.com`) for email marketing services can help you stay below the 10 lookup limit with a separate SPF record isolates reputation harm from from misconfigured vendors.
-	- It is not recommended to add marketing services, like Mailchimp or Sendgrid, to your main SPF record
+	- *It is not recommended to add marketing services, like Mailchimp or Sendgrid, to your main SPF record*
 		- Marketers use tons of servers to send mail to get around spam filters, and because of this, SPF DNS lookups often reach their limit before getting to the root IP and fail authentication.
 - SPF [[Definitions and Topics/AAA\|Authorizes]] a list of approved senders and provides weak^[Since it does not cryptographically verify content like [[Definitions and Topics/DKIM\|DKIM]]] [[Definitions and Topics/AAA\|Authentication]] by comparing the sending IP against the list of approved senders.
 

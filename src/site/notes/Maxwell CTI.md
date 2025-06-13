@@ -22,8 +22,8 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                          | Last Modified      |
 | ---------------------------------------------------------------------------------------- | ------------------ |
+| [[Definitions and Topics/SPF\|SPF]]                                                   | 2025.06.13 - 12:56 |
 | [[Definitions and Topics/DMARC\|DMARC]]                                               | 2025.06.13 - 12:39 |
-| [[Definitions and Topics/SPF\|SPF]]                                                   | 2025.06.13 - 12:39 |
 | [[Technical Guides/Securing Email\|Securing Email]]                                   | 2025.06.13 - 12:34 |
 | [[Definitions and Topics/Trust Service Categories\|Trust Service Categories]]         | 2025.06.12 - 15:53 |
 | [[Frameworks, Standards, and Regulations/SOC/SOC Reports\|SOC Reports]]               | 2025.06.12 - 15:46 |
