@@ -22,6 +22,9 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                          | Last Modified      |
 | ---------------------------------------------------------------------------------------- | ------------------ |
+| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-37\|NIST SP 800-37]]        | 2025.06.16 - 12:26 |
+| [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]]           | 2025.06.16 - 11:23 |
+| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]]        | 2025.06.16 - 11:07 |
 | [[Definitions and Topics/SPF\|SPF]]                                                   | 2025.06.13 - 13:11 |
 | [[Technical Guides/Securing Email\|Securing Email]]                                   | 2025.06.13 - 13:09 |
 | [[Definitions and Topics/DMARC\|DMARC]]                                               | 2025.06.13 - 12:39 |
@@ -44,8 +47,5 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Definitions and Topics/C2\|C2]]                                                     | 2025.06.12 - 15:10 |
 | [[Definitions and Topics/Adversary\|Adversary]]                                       | 2025.06.12 - 15:10 |
 | [[Definitions and Topics/APT\|APT]]                                                   | 2025.06.12 - 15:10 |
-| [[Frameworks, Standards, and Regulations/SOC/SOC 2\|SOC 2]]                           | 2025.06.12 - 12:45 |
-| [[Definitions and Topics/CSOC\|CSOC]]                                                 | 2025.06.12 - 12:43 |
-| [[Definitions and Topics/CUEC\|CUEC]]                                                 | 2025.06.12 - 12:42 |
 
 { .block-language-dataview}

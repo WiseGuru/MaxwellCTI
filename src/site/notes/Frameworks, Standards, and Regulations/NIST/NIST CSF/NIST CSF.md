@@ -32,7 +32,8 @@
 		2. Range from Tier 1^[Partial implementation or limited awareness of risk.] (lowest) to Tier 4^[Highly integrated into the organization or highly adaptive to cybersecurity risks.] (highest)
 2. Additional resources on the [NIST CSF website](https://www.nist.gov/cyberframework):
 	1. Informative References
-		1. Real-world outcomes
+		1. Real-world outcomes; basically, which outcomes are mapped to which controls.
+			1. Follow the "Download English (xlsx)" link for the most recent list of mappings: [CSF 2.0 Informative References - NIST](https://www.nist.gov/cyberframework/informative-references)
 	2. Implementation Examples
 		1. Examples on how certain outcomes can be achieved
 	3. Quick-Start Guides

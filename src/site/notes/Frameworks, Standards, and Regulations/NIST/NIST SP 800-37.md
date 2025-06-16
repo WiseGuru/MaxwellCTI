@@ -4,22 +4,43 @@
 
 #### NIST SP 800-37 (RMF)
 - "The Risk Management Framework (RMF) provides a process that integrates security, privacy, and cyber supply chain risk management activities into the system development life cycle."^[[NIST Risk Management Framework | CSRC](https://csrc.nist.gov/projects/risk-management/about-rmf)]
-- RMF map created by Aron Lange:^[ [Here are some of the top free resources that will help you to break into GRC and information security. - Aron Lange](https://www.linkedin.com/feed/update/urn:li:activity:6977867944248627200)] 
+- RMF map created by Aron Lange:^[ [Here are some of the top free resources that will help you to break into GRC and information security. - Aron Lange](https://www.linkedin.com/feed/update/urn:li:activity:6977867944248627200)] ^[This is for my own reference, and won't be accessible on the site: [[NIST RMF.pdf]]]
 
-![[NIST RMF.pdf]]
+<iframe
+  src="https://www.dropbox.com/scl/fi/ae7mhldl2zv5jw9ytdxm1/NIST-RMF.pdf?rlkey=7iw0ygnc9lxlxwh3immit8u4f&st=e2ayxcw1&?raw=1"
+  width="100%"
+  height="650px"
+  style="border: none;"
+  allowfullscreen
+></iframe>
+<p>
+  <a href="https://www.dropbox.com/scl/fi/ae7mhldl2zv5jw9ytdxm1/NIST-RMF.pdf?dl=1" target="_blank">
+    Download the NIST RMF PDF
+  </a>
+</p>
+
+
+
 
 #### Critical Documents in the RMF Process
 SSP → SAP → SAR → POA&M
-- SSP defines what should be implemented
-- SAP defines how to test implementations
-- SAR documents what was found
-- POA&M tracks what needs to be fixed
+- **Select Controls**
+	- SSP defines what should be implemented
+- **Assess Controls**
+	- SAP defines how to test implementations
+	- SAR documents what was found
+	- POA&M tracks what needs to be fixed
+```mermaid
+flowchart TD
+A["SSP: System Security Plan<br>Defines control implementation"] ==> B[SAP: System Assessment Plan<br>How to assess implementation]
+B ==> C[SAR: System Assessment Report]
+C ==> D[POA&M: Plan of Action and Milestones<br>Track what needs to be fixed]
+C -->|Findings reference SSP control numbers| A
+D -->|Items link to findings| C
+A -->|Updated to reflect closed items in POA&M| D
+B -->|Tests are mapped to controls defined in SSP| A
+```
 
-Cross-References:
-- SAR findings reference SSP control numbers
-- POA&M items link to SAR findings
-- SSP updates reflect closed POA&M items
-- SAP test cases map to SSP controls
 
 ##### Gerald Auger Definitive Guide to RMF (2021)
 [Definitive Guide to RMF (Actionable plan for FISMA Compliance) - YouTube](https://www.youtube.com/watch?v=8zxzqpw0jBA)
@@ -92,9 +113,10 @@ Cross-References:
 	- 	Super short and has a great graphic which details every step and task of the RMF
 	- Original link down; updated link to LinkedIn post here, which has additional resources and the graphic but lacks the article: [💥Here are some of the top free resources that will help you to break into GRC and information security. - Aron Lange](https://www.linkedin.com/feed/update/urn:li:activity:6977867944248627200)
 ##### Videos
-- [Definitive Guide to RMF (Actionable plan for FISMA Compliance) - YouTube](https://www.youtube.com/watch?v=8zxzqpw0jBA)
-	- 15 minute long video
-	- Older, includes references to documents that have been withdrawn and doesn't include the "Prepare" phase
-- [NIST RMF FULLY EXPLAINED (IN PLAIN ENGLISH) - YouTube](https://www.youtube.com/watch?v=Z2okRecJC7E)
-	- 1h12m video *long*
-	- I love and hate Gerald Auger; his content is great and helpful, but his style is super distracting and maddening.
+- Dr. Gerald Auger^[oh-zher]
+	- [Definitive Guide to RMF (Actionable plan for FISMA Compliance) - YouTube](https://www.youtube.com/watch?v=8zxzqpw0jBA)
+		- 15 minute long video
+		- Older, includes references to documents that have been withdrawn and doesn't include the "Prepare" phase
+	- [NIST RMF FULLY EXPLAINED (IN PLAIN ENGLISH) - YouTube](https://www.youtube.com/watch?v=Z2okRecJC7E)
+		- 1h12m video *long*
+		- I love and hate Gerry Auger videos; his content is great and helpful, but his style meanders and can be very distracting

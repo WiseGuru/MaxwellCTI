@@ -67,19 +67,19 @@ This guide ([Complete Guide to the NIST Cybersecurity Framework — RiskOptics](
 			1. 80-90% of systems are *Moderate* impact systems
 			2. *High* ratings are reserved for national security or classified systems
 			3. *Low* ratings are also rare, non-business critical
-		3. [[NIST SP 800-60\|NIST SP 800-60]] provides guidelines on the impact you should assign to certain systems
+		3. [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]] provides guidelines on the impact you should assign to certain systems
 			1. More on this here: [NIST RMF System Categorization Step Hands On (Using SP 800-60 Vol II) - YouTube](https://www.youtube.com/watch?v=yAfM2E2aJEM)
-	3. **Select**: Select controls to implement from [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]]
+		4. The [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]] provides a mapping 
+	3. **Select**: Select controls to implement from [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|NIST 800-53]]
 		1. Basically a big dictionary with hundreds of controls
-		2. We're just baselining, so able to pick and choose as needed
-	4. **Implement**: Implement the controls, the lions-share of the work
-		1. Make a "System Security Plan"
+		2. The outcome of this step is the *SSP* ([[Frameworks, Standards, and Regulations/NIST/System Security Plan\|System Security Plan]]), and instructions on how to create one are found in the [NIST SP 800-18](https://csrc.nist.gov/pubs/sp/800/18/r1/final)
 			1. This is the book/plan for the documentation of your system
 				1. Network diagram, who owns the system, what kind of data is stored, etc.
 				2. All the controls to secure the systems and how they are implemented
 					1. May be more or less complicated, depending on the size of the organization
 			2. Gerald specifically mentions the [[NIST SP 800-15\|NIST SP 800-15]], but it was withdrawn in September of the year he published his video
-		2. If you have any challenges implementing controls, NIST has implementation guides for most systems
+	4. **Implement**: Implement the controls, the lions-share of the work
+		1. If you have any challenges implementing controls, NIST has implementation guides for most systems
 			1. Offer tons of instructions and things you can do
 	5. **Assess**: Bring in an independent auditor to inspect your controls
 		1. For [[Frameworks, Standards, and Regulations/NIST/FISMA\|FISMA]] or anything else, you will need an external auditor
