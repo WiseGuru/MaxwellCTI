@@ -21,6 +21,8 @@ SSP → SAP → SAR → POA&M
 	- SAP defines how to test implementations
 	- SAR documents what was found
 	- POA&M tracks what needs to be fixed
+
+
 ```mermaid
 flowchart TD
 A["SSP: System Security Plan
