@@ -20,32 +20,32 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 
 ## Recently Modified Pages
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
-| 25 Most Recently Modified Pages                                                          | Last Modified      |
-| ---------------------------------------------------------------------------------------- | ------------------ |
-| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-37\|NIST SP 800-37]]        | 2025.06.16 - 13:11 |
-| [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]]           | 2025.06.16 - 11:23 |
-| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]]        | 2025.06.16 - 11:07 |
-| [[Definitions and Topics/SPF\|SPF]]                                                   | 2025.06.13 - 13:11 |
-| [[Technical Guides/Securing Email\|Securing Email]]                                   | 2025.06.13 - 13:09 |
-| [[Definitions and Topics/DMARC\|DMARC]]                                               | 2025.06.13 - 12:39 |
-| [[Definitions and Topics/Trust Service Categories\|Trust Service Categories]]         | 2025.06.12 - 15:53 |
-| [[Frameworks, Standards, and Regulations/SOC/SOC Reports\|SOC Reports]]               | 2025.06.12 - 15:46 |
-| [[Definitions and Topics/Attestation\|Attestation]]                                   | 2025.06.12 - 15:46 |
-| [[Resources and Communities\|Resources and Communities]]                              | 2025.06.12 - 15:22 |
-| [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]]                                            | 2025.06.12 - 15:12 |
-| [[Definitions and Topics/backdoor\|backdoor]]                                         | 2025.06.12 - 15:11 |
-| [[Definitions and Topics/TTPs\|TTPs]]                                                 | 2025.06.12 - 15:11 |
-| [[Definitions and Topics/SDLC\|SDLC]]                                                 | 2025.06.12 - 15:11 |
-| [[Definitions and Topics/Remote Shell\|Remote Shell]]                                 | 2025.06.12 - 15:11 |
-| [[Definitions and Topics/Principle of Least Privilege\|Principle of Least Privilege]] | 2025.06.12 - 15:11 |
-| [[Definitions and Topics/OWASP\|OWASP]]                                               | 2025.06.12 - 15:11 |
-| [[Definitions and Topics/OSINT\|OSINT]]                                               | 2025.06.12 - 15:11 |
-| [[Definitions and Topics/Lateral movement\|Lateral movement]]                         | 2025.06.12 - 15:10 |
-| [[Definitions and Topics/LAPS\|LAPS]]                                                 | 2025.06.12 - 15:10 |
-| [[Definitions and Topics/FOSS\|FOSS]]                                                 | 2025.06.12 - 15:10 |
-| [[Definitions and Topics/Email harvesting\|Email harvesting]]                         | 2025.06.12 - 15:10 |
-| [[Definitions and Topics/C2\|C2]]                                                     | 2025.06.12 - 15:10 |
-| [[Definitions and Topics/Adversary\|Adversary]]                                       | 2025.06.12 - 15:10 |
-| [[Definitions and Topics/APT\|APT]]                                                   | 2025.06.12 - 15:10 |
+| 25 Most Recently Modified Pages                                                          | Last Modified |
+| ---------------------------------------------------------------------------------------- | ------------- |
+| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-37\|NIST SP 800-37]]        | 2025, Jun 16  |
+| [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]]           | 2025, Jun 16  |
+| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]]        | 2025, Jun 16  |
+| [[Definitions and Topics/SPF\|SPF]]                                                   | 2025, Jun 13  |
+| [[Technical Guides/Securing Email\|Securing Email]]                                   | 2025, Jun 13  |
+| [[Definitions and Topics/DMARC\|DMARC]]                                               | 2025, Jun 13  |
+| [[Definitions and Topics/Trust Service Categories\|Trust Service Categories]]         | 2025, Jun 12  |
+| [[Frameworks, Standards, and Regulations/SOC/SOC Reports\|SOC Reports]]               | 2025, Jun 12  |
+| [[Definitions and Topics/Attestation\|Attestation]]                                   | 2025, Jun 12  |
+| [[Resources and Communities\|Resources and Communities]]                              | 2025, Jun 12  |
+| [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]]                                            | 2025, Jun 12  |
+| [[Definitions and Topics/backdoor\|backdoor]]                                         | 2025, Jun 12  |
+| [[Definitions and Topics/TTPs\|TTPs]]                                                 | 2025, Jun 12  |
+| [[Definitions and Topics/SDLC\|SDLC]]                                                 | 2025, Jun 12  |
+| [[Definitions and Topics/Remote Shell\|Remote Shell]]                                 | 2025, Jun 12  |
+| [[Definitions and Topics/Principle of Least Privilege\|Principle of Least Privilege]] | 2025, Jun 12  |
+| [[Definitions and Topics/OWASP\|OWASP]]                                               | 2025, Jun 12  |
+| [[Definitions and Topics/OSINT\|OSINT]]                                               | 2025, Jun 12  |
+| [[Definitions and Topics/Lateral movement\|Lateral movement]]                         | 2025, Jun 12  |
+| [[Definitions and Topics/LAPS\|LAPS]]                                                 | 2025, Jun 12  |
+| [[Definitions and Topics/FOSS\|FOSS]]                                                 | 2025, Jun 12  |
+| [[Definitions and Topics/Email harvesting\|Email harvesting]]                         | 2025, Jun 12  |
+| [[Definitions and Topics/C2\|C2]]                                                     | 2025, Jun 12  |
+| [[Definitions and Topics/Adversary\|Adversary]]                                       | 2025, Jun 12  |
+| [[Definitions and Topics/APT\|APT]]                                                   | 2025, Jun 12  |
 
 { .block-language-dataview}
