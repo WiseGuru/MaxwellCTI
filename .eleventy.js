@@ -513,8 +513,8 @@ module.exports = function (eleventyConfig) {
         collapseWhitespace: true,
         conservativeCollapse: true,
         preserveLineBreaks: true,
-        minifyCSS: true,
-        minifyJS: true,
+        minifyCSS: false,
+        minifyJS: false,
         keepClosingSlash: true,
       });
     }
