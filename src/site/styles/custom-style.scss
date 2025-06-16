@@ -39,3 +39,50 @@ ul ul {
 ul ul ul {
   list-style-type: square; /* Level 3: Square */
 }
+
+/***
+ This is a section for Mermaid formatting.
+ ***/
+/* container */
+.markdown-preview-view pre.mermaid {
+  background:    #2E3440;  /* Nord base0 instead of white */
+  border-radius: 25px;
+  padding:       10px;
+}
+
+/* SVG background */
+.markdown-preview-view pre.mermaid .mermaid,
+.markdown-preview-view pre.mermaid .mermaid svg {
+  background: transparent;
+}
+
+/* nodes */
+.markdown-preview-view pre.mermaid .node rect {
+  fill:   #3B4252;  /* Nord base1 */
+  stroke: #4C566A;  /* Nord base3 */
+}
+
+/* edges */
+.markdown-preview-view pre.mermaid .edgePath path {
+  stroke: #81A1C1;  /* Nord frost-blue */
+}
+
+/* labels & text */
+.markdown-preview-view pre.mermaid .label,
+.markdown-preview-view pre.mermaid text {
+  fill: #D8DEE9;   /* Nord snow-storm */
+}
+
+/* clusters (subgraphs) */
+.markdown-preview-view pre.mermaid .cluster rect {
+  fill:   #3B4252;  /* same as nodes */
+  stroke: #4C566A;
+}
+
+/* notes */
+.markdown-preview-view pre.mermaid .note rect {
+  fill: #4C566A;    /* maybe a bit darker */
+}
+.markdown-preview-view pre.mermaid .note text {
+  fill: #D8DEE9;
+}
