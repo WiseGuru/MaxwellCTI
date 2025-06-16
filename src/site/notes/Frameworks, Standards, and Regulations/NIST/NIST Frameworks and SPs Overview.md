@@ -46,14 +46,14 @@ This guide ([Complete Guide to the NIST Cybersecurity Framework — RiskOptics](
 - RMF map created by Aron Lange:^[ [Here are some of the top free resources that will help you to break into GRC and information security. - Aron Lange](https://www.linkedin.com/feed/update/urn:li:activity:6977867944248627200)] ^[This is for my own reference, and won't be accessible on the site: [[NIST RMF.pdf]]]
 
 <iframe
-  src="https://www.dropbox.com/scl/fi/ae7mhldl2zv5jw9ytdxm1/NIST-RMF.pdf?rlkey=7iw0ygnc9lxlxwh3immit8u4f&st=e2ayxcw1&?raw=1"
+  src="https://drive.google.com/file/d/10CcrJEA3GEe8Hjk35PlGQc0c8bTWVnCM/view?usp=sharing?raw=1"
   width="100%"
   height="650px"
   style="border: none;"
   allowfullscreen
 ></iframe>
 <p>
-  <a href="https://www.dropbox.com/scl/fi/ae7mhldl2zv5jw9ytdxm1/NIST-RMF.pdf?dl=1" target="_blank">
+  <a href="https://drive.google.com/file/d/10CcrJEA3GEe8Hjk35PlGQc0c8bTWVnCM/view?usp=sharingdl=1" target="_blank">
     Download the NIST RMF PDF by Aron Lange
   </a>
 </p>
