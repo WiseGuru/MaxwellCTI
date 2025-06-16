@@ -62,9 +62,13 @@ SSP → SAP → SAR → POA&M
 	- POA&M tracks what needs to be fixed
 ```mermaid
 flowchart TD
-A["SSP: System Security Plan<br>Defines control implementation"] ==> B[SAP: System Assessment Plan<br>How to assess implementation]
-B ==> C[SAR: System Assessment Report<br>Describes all assessment findings]
-C ==> D[POA&M: Plan of Action and Milestones<br>Track what needs to be fixed]
+A["SSP: System Security Plan
+Defines control implementation"] ==> B[SAP: System Assessment Plan
+How to assess implementation]
+B ==> C[SAR: System Assessment Report
+Describes all assessment findings]
+C ==> D[POA&M: Plan of Action and Milestones
+Track what needs to be fixed]
 C -->|Findings reference SSP control numbers| A
 D -->|Items link to findings| C
 A -->|Updated to reflect closed items in POA&M| D
