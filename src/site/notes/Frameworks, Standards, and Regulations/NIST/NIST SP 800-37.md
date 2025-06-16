@@ -24,6 +24,11 @@ SSP → SAP → SAR → POA&M
 
 
 ```mermaid
+---
+config:
+theme: dark
+layout: dagre
+---
 flowchart TD
 A["SSP: System Security Plan
 Defines control implementation"] ==> B[SAP: System Assessment Plan
