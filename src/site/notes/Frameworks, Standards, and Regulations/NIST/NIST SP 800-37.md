@@ -4,6 +4,7 @@
 
 #### NIST SP 800-37 (RMF)
 - "The Risk Management Framework (RMF) provides a process that integrates security, privacy, and cyber supply chain risk management activities into the system development life cycle."^[[NIST Risk Management Framework | CSRC](https://csrc.nist.gov/projects/risk-management/about-rmf)]
+- RMF map created by Aron Lange: [[NIST RMF.pdf]]
 
 
 ##### Gerald Auger Definitive Guide to RMF (2021)
@@ -33,7 +34,7 @@
 			1. 80-90% of systems are *Moderate* impact systems
 			2. *High* ratings are reserved for national security or classified systems
 			3. *Low* ratings are also rare, non-business critical
-		3. [[NIST SP 800-60\|NIST SP 800-60]] provides guidelines on the impact you should assign to certain systems
+		3. [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]] provides guidelines on the impact you should assign to certain systems
 			1. More on this here: [NIST RMF System Categorization Step Hands On (Using SP 800-60 Vol II) - YouTube](https://www.youtube.com/watch?v=yAfM2E2aJEM)
 	3. **Select**: Select controls to implement from [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]]
 		1. Basically a big dictionary with hundreds of controls
@@ -64,13 +65,15 @@
 # Resources
 
 #### Official
-- [SP 800-37 Rev. 2, Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy | CSRC](https://csrc.nist.gov/pubs/sp/800/37/r2/final)
+- [NIST Risk Management Framework \| CSRC](https://csrc.nist.gov/projects/risk-management/about-rmf)
+	- [SP 800-37 Rev. 2, Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy | CSRC](https://csrc.nist.gov/pubs/sp/800/37/r2/final)
 	- Direct link to the PDF: [nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r2.pdf](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r2.pdf)
 	- 183 pages
 #### Supplemental
 ##### Articles
-- [NIST Risk Management Framework - by Aron Lange](https://blog.grclab.com/p/nist-risk-management-framework)
-	- Super short and has a great graphic which details every step and task of the RMF
+- ~~[NIST Risk Management Framework - by Aron Lange](https://blog.grclab.com/p/nist-risk-management-framework)~~
+	- 	Super short and has a great graphic which details every step and task of the RMF
+	- Original link down; updated link to LinkedIn post here: [💥Here are some of the top free resources that will help you to break into GRC and information security. \| Aron Lange](https://www.linkedin.com/feed/update/urn:li:activity:6977867944248627200)
 ##### Videos
 - [Definitive Guide to RMF (Actionable plan for FISMA Compliance) - YouTube](https://www.youtube.com/watch?v=8zxzqpw0jBA)
 	- 15 minute long video
