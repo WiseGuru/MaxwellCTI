@@ -71,12 +71,12 @@ B ==> C[SAR: System Assessment Report
 Describes all assessment findings]
 C ==> D[POA&M: Plan of Action and Milestones
 Track what needs to be fixed]
-C -->|Findings reference
+C <-->|Findings reference
 SSP control numbers| A
-D -->|Items link to findings| C
-A -->|Updated to reflect
-closed items in POA&M| D
-B -->|Tests are mapped to
+D <-->|POA&M items are linked to findings| C
+D -->|SSP updated to reflect
+closed items in POA&M| A
+B <-->|Tests are mapped to
 controls defined in SSP| A
 ```
 
