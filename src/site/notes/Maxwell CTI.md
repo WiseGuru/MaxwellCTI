@@ -22,7 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                          | Last Modified      |
 | ---------------------------------------------------------------------------------------- | ------------------ |
-| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-37\|NIST SP 800-37]]        | 2025.06.16 - 12:46 |
+| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-37\|NIST SP 800-37]]        | 2025.06.16 - 12:47 |
 | [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]]           | 2025.06.16 - 11:23 |
 | [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]]        | 2025.06.16 - 11:07 |
 | [[Definitions and Topics/SPF\|SPF]]                                                   | 2025.06.13 - 13:11 |
