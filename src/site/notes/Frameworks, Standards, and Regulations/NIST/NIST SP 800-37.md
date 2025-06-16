@@ -19,8 +19,7 @@
   </a>
 </p>
 
-
-#### Critical Documents in the RMF Process
+## Critical Documents in the RMF Process
 SSP → SAP → SAR → POA&M
 - **Select Controls**
 	- SSP defines what should be implemented
@@ -31,7 +30,7 @@ SSP → SAP → SAR → POA&M
 ```mermaid
 flowchart TD
 A["SSP: System Security Plan<br>Defines control implementation"] ==> B[SAP: System Assessment Plan<br>How to assess implementation]
-B ==> C[SAR: System Assessment Report]
+B ==> C[SAR: System Assessment Report<br>Describes all assessment findings]
 C ==> D[POA&M: Plan of Action and Milestones<br>Track what needs to be fixed]
 C -->|Findings reference SSP control numbers| A
 D -->|Items link to findings| C
@@ -39,24 +38,18 @@ A -->|Updated to reflect closed items in POA&M| D
 B -->|Tests are mapped to controls defined in SSP| A
 ```
 
-
-##### Gerald Auger Definitive Guide to RMF (2021)
-[Definitive Guide to RMF (Actionable plan for FISMA Compliance) - YouTube](https://www.youtube.com/watch?v=8zxzqpw0jBA)
-1. Video Overview
-	1. Duration - 15:40
-		1. First two minutes are purely introduction - skip to [2:39](https://youtu.be/8zxzqpw0jBA?si=ZvR4u-Rwlj0lZPiS&t=159)
-	2. Focus is on [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-37\|NIST SP 800-37]]
-2. The [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-37\|RMF]] is a ~~6-step~~ *7-step* continuous cycle to understand and provide a uniform approach to securing information systems
+## RMF
+1. The [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-37\|RMF]] is a *7-step* continuous cycle to understand and provide a uniform approach to securing information systems
 	1. These are the steps:
-		1. *Prepare* (not discussed in Gerald's video)
+		1. Prepare
 		2. Categorize
 		3. Select
 		4. Implement
 		5. Assess (Audit)
 		6. Authorize
 		7. Monitor
-3. RMF Step Guide
-	1. **Prepare**:^[Not discussed in Gerald's video, but detailed here for reference] Setup the organization for success
+2. RMF Step Guide
+	1. **Prepare**:^[Not discussed in Gerald's video, but detailed here for reference.] Setup the organization for success
 		1. Identify systems and stakeholders in the business and assign role for executing the RMF
 		2. Conduct risk assessments and get a baseline of current risk and security practices
 		3. **Max note**: Without any practical experience myself, I feel like Gerald combined the *Prepare* and *Categorize* tasks, and I think that omission would likely make subsequent steps more difficult.
