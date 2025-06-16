@@ -501,25 +501,25 @@ module.exports = function (eleventyConfig) {
     return str && parsed.innerHTML;
   });
 
-  eleventyConfig.addTransform("htmlMinifier", (content, outputPath) => {
-    if (
-      (process.env.NODE_ENV === "production" || process.env.ELEVENTY_ENV === "prod") &&
-      outputPath &&
-      outputPath.endsWith(".html")
-    ) {
-      return htmlMinifier.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-        conservativeCollapse: true,
-        preserveLineBreaks: true,
-        minifyCSS: false,
-        minifyJS: false,
-        keepClosingSlash: true,
-      });
-    }
-    return content;
-  });
+//  eleventyConfig.addTransform("htmlMinifier", (content, outputPath) => {
+//    if (
+//      (process.env.NODE_ENV === "production" || process.env.ELEVENTY_ENV === "prod") &&
+//      outputPath &&
+//      outputPath.endsWith(".html")
+//    ) {
+//      return htmlMinifier.minify(content, {
+//        useShortDoctype: true,
+//        removeComments: true,
+//        collapseWhitespace: true,
+//        conservativeCollapse: true,
+//        preserveLineBreaks: true,
+//        minifyCSS: false,
+//        minifyJS: false,
+//        keepClosingSlash: true,
+//      });
+//    }
+//    return content;
+//  });
 
   eleventyConfig.addPassthroughCopy("src/site/img");
   eleventyConfig.addPassthroughCopy("src/site/scripts");
