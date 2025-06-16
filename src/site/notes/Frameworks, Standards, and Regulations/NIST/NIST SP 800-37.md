@@ -4,8 +4,22 @@
 
 #### NIST SP 800-37 (RMF)
 - "The Risk Management Framework (RMF) provides a process that integrates security, privacy, and cyber supply chain risk management activities into the system development life cycle."^[[NIST Risk Management Framework | CSRC](https://csrc.nist.gov/projects/risk-management/about-rmf)]
-- RMF map created by Aron Lange:^[[💥Here are some of the top free resources that will help you to break into GRC and information security. - Aron Lange](https://www.linkedin.com/feed/update/urn:li:activity:6977867944248627200)] [[NIST RMF.pdf\|💥Here are some of the top free resources that will help you to break into GRC and information security. - Aron Lange](https://www.linkedin.com/feed/update/urn:li:activity:6977867944248627200)] [[NIST RMF.pdf]]
+- RMF map created by Aron Lange:^[ [Here are some of the top free resources that will help you to break into GRC and information security. - Aron Lange](https://www.linkedin.com/feed/update/urn:li:activity:6977867944248627200)] 
 
+![[NIST RMF.pdf]]
+
+#### Critical Documents in the RMF Process
+SSP → SAP → SAR → POA&M
+- SSP defines what should be implemented
+- SAP defines how to test implementations
+- SAR documents what was found
+- POA&M tracks what needs to be fixed
+
+Cross-References:
+- SAR findings reference SSP control numbers
+- POA&M items link to SAR findings
+- SSP updates reflect closed POA&M items
+- SAP test cases map to SSP controls
 
 ##### Gerald Auger Definitive Guide to RMF (2021)
 [Definitive Guide to RMF (Actionable plan for FISMA Compliance) - YouTube](https://www.youtube.com/watch?v=8zxzqpw0jBA)
@@ -71,6 +85,7 @@
 	- 183 pages
 - [dhs.gov/sites/default/files/2023-08/23\_0803\_cpo\_ security-authorization-process-guide.pdf](https://www.dhs.gov/sites/default/files/2023-08/23_0803_cpo_%20security-authorization-process-guide.pdf)
 	- This is the DHS "System Security Authorization Process Guide"
+	- 32 pages (66 with appendices) that maps the RMF to their ATO (authorization to operate) process.
 #### Supplemental
 ##### Articles
 - ~~[NIST Risk Management Framework - by Aron Lange](https://blog.grclab.com/p/nist-risk-management-framework)~~
