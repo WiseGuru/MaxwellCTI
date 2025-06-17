@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/nist/fisma/"}
 ---
 
-#### FISM
+#### FISMA
 - The *Federal Information Security Modernization Act of 2014* (*FISMA*) amends the earlier Federal Information Security *Management* Act of 2002 to "**explicitly emphasizes a risk-based policy for cost-effective security.**"^[[NIST Risk Management Framework | CSRC](https://csrc.nist.gov/Projects/risk-management/fisma-background)]
 - Requires federal agencies to provide "*information security protections*" for:
 	- *Information* gathered or maintained *by or on behalf of* an agency

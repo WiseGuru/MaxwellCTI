@@ -2,10 +2,10 @@
 {"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/nist/nist-sp-800-60/"}
 ---
 
-#### NIST SP 800-60
-- The *NIST SP 800-60*, Guide for Mapping Types of Information and Systems to Security Categories
+#### NIST SP 800-60, Guide for Mapping Types of Information and Systems to Security Categories
+- The *NIST SP 800-60* provides guidelines on the impact you should assign to certain systems
 	- 12 pages long
-- 
+
 
 
 

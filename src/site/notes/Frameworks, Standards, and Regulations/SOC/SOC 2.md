@@ -10,7 +10,7 @@
 - I'm not sure how it's actually perceived in the industry, but feels more like a marketing gimmick/exercise than a security exercise and ripe for abuse by limiting what's within scope.
 	- Ostendio has a blog which discusses something similar:
 		- "... the ability to manipulate the scope has led to significant abuse of this audit. This ability to manipulate the scope means that it is difficult to compare one SOC 2 with another and also allows organizations to avoid auditing areas that are perhaps their weakest link."^[[The Rise and Fall of SOC 2 audits](https://www.ostendio.com/blog/the-rise-and-fall-of-soc2-audits)]
-	- It has to be conducted in good faith and paired with something like the NIST [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-37\|RMF]] to actually be effective
+	- It has to be conducted in good faith and paired with something like the NIST [[Frameworks, Standards, and Regulations/NIST/RMF/NIST SP 800-37 (RMF)\|RMF]] to actually be effective
 
 
 
