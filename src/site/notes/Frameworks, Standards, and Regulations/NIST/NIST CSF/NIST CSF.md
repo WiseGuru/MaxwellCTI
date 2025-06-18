@@ -106,10 +106,12 @@ being evaluated| B
 B -->|Policies| C
 B-->|Management 
 Priorities| C
-B-->|Risk posture| C
+B-->|Risk
+posture| C
 B-->|Community
 Profiles| C
-B-->|CSF Tiers| C
+B-->|CSF
+Tiers| C
 
 C-->|Analyze gaps
 between Current and
