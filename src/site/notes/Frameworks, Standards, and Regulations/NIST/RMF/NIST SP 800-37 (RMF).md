@@ -31,7 +31,6 @@ These documents are required for FISMA compliance.^[[dhs.gov/sites/default/files
 SSP → SAP → SAR → POA&M
 
 ```mermaid
-
 flowchart TD
 A["SSP: System Security Plan
 Defines control implementation"] ==> B[SAP: System Assessment Plan
@@ -99,7 +98,7 @@ controls defined in SSP| A
 				5. When the report will be delivered
 			2. The auditor should have a solid understanding of the controls you are investigating and be able to provide color and ask questions beyond the stated control in the [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]]
 				1. The 800-53 can be quite technical, so making it understandable to regular humans is key.
-		2.  The *SAR* ([[System Assessment Report\|System Assessment Report]]) and *POA&M* ([[Plan of Action and Milestrones\|Plan of Action and Milestrones]]) are created as part of this step
+		2.  The *SAR* ([[System Assessment Report\|System Assessment Report]]) and *POA&M* ([[Frameworks, Standards, and Regulations/NIST/NIST CSF/Plan of Action and Milestones\|Plan of Action and Milestones]]) are created as part of this step
 			1. The *SAR* includes all information for the controls assessed, including the auditor's findings
 			2. The *POA&M* maps those findings to actionable items and is prepared by the system owner.
 		3. For [[Frameworks, Standards, and Regulations/NIST/FISMA\|FISMA]] or any kind of certification, organizations will need an external, independent auditor to conduct the assessment
