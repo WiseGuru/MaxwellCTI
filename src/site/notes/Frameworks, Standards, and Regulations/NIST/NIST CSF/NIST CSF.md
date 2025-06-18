@@ -108,8 +108,6 @@ B-->|Management
 Priorities| C
 B-->|Risk
 posture| C
-B-->|Community
-Profiles| C
 B-->|CSF
 Tiers| C
 
