@@ -51,7 +51,7 @@
 		1. The newest and most *core* of core functions
 			1. It's critical to integrating the other Functions into an organization, and is at the center of the framework, touching all other functions
 		2. Built with new and reorganized categories from the other functions
-			3. When using the [CSF 2.0 Reference Tool](https://csrc.nist.gov/Projects/Cybersecurity-Framework/Filters#/csf/filters), you will see "Withdrawn" categories and subcategories that now match to Governance
+			1. When using the [CSF 2.0 Reference Tool](https://csrc.nist.gov/Projects/Cybersecurity-Framework/Filters#/csf/filters), you will see "Withdrawn" categories and subcategories that now match to Governance
 		3. Governance "informs how an organization will implement the other five Functions."
 	2. Identify
 		1. Identify and understand the cybersecurity risks for your organization
