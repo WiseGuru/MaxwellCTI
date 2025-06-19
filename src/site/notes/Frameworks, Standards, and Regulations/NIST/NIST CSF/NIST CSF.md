@@ -8,27 +8,73 @@
 
 ## What is it?
 1. The CSF provides a *high-level overview of cybersecurity* concepts and outlines **six Core functions** to achieve risk management outcomes: Govern, Identify, Protect, Detect, Respond, and Recover.
+	1. It is intended to be useful across organizations and industries with fewer administration requirements, as compared to the [[Frameworks, Standards, and Regulations/NIST/RMF/NIST SP 800-37 (RMF)\|RMF]], which is intended for use with the US government authorization process. 
 2. The CSF is not prescriptive, and is intended to be used with other frameworks and resources
 	1. Its goal is to help organizations *identify and assess*, *prioritize*, and *communicate* cyber risks
 		1. Identify and assess
-			1. Describe the security posture of the organization
+			1. Describe the current and target security posture of the organization
 			2. Determine gaps and progress towards addressing gaps
 		2. Prioritize
 			1. Prioritize and action against cybersecurity risks in alignment with an organization's mission and governance expectations, and regulatory and legal requirements
 		3. Communicate
 			1. Provide a common language for high-level cybersecurity risk management
 	2. The [Informative References](https://www.nist.gov/cyberframework/informative-references) documents maps the Core functions to different categories and subcategories (outcomes)
-		1. For example, Identity Asset Management 01 (ID.AM-02) lists multiple other frameworks and resources which could be used to fulfill its outcome (CSF v1.1, ISO 27001, [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]], etc.).  
+		1. For example, Identity Asset Management 01 (ID.AM-02) lists multiple other frameworks and resources which could be used to fulfill its outcome (CSF v1.1, ISO 27001, [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]], etc.).
+3. Compared to the [[Frameworks, Standards, and Regulations/NIST/RMF/NIST SP 800-37 (RMF)\|RMF]], the CSF has a more streamlined and flexible process for implementation which is intended to be useful across organizations and industries.
+4. The CSF uses a 5-step implementation process built around *Organizational Profiles*^[The NISt SP 1301 is a quick start guide for implementation. [nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1301.pdf](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1301.pdf)]
+	1. Scope the Organizational Profile
+		1. Identify the systems being assessed, goal, necessary assets, teams, individuals, etc.
+	2. Gather the information needed to prepare the Organizational Profile
+		1. Community profiles as a baseline, internal documentation, processes, etc.
+		2. Choose the outcomes you are targetting
+	3. Create the Organizational Profile
+		1. Create a Current Profile matching what you are doing (or think you're doing) and a Target Profile with where you want to take the organization
+		2. Use Tiers to define implementation requirements and set priorities for Target Profile objectives
+	4. Analyze the gaps between the Current and Target profiles, and create an action plan
+		1. Create a [[Frameworks, Standards, and Regulations/NIST/NIST CSF/Plan of Action and Milestones\|Plan of Action and Milestones]] based on the gaps between the Current and Target profiles
+	5. Implement the action plan and update the Organizational Profile
+		1. Implement plan, update the Organizational Profile, and re-assess periodically for continual improvement
 
+```mermaid
+flowchart
+A[\Scope Organization Profile/]
+B[\Gather Required Information/]
+C[Create the Profile]
+D[/Create Action Plan\]
+E[/Implement Plan and
+Update Profile\]
+
+A-->|Identify systems
+being evaluated| B
+
+B -->|Policies| C
+B-->|Management 
+Priorities| C
+B-->|Risk
+posture| C
+B-->|CSF
+Tiers| C
+
+C-->|Analyze gaps
+between Current and
+Target profiles|D
+
+D-->|Prioritize gaps
+to address risk|E
+
+E-->|Repeat as necessary
+for continual improvement|A
+
+```
 
 ## CSF Overview
-1. CSF is composed of three components:
+1. CSF has three key components:
 	1. *CSF Core*
 		1. Uses 6 functions to identify cybersecurity risk outcomes
 		2. Intended to be understandable by *executives*, *managers*, and *practitioners* alike
 	2. *CSF Organizational Profiles*
 		1. Mechanisms for building an organization's profile that maps to the Core
-		2. Can be used to understand *current* security posture or a desired *target* posture.
+		2. Used to understand *current* security posture and/or a desired *target* posture.
 	3. *CSF Tiers*
 		1. A method of characterizing the cybersecurity "rigor" of an organizational profile
 		2. Range from Tier 1^[Partial implementation or limited awareness of risk.] (lowest) to Tier 4^[Highly integrated into the organization or highly adaptive to cybersecurity risks.] (highest)
@@ -83,46 +129,6 @@
 	1. A "Current" profile that describes which outcomes the organization is trying to achieve and why
 	2. A "Target" profile that describes desired outcomes, in anticipation of new requirements, technology, threat intelligence, etc.
 3. The difference between the profiles is used to construct a [[Frameworks, Standards, and Regulations/NIST/NIST CSF/Plan of Action and Milestones\|roadmap]] for the organization
-
-The CSF provides a 5 step process for implementing profiles:
-1. Scope the Organizational Profile
-2. Gather the information needed to prepare the Organizational Profile
-3. Create the Organizational Profile
-4. Analyze the gaps between the Current and Target profiles, and create an action plan
-5. Implement the action plan and update the Organizational Profile
-
-```mermaid
-flowchart
-A[\Scope Organization Profile/]
-B[\Gather Required Information/]
-C[Create the Profile]
-D[/Create Action Plan\]
-E[/Implement Plan and
-Update Profile\]
-
-A-->|Identify systems
-being evaluated| B
-
-B -->|Policies| C
-B-->|Management 
-Priorities| C
-B-->|Risk
-posture| C
-B-->|CSF
-Tiers| C
-
-C-->|Analyze gaps
-between Current and
-Target profiles|D
-
-D-->|Prioritize gaps
-to address risk|E
-
-E-->|Repeat as necessary
-for continual improvement|A
-
-```
-
 
 
 ## CSF Tiers
