@@ -36,10 +36,11 @@
 		3. [SP 800-137, Information Security Continuous Monitoring (ISCM) for Federal Information Systems and Organizations \| CSRC](https://csrc.nist.gov/pubs/sp/800/137/final)
 
 
-![NIST-RMF.png](/img/user/Attachments/NIST-RMF.png)
+![NIST-RMF.png|600](/img/user/Attachments/NIST-RMF.png)
 NIST's RMF wheel highlighting key documentation.^[[Risk Management Framework (RMF) Overview - FISMA Implementation Project | CSRC](https://csrc.nist.rip/Projects/Risk-Management/Risk-Management-Framework-(RMF)-Overview)]
 
 <iframe src="https://drive.google.com/file/d/10CcrJEA3GEe8Hjk35PlGQc0c8bTWVnCM/preview" width="900" height="650" allow="autoplay"></iframe>
+
 RMF map created by Aron Lange:^[[Here are some of the top free resources that will help you to break into GRC and information security. - Aron Lange](https://www.linkedin.com/feed/update/urn:li:activity:6977867944248627200)]
 
 ## Critical Documents in the RMF Process
