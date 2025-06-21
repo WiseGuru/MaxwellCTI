@@ -516,7 +516,8 @@ The final result is a spreadsheet with a summary of all of the reports it collec
 # Tools and Resources
 ## Resources and tools
 - [Learn and Test DMARC](https://www.dmarctester.com/)
-	- Great site for quickly testing mail you can send
+	- Great site for quickly testing mail.
+	- Note that the spoofing feature just walks you through what would happen if someone spoofed your domain, and does not generate an actual spoofed email.
 - [MX Lookup Tool - Check your DNS MX Records online - MxToolbox](https://mxtoolbox.com/)
 	- MxToolBox is one of the best online toolkits you can use; I have cultivated links here for each kind of check you might want to perform.
 	- [Network Tools: DNS,IP,Email - MxToolBox](https://mxtoolbox.com/SuperTool.aspx)
