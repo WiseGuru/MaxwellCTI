@@ -22,7 +22,9 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                   | Last Modified |
 | ------------------------------------------------------------------------------------------------- | ------------- |
-| [[Technical Guides/Securing Email\|Securing Email]]                                            | 2025, Jun 20  |
+| [[Definitions and Topics/DMARC\|DMARC]]                                                        | 2025, Jun 25  |
+| [[Definitions and Topics/DKIM\|DKIM]]                                                          | 2025, Jun 25  |
+| [[Technical Guides/Securing Email\|Securing Email]]                                            | 2025, Jun 25  |
 | [[Frameworks, Standards, and Regulations/NIST/RMF/NIST SP 800-37 (RMF)\|NIST SP 800-37 (RMF)]] | 2025, Jun 19  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]]                    | 2025, Jun 19  |
 | [[Frameworks, Standards, and Regulations/NIST/FISMA\|FISMA]]                                   | 2025, Jun 16  |
@@ -33,7 +35,6 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Frameworks, Standards, and Regulations/SOC/SOC 2\|SOC 2]]                                    | 2025, Jun 16  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]]                 | 2025, Jun 16  |
 | [[Definitions and Topics/SPF\|SPF]]                                                            | 2025, Jun 13  |
-| [[Definitions and Topics/DMARC\|DMARC]]                                                        | 2025, Jun 13  |
 | [[Definitions and Topics/Trust Service Categories\|Trust Service Categories]]                  | 2025, Jun 12  |
 | [[Frameworks, Standards, and Regulations/SOC/SOC Reports\|SOC Reports]]                        | 2025, Jun 12  |
 | [[Definitions and Topics/Attestation\|Attestation]]                                            | 2025, Jun 12  |
@@ -46,6 +47,5 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Definitions and Topics/Principle of Least Privilege\|Principle of Least Privilege]]          | 2025, Jun 12  |
 | [[Definitions and Topics/OWASP\|OWASP]]                                                        | 2025, Jun 12  |
 | [[Definitions and Topics/OSINT\|OSINT]]                                                        | 2025, Jun 12  |
-| [[Definitions and Topics/Lateral movement\|Lateral movement]]                                  | 2025, Jun 12  |
 
 { .block-language-dataview}

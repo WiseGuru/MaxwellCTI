@@ -6,13 +6,15 @@ Securing your email is a critical part of protecting yourself and your business 
 
 One of the best ways to protect yourself and those you interact with is to secure and authenticate emails you send. **Without** *tools like [[Definitions and Topics/SPF\|SPF]], [[Definitions and Topics/DKIM\|DKIM]], and [[Definitions and Topics/DMARC\|DMARC]]* to authenticate your your messages, *scammers can send messages that appear to come from you without having access to your account or server*. 
 
-Great! Sign me up, right? While setup is be relatively easy, misconfigurations can cause major headaches and prevent mail from getting delivered, and prior attempts can muddy the water about what's working and what isn't.
+Unfortunately, it's not a one-size-fits-all solution; many people will add a DKIM record but forget DMARC, or have a DMARC record where `p=none`, and these misconfigurations leave you vulnerable to attackers.
 
->*Don't send email from your domain*? Stop anyone from impersonating you with **these rules that reject all email sent from your domain**:
+I have you covered; below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Technical Guides/Securing Email#Implementation\|Implementation Guides]], and [[Technical Guides/Securing Email#Tools and Resources\|Resources]] that will help you configure and protect your email and brand identity.
+
+>[!tip] Don't send email from your domain?
+>If you don't send email from your domain, you only need **two DNS records that reject all email sent from your domain**:
 > SPF: `TXT   @   "v=spf1 -all"`
 > DMARC: `TXT  _dmarc.example.com   "v=DMARC1; p=reject"`
-
-Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Technical Guides/Securing Email#Implementation\|Implementation Guides]], and [[Technical Guides/Securing Email#Tools and Resources\|Resources]] that will help you configure and protect your email identity.
+ > (note that `example.com` should be your domain, as in `_dmarc.maxwellcti.com`)
 
 # Definitions
 
@@ -139,9 +141,10 @@ Below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Techni
 # Implementation
 Below are implementation and syntax guides for each type of record; but to have a smooth rollout I recommend following these steps.
 
-> **Note**: Many experts recommend configuring SPF and DKIM records at least 48 hours before DMARC,^[[Recommended DMARC rollout - Google Workspace Admin Help](https://support.google.com/a/answer/10032473?sjid=10183544884627146580-NC)] ^[[cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf](https://www.cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf)] but I don't think this is efficient.
+> [!Note]
+> Many experts recommend configuring SPF and DKIM records at least 48 hours before DMARC,^[[Recommended DMARC rollout - Google Workspace Admin Help](https://support.google.com/a/answer/10032473?sjid=10183544884627146580-NC)] ^[[cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf](https://www.cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf)] but I don't think this is efficient.
 > 
-> Even though all email sent during this period will show as "failed authentication," setting up DMARC in *audit mode* first will provide you with more information sooner about who is sending email on your organization's behalf, which can help you correct your SPF and DKIM records more quickly. There is no risk in setting up DMARC first as long as you set `p=none` so no action is taken on emails that fail authentication.
+> Even though all email sent during this period will show as "failed authentication," setting up DMARC in *audit mode* as the first step will provide you with more information sooner about who is sending email on your organization's behalf, which can help you correct your SPF and DKIM records more quickly. There is no risk in creating DMARC record immediately as long as you set `p=none` so no action is taken on emails that fail authentication.
 
 ## Implementation Plan
 1. **Configure DMARC to generate delivery reports**
@@ -306,6 +309,7 @@ The process to configure DKIM is different for each email provider.
 
 If your mail provider is also your DNS host, it's often as easy as checking a box. However, if your mail provider and DNS host are different, then you will be required to create specific DNS entries on the name server to authenticate. [Fastmail](https://www.fastmail.help/hc/en-us/articles/360058753354-Adding-MX-records-to-Namecheap#signing), for example, requires you to add three CNAME entries to your DNS host for authentication.
 
+> [!hint]
 > You can use [[Tool Deep-Dives/dig\|dig]] to inspect the DKIM record values and observe key key rotation.
 > Cycling through each record with the command `dig @1.1.1.1 fm1._domainkey.maxwellcti.com TXT +short` reveals that one record has the DKIM key, where the other two return `"v=DKIM1; k=rsa; n=Intentionally_Left_Blank_As_Per_DKIM_Rotation_BCP; p="`
 
@@ -352,7 +356,8 @@ Let's break it down; more tags can be found on [the DKIM Verification section on
 
 #### DMARC Implementation
 
-> **WARNING**: Both [[Definitions and Topics/SPF\|SPF]] and [[Definitions and Topics/DKIM\|DKIM]] **must** be configured before setting the DMARC policy to `quarantine` or `reject`. Failure to do so will result in undelivered mail.
+> [!warning]
+> Both [[Definitions and Topics/SPF\|SPF]] and [[Definitions and Topics/DKIM\|DKIM]] **must** be configured before setting the DMARC policy to `quarantine` or `reject`. Failure to do so will result in undelivered mail.
 
 Configuring DMARC is easy, but can cause you the most headaches because it's what authorizes email to be delivered, and a misconfiguration can stop your email in its tracks. Therefore, it's highly recommended that you *first configure your DMARC policy to `none` to take no action* on emails for the first couple of weeks, using the reports generated to make sure everything is getting delivered as expected, and then to add a `quarantine` or `reject` policy and maybe ramp up implementation through the `pct` tag.
 
@@ -515,6 +520,10 @@ The final result is a spreadsheet with a summary of all of the reports it collec
 
 # Tools and Resources
 ## Resources and tools
+- Gmail
+	- Sending an email to a Gmail account you can access is a good way to verify your SPF/DKIM/DMARC settings.
+		- Open the email, click on the three-dot menu at the top-right, select "Show original," and at the very top are its SPF/DKIM/DMARC pass/failure score.
+	- Be aware that if there is no DMARC policy, there won't be a DMARC entry.
 - [Learn and Test DMARC](https://www.dmarctester.com/)
 	- Great site for quickly testing mail.
 	- Note that the spoofing feature just walks you through what would happen if someone spoofed your domain, and does not generate an actual spoofed email.
@@ -543,6 +552,7 @@ The final result is a spreadsheet with a summary of all of the reports it collec
 		- It takes *6 and a half months* to get to the point where you're enacting policy, and you don't even setup a DMARC record until about the *third month*.
 		- I think it's important, critical even, to be diligent when working with a production environment, and if you want to slow-roll deployment to make sure nothing goes wrong, all power to you, but to only start gathering live information half-way through deployment seems crazy to me.
 - [GitHub - techsneeze/dmarcts-report-parser: A Perl based tool to parse DMARC reports from an IMAP mailbox or from the filesystem, and insert the information into a database. ( Formerly known as imap-dmarcts )](https://github.com/techsneeze/dmarcts-report-parser)
+
 ## DNS Look-up tools
 [[Tool Deep-Dives/dig\|dig]]
 [[nslookup\|nslookup]]
