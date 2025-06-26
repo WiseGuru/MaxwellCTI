@@ -22,9 +22,9 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                   | Last Modified |
 | ------------------------------------------------------------------------------------------------- | ------------- |
+| [[Technical Guides/Securing Email\|Securing Email]]                                            | 2025, Jun 26  |
 | [[Definitions and Topics/DMARC\|DMARC]]                                                        | 2025, Jun 25  |
 | [[Definitions and Topics/DKIM\|DKIM]]                                                          | 2025, Jun 25  |
-| [[Technical Guides/Securing Email\|Securing Email]]                                            | 2025, Jun 25  |
 | [[Frameworks, Standards, and Regulations/NIST/RMF/NIST SP 800-37 (RMF)\|NIST SP 800-37 (RMF)]] | 2025, Jun 19  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]]                    | 2025, Jun 19  |
 | [[Frameworks, Standards, and Regulations/NIST/FISMA\|FISMA]]                                   | 2025, Jun 16  |

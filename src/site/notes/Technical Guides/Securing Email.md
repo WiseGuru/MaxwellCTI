@@ -520,10 +520,8 @@ The final result is a spreadsheet with a summary of all of the reports it collec
 
 # Tools and Resources
 ## Resources and tools
-- Gmail
-	- Sending an email to a Gmail account you can access is a good way to verify your SPF/DKIM/DMARC settings.
-		- Open the email, click on the three-dot menu at the top-right, select "Show original," and at the very top are its SPF/DKIM/DMARC pass/failure score.
-	- Be aware that if there is no DMARC policy, there won't be a DMARC entry.
+- [DKIM Test - DKIM Verify - DKIM Validator](https://www.appmaildev.com/en/dkim)
+	- Straight-forward tool to test and analyze SPF, DKIM, and DMARC.
 - [Learn and Test DMARC](https://www.dmarctester.com/)
 	- Great site for quickly testing mail.
 	- Note that the spoofing feature just walks you through what would happen if someone spoofed your domain, and does not generate an actual spoofed email.
