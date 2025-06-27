@@ -1,24 +1,39 @@
 <aside id="floating-control">
-  <a id="emailme" href="#">
+  <a
+    id="emailme"
+    href="#"
+  >
     <i icon-name="mail-plus" title="Discuss" aria-hidden="true"></i>
   </a>
   <span id="theme-switch">
-    <i class="svg-icon light"  icon-name="sun"      aria-hidden="true"></i>
-    <i class="svg-icon dark"   icon-name="moon"     aria-hidden="true"></i>
-    <i class="svg-icon auto"   icon-name="sun-moon" aria-hidden="true"></i>
+    <i class="svg-icon light" icon-name="sun" aria-hidden="true"></i>
+    <i class="svg-icon dark" icon-name="moon" aria-hidden="true"></i>
+    <i class="svg-icon auto" icon-name="sun-moon" aria-hidden="true"></i>
   </span>
+  <a
+    id="coffee-link"
+    href="https://ko-fi.com/S6S3TOIAO"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Buy me a coffee"
+  >
+    <i icon-name="coffee" aria-hidden="true"></i>
+  </a>
 </aside>
-
-<!-- load the Ko-fi overlay widget library -->
-<script defer src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
 
 <script defer>
   function setThemeIcon(theme) {
-    let toRemove;
+    let toAdd, toRemove;
     switch (theme) {
-      case 'dark':  toRemove = ['auto','light']; break;
-      case 'light': toRemove = ['dark','auto'];   break;
-      default:      toRemove = ['light','dark'];  break;
+      case 'dark':
+        toRemove = ['auto', 'light'];
+        break;
+      case 'light':
+        toRemove = ['dark', 'auto'];
+        break;
+      default:
+        toRemove = ['light', 'dark'];
+        break;
     }
     const sw = document.getElementById('theme-switch');
     sw.classList.add(theme);
@@ -27,55 +42,54 @@
 
   function setTheme(theme, setIcon) {
     if (setIcon) setThemeIcon(theme);
-    if (theme==='dark') {
-      document.body.classList.replace('theme-light','theme-dark');
-    } else if (theme==='light') {
-      document.body.classList.replace('theme-dark','theme-light');
+
+    if (theme === 'dark') {
+      document.body.classList.remove('theme-light');
+      document.body.classList.add('theme-dark');
+    } else if (theme === 'light') {
+      document.body.classList.add('theme-light');
+      document.body.classList.remove('theme-dark');
     } else {
-      theme = window.matchMedia?.('(prefers-color-scheme: dark)').matches
-        ? 'dark' : 'light';
-      setTheme(theme,false);
+      theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ? 'dark'
+        : 'light';
+      setTheme(theme, false);
     }
   }
 
-  let theme = localStorage.getItem('site-theme')||'auto';
-  setTheme(theme,true);
+  let theme = window.localStorage.getItem('site-theme') || 'auto';
+  setTheme(theme, true);
   window.theme = theme;
-  localStorage.setItem('site-theme',theme);
+  window.localStorage.setItem('site-theme', theme);
 
   window.matchMedia('(prefers-color-scheme: dark)')
-    .addEventListener('change',()=>{
-      if ((localStorage.getItem('site-theme')||'auto')==='auto') {
-        setTheme('auto',true);
+    .addEventListener('change', () => {
+      const settings = window.localStorage.getItem('site-theme');
+      if (!settings || settings === 'auto') {
+        window.localStorage.setItem('site-theme', 'auto');
+        setTheme('auto', true);
       }
     });
 
   document.getElementById('theme-switch')
-    .addEventListener('click',()=>{
-      const next = window.theme==='auto'
-        ? 'dark'
-        : window.theme==='dark'
-          ? 'light'
-          : 'auto';
-      setTheme(next,true);
+    .addEventListener('click', () => {
+      let next;
+      if (window.theme === 'auto')      next = 'dark';
+      else if (window.theme === 'dark') next = 'light';
+      else                              next = 'auto';
+
+      setTheme(next, true);
+      window.localStorage.setItem('site-theme', next);
       window.theme = next;
-      localStorage.setItem('site-theme',next);
     });
 
-  document.addEventListener('DOMContentLoaded',()=>{
-    // 1) email-me link with real page title:
+  // —————— NEW: wait for the DOM then override the mailto link ——————
+  document.addEventListener('DOMContentLoaded', () => {
     const emailLink = document.getElementById('emailme');
+    if (!emailLink) return;
     emailLink.href =
       `mailto:talktome@maxwellcti.com` +
       `?subject=Regarding%20${encodeURIComponent(document.title)}` +
-      `&body=Discussing%20${encodeURIComponent(location.href)}`;
-
-    // 2) initialize the Ko-fi floating chat button
-    kofiWidgetOverlay.draw('wiseguru', {
-      'type': 'floating-chat',
-      'floating-chat.donateButton.text': '',
-      'floating-chat.donateButton.background-color': '#d9534f',
-      'floating-chat.donateButton.text-color': '#fff'
-    });
+      `&body=Discussing%20${encodeURIComponent(window.location.href)}`;
   });
 </script>
