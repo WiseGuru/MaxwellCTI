@@ -1,7 +1,7 @@
 <aside id="floating-control">
   <a
     id="emailme"
-    href="mailto:max@maxwellcti.com?subject=Regarding {{title}}&body=Discussing {{meta.siteBaseUrl}}{{permalink}}"
+    href="#"
   >
     <i icon-name="mail-plus" title="Discuss" aria-hidden="true"></i>
   </a>
@@ -12,64 +12,75 @@
   </span>
 </aside>
 
-    
-<script>
-    function setThemeIcon(theme) {
-        let toAdd;
-        switch (theme) {
-            case 'dark':
-                toRemove = ['auto', 'light'];
-                break;
-            case 'light':
-                toAdd = 'fa-adjust';
-                toRemove = ['dark', 'auto'];
-                break;
-            default:
-                toRemove = ['light', 'dark'];
-                break;
-        }
-        document.getElementById('theme-switch').classList.add(theme);
-        document.getElementById('theme-switch').classList.remove(...toRemove);
+<script defer>
+  function setThemeIcon(theme) {
+    let toAdd, toRemove;
+    switch (theme) {
+      case 'dark':
+        toRemove = ['auto', 'light'];
+        break;
+      case 'light':
+        toRemove = ['dark', 'auto'];
+        break;
+      default:
+        toRemove = ['light', 'dark'];
+        break;
     }
-    function setTheme(theme, setIcon) {
-        if (setIcon) {
-            setThemeIcon(theme);
-        }
-        if (theme == 'dark') {
-            document.body.classList.remove('theme-light');
-            document.body.classList.add('theme-dark');
-        } else if (theme == "light") {
-            document.body.classList.add('theme-light');
-            document.body.classList.remove('theme-dark');
-        } else {
-            theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
-            setTheme(theme, false);
-        }
-        
-    }
-    let theme = window.localStorage.getItem('site-theme') || "auto";
-    setTheme(theme, true);
-    window.theme = theme;
-    window.localStorage.setItem('site-theme', theme);
+    const sw = document.getElementById('theme-switch');
+    sw.classList.add(theme);
+    sw.classList.remove(...toRemove);
+  }
 
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(event) {
-        const settings = window.localStorage.getItem('site-theme');
-        if (!settings || settings == "auto") {
-            window.localStorage.setItem('site-theme', "auto");
-            setTheme("auto", true);
-        }
+  function setTheme(theme, setIcon) {
+    if (setIcon) setThemeIcon(theme);
+
+    if (theme === 'dark') {
+      document.body.classList.remove('theme-light');
+      document.body.classList.add('theme-dark');
+    } else if (theme === 'light') {
+      document.body.classList.add('theme-light');
+      document.body.classList.remove('theme-dark');
+    } else {
+      theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ? 'dark'
+        : 'light';
+      setTheme(theme, false);
+    }
+  }
+
+  let theme = window.localStorage.getItem('site-theme') || 'auto';
+  setTheme(theme, true);
+  window.theme = theme;
+  window.localStorage.setItem('site-theme', theme);
+
+  window.matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', () => {
+      const settings = window.localStorage.getItem('site-theme');
+      if (!settings || settings === 'auto') {
+        window.localStorage.setItem('site-theme', 'auto');
+        setTheme('auto', true);
+      }
     });
-    document.getElementById('theme-switch').addEventListener('click', function() {
-        let theme;
-        if (window.theme == 'auto') {
-            theme = "dark";
-        } else if (window.theme == 'dark') {
-            theme = 'light'
-        } else {
-            theme = 'auto';
-        }
-        setTheme(theme, true);
-        window.localStorage.setItem('site-theme', theme);
-        window.theme = theme;
-    })
+
+  document.getElementById('theme-switch')
+    .addEventListener('click', () => {
+      let next;
+      if (window.theme === 'auto')      next = 'dark';
+      else if (window.theme === 'dark') next = 'light';
+      else                              next = 'auto';
+
+      setTheme(next, true);
+      window.localStorage.setItem('site-theme', next);
+      window.theme = next;
+    });
+
+  // —————— NEW: wait for the DOM then override the mailto link ——————
+  document.addEventListener('DOMContentLoaded', () => {
+    const emailLink = document.getElementById('emailme');
+    if (!emailLink) return;
+    emailLink.href =
+      `mailto:max@maxwellcti.com` +
+      `?subject=Regarding%20${encodeURIComponent(document.title)}` +
+      `&body=Discussing%20${encodeURIComponent(window.location.href)}`;
+  });
 </script>
