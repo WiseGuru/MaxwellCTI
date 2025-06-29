@@ -22,6 +22,7 @@ Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                   | Last Modified |
 | ------------------------------------------------------------------------------------------------- | ------------- |
+| [[Tool Deep-Dives/Linux/Installing Software on Debian\|Installing Software on Debian]]         | 2025, Jun 28  |
 | [[Technical Guides/Securing Email\|Securing Email]]                                            | 2025, Jun 26  |
 | [[Definitions and Topics/DMARC\|DMARC]]                                                        | 2025, Jun 25  |
 | [[Definitions and Topics/DKIM\|DKIM]]                                                          | 2025, Jun 25  |
@@ -46,6 +47,5 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Definitions and Topics/Remote Shell\|Remote Shell]]                                          | 2025, Jun 12  |
 | [[Definitions and Topics/Principle of Least Privilege\|Principle of Least Privilege]]          | 2025, Jun 12  |
 | [[Definitions and Topics/OWASP\|OWASP]]                                                        | 2025, Jun 12  |
-| [[Definitions and Topics/OSINT\|OSINT]]                                                        | 2025, Jun 12  |
 
 { .block-language-dataview}
