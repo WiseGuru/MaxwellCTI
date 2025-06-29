@@ -14,8 +14,8 @@ Below is a list of the pages I've updated recently; you can also search from the
 Still not sure where to start? Why not check out my guide on [[Technical Guides/Securing Email\|securing email with SPF, DKIM, and DMARC]]?
 
 
-### Find me everywhere else on [linktr.ee/wiseguru](https://linktr.ee/wiseguru)
-Because ~~two~~ ~~three~~ ~~four~~ *many* projects are better than one.
+### Find me everywhere at [wyz.guru](https://wyz.guru)
+
 
 
 ## Recently Modified Pages
