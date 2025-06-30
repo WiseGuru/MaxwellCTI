@@ -6,7 +6,7 @@
 
 Hello and welcome! This blog is a documentation of my journey into cybersecurity; as I take classes, attend seminars, participate in cyber ranges and HTB/THM-style labs, and pursue my own interests, I will document the things I learn and work on here. 
 
-As I work on projects, I try to document and publish what I learn. There will be many pages in progress (aka, with bad grammar, syntax, incomplete information, etc.), but I try to keep things tight and professional.
+As I work on projects, I will document and publish what I learn. There are many pages in progress (i.e., with bad grammar, syntax, incomplete information, etc.), but I try to keep things tight and professional.
 
 ### New here?
 Below is a list of the pages I've updated recently; you can also search from the top right, or scroll through everything on the left.
