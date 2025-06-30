@@ -22,8 +22,8 @@ Still not sure where to start? Why not check out my guide on [[Technical Guides/
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                   | Last Modified |
 | ------------------------------------------------------------------------------------------------- | ------------- |
+| [[Tool Deep-Dives/Linux/Installing Software on Debian\|Installing Software on Debian]]         | 2025, Jun 30  |
 | [[Definitions and Topics/System Security Plan\|System Security Plan]]                          | 2025, Jun 30  |
-| [[Tool Deep-Dives/Linux/Installing Software on Debian\|Installing Software on Debian]]         | 2025, Jun 28  |
 | [[Technical Guides/Securing Email\|Securing Email]]                                            | 2025, Jun 26  |
 | [[Definitions and Topics/DMARC\|DMARC]]                                                        | 2025, Jun 25  |
 | [[Definitions and Topics/DKIM\|DKIM]]                                                          | 2025, Jun 25  |

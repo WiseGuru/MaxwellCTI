@@ -2,7 +2,8 @@
 {"dg-publish":true,"permalink":"/tool-deep-dives/linux/installing-software-on-debian/"}
 ---
 
-There are a few different ways to install software on a Debian.
+There are a few different ways to install software on a Debian; this not a complete list, and there are various other tools (like [Nala](https://gitlab.com/volian/nala)) that further extend and modify the native tools.
+
 - `dpkg`
 	- Simple package manager and installer for Debian
 	- `-i` or `--install` install a given file
