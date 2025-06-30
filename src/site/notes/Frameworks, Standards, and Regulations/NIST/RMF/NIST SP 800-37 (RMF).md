@@ -100,7 +100,7 @@ controls defined in SSP| A
 	1. The 800-53 is basically a big dictionary with hundreds of controls
 		1. Start with the baseline for your system's impact in [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53B\|800-53B]]
 		2. Tailor the controls to your organization
-	2. The outcome of this step is the *SSP* ([[Frameworks, Standards, and Regulations/NIST/RMF/System Security Plan\|System Security Plan]]), and instructions on how to create one are found in the [NIST SP 800-18](https://csrc.nist.gov/pubs/sp/800/18/r1/final)
+	2. The outcome of this step is the *SSP* ([[Definitions and Topics/System Security Plan\|System Security Plan]]), and instructions on how to create one are found in the [NIST SP 800-18](https://csrc.nist.gov/pubs/sp/800/18/r1/final)
 		1. This is the book/plan for the documentation of your system
 			1. Network diagram, who owns the system, what kind of data is stored, etc.
 			2. All the controls to secure the systems and how they are implemented
