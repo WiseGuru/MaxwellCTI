@@ -22,6 +22,8 @@ Still not sure where to start? Why not check out my guide on [[Technical Guides/
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                   | Last Modified |
 | ------------------------------------------------------------------------------------------------- | ------------- |
+| [[Tool Deep-Dives/OSINT/exiftool\|exiftool]]                                                   | 2025, Jun 30  |
+| [[Definitions and Topics/exif\|exif]]                                                          | 2025, Jun 30  |
 | [[Frameworks, Standards, and Regulations/SOC/SOC 2\|SOC 2]]                                    | 2025, Jun 30  |
 | [[Definitions and Topics/Trust Service Categories\|Trust Service Categories]]                  | 2025, Jun 30  |
 | [[Frameworks, Standards, and Regulations/SOC/SOC Reports\|SOC Reports]]                        | 2025, Jun 30  |
@@ -45,7 +47,5 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Definitions and Topics/TTPs\|TTPs]]                                                          | 2025, Jun 12  |
 | [[Definitions and Topics/SDLC\|SDLC]]                                                          | 2025, Jun 12  |
 | [[Definitions and Topics/Remote Shell\|Remote Shell]]                                          | 2025, Jun 12  |
-| [[Definitions and Topics/Principle of Least Privilege\|Principle of Least Privilege]]          | 2025, Jun 12  |
-| [[Definitions and Topics/OWASP\|OWASP]]                                                        | 2025, Jun 12  |
 
 { .block-language-dataview}
