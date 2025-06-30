@@ -22,6 +22,9 @@ Still not sure where to start? Why not check out my guide on [[Technical Guides/
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                   | Last Modified |
 | ------------------------------------------------------------------------------------------------- | ------------- |
+| [[Frameworks, Standards, and Regulations/SOC/SOC 2\|SOC 2]]                                    | 2025, Jun 30  |
+| [[Definitions and Topics/Trust Service Categories\|Trust Service Categories]]                  | 2025, Jun 30  |
+| [[Frameworks, Standards, and Regulations/SOC/SOC Reports\|SOC Reports]]                        | 2025, Jun 30  |
 | [[Frameworks, Standards, and Regulations/NIST/FISMA\|FISMA]]                                   | 2025, Jun 30  |
 | [[Tool Deep-Dives/Linux/Installing Software on Debian\|Installing Software on Debian]]         | 2025, Jun 30  |
 | [[Definitions and Topics/System Security Plan\|System Security Plan]]                          | 2025, Jun 30  |
@@ -33,11 +36,8 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]]                 | 2025, Jun 16  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53B\|800-53B]]                   | 2025, Jun 16  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53A\|800-53A]]                   | 2025, Jun 16  |
-| [[Frameworks, Standards, and Regulations/SOC/SOC 2\|SOC 2]]                                    | 2025, Jun 16  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]]                 | 2025, Jun 16  |
 | [[Definitions and Topics/SPF\|SPF]]                                                            | 2025, Jun 13  |
-| [[Definitions and Topics/Trust Service Categories\|Trust Service Categories]]                  | 2025, Jun 12  |
-| [[Frameworks, Standards, and Regulations/SOC/SOC Reports\|SOC Reports]]                        | 2025, Jun 12  |
 | [[Definitions and Topics/Attestation\|Attestation]]                                            | 2025, Jun 12  |
 | [[Resources and Communities\|Resources and Communities]]                                       | 2025, Jun 12  |
 | [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]]                                                     | 2025, Jun 12  |

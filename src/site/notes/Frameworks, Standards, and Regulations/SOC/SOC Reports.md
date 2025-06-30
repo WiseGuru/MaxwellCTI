@@ -14,7 +14,7 @@
 - SOC 1 (Type 1/Type 2)
 	- Financial audits; this is more generic and generally has to do with financial processing.
 	- Organizations that handle financial data typically need a SOC 1 report.
-- SOC 2 (Type 1/Type 2)
+- [[Frameworks, Standards, and Regulations/SOC/SOC 2\|SOC 2]] (Type 1/Type 2)
 	- Security report; expands on the SOC 1 control to include security
 - SOC 3 (Type 2)
 	- Redacted SOC 2 Type 2 report for public release
