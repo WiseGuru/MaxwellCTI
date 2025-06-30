@@ -18,7 +18,6 @@ Sample output from a song by [WangleLine](https://wangleline.bandcamp.com/album/
 # Metadata
 
 ### Sources
-[protectstar.com/en/blog/invisible-traces-in-ai-generated-images-privacy-risks-from-exif-data](https://www.protectstar.com/en/blog/invisible-traces-in-ai-generated-images-privacy-risks-from-exif-data)
 
 ### Tags
 #tools_osint  
