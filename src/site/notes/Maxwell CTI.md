@@ -22,6 +22,8 @@ Still not sure where to start? Why not check out my guide on [[Technical Guides/
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                   | Last Modified |
 | ------------------------------------------------------------------------------------------------- | ------------- |
+| [[Tool Deep-Dives/Linux/chmod\|chmod]]                                                         | 2025, Jul 06  |
+| [[Tool Deep-Dives/SSH/OpenSSH\|OpenSSH]]                                                       | 2025, Jul 06  |
 | [[Tool Deep-Dives/SSH/SSH\|SSH]]                                                               | 2025, Jul 04  |
 | [[Tool Deep-Dives/Windows/RDP\|RDP]]                                                           | 2025, Jul 02  |
 | [[Tool Deep-Dives/OSINT/exiftool\|exiftool]]                                                   | 2025, Jun 30  |
@@ -45,7 +47,5 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Definitions and Topics/Attestation\|Attestation]]                                            | 2025, Jun 12  |
 | [[Resources and Communities\|Resources and Communities]]                                       | 2025, Jun 12  |
 | [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]]                                                     | 2025, Jun 12  |
-| [[Definitions and Topics/backdoor\|backdoor]]                                                  | 2025, Jun 12  |
-| [[Definitions and Topics/TTPs\|TTPs]]                                                          | 2025, Jun 12  |
 
 { .block-language-dataview}
