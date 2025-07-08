@@ -35,8 +35,6 @@
 Source: [chmod](https://gps.uml.edu/tutorials/unix-linux/unix/chmod.htm)
 
 
-
-
 # Metadata
 
 ### Sources
