@@ -14,12 +14,12 @@
 		- First position: The object **u**ser (owner)
 		- Second position: The **g**roup
 		- Third position: All **o**thers
-	- The files "user" and "group" are set with [[chown\|chown]]
+	- The files "user" and "group" are set with [[Tool Deep-Dives/Linux/chown\|chown]]
 		- A file may only have one user and one group assigned to it.
 - Permissions can be set all at once or piece-meal
 	- `chmod 750 plans.txt` would set the permissions for `plans.txt` to User with RWX, Group with R-X, and Others with no access (---).
 	- `chmod o+r plans.txt` grants "all others" Read access to the file `plans.txt`. 
-- `chmod` is not as fine-grained as [[setfacl\|setfacl]], which allows the configuration of Access Control Lists (ACLs)
+- `chmod` is not as fine-grained as [[Tool Deep-Dives/Linux/setfacl\|setfacl]], which allows the configuration of Access Control Lists (ACLs)
 
 
 | Octal Digit | Permissions          | 3-Character Display |

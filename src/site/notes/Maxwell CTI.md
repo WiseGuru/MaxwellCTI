@@ -22,8 +22,9 @@ Still not sure where to start? Why not check out my guide on [[Technical Guides/
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                   | Last Modified |
 | ------------------------------------------------------------------------------------------------- | ------------- |
-| [[Tool Deep-Dives/Linux/chmod\|chmod]]                                                         | 2025, Jul 06  |
-| [[Tool Deep-Dives/SSH/OpenSSH\|OpenSSH]]                                                       | 2025, Jul 06  |
+| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]]                 | 2025, Jul 10  |
+| [[Tool Deep-Dives/Linux/chmod\|chmod]]                                                         | 2025, Jul 07  |
+| [[Tool Deep-Dives/SSH/OpenSSH\|OpenSSH]]                                                       | 2025, Jul 07  |
 | [[Tool Deep-Dives/SSH/SSH\|SSH]]                                                               | 2025, Jul 04  |
 | [[Tool Deep-Dives/Windows/RDP\|RDP]]                                                           | 2025, Jul 02  |
 | [[Tool Deep-Dives/OSINT/exiftool\|exiftool]]                                                   | 2025, Jun 30  |
@@ -39,7 +40,6 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Definitions and Topics/DKIM\|DKIM]]                                                          | 2025, Jun 25  |
 | [[Frameworks, Standards, and Regulations/NIST/RMF/NIST SP 800-37 (RMF)\|NIST SP 800-37 (RMF)]] | 2025, Jun 19  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]]                    | 2025, Jun 19  |
-| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]]                 | 2025, Jun 16  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53B\|800-53B]]                   | 2025, Jun 16  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53A\|800-53A]]                   | 2025, Jun 16  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]]                 | 2025, Jun 16  |

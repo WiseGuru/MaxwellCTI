@@ -5,7 +5,6 @@
 #### OpenSSH
 - *OpenSSH* "OpenSSH is a suite of secure networking utilities based on the [[Tool Deep-Dives/SSH/SSH\|Secure Shell protocol]], which provides a secure channel over an unsecured network in a client–server architecture."^[[OpenSSH - Wikipedia](https://en.wikipedia.org/wiki/OpenSSH)]
 
-[[#1. Install OpenSSH Server on the *Host*]]
 ## Install and Configure OpenSSH Server on Windows and (Debian-based) Linux Hosts
 I'm sorry if this is confusing to have the two OS's interwoven; however, the configuration is pretty similar between the two of them, so it made sense to me to combine them together. I may separate them at some point, but feel free to send me an email with your thoughts.
 
@@ -233,12 +232,12 @@ Once you've saved your changes, you need to restart the SSH service.
 	5. **Name:** Give your rule a name, such as OpenSSH Inbound Rule. Click Finish.
 
 ##### Linux *Host*
-Assuming you use [[ufw\|ufw]] as your firewall, you just need to add either `ssh` to your rules or the port you manually configured.
+Assuming you use [[Tool Deep-Dives/Linux/ufw\|ufw]] as your firewall, you just need to add either `ssh` to your rules or the port you manually configured.
 
 `sudo ufw allow ssh`
 `sudo ufw allow [custom port for SSH]`
 
-[[Gufw\|Gufw]] allows you to add comments to your rules, making a custom ephemeral port a little easier to manage (for example here with port 55555)
+[[Tool Deep-Dives/Linux/Gufw\|Gufw]] allows you to add comments to your rules, making a custom ephemeral port a little easier to manage (for example here with port 55555)
 ![OpenSSH-1.png](/img/user/Attachments/OpenSSH-1.png)
 
 ### 5. First connection and troubleshooting
