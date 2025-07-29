@@ -21,7 +21,7 @@
 	2. The [Informative References](https://www.nist.gov/cyberframework/informative-references) documents maps the Core functions to different categories and subcategories (outcomes)
 		1. For example, Identity Asset Management 01 (ID.AM-02) lists multiple other frameworks and resources which could be used to fulfill its outcome (CSF v1.1, ISO 27001, [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]], etc.).
 3. Compared to the [[Frameworks, Standards, and Regulations/NIST/RMF/NIST SP 800-37 (RMF)\|RMF]], the CSF has a more streamlined and flexible process for implementation which is intended to be useful across organizations and industries.
-4. The CSF uses a 5-step implementation process built around *Organizational Profiles*^[The NISt SP 1301 is a quick start guide for implementation. [nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1301.pdf](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1301.pdf)]
+4. The CSF uses a 5-step implementation process built around *Organizational Profiles*^[The NIST SP 1301 is a quick start guide for implementation. [nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1301.pdf](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1301.pdf)]
 	1. Scope the Organizational Profile
 		1. Identify the systems being assessed, goal, necessary assets, teams, individuals, etc.
 	2. Gather the information needed to prepare the Organizational Profile

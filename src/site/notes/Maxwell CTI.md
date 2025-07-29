@@ -22,7 +22,11 @@ Still not sure where to start? Why not check out my guide on [[Technical Guides/
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                   | Last Modified |
 | ------------------------------------------------------------------------------------------------- | ------------- |
-| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]]                 | 2025, Jul 10  |
+| [[_Blog and Research/Zoom Phishing Email\|Zoom Phishing Email]]                                | 2025, Jul 29  |
+| [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]]                    | 2025, Jul 14  |
+| [[Tool Deep-Dives/Linux/grep\|grep]]                                                           | 2025, Jul 12  |
+| [[Tool Deep-Dives/Linux/zgrep\|zgrep]]                                                         | 2025, Jul 12  |
+| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]]                 | 2025, Jul 11  |
 | [[Tool Deep-Dives/Linux/chmod\|chmod]]                                                         | 2025, Jul 07  |
 | [[Tool Deep-Dives/SSH/OpenSSH\|OpenSSH]]                                                       | 2025, Jul 07  |
 | [[Tool Deep-Dives/SSH/SSH\|SSH]]                                                               | 2025, Jul 04  |
@@ -39,13 +43,9 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Definitions and Topics/DMARC\|DMARC]]                                                        | 2025, Jun 25  |
 | [[Definitions and Topics/DKIM\|DKIM]]                                                          | 2025, Jun 25  |
 | [[Frameworks, Standards, and Regulations/NIST/RMF/NIST SP 800-37 (RMF)\|NIST SP 800-37 (RMF)]] | 2025, Jun 19  |
-| [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]]                    | 2025, Jun 19  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53B\|800-53B]]                   | 2025, Jun 16  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53A\|800-53A]]                   | 2025, Jun 16  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]]                 | 2025, Jun 16  |
 | [[Definitions and Topics/SPF\|SPF]]                                                            | 2025, Jun 13  |
-| [[Definitions and Topics/Attestation\|Attestation]]                                            | 2025, Jun 12  |
-| [[Resources and Communities\|Resources and Communities]]                                       | 2025, Jun 12  |
-| [[Tool Deep-Dives/Windows/Sysmon\|Sysmon]]                                                     | 2025, Jun 12  |
 
 { .block-language-dataview}

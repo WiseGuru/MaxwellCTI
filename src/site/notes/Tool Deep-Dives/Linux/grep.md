@@ -5,7 +5,7 @@
 #### grep
 - CLI utility for searching text data sets for matching expressions.
 - You can use `\|` to separate "OR" strings
-	- For example, `grep '445\|CLOSED\|ESTABLISHED'`
+	- For example, `grep '445\|CLOSED\|ESTABLISHED' firewalloutput.txt`
 - Important options
 	- `-i` or `--ignore-case`
 		- Search for string, regardless of case
@@ -14,11 +14,19 @@
 		- Searches for any results that do NOT include the search term
 	- `-n` or `--line-number`
 		- Get the line number with the output
+	- `-l` or `--files-with-matches`
+		- Just lists file names with matching content
 - [[Tool Deep-Dives/Windows/Windows\|Windows]] alternatives
 	- In [[Tool Deep-Dives/Windows/PowerShell\|PowerShell]]: `Select-String`
 	- In Windows command line ([[Tool Deep-Dives/Windows/cmd.exe\|cmd.exe]]), `findstr`
 
 
+Simple file copy script using [[for\|for]]
+```shell
+for file in $(grep -l "search_string" /files/to/sea.rch); do
+  cp "$file" /path/to/destination/
+done
+```
 
 
 # Metadata
