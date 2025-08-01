@@ -22,7 +22,6 @@ Still not sure where to start? Why not check out my guide on [[Technical Guides/
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                   | Last Modified |
 | ------------------------------------------------------------------------------------------------- | ------------- |
-| [[_Blog and Research/Zoom Phishing Email\|Zoom Phishing Email]]                                | 2025, Jul 29  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]]                    | 2025, Jul 14  |
 | [[Tool Deep-Dives/Linux/grep\|grep]]                                                           | 2025, Jul 12  |
 | [[Tool Deep-Dives/Linux/zgrep\|zgrep]]                                                         | 2025, Jul 12  |
@@ -47,5 +46,6 @@ Take this with a grain of salt; I synchronize my Obsidian vault between devices 
 | [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53A\|800-53A]]                   | 2025, Jun 16  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]]                 | 2025, Jun 16  |
 | [[Definitions and Topics/SPF\|SPF]]                                                            | 2025, Jun 13  |
+| [[Definitions and Topics/Attestation\|Attestation]]                                            | 2025, Jun 12  |
 
 { .block-language-dataview}
