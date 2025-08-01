@@ -138,7 +138,9 @@ Email authentication is hard; it's why many companies never get around to it, an
 
 SPF was designed to both list authorized senders and prescribe policy; kind of like a proto-DMARC. Things get complicated, however, when you add services like MailChimp or SendGrid, which actually should not be configured with SPF, or when someone configures email forwarding. If a receiving domain only enforced SPF policy, `-all` would immediately reject any forwarded email and any authentic newsletters you signed up for. Additionally, SPF lacks the reporting features of DMARC, leaving sending domains in the dark when it comes to trends in spoofing. Implementing DKIM and DMARC solves these problems, but if the receiving email server isn't configured to check them, then they're relying entirely on SPF.
 
-And some might be asking "If this spoof email was delivered to junk anyway, why should we care?" We should care because plenty legitimate emails get delivered to Junk, and many users have been trained to look in Junk for authentic mail that slipped through. An unwary or unsavvy user could easily be fooled into clicking a link if they check the sending domain and don't realize it's been spoofed.
+Zoom isn't doing anything wrong here; SPF is considered part of the authentication process for a reason, and it's frankly the one most likely to be bunged up with email forwarding or other issues. Zoom invitations are often sent across domains, to distribution lists, to forwarded email addresses, and having a strict SPF policy would cause significant friction for recipients with improperly configured email security tools. RingCentral is primarily a VoIP provider and likely doesn't have the same friction points (or they've accepted the risk).
+
+And some might be asking "If this spoof email was delivered to junk anyway, why should we care?" We should care because plenty legitimate emails get delivered to Junk all the time, and many users have been trained to look in Junk for authentic mail that slipped through. An unwary or unsavvy user could easily be fooled into clicking a link if they check the sending domain and don't realize it's been spoofed.
 
 # Key Takeaways
 
