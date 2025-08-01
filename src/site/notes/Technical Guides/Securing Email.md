@@ -26,6 +26,7 @@ I have you covered; below are [[Technical Guides/Securing Email#Definitions\|Def
 - *SPF* (Sender Policy Framework) is a mechanism that identifies email servers that are authorized to send email from your domain.
 	- Uses a TXT record^[There used to be an SPF record type, but that is no longer in use.] on your DNS host/nameserver
 	- Recipients perform a DNS lookup to confirm the sender.
+	- If there is no [[Definitions and Topics/DMARC\|DMARC]] record present (or the receiving server is not configured to check DMARC), then mail will be authorized or denied based on the SPF record policy.
 - Receivers perform an *SPF Lookup* by comparing the incoming mail's sending server to the list of authenticated senders in the SPF record.^[More technically, the receiving server fetches the SPF TXT record from the sending domain in the SMTP `MAILFROM` field, and checks whether the sending IP address is listed in the record.]
 	- If the email comes from an authorized sender, the email will `pass` the SPF lookup.
 		-  [[Definitions and Topics/DMARC\|DMARC]] would check for *SPF Alignment* by comparing the SMTP `MAILFROM` and the email's "From:" fields to make sure they match.
@@ -159,10 +160,12 @@ Below are implementation and syntax guides for each type of record; but to have 
 			1. Obligatory reminder that most providers do not send forensic reports, so `fo` and `ruf` can be ignored if desired.
 	3. *Note*: Some providers require SPF and DKIM records before you can create a DMARC record, even in audit mode.
 2. **Configure one SPF record** for each domain that identifies non-marketing mail senders
-	1. Most mail providers have a tool to generate SPF records, or will have one available for you to copy and paste; review it and make sure it has everything you need and is strict enough to your liking.
+	1. Most mail providers have a tool to generate SPF records, or will have one available for you to copy and paste; review it and make sure it has everything you need and is strict enough for your risk appetite.
+		1. Some email servers don't handle DMARC records, so try to use `-all` on your primary domains to reduce the likelihood of spoofing.
 	2. *Do not add email marketers like Mailchimp or Sendgrid to your SPF record*; this will cause DNS lookups to exceed 10 hops and cause authentication failures.
-		1. If you use an email marketing service provider, set the last tag as `~all` and not `-all` to make it less likely they get rejected as spam.
-		2. Using a subdomain to send email marketing, like `newsletter.example.com`, allows you to create a unique set of SPF records for that subdomain, preventing cross-contamination of DNS lookups and tightening the authentication requirements for both personal and broadcast emails. 
+	3. If you use an email marketing service provider, create a subdomain and set the last tag as `~all` and not `-all` to reduce the chance authentic messages are rejected as spam.
+		1. Using a subdomain, like `newsletter.example.com`, to send email newsletters or marketing material allows you to create a unique set of SPF records for that subdomain.
+		2. Unique subdomains also preserves the domain reputation for your primary domain and makes it easier to identify and isolate delivery problems.
 3. **Configure DKIM records** for every sending host
 	1. Each sender (Microsoft Exchange, Gmail, Mailchimp, etc.) will have instructions on how to add DKIM records to your name server.
 4. **Review DMARC reports**
@@ -198,10 +201,19 @@ Below are implementation and syntax guides for each type of record; but to have 
 #### SPF Implementation
 [The syntax guide on Open-SPF is phenomenal](http://www.open-spf.org/SPF_Record_Syntax/), but for simplicity, here's an example of a sub-optimal SPF record. 
 
+> [!Tip] SPF Qualifiers
+> SPF uses qualifiers to indicate whether a source is permitted or unauthorized. They're also used to enforce policy if there's no accompanying [[Definitions and Topics/DMARC\|DMARC]] record or if the receiving server is not equipped to handle DMARC policies.
+> 
+> 1. `+` = *Pass*, the email originating host is allowed to send.
+> 	1. This is the default, and does not need to be explicitly written out.
+> 2. `-` = *Fail*, the originating host is not allowed to send and messages should be rejected.
+> 3. `~` = *SoftFail*, originating host is not officially allowed to send, but authentic mail may be sent from it.
+> 4. `?` = *Neutral*, or no policy.
+
 1. **Name**: `@`
 2. **Type**: TXT
 3. **TTL**: 3600
-4. **Value**: `v=spf1 +a mx ip4:123.45.67.89 a:contoso.com include:spf.example.com -all`
+4. **Value**: `v=spf1 +a mx ip4:123.45.67.89 a:contoso.com include:spf.example.com ~include:olddomain.com -all`
 
 The SPF record is first checked as a whole to ensure it is a valid record and falls below the 10 maximum DNS lookups. Then the record is processed in order, and once the email is matched to a qualifier, it stops getting processed. Let's break it down.
 
@@ -219,11 +231,8 @@ The SPF record is first checked as a whole to ensure it is a valid record and fa
 		1. SPF version 1
 		2. There is currently only one version.
 	2. `+a`
-		1. The `+` is a qualifier that says what to do if a sending domain matches that value; here are a few of the most common ones.
-			1. `+` = *Pass*, the email originating host is allowed to send
-				1. This is the default, and does not need to be explicitly written out and is only here for demonstration purposes
-			2. `-` = *Fail*, the originating host is not allowed to send
-			3. `~` = *SoftFail*, originating host is not officially allowed to send, but authentic mail may be sent from it
+		1. The `+` qualifier passes emails which match this sender
+			1. Because the `+` is the default qualifier, is not normally explicitly stated, and will not be stated in further records.
 		2. The `a` tells the recipient to check the current domain's DNS for A records (e.g., IPv4 addresses) and mark them as designated senders
 		3. **Note**: dmarcian recommends avoiding `a` entries as they are often unnecessary and increase the number of lookups.^[[SPF Best Practices: Avoiding SPF Record Flattening - dmarcian](https://dmarcian.com/spf-best-practices/)]
 	3. `mx`
@@ -240,7 +249,9 @@ The SPF record is first checked as a whole to ensure it is a valid record and fa
 	6. `include:spf.example.com`
 		1. Checks `spf.example.com` for its SPF record and includes that in the current SPF record lookup
 		2. Be careful as this can bring you much closer to the *10 DNS lookup limit* and cause a `PermError`
-	7. `-all`
+	7. `~include:olddomain.com`
+		1. This marks emails from `olddomain.com` with a "softfail" qualifier, indicating that emails from that domain shouldn't be rejected outright, but possibly tagged as suspicious.
+	8. `-all`
 		1. Fail all originating hosts that have not been matched to this point in the record
 			1. Because this is the last entry, any email that is authenticated by one of the earlier entries will get through, and everything else will fail authentication
 			2. This is similar to Firewall configurations where the last rule is often `deny any any`
