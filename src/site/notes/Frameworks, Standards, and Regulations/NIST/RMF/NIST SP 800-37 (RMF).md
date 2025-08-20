@@ -106,9 +106,9 @@ controls defined in SSP| A
 			2. All the controls to secure the systems and how they are implemented
 				1. May be more or less complicated, depending on the size of the organization
 		2. Gerald specifically mentions the [[NIST SP 800-15\|NIST SP 800-15]], but it was withdrawn in September of the year he published his video
-4. **Implement**: Implement the controls, the lions-share of the work
+4. **Implement**: Implement the controls (the lion's-share of the work)
 	1. If you have any challenges implementing controls, NIST has implementation guides for most systems
-		1. Offer tons of instructions and things you can do
+		1. NIST offers tons of instructions and things you can do
 5. **Assess**: Bring in an independent auditor to inspect your controls
 	1. The *SSP* is used to create the *SAP* ([[System Assessment Plan\|System Assessment Plan]]) with the help of the [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53A\|800-53A]]
 		1. The plan should include information like:

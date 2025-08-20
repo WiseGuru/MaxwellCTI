@@ -12,7 +12,7 @@ It's pretty common to receive phishing emails with "Zoom" as the sender's name o
 1. The attacker was able to craft a custom email using Zoom.
 2. The receiving server is not honoring Zoom's DMARC policy.
 
-I use the "DKIM Verifier" extension for Thunderbird, so we can tell immediately that this email isn't authenticated with [[Definitions and Topics/DKIM\|DKIM]],^[The default configuration on appears with valid DKIM records; select DKIM>Options>Display, and change "Show DKIM header" to "when an email is viewer" to see the DKIM record for all emails.] and checking the headers shows the original Brazilian sending domain and IP:
+I use the "DKIM Verifier" extension for Thunderbird, so we can tell immediately that this email isn't authenticated with [[Definitions and Topics/DKIM\|DKIM]],^[The default configuration only appears with valid DKIM records; select DKIM>Options>Display, and change "Show DKIM header" to "when an email is viewer" to see the DKIM record for all emails.] and checking the headers shows the original Brazilian sending domain and IP:
 
 ```
 Received: from 45[.]178[.]113[.]187[.]seegfibras[.]com[.]br ([45[.]178[.]113[.]187]) by instance-us-central1-4frm[.]prod[.]antispam[.]mailspamprotection[.]com

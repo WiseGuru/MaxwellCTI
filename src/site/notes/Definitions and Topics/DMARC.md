@@ -69,8 +69,9 @@ Let's break it down.
 			3. `reject`: Instructs the receiving server to outright reject any mail that fails authentication.
 				1. This is the most secure, but can also be the most problematic if a configuration changes or something goes wrong.
 	4. `sp=reject`
-		1. The policy for subdomains; if `sp` is not stated in the record, then the policy described by `p` applies to subdomains.
-			1. This may be helpful to set a stricter policy if there are no subdomains, or a looser policy if configuring a subdomain for mail.
+		1. The policy for subdomains; if `sp` is not stated in the record, then the policy described by `p` is inherited by its subdomains.
+			1. Setting `sp` may be helpful to set a stricter policy if there are no subdomains, or a looser policy if configuring a subdomain for mail.
+			2. Some receiving servers don't check the root domain for a DMARC policy to inherit; playing it safe and adding a DMARC record for your subdomains is not a bad idea.
 		2. Creating a distinct DMARC policy for a subdomain (e.g., `_dmarc.mailer.example.com`) takes precedence over the `sp` policy designation.
 			1. To reiterate, `sp` only applies to a subdomain if there isn't a more specific DMARC policy created for it.
 	5. `pct=100`
@@ -87,10 +88,9 @@ Let's break it down.
 		1. DKIM alignment requirements; see `aspf` for details.
 	8. `rua=mailto:dmarc-reports@example.com`
 		1. Identifies the email address to which recipient servers should send *delivery aggregate reports*
-		2. List of addresses must begin with `mailto:`
+		2. Each address must begin with `mailto:`, and multiple addresses can be specified if separated by a comma.
+			1. e.g., `rua=mailto:address1@example.com,mailto:address2@contoso.com`
 		3. Aggregate reports contain basic information and include successful and failed delivery information
-		4. Multiple addresses can be specified if separated by a comma.
-			1. e.g., `rua=mailto:address1@example.com,address2@contoso.com`
 	9. `ruf=mailto:dmarc-failures@example.com`
 		1. Identifies the email address to which recipient servers should send *individual delivery forensic failure reports*
 		2. Forensic failure reports contain detailed information about failed deliveries to assist with triage and troubleshooting.
