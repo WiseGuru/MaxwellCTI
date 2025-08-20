@@ -121,8 +121,10 @@ For example:
 
 The TXT record **name** identifies the domain generating the report (`sendingdomain.com`), followed by `._report._dmarc` and the domain receiving the reports (`.receivingdomain.com`).
 The TXT record **value** just identifies the DMARC version (`"v=DMARC1"`)
- 
-**WARNING**: While you can use a `*` wildcard to simplify the record to `*._report._dmarc.receivingdomain.com`, allowing anyone to send email to your DMARC report inboxes, you probably shouldn't. Spam filters and firewalls don't typically inspect DMARC reports, and an attacker could exploit this to flood the inbox with bogus DMARC reports or inject malicious code into zipped attachments, which might get run automatically by report analyzing software. 
+
+
+> [!WARNING]
+>  While you can use a `*` wildcard to simplify the record to `*._report._dmarc.receivingdomain.com`, allowing anyone to send email to your DMARC report inboxes, you probably shouldn't. Spam filters and firewalls don't typically inspect DMARC reports, and an attacker could exploit this to flood the inbox with bogus DMARC reports or inject malicious code into zipped attachments, which might get run automatically by report analyzing software. 
 
 #### [[Tool Deep-Dives/dig\|dig]]
 
