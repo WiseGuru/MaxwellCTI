@@ -368,7 +368,7 @@ Let's break it down; more tags can be found on [the DKIM Verification section on
 #### DMARC Implementation
 
 > [!warning]
-> Both [[Definitions and Topics/SPF\|SPF]] and [[Definitions and Topics/DKIM\|DKIM]] **must** be configured before setting the DMARC policy to `quarantine` or `reject`. Failure to do so will result in undelivered mail.
+> Both [[Definitions and Topics/SPF\|SPF]] and [[Definitions and Topics/DKIM\|DKIM]] **must** be configured before setting the DMARC policy to `quarantine` or `reject`. Failure to do so **will** result in undelivered mail.
 
 Configuring DMARC is easy, but can cause you the most headaches because it's what authorizes email to be delivered, and a misconfiguration can stop your email in its tracks. Therefore, it's highly recommended that you *first configure your DMARC policy to `none` to take no action* on emails for the first couple of weeks, using the reports generated to make sure everything is getting delivered as expected, and then to add a `quarantine` or `reject` policy and maybe ramp up implementation through the `pct` tag.
 
