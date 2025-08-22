@@ -2,13 +2,11 @@
 {"dg-publish":true,"permalink":"/technical-guides/securing-email/"}
 ---
 
-Securing your email is a critical part of protecting yourself and your business from scams and losses. The [FBI IC3 2024 Annual Report](https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf) identifies Business Email Compromise and Phishing/Spoofing as one of the biggest problems by far, causing a combined *$2.8 billion* in losses in 2024 alone.
+Securing your email is a critical part of protecting yourself and your business from scams and losses. The [FBI IC3 2024 Annual Report](https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf) identified Business Email Compromise and Phishing/Spoofing as one of the biggest problems causing a combined *$2.8 billion* in losses in 2024 alone.
 
 One of the best ways to protect yourself and those you interact with is to secure and authenticate emails you send. **Without** *tools like [[Definitions and Topics/SPF\|SPF]], [[Definitions and Topics/DKIM\|DKIM]], and [[Definitions and Topics/DMARC\|DMARC]]* to authenticate your your messages, *scammers can send messages that appear to come from you without having access to your account or server*. 
 
-Unfortunately, it's not a one-size-fits-all solution; many people will add a DKIM record but forget DMARC, or have a DMARC record where `p=none`, and these misconfigurations leave you vulnerable to attackers.
-
-I have you covered; below are [[Technical Guides/Securing Email#Definitions\|Definitions]], [[Technical Guides/Securing Email#Implementation\|Implementation Guides]], and [[Technical Guides/Securing Email#Tools and Resources\|Resources]] that will help you configure and protect your email and brand identity.
+I have you covered; below are [[Technical Guides/Securing Email#Protocol Summaries\|Protocol Summaries]], [[Technical Guides/Securing Email#Implementation\|Implementation Guides]], and [[Technical Guides/Securing Email#Tools and Resources\|additional resources]] that will help you configure and protect your email and brand identity.
 
 >[!tip] Don't send email from your domain?
 >If you don't send email from your domain, you only need **two DNS records that reject all email sent from your domain**:
@@ -16,7 +14,47 @@ I have you covered; below are [[Technical Guides/Securing Email#Definitions\|Def
 > DMARC: `TXT  _dmarc.example.com   "v=DMARC1; p=reject"`
  > (note that `example.com` should be your domain, as in `_dmarc.maxwellcti.com`)
 
-# Definitions
+# Email 101: Email Authentication
+Let's cover the basics if this is your first time looking into this or you need a refresher.
+
+Email is one of the oldest protocols of the internet, and has been around since at least 1980.^[[Simple Mail Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)] Back in those days, there wasn't a lot of concern about verifying who was sending the email, just that it got to where you sent it. Because of this, there were no authentication protocols built into it; just send and receive. Without verification, you (and attackers) can send an email as anyone else without having access to their accounts.
+## What is spoofing?
+
+Emails that impersonate another email address are called *spoofing emails*. Changing the display name for an email is easy, and doesn't impact email authentication. You've probably received many emails over the years claiming to be from businesses 
+
+![Securing Email-1.png](/img/user/Attachments/Securing%20Email-1.png)
+
+Common spoofing attacks take a variety of forms:
+1. Impersonating people within or partnered with your organization to intercept and redirect funds, gain access, or get people to install malware.
+	1. "Dear HR, I changed my bank recently; please send all paychecks to..."
+	2. "Accounts payable, please use the updated routing number below..."
+	3. "This is your IT department; please download the urgent security patch below..."
+2. Send you an email *as you* to make you more likely to click the link.
+	1. This often looks odd, and our natural curiosity as humans leads to more clicks.
+3. Using your domains reputation to make unrelated scam emails more likely to be delivered.
+	1. Domains build up reputation over time, and an older domain with a long history of email traffic is more likely to be delivered than a new domain setup yesterday.
+	2. This hurts your domain's reputation and makes it more likely that real emails will be sent to spam.
+
+## How does authentication work?
+
+Since 1980, we've come up with three protocols to help authenticate email; [[Definitions and Topics/SPF\|SPF]], [[Definitions and Topics/DKIM\|DKIM]], and [[Definitions and Topics/DMARC\|DMARC]]. Combined, they are used to identify servers that are permitted to send email on your behalf, signing certification to authenticate legitimate email, a define a policy for emails that fail authentication.
+
+*It is critical for all three protocols to be configured correctly to make ensure real emails get delivered.*
+
+*SPF* was the first protocol released, and it includes both a basic authorization and policy process. It lists out domains which are allowed to send email, and says what to do with everything else. The policy component was replaced with DMARC, but some email hosts still rely on SPF for authentication.
+
+*DKIM* signs emails sent from your approved servers and provides recipients with a public key to verify the signature. This ensures that the emails are not changed in transit and makes sure that any routing problems don't lead to authentication failures.
+
+*DMARC* checks if the SPF and DKIM authentication checks passed, then confirms that they match (or align with) the sending domain, and if at least one of them both passes and is in alignment, marks the email as legitimate. If an email fails both checks, then DMARC tells the recipient server what to do with the email; nothing (`none`), send it to junk (`quarantine`), or do not deliver it to the mailbox (`reject`). It also provides addresses for receiving servers to send *DMARC Reports*, which include details on what emails they've received and whether they passed or failed authentication. The reports are not very easy to read by themselves, but can be interpreted by services or scripts to convert them into usable data.
+
+## The broader email ecosystem
+
+Email authentication doesn't happen in a vacuum. In lieu of consistent SPF/DKIM/DMARC configurations, many companies rely on heuristic analysis of emails to determine if they are phishy or not. Additionally, the policies set forth in SPF and DMARC are more like guidelines, and while many email hosts comply with them, some have made decisions not to reject emails based on DMARC policies alone. This means that even if you have a well-defined policy set to `reject` inauthentic mail, some mail hosts could still deliver them to mailboxes.
+
+Additionally, Google, Yahoo, Apple Mail, and Microsoft require all domains which send more than 5,000 emails in a day to have a valid DMARC policy.^[[Understanding Gmail and Yahoo DMARC Requirements - dmarcian](https://dmarcian.com/yahoo-and-google-dmarc-required/)] While a policy of `none` technically meets the requirements, it still leaves you and your domain vulnerable to spoofing.
+
+# Protocol Summaries
+
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/definitions-and-topics/spf/#spf" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
@@ -102,10 +140,15 @@ I have you covered; below are [[Technical Guides/Securing Email#Definitions\|Def
 		- However, if you want more granularity (like different aggregate/failure report addresses), you can add another record for that subdomain.
 - DMARC verifies [[Definitions and Topics/AAA\|authentication]] by requiring alignment with either [[Definitions and Topics/SPF\|SPF]] or [[Definitions and Topics/DKIM\|DKIM]], specifies a policy instructing receivers how to handle [[Definitions and Topics/AAA\|unauthorized]] senders, and generates XML reports sent to the domain owner for [[Definitions and Topics/AAA\|Accounting]].
 
+> [!note]
 > If you are reviewing old records, you might see a DKIM record with `v=DKIM1; o=~`. This is an outdated and unused spec; it can be deleted without issue.^[[What is this extra \_domainkey.? Should I kill it? : r/DMARC](https://www.reddit.com/r/DMARC/comments/1h7elj3/comment/m0kwi0l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)] ^[[draft-allman-dkim-ssp-01](https://datatracker.ietf.org/doc/html/draft-allman-dkim-ssp-01/#section-5)]
 
 
 </div></div>
+
+
+## Extras
+I'm not covering these protocols in this guide, but you may see them referenced elsewhere and might be interesting for you to investigate.
 
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/definitions-and-topics/bimi/#bimi" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
@@ -120,6 +163,7 @@ I have you covered; below are [[Technical Guides/Securing Email#Definitions\|Def
 
 
 </div></div>
+
 
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
@@ -140,12 +184,12 @@ I have you covered; below are [[Technical Guides/Securing Email#Definitions\|Def
 
 
 # Implementation
-Below are implementation and syntax guides for each type of record; but to have a smooth rollout I recommend following these steps.
+Below is an implementation plan and syntax guides for each protocol. To ensure a smooth roll-out, I encourage you to plan your steps carefully and make sure your syntax is correct.
 
 > [!Note]
 > Many experts recommend configuring SPF and DKIM records at least 48 hours before DMARC,^[[Recommended DMARC rollout - Google Workspace Admin Help](https://support.google.com/a/answer/10032473?sjid=10183544884627146580-NC)] ^[[cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf](https://www.cisco.com/c/dam/en/us/products/collateral/security/esa-spf-dkim-dmarc.pdf)] but I don't think this is efficient.
 > 
-> Even though all email sent during this period will show as "failed authentication," setting up DMARC in *audit mode* as the first step will provide you with more information sooner about who is sending email on your organization's behalf, which can help you correct your SPF and DKIM records more quickly. There is no risk in creating DMARC record immediately as long as you set `p=none` so no action is taken on emails that fail authentication.
+> Even though all email sent during this period will show as "failed authentication," setting up DMARC in *audit mode* (with `p=none`) as the first step will provide you with more information sooner about who is sending email on your organization's behalf. This can help you correct your SPF and DKIM records more quickly, and there is no risk of email delivery failure. You just need to be absolutely certain that DMARC is set to `p=none` so no action is taken on emails that fail authentication.
 
 ## Implementation Plan
 1. **Configure DMARC to generate delivery reports**

@@ -22,11 +22,11 @@ Still not sure where to start? Why not check out my guide on [[Technical Guides/
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
 | 25 Most Recently Modified Pages                                                                   | Last Modified |
 | ------------------------------------------------------------------------------------------------- | ------------- |
-| [[Definitions and Topics/DMARC\|DMARC]]                                                        | 2025, Aug 20  |
+| [[Technical Guides/Securing Email\|Securing Email]]                                            | 2025, Aug 21  |
+| [[Definitions and Topics/DMARC\|DMARC]]                                                        | 2025, Aug 21  |
 | [[Frameworks, Standards, and Regulations/NIST/RMF/NIST SP 800-37 (RMF)\|NIST SP 800-37 (RMF)]] | 2025, Aug 20  |
 | [[_Blog and Research/Zoom Phishing Email\|Zoom Phishing Email]]                                | 2025, Aug 06  |
 | [[Definitions and Topics/SPF\|SPF]]                                                            | 2025, Aug 01  |
-| [[Technical Guides/Securing Email\|Securing Email]]                                            | 2025, Aug 01  |
 | [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]]                    | 2025, Jul 14  |
 | [[Tool Deep-Dives/Linux/grep\|grep]]                                                           | 2025, Jul 12  |
 | [[Tool Deep-Dives/Linux/zgrep\|zgrep]]                                                         | 2025, Jul 12  |
