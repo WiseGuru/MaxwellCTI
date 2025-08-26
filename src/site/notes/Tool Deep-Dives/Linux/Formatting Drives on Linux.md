@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/formatting-drives-on-linux/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/formatting-drives-on-linux/","updated":"2024-11-12T21:03:40.881-08:00"}
 ---
 
 #### Summary

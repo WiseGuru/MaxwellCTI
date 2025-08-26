@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/path-variable/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/path-variable/","updated":"2025-02-20T12:47:21.134-08:00"}
 ---
 
 #### $PATH

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/proxmox-virtual-environment/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/proxmox-virtual-environment/","updated":"2025-02-02T14:27:50.000-08:00"}
 ---
 
 #### Proxmox VE

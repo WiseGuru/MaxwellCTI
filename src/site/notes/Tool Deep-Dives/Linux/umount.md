@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/umount/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/umount/","updated":"2025-05-30T10:18:52.610-07:00"}
 ---
 
 #### umount

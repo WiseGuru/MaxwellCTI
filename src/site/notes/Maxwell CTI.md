@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/maxwell-cti/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/maxwell-cti/","tags":["gardenEntry"],"updated":"2025-06-30T14:26:50.717-07:00"}
 ---
 
 # Welcome to Maxwell CTI!
@@ -20,32 +20,32 @@ Still not sure where to start? Why not check out my guide on [[Technical Guides/
 
 ## Recently Modified Pages
 Take this with a grain of salt; I synchronize my Obsidian vault between devices with Resilio Sync, which can set an artificial "last modified" timestamp.
-| 25 Most Recently Modified Pages                                                                   | Last Modified |
-| ------------------------------------------------------------------------------------------------- | ------------- |
-| [[Technical Guides/Securing Email\|Securing Email]]                                            | 2025, Aug 21  |
-| [[Definitions and Topics/DMARC\|DMARC]]                                                        | 2025, Aug 21  |
-| [[Frameworks, Standards, and Regulations/NIST/RMF/NIST SP 800-37 (RMF)\|NIST SP 800-37 (RMF)]] | 2025, Aug 20  |
-| [[_Blog and Research/Zoom Phishing Email\|Zoom Phishing Email]]                                | 2025, Aug 06  |
-| [[Definitions and Topics/SPF\|SPF]]                                                            | 2025, Aug 01  |
-| [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]]                    | 2025, Jul 14  |
-| [[Tool Deep-Dives/Linux/grep\|grep]]                                                           | 2025, Jul 12  |
-| [[Tool Deep-Dives/Linux/zgrep\|zgrep]]                                                         | 2025, Jul 12  |
-| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]]                 | 2025, Jul 11  |
-| [[Tool Deep-Dives/Linux/chmod\|chmod]]                                                         | 2025, Jul 07  |
-| [[Tool Deep-Dives/SSH/OpenSSH\|OpenSSH]]                                                       | 2025, Jul 07  |
-| [[Tool Deep-Dives/SSH/SSH\|SSH]]                                                               | 2025, Jul 04  |
-| [[Tool Deep-Dives/Windows/RDP\|RDP]]                                                           | 2025, Jul 02  |
-| [[Tool Deep-Dives/OSINT/exiftool\|exiftool]]                                                   | 2025, Jun 30  |
-| [[Definitions and Topics/exif\|exif]]                                                          | 2025, Jun 30  |
-| [[Frameworks, Standards, and Regulations/SOC/SOC 2\|SOC 2]]                                    | 2025, Jun 30  |
-| [[Definitions and Topics/Trust Service Categories\|Trust Service Categories]]                  | 2025, Jun 30  |
-| [[Frameworks, Standards, and Regulations/SOC/SOC Reports\|SOC Reports]]                        | 2025, Jun 30  |
-| [[Frameworks, Standards, and Regulations/NIST/FISMA\|FISMA]]                                   | 2025, Jun 30  |
-| [[Tool Deep-Dives/Linux/Installing Software on Debian\|Installing Software on Debian]]         | 2025, Jun 30  |
-| [[Definitions and Topics/System Security Plan\|System Security Plan]]                          | 2025, Jun 30  |
-| [[Definitions and Topics/DKIM\|DKIM]]                                                          | 2025, Jun 25  |
-| [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53B\|800-53B]]                   | 2025, Jun 16  |
-| [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53A\|800-53A]]                   | 2025, Jun 16  |
-| [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]]                 | 2025, Jun 16  |
+| 25 Most Recently Modified Pages                                                                                       | Last Modified |
+| --------------------------------------------------------------------------------------------------------------------- | ------------- |
+| [[Frameworks, Standards, and Regulations/NIST/NIST Frameworks and SPs Overview\|NIST Frameworks and SPs Overview]] | 2025, Aug 26  |
+| [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]]                                     | 2025, Aug 26  |
+| [[Technical Guides/Securing Email\|Securing Email]]                                                                | 2025, Aug 21  |
+| [[Definitions and Topics/DMARC\|DMARC]]                                                                            | 2025, Aug 21  |
+| [[Frameworks, Standards, and Regulations/NIST/RMF/NIST SP 800-37 (RMF)\|NIST SP 800-37 (RMF)]]                     | 2025, Aug 20  |
+| [[_Blog and Research/Zoom Phishing Email\|Zoom Phishing Email]]                                                    | 2025, Aug 06  |
+| [[Definitions and Topics/SPF\|SPF]]                                                                                | 2025, Aug 01  |
+| [[Frameworks, Standards, and Regulations/NIST/NIST CSF/NIST CSF\|NIST CSF]]                                        | 2025, Jul 14  |
+| [[Tool Deep-Dives/Linux/grep\|grep]]                                                                               | 2025, Jul 12  |
+| [[Tool Deep-Dives/Linux/zgrep\|zgrep]]                                                                             | 2025, Jul 12  |
+| [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]]                                     | 2025, Jul 11  |
+| [[Tool Deep-Dives/Linux/chmod\|chmod]]                                                                             | 2025, Jul 07  |
+| [[Tool Deep-Dives/SSH/OpenSSH\|OpenSSH]]                                                                           | 2025, Jul 07  |
+| [[Tool Deep-Dives/SSH/SSH\|SSH]]                                                                                   | 2025, Jul 04  |
+| [[Tool Deep-Dives/Windows/RDP\|RDP]]                                                                               | 2025, Jul 02  |
+| [[Tool Deep-Dives/OSINT/exiftool\|exiftool]]                                                                       | 2025, Jun 30  |
+| [[Definitions and Topics/exif\|exif]]                                                                              | 2025, Jun 30  |
+| [[Frameworks, Standards, and Regulations/SOC/SOC 2\|SOC 2]]                                                        | 2025, Jun 30  |
+| [[Definitions and Topics/Trust Service Categories\|Trust Service Categories]]                                      | 2025, Jun 30  |
+| [[Frameworks, Standards, and Regulations/SOC/SOC Reports\|SOC Reports]]                                            | 2025, Jun 30  |
+| [[Frameworks, Standards, and Regulations/NIST/FISMA\|FISMA]]                                                       | 2025, Jun 30  |
+| [[Tool Deep-Dives/Linux/Installing Software on Debian\|Installing Software on Debian]]                             | 2025, Jun 30  |
+| [[Definitions and Topics/System Security Plan\|System Security Plan]]                                              | 2025, Jun 30  |
+| [[Definitions and Topics/DKIM\|DKIM]]                                                                              | 2025, Jun 25  |
+| [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53B\|800-53B]]                                       | 2025, Jun 16  |
 
 { .block-language-dataview}

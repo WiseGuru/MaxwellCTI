@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws-practitioner/amazon-course/module-2-compute-in-the-cloud/"}
+{"dg-publish":true,"permalink":"/aws-practitioner/amazon-course/module-2-compute-in-the-cloud/","updated":"2024-02-16T14:04:43.000-08:00"}
 ---
 
 1. Multitenancy

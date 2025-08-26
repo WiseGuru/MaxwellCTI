@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/soc/soc-reports/","tags":["SOC"]}
+{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/soc/soc-reports/","tags":["SOC"],"updated":"2025-06-30T14:33:12.540-07:00"}
 ---
 
 #### SOC Reports

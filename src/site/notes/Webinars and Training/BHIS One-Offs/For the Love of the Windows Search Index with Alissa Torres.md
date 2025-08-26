@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/bhis-one-offs/for-the-love-of-the-windows-search-index-with-alissa-torres/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/bhis-one-offs/for-the-love-of-the-windows-search-index-with-alissa-torres/","updated":"2024-02-15T16:02:37.000-08:00"}
 ---
 
 ### Introduction

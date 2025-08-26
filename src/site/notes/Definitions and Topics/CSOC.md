@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/csoc/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/csoc/","updated":"2025-06-12T12:43:02.304-07:00"}
 ---
 
 #### CSOC

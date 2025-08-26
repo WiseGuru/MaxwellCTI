@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/000-bhis-lab-directory/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/000-bhis-lab-directory/","updated":"2025-06-09T11:44:30.492-07:00"}
 ---
 
 These labs were initially completed the first time I took [John Strand's "SOC Core Skills"](https://www.antisyphontraining.com/course/soc-core-skills-with-john-strand/) course in March of 2024, and were touched-up and uploaded over the course of 2024. In June of 2025, I discovered that the VM and labs were updated. So just bear in mind that any published labs from before June 2025 will contain old information until I revisit them.

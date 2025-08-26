@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/zero-day/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/zero-day/","updated":"2024-03-28T13:55:05.000-07:00"}
 ---
 
 #### Zero-day

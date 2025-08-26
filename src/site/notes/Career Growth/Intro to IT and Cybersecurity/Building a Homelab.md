@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/career-growth/intro-to-it-and-cybersecurity/building-a-homelab/","tags":["VM"]}
+{"dg-publish":true,"permalink":"/career-growth/intro-to-it-and-cybersecurity/building-a-homelab/","tags":["VM"],"updated":"2025-02-18T10:24:55.664-08:00"}
 ---
 
 # Why Build a Homelab?

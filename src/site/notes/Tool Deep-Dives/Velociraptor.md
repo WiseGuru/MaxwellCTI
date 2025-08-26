@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/velociraptor/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/velociraptor/","updated":"2024-03-26T13:52:39.000-07:00"}
 ---
 
 #### Velociraptor

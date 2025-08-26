@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/unified-kill-chain/thm-unified-kill-chain/"}
+{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/unified-kill-chain/thm-unified-kill-chain/","updated":"2024-02-18T16:25:07.000-08:00"}
 ---
 
 #thm 

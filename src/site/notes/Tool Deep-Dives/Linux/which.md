@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/which/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/which/","updated":"2024-09-12T09:02:53.000-07:00"}
 ---
 
 #### which

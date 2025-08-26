@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/attack-surface-management/asm-resources/"}
+{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/attack-surface-management/asm-resources/","updated":"2024-02-19T21:49:13.000-08:00"}
 ---
 
 ## ASM Videos

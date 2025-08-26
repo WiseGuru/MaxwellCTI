@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/upgrade-vs-dist-upgrade/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/upgrade-vs-dist-upgrade/","updated":"2024-01-03T12:49:44.000-08:00"}
 ---
 
 

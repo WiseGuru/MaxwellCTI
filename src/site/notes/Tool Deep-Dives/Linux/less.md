@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/less/","tags":["tools_linux"]}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/less/","tags":["tools_linux"],"updated":"2024-02-26T10:17:55.000-08:00"}
 ---
 
 #### less

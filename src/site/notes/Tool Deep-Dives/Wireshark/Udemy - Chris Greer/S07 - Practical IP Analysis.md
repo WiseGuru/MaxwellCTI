@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s07-practical-ip-analysis/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s07-practical-ip-analysis/","updated":"2024-02-16T13:32:08.000-08:00"}
 ---
 
 1. IP Identification

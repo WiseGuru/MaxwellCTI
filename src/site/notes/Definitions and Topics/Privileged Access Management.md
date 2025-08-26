@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/privileged-access-management/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/privileged-access-management/","updated":"2024-04-29T16:45:34.000-07:00"}
 ---
 
 #### Privileged Access Management

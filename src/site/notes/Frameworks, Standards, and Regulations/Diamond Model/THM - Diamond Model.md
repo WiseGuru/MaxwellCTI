@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/diamond-model/thm-diamond-model/"}
+{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/diamond-model/thm-diamond-model/","updated":"2024-02-18T16:25:46.000-08:00"}
 ---
 
 ![THM - Diamond Model-1.png](/img/user/Attachments/THM%20-%20Diamond%20Model-1.png)

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-sysmon/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-sysmon/","updated":"2025-06-09T11:43:04.745-07:00"}
 ---
 
 

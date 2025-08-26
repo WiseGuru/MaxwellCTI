@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/privileged-identity-management/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/privileged-identity-management/","updated":"2024-04-29T16:45:36.000-07:00"}
 ---
 
 #### Privileged Identity Management

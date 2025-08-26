@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/chmod/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/chmod/","updated":"2025-07-07T21:34:15.677-07:00"}
 ---
 
 #### chmod

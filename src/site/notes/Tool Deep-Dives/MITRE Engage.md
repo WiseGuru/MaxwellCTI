@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/mitre-engage/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/mitre-engage/","updated":"2024-04-01T16:42:26.000-07:00"}
 ---
 
 #### MITRE Engage

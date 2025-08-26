@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-06-egress-traffic-analysis/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-06-egress-traffic-analysis/","updated":"2025-06-09T08:59:46.743-07:00"}
 ---
 
 

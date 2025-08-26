@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/osint/ffuf/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/osint/ffuf/","updated":"2024-05-13T13:15:48.000-07:00"}
 ---
 
 #### ffuf - Fuzz Faster U Fool

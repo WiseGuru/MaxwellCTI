@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/windows/netstat/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/windows/netstat/","updated":"2024-03-11T10:47:18.000-07:00"}
 ---
 
 #### netstat

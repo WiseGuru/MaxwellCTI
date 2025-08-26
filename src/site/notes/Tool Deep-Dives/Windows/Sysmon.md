@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/windows/sysmon/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/windows/sysmon/","updated":"2025-06-12T15:12:06.208-07:00"}
 ---
 
 #### Sysmon

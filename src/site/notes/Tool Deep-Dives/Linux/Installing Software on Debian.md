@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/installing-software-on-debian/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/installing-software-on-debian/","updated":"2025-06-30T14:20:05.974-07:00"}
 ---
 
 There are a few different ways to install software on a Debian; this not a complete list, and there are various other tools (like [Nala](https://gitlab.com/volian/nala)) that further extend and modify the native tools.

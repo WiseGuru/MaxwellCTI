@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/career-growth/intro-to-it-and-cybersecurity/recommended-helpdesk-classes-and-lectures/"}
+{"dg-publish":true,"permalink":"/career-growth/intro-to-it-and-cybersecurity/recommended-helpdesk-classes-and-lectures/","updated":"2025-02-03T15:58:34.000-08:00"}
 ---
 
 # Learning how to troubleshoot

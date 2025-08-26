@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-tcpdump/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-tcpdump/","updated":"2025-06-09T11:42:55.939-07:00"}
 ---
 
 

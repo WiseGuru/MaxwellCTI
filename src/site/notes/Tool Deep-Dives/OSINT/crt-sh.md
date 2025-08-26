@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/osint/crt-sh/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/osint/crt-sh/","updated":"2024-05-06T14:04:37.000-07:00"}
 ---
 
 #### [crt.sh | Certificate Search](https://crt.sh/)

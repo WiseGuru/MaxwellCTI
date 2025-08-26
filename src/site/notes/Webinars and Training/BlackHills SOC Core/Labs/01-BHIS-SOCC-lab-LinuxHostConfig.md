@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/01-bhis-socc-lab-linux-host-config/","tags":["VM"]}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/01-bhis-socc-lab-linux-host-config/","tags":["VM"],"updated":"2025-06-09T11:21:26.705-07:00"}
 ---
 
 

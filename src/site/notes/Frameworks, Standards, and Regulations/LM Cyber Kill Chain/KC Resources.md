@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/lm-cyber-kill-chain/kc-resources/"}
+{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/lm-cyber-kill-chain/kc-resources/","updated":"2024-02-18T16:25:33.000-08:00"}
 ---
 
 ## Source

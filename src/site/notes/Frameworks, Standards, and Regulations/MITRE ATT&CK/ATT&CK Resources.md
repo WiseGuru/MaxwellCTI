@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/mitre-att-and-ck/att-and-ck-resources/"}
+{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/mitre-att-and-ck/att-and-ck-resources/","updated":"2024-03-05T10:17:51.000-08:00"}
 ---
 
 

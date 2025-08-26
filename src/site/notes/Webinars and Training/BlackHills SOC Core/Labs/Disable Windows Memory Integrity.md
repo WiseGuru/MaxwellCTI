@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/disable-windows-memory-integrity/","tags":["VM"]}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/disable-windows-memory-integrity/","tags":["VM"],"updated":"2025-02-18T10:25:18.519-08:00"}
 ---
 
 Disabling Windows Memory Integrity is simple enough, and necessary if you're running a VM within a VM^[YoDawgIHerdULike.jpeg] and you have a few ways of getting there.

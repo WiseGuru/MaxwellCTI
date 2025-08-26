@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s01-02-introduction/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s01-02-introduction/","updated":"2024-03-09T11:58:22.000-08:00"}
 ---
 
 ## First Exercise

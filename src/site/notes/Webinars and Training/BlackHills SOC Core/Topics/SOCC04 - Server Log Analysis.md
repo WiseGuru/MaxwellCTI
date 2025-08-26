@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-04-server-log-analysis/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-04-server-log-analysis/","updated":"2024-03-11T12:51:02.000-07:00"}
 ---
 
 # Server Analysis

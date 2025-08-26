@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/changing-the-wireshark-display/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/changing-the-wireshark-display/","updated":"2024-02-14T11:54:50.000-08:00"}
 ---
 
 ## Configuring a profile

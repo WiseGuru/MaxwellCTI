@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/siem/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/siem/","updated":"2024-03-13T15:52:22.000-07:00"}
 ---
 
 #### SIEM

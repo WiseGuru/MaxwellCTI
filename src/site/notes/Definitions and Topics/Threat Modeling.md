@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/threat-modeling/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/threat-modeling/","updated":"2024-04-29T16:03:31.000-07:00"}
 ---
 
 #### Threat Modeling

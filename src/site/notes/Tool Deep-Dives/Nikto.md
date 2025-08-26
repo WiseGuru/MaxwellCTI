@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/nikto/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/nikto/","updated":"2024-08-01T12:25:14.412-07:00"}
 ---
 
 #### Nikto

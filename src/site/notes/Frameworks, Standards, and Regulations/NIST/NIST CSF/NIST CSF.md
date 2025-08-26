@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/nist/nist-csf/nist-csf/"}
+{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/nist/nist-csf/nist-csf/","updated":"2025-07-14T14:05:38.351-07:00"}
 ---
 
 > If you are just getting started, I recommend [just reading it](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf) since it's only **32 pages** long.

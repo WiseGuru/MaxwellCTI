@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/7zip/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/7zip/","updated":"2024-06-24T12:35:13.302-07:00"}
 ---
 
 #### 7zip

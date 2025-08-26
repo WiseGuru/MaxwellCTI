@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/fstab/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/fstab/","updated":"2024-11-12T14:03:42.549-08:00"}
 ---
 
 #### fstab

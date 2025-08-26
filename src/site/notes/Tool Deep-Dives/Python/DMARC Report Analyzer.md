@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/python/dmarc-report-analyzer/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/python/dmarc-report-analyzer/","updated":"2025-05-29T17:23:16.392-07:00"}
 ---
 
 #### DMARC Report Analyzer

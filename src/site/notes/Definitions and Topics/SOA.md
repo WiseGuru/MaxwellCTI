@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/soa/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/soa/","updated":"2025-05-26T18:50:58.905-07:00"}
 ---
 
 #### SOA

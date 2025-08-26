@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/lan-turtle/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/lan-turtle/","updated":"2024-03-18T11:47:32.000-07:00"}
 ---
 
 #### LAN Turtle

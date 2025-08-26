@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/subdomain-enumeration/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/subdomain-enumeration/","updated":"2024-05-06T14:39:11.000-07:00"}
 ---
 
 #### Subdomain Enumeration

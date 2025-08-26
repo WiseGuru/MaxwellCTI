@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/sort/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/sort/","updated":"2025-05-30T10:18:45.558-07:00"}
 ---
 
 #### sort

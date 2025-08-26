@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technical-guides/securing-email/"}
+{"dg-publish":true,"permalink":"/technical-guides/securing-email/","updated":"2025-08-21T21:16:17.980-07:00"}
 ---
 
 Securing your email is a critical part of protecting yourself and your business from scams and losses. The [FBI IC3 2024 Annual Report](https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf) identified Business Email Compromise and Phishing/Spoofing as one of the biggest problems causing a combined *$2.8 billion* in losses in 2024 alone.

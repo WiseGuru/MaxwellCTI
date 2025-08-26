@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/business-continuity-and-disaster-recovery-guide/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/business-continuity-and-disaster-recovery-guide/","updated":"2024-04-29T16:45:47.000-07:00"}
 ---
 
 #### Business Continuity and Disaster Recovery Guide

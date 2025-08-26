@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-memory-analyses/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-memory-analyses/","updated":"2025-06-09T11:43:13.699-07:00"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/responder/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/responder/","updated":"2024-03-18T10:36:55.000-07:00"}
 ---
 
 #### Responder

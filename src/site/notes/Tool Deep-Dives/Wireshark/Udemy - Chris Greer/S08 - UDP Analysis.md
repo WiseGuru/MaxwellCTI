@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s08-udp-analysis/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s08-udp-analysis/","updated":"2024-06-02T11:24:25.000-07:00"}
 ---
 
 1. UDP Header

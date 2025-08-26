@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources-and-communities/"}
+{"dg-publish":true,"permalink":"/resources-and-communities/","updated":"2025-06-12T15:22:16.077-07:00"}
 ---
 
 1. Monoliths (Active MSSPs and organizations)

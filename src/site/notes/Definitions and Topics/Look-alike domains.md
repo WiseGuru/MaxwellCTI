@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/look-alike-domains/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/look-alike-domains/","updated":"2024-05-06T13:57:30.000-07:00"}
 ---
 
 #### Look-alike domains

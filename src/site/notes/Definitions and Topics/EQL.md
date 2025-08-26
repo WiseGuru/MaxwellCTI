@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/eql/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/eql/","updated":"2024-04-01T16:18:40.000-07:00"}
 ---
 
 #### EQL

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/email-harvesting/","tags":["defs_sec"]}
+{"dg-publish":true,"permalink":"/definitions-and-topics/email-harvesting/","tags":["defs_sec"],"updated":"2025-06-12T15:10:43.084-07:00"}
 ---
 
 #### Email Harvesting

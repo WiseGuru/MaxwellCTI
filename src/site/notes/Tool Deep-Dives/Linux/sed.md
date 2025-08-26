@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/sed/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/sed/","updated":"2024-11-12T13:02:22.901-08:00"}
 ---
 
 #### sed

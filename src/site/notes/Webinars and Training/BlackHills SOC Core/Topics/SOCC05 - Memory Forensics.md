@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-05-memory-forensics/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-05-memory-forensics/","updated":"2025-06-09T11:37:04.617-07:00"}
 ---
 
 

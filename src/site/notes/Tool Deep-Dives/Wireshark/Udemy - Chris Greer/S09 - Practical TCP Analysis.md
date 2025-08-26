@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s09-practical-tcp-analysis/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s09-practical-tcp-analysis/","updated":"2024-02-16T13:32:03.000-08:00"}
 ---
 
 1. The TCP Handshake Intro

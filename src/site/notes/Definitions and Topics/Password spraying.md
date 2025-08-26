@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/password-spraying/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/password-spraying/","updated":"2024-03-18T09:13:59.000-07:00"}
 ---
 
 #### Password Spraying

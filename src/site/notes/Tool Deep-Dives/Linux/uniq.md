@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/uniq/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/uniq/","updated":"2025-05-30T10:18:57.884-07:00"}
 ---
 
 #### uniq

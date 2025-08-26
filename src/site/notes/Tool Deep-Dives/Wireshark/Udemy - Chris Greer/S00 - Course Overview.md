@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s00-course-overview/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s00-course-overview/","updated":"2024-03-31T14:53:13.000-07:00"}
 ---
 
 [Getting Started with Wireshark: The Ultimate Hands-On Course | Udemy](https://www.udemy.com/course/wireshark-ultimate-hands-on-course/)

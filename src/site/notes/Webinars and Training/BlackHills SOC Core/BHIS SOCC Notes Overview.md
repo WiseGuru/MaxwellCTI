@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/bhis-socc-notes-overview/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/bhis-socc-notes-overview/","updated":"2025-06-09T11:37:04.604-07:00"}
 ---
 
 # Introduction

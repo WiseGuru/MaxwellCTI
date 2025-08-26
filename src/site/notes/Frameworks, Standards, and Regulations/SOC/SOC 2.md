@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/soc/soc-2/"}
+{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/soc/soc-2/","updated":"2025-06-30T14:35:53.392-07:00"}
 ---
 
 #### SOC 2

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s03-configuring-wireshark/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s03-configuring-wireshark/","updated":"2024-02-16T13:32:20.000-08:00"}
 ---
 
 

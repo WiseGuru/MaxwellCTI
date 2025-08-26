@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-deep-blue-cli/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/labs/bhis-socc-lab-deep-blue-cli/","updated":"2025-06-09T11:43:34.223-07:00"}
 ---
 
 

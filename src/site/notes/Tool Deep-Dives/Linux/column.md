@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/column/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/column/","updated":"2024-03-12T16:39:00.000-07:00"}
 ---
 
 #### column

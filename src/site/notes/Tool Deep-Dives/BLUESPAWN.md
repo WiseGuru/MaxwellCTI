@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/bluespawn/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/bluespawn/","updated":"2024-03-13T15:30:17.000-07:00"}
 ---
 
 #### BLUESPAWN

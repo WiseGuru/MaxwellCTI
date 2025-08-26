@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/nist/rmf/nist-sp-800-37-rmf/"}
+{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/nist/rmf/nist-sp-800-37-rmf/","updated":"2025-08-20T11:23:26.461-07:00"}
 ---
 
 #### NIST SP 800-37 (RMF)

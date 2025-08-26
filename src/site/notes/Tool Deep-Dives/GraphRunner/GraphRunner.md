@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/graph-runner/graph-runner/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/graph-runner/graph-runner/","updated":"2025-02-05T15:03:16.961-08:00"}
 ---
 
 #### GraphRunner

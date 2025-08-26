@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/osint/exiftool/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/osint/exiftool/","updated":"2025-06-30T16:26:11.318-07:00"}
 ---
 
 #### exiftool

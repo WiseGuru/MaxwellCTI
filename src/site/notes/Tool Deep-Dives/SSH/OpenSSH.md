@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/ssh/open-ssh/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/ssh/open-ssh/","updated":"2025-07-07T21:23:19.272-07:00"}
 ---
 
 #### OpenSSH

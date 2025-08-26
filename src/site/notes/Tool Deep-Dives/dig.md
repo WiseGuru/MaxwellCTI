@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/dig/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/dig/","updated":"2025-05-27T09:11:01.941-07:00"}
 ---
 
 #### dig

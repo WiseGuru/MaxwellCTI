@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s10-troubleshooting-with-wireshark/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/udemy-chris-greer/s10-troubleshooting-with-wireshark/","updated":"2024-02-16T13:32:00.000-08:00"}
 ---
 
 1. Slow application response time

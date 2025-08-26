@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/capture-traffic-with-wireshark/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/capture-traffic-with-wireshark/","updated":"2024-02-14T11:54:43.000-08:00"}
 ---
 
 ### Start Capturing

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/tcpdump/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/tcpdump/","updated":"2025-06-09T11:36:21.778-07:00"}
 ---
 
 #### tcpdump

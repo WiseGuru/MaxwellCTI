@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/rules-of-engagement/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/rules-of-engagement/","updated":"2024-04-29T16:45:17.000-07:00"}
 ---
 
 #### Rules of Engagement

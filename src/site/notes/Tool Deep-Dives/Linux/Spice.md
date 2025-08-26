@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/spice/","tags":["VM"]}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/spice/","tags":["VM"],"updated":"2025-02-18T10:34:17.516-08:00"}
 ---
 
 #### Spice

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/exif/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/exif/","updated":"2025-06-30T16:03:13.530-07:00"}
 ---
 
 #### exif

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/exporting-v-ms-to-run-with-qemu/","tags":["VM"]}
+{"dg-publish":true,"permalink":"/tool-deep-dives/proxmox/exporting-v-ms-to-run-with-qemu/","tags":["VM"],"updated":"2025-05-27T09:27:52.127-07:00"}
 ---
 
 > **Disclaimer**: This is a long-ass process, and should really only be done if there are no other options. 

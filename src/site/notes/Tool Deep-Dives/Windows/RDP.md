@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/windows/rdp/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/windows/rdp/","updated":"2025-07-02T10:25:56.604-07:00"}
 ---
 
 #### RDP

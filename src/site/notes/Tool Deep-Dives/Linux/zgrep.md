@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/zgrep/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/zgrep/","updated":"2025-07-12T15:16:33.779-07:00"}
 ---
 
 #### zgrep

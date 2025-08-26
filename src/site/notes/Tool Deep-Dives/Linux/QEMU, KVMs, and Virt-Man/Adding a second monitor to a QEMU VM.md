@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/qemu-kv-ms-and-virt-man/adding-a-second-monitor-to-a-qemu-vm/","tags":["VM"]}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/qemu-kv-ms-and-virt-man/adding-a-second-monitor-to-a-qemu-vm/","tags":["VM"],"updated":"2025-02-18T10:24:37.500-08:00"}
 ---
 
 > In progress and possibly untested; take everything with a pinch of salt.

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/spf/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/spf/","updated":"2025-08-01T12:20:27.814-07:00"}
 ---
 
 #### SPF

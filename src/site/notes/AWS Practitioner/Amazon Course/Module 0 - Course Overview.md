@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws-practitioner/amazon-course/module-0-course-overview/"}
+{"dg-publish":true,"permalink":"/aws-practitioner/amazon-course/module-0-course-overview/","updated":"2024-02-16T14:02:45.000-08:00"}
 ---
 
 So I started this course, but I ran into a few issues.

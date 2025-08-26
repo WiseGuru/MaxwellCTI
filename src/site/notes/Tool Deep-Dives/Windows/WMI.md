@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/windows/wmi/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/windows/wmi/","updated":"2024-03-11T11:07:20.000-07:00"}
 ---
 
 > **NOTE**: CIM is the *open standard* of WMI, is cross-platform, and more efficient.

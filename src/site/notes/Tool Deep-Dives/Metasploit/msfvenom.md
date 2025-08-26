@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/metasploit/msfvenom/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/metasploit/msfvenom/","updated":"2024-03-08T12:33:33.000-08:00"}
 ---
 
 #### msfvenom

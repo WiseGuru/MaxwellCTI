@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/vad/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/vad/","updated":"2024-03-12T16:21:44.000-07:00"}
 ---
 
 #### VAD

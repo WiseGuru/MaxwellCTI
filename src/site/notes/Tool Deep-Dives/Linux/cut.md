@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/cut/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/cut/","updated":"2024-03-09T11:55:51.000-08:00"}
 ---
 
 #### cut

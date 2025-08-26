@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-08-endpoint-protection/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-08-endpoint-protection/","updated":"2024-03-13T16:15:26.000-07:00"}
 ---
 
 **NOTE**: We kinda rushed through this section in the class and I'm a little under the weather as I'm working on it now, so I've tidied it up a bit, but want to fill it in more later.

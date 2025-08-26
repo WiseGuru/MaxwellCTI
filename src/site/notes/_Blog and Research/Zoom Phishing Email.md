@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/blog-and-research/zoom-phishing-email/"}
+{"dg-publish":true,"permalink":"/blog-and-research/zoom-phishing-email/","updated":"2025-08-06T12:46:09.000-07:00"}
 ---
 
 # Zoom Gets Spoofed

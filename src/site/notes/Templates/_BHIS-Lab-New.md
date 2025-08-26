@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/templates/bhis-lab-new/"}
+{"dg-publish":true,"permalink":"/templates/bhis-lab-new/","updated":"2025-06-09T11:19:16.965-07:00"}
 ---
 
 ## LAB: 

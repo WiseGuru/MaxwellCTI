@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/nist/nist-sp-800-60/"}
+{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/nist/nist-sp-800-60/","updated":"2025-07-11T12:49:34.385-07:00"}
 ---
 
 #### NIST SP 800-60, Guide for Mapping Types of Information and Systems to Security Categories

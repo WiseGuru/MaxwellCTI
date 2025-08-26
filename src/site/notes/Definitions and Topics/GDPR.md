@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/gdpr/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/gdpr/","updated":"2025-05-07T08:34:46.337-07:00"}
 ---
 
 #### GDPR

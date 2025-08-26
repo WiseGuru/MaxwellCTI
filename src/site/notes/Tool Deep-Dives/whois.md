@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/whois/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/whois/","updated":"2025-05-30T10:21:55.630-07:00"}
 ---
 
 #### whois

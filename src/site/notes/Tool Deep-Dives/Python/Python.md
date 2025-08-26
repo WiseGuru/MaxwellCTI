@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/python/python/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/python/python/","updated":"2024-03-27T10:57:59.000-07:00"}
 ---
 
 #### Python

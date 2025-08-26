@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-02-linux/"}
+{"dg-publish":true,"permalink":"/webinars-and-training/black-hills-soc-core/topics/socc-02-linux/","updated":"2024-02-20T11:02:22.000-08:00"}
 ---
 
 # Become the Master Triager

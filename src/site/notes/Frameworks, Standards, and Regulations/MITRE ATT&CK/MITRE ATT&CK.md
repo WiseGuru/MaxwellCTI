@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/mitre-att-and-ck/mitre-att-and-ck/"}
+{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/mitre-att-and-ck/mitre-att-and-ck/","updated":"2024-03-05T20:39:08.000-08:00"}
 ---
 
 ## MITRE ATT&CK Overview

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/linux/remmina/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/linux/remmina/","updated":"2025-02-04T11:05:49.000-08:00"}
 ---
 
 

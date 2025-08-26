@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/windows/power-shell/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/windows/power-shell/","updated":"2024-03-28T11:16:08.000-07:00"}
 ---
 
 

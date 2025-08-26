@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/cuec/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/cuec/","updated":"2025-06-12T12:42:56.865-07:00"}
 ---
 
 #### CUEC

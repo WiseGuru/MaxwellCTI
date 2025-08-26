@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/nist/fisma/"}
+{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/nist/fisma/","updated":"2025-06-30T14:25:40.432-07:00"}
 ---
 
 #### FISMA

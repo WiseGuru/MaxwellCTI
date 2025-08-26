@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wazuh/wazuh/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wazuh/wazuh/","updated":"2024-03-13T16:02:26.000-07:00"}
 ---
 
 #### Wazuh

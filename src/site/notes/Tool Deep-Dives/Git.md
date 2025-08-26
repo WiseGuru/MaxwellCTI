@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/git/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/git/","updated":"2024-04-30T13:40:57.000-07:00"}
 ---
 
 #### Git

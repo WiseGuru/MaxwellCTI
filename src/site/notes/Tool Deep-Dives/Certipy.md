@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/certipy/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/certipy/","updated":"2024-08-07T09:40:53.765-07:00"}
 ---
 
 #### Certipy

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/reading-information-from-the-display/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/wireshark/guides/reading-information-from-the-display/","updated":"2024-02-14T11:55:04.000-08:00"}
 ---
 
 1. Packet count

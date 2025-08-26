@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/system-security-plan/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/system-security-plan/","updated":"2025-06-30T14:18:55.186-07:00"}
 ---
 
 #### SSP

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/python/python-introduction/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/python/python-introduction/","updated":"2024-04-16T13:26:54.000-07:00"}
 ---
 
 I started this section by following this video to ["Learn Python in 1 Hour"](https://www.youtube.com/watch?v=kqtD5dpn9C8), but then immediately got distracted by Python's potential and went down a rabbit hole.^[Or hognose hole, if you will.]

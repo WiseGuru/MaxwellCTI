@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/kerberoasting/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/kerberoasting/","updated":"2024-03-13T09:33:27.000-07:00"}
 ---
 
 #### Kerberoasting

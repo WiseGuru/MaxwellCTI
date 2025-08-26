@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tool-deep-dives/logon-tracer/"}
+{"dg-publish":true,"permalink":"/tool-deep-dives/logon-tracer/","updated":"2024-08-07T09:44:08.125-07:00"}
 ---
 
 #### LogonTracer

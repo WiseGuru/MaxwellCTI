@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/xdr/"}
+{"dg-publish":true,"permalink":"/definitions-and-topics/xdr/","updated":"2024-03-13T15:59:17.000-07:00"}
 ---
 
 #### XDR

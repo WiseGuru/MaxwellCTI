@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/definitions-and-topics/trust-service-categories/","tags":["SOC"]}
+{"dg-publish":true,"permalink":"/definitions-and-topics/trust-service-categories/","tags":["SOC"],"updated":"2025-06-30T14:35:38.615-07:00"}
 ---
 
 #### Trust Service Categories
