@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technical-guides/securing-email/","updated":"2025-08-21T21:16:17.980-07:00"}
+{"dg-publish":true,"permalink":"/technical-guides/securing-email/","updated":"2025-09-04T12:09:55.042-07:00"}
 ---
 
 Securing your email is a critical part of protecting yourself and your business from scams and losses. The [FBI IC3 2024 Annual Report](https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf) identified Business Email Compromise and Phishing/Spoofing as one of the biggest problems causing a combined *$2.8 billion* in losses in 2024 alone.
@@ -11,8 +11,8 @@ I have you covered; below are [[Technical Guides/Securing Email#Protocol Summari
 >[!tip] Don't send email from your domain?
 >If you don't send email from your domain, you only need **two DNS records that reject all email sent from your domain**:
 > SPF: `TXT   @   "v=spf1 -all"`
-> DMARC: `TXT  _dmarc.example.com   "v=DMARC1; p=reject"`
- > (note that `example.com` should be your domain, as in `_dmarc.maxwellcti.com`)
+> DMARC: `TXT  _dmarc.yourdomain.com   "v=DMARC1; p=reject"`
+ > (note that `yourdomain.com` should be the domain you're modifying, as in `_dmarc.maxwellcti.com`)
 
 # Email 101: Email Authentication
 Let's cover the basics if this is your first time looking into this or you need a refresher.
@@ -39,17 +39,17 @@ Common spoofing attacks take a variety of forms:
 
 Since 1980, we've come up with three protocols to help authenticate email; [[Definitions and Topics/SPF\|SPF]], [[Definitions and Topics/DKIM\|DKIM]], and [[Definitions and Topics/DMARC\|DMARC]]. Combined, they are used to identify servers that are permitted to send email on your behalf, signing certification to authenticate legitimate email, a define a policy for emails that fail authentication.
 
-*It is critical for all three protocols to be configured correctly to make ensure real emails get delivered.*
+*It is critical for all three protocols to be configured correctly to ensure real emails get delivered.*
 
 *SPF* was the first protocol released, and it includes both a basic authorization and policy process. It lists out domains which are allowed to send email, and says what to do with everything else. The policy component was replaced with DMARC, but some email hosts still rely on SPF for authentication.
 
 *DKIM* signs emails sent from your approved servers and provides recipients with a public key to verify the signature. This ensures that the emails are not changed in transit and makes sure that any routing problems don't lead to authentication failures.
 
-*DMARC* checks if the SPF and DKIM authentication checks passed, then confirms that they match (or align with) the sending domain, and if at least one of them both passes and is in alignment, marks the email as legitimate. If an email fails both checks, then DMARC tells the recipient server what to do with the email; nothing (`none`), send it to junk (`quarantine`), or do not deliver it to the mailbox (`reject`). It also provides addresses for receiving servers to send *DMARC Reports*, which include details on what emails they've received and whether they passed or failed authentication. The reports are not very easy to read by themselves, but can be interpreted by services or scripts to convert them into usable data.
+*DMARC* checks if the SPF and DKIM authentication checks passed, then confirms that they match (or align with) the sending domain, and if at least one of them both passes and is in alignment, marks the email as legitimate. *If an email fails both SPF and DKIM checks*, then DMARC tells the recipient server what to do with the email; nothing (`none`), send it to junk (`quarantine`), or do not deliver it to the mailbox (`reject`). It also provides addresses for receiving servers to send *DMARC Reports*, which include details on what emails they've received and whether they passed or failed authentication. The reports are not very easy to read by themselves, but can be interpreted by services or scripts.
 
 ## The broader email ecosystem
 
-Email authentication doesn't happen in a vacuum. In lieu of consistent SPF/DKIM/DMARC configurations, many companies rely on heuristic analysis of emails to determine if they are phishy or not. Additionally, the policies set forth in SPF and DMARC are more like guidelines, and while many email hosts comply with them, some have made decisions not to reject emails based on DMARC policies alone. This means that even if you have a well-defined policy set to `reject` inauthentic mail, some mail hosts could still deliver them to mailboxes.
+Email authentication doesn't happen in a vacuum. In lieu of consistent SPF/DKIM/DMARC configurations, many companies rely on heuristic analysis of emails to determine if they are phishy or not. Additionally, the policies set forth in SPF and DMARC are more like guidelines, and while many email hosts comply with them, some have made decisions not to reject emails based on DMARC policies alone. This means that even if you have a well-defined policy set to `reject` inauthentic mail, some mail hosts could still deliver them to mailboxes.^[Although usually they at least get delivered to junk.]
 
 Additionally, Google, Yahoo, Apple Mail, and Microsoft require all domains which send more than 5,000 emails in a day to have a valid DMARC policy.^[[Understanding Gmail and Yahoo DMARC Requirements - dmarcian](https://dmarcian.com/yahoo-and-google-dmarc-required/)] While a policy of `none` technically meets the requirements, it still leaves you and your domain vulnerable to spoofing.
 

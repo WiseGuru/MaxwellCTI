@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/nist/nist-frameworks-and-s-ps-overview/","updated":"2025-08-26T10:47:18.016-07:00"}
+{"dg-publish":true,"permalink":"/frameworks-standards-and-regulations/nist/nist-frameworks-and-s-ps-overview/","updated":"2025-08-26T10:47:50.284-07:00"}
 ---
 
 **NIST** (the National Institute of Standards and Technology) is a US federal institution that does research and forms national standards. As it relates to cybersecurity frameworks, NIST has created several *frameworks* and *special publications* (SPs) that describe best-practices for certain processes and problems. Some SPs are broad (like the [[Frameworks, Standards, and Regulations/NIST/RMF/NIST SP 800-37 (RMF)\|NIST SP 800-37 (RMF)]] or [[Frameworks, Standards, and Regulations/NIST/NIST 800-53/800-53R5\|800-53R5]]), where others are extremely narrow in their focus (like the [[Frameworks, Standards, and Regulations/NIST/NIST SP 800-60\|NIST SP 800-60]])
