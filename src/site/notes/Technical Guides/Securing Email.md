@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technical-guides/securing-email/","updated":"2025-09-04T12:09:55.042-07:00"}
+{"dg-publish":true,"permalink":"/technical-guides/securing-email/","updated":"2025-09-05T20:43:03.237-07:00"}
 ---
 
 Securing your email is a critical part of protecting yourself and your business from scams and losses. The [FBI IC3 2024 Annual Report](https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf) identified Business Email Compromise and Phishing/Spoofing as one of the biggest problems causing a combined *$2.8 billion* in losses in 2024 alone.
@@ -41,7 +41,7 @@ Since 1980, we've come up with three protocols to help authenticate email; [[Def
 
 *It is critical for all three protocols to be configured correctly to ensure real emails get delivered.*
 
-*SPF* was the first protocol released, and it includes both a basic authorization and policy process. It lists out domains which are allowed to send email, and says what to do with everything else. The policy component was replaced with DMARC, but some email hosts still rely on SPF for authentication.
+*SPF* was the first protocol released, and it includes both a basic authorization and policy process. It lists sources which are allowed to send email, and says what to do with everything else. The policy component was replaced with DMARC, but some email hosts still rely on SPF for authentication.
 
 *DKIM* signs emails sent from your approved servers and provides recipients with a public key to verify the signature. This ensures that the emails are not changed in transit and makes sure that any routing problems don't lead to authentication failures.
 
