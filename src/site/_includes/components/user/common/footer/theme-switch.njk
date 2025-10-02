@@ -1,4 +1,5 @@
 <aside id="floating-control">
+{# Ko-Fi/BuyMeACoffee Link #}
   <a
     id="coffee-link"
     href="https://ko-fi.com/wiseguru"
@@ -8,18 +9,25 @@
   >
     <i icon-name="coffee" aria-hidden="true"></i>
   </a>
+{# Email Me Link #}
   <a
     id="emailme"
     href="#"
   >
     <i icon-name="mail-plus" title="Discuss" aria-hidden="true"></i>
   </a>
+{# Theme Switching Link #}
   <span id="theme-switch">
     <i class="svg-icon light" icon-name="sun" aria-hidden="true"></i>
     <i class="svg-icon dark" icon-name="moon" aria-hidden="true"></i>
     <i class="svg-icon auto" icon-name="sun-moon" aria-hidden="true"></i>
   </span>
 </aside>
+
+{#
+This is a ton of functions to detect and set the theme automatically.
+You should not make any changes to this section unless you know what you're doing.
+#}
 
 <script defer>
   function setThemeIcon(theme) {
@@ -83,7 +91,10 @@
       window.theme = next;
     });
 
-  // —————— NEW: wait for the DOM then override the mailto link ——————
+{#
+This waits for the DOM, then override the mailto link with your email, and automatically sets the subject to include the page title and the body to include the page URL.
+#}
+
   document.addEventListener('DOMContentLoaded', () => {
     const emailLink = document.getElementById('emailme');
     if (!emailLink) return;
