@@ -593,6 +593,9 @@ The final result is a spreadsheet with a summary of all of the reports it collec
 - [DMARC Domain Checker - dmarcian](https://dmarcian.com/domain-checker/)
 	- dmarcian offers another fabulous record checker with additional tools that break down SPF, DKIM, and DMARC records.
 	- Be warned, however, that it only returns one DKIM key and has trouble finding CNAME records.
+- [Email Tester - Suped](https://www.suped.com/tools/email-tester)
+	- Send a test email to analyze SPF, DKIM, DMARC, message headers, and other email authentication and deliverability checks.
+	- Useful for verifying that your email authentication is working correctly with a real message, rather than only checking DNS records.
 - [Free Domain Analyzer Tool \| PowerAnalyzer](https://powerdmarc.com/analyzer/)
 	- Can automatically detect/select the DKIM selector
 	- Checks BIMI and a few others with only a couple of clicks
